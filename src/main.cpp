@@ -1,25 +1,29 @@
 #include <GL/glut.h>
 #include <iostream>
-#include "Classes/robot.h"
 #include <math.h>
+#include <vector>
+#include "Classes/robot.h"
+#include "Classes/utils.h"
+
 using namespace std;
 
 #define WindowHeight 800
 #define WindowWidth 800
 #define ScreenHeight 1080
 #define ScreenWidth 1920
-#define NumRobots 100
+#define NumRobots 50
 
-Robot robot[NumRobots];
+vector<Robot> robot(NumRobots);
 
 void draw();
 void timer(int);
 void newPopulation();
 void updatePositions(float seconds);
-float distance(float x1, float y1, float x2, float y2);
+float distance(Robot *r1, Robot *r2);
+float angleTwoPoints(Robot *r1, Robot *r2);
+float distTwoAngles(float a1, float a2);
 
-int main(int argc, char** argv)
-{
+int main(int argc, char** argv){
   srand(time(0));
 
   glutInit(&argc, argv);
@@ -50,32 +54,76 @@ void draw(){
 }
 
 void timer(int){
-  updatePositions(10);// Update every 100ms
+  updatePositions(0.020);// Update every 20ms
+
+
   glutPostRedisplay();
-  glutTimerFunc(10, timer, 0);
+  glutTimerFunc(20, timer, 0);
 }
 
 void newPopulation(){
-  float posX, posY, angle;
+  float posX, posY, angle, genes[6];
 
-  for (int i = 0; i < NumRobots; i++) {
+  for (int i = 0; i < NumRobots; i++){
+    robot[i].setId(i);
+
     posX = (rand()%100 - 50)/5.0;// Some value between -10 and +10
     posY = (rand()%100 - 50)/5.0;// Some value between -10 and +10
     angle = rand()%360;
-    robot[i].newOrientation(posX, posY, angle);
+
+    // Random position until reach a valid Position
+    bool validposition=false;
+    while(!validposition){
+      validposition=true;
+      robot[i].newOrientation(posX, posY, angle);
+      for (int j = 0; j < NumRobots; j++){
+        if(i!=j){
+          if(distanceTwoRobots( &robot[i],&robot[j] ) <= (robot[i].getRadius()+robot[j].getRadius())){
+            validposition=false;
+            posX = (rand()%100 - 50)/5.0;// Some value between -10 and +10
+            posY = (rand()%100 - 50)/5.0;// Some value between -10 and +10
+          }
+        }
+      }
+    }
+
+    // SideSensorActivation   (0-3)meters
+    genes[0] = 2;//(rand()%300)/100.0;
+    // FrontSensorActivation  (0-3)meters
+    genes[1] = 2;//(rand()%300)/100.0;
+    // LinearVelocity         (0-1)meters/second
+    genes[2] = 2;//(rand()%100)/100.0;
+    // MaximumRotation        (0-10)degrees
+    genes[3] = (rand()%1000)/100.0;
+    // SensorAngle            (0-90)degrees
+    genes[4] = (rand()%9000)/100.0;
+    // Set random genes
+    robot[i].newGene(genes);
+
   }
 }
 
 void updatePositions(float seconds){
-  bool canMove;
+  for (int i = 0; i < NumRobots; i++) {
+    robot[i].move(robot, seconds);
+  }
+  /*bool canMove;
   for (int i = 0; i < NumRobots; i++) {
     canMove = true;
+    //cout<<"----"<<i<<"----"<<endl;
     for (int j = 0; j < NumRobots; j++) {
       if(j!=i){
-        if(distance( robot[i].getX(),robot[i].getY(),robot[j].getX(),robot[j].getY() ) < robot[i].getRadius()+robot[j].getRadius()){
+        if(distance( &robot[i],&robot[j] ) <= (robot[i].getRadius()+robot[j].getRadius())){
           canMove = false;
+
           robot[i].newColor(1,0,0);
-          robot[i].
+          if(distTwoAngles( robot[i].getTheta(), angleTwoPoints(&robot[j],&robot[i]))<=90 ||
+            distTwoAngles( robot[i].getTheta(), angleTwoPoints(&robot[j],&robot[i]))>=270){
+            robot[i].rotate();
+            break;
+          }else{
+            canMove = true;
+          }
         }
       }
     }
@@ -83,9 +131,5 @@ void updatePositions(float seconds){
       robot[i].newColor(0,0,0);
       robot[i].move(0.01, 0, seconds);
     }
-  }
-}
-
-float distance(float x1, float y1, float x2, float y2){
-  return sqrt( (x1-x2)*(x1-x2) + (y1-y2)*(y1-y2) );
+  }*/
 }
