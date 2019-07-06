@@ -1,86 +1,91 @@
 #include <GL/glut.h>
 #include <iostream>
-#include <sys/time.h>
+#include "Classes/robot.h"
 #include <math.h>
-
 using namespace std;
 
 #define WindowHeight 800
 #define WindowWidth 800
 #define ScreenHeight 1080
 #define ScreenWidth 1920
-int factor=100; // factor the animation is slowed down by
+#define NumRobots 100
 
-double dx = 0;
-double size = 1;
+Robot robot[NumRobots];
 
-void animate(double speed);
+void draw();
+void timer(int);
+void newPopulation();
+void updatePositions(float seconds);
+float distance(float x1, float y1, float x2, float y2);
 
-static double ftime(void) {
-  struct timeval t;
-  gettimeofday(&t, NULL);
+int main(int argc, char** argv)
+{
+  srand(time(0));
 
-  return 1.0*t.tv_sec + 1e-6*t.tv_usec;
-}
+  glutInit(&argc, argv);
+  glutInitDisplayMode(GLUT_RGB | GLUT_DOUBLE);
+  glutInitWindowSize(WindowWidth, WindowHeight);
+  glutInitWindowPosition((ScreenWidth/2)-(WindowWidth/2), (ScreenHeight/2)-(WindowHeight/2));
+  glutCreateWindow("Obstable Avoidance Simulation");
 
-void animate(double speed) {
-  if (dx > 1.5) {
-    dx = -1.5;
-  }
-  else {
-    dx += speed/factor;
-    size = (cos((dx+1.5)*M_PI*3)+1)/4;
-    cout<< (dx+1.5)/3*M_PI <<" "<<cos((dx+1.5)/3*M_PI)<<endl;
-  }
+  newPopulation();
+  glClearColor(1.0, 1.0, 1.0, 1.0);
+  glutDisplayFunc(draw);
   glutPostRedisplay();
+  glutTimerFunc(0, timer, 0);
+  glutMainLoop();
+
+  return 0;
 }
 
-void square(void) {
+void draw(){
   glClear(GL_COLOR_BUFFER_BIT);
+  glLoadIdentity();
 
-  glColor3f(0.0, 0.0, 0.5);
-
-  glBegin(GL_POLYGON);
-    glVertex2d(-(size/2)+dx, (size/2)+dx);
-    glVertex2d(-(size/2)+dx, -(size/2)+dx);
-    glVertex2d((size/2)+dx, -(size/2)+dx);
-    glVertex2d((size/2)+dx, (size/2)+dx);
-  glEnd();
+  for (int i = 0; i < NumRobots; i++) {
+    robot[i].draw();
+  }
 
   glutSwapBuffers();
 }
 
-
-static double last_T;
-
-static void idle(void) {
-  const double now_T = ftime();
-  const double delta_T = now_T - last_T;
-  last_T = now_T;
-
-  const double speed = delta_T * 60;
-
-  animate(speed);
+void timer(int){
+  updatePositions(10);// Update every 100ms
   glutPostRedisplay();
+  glutTimerFunc(10, timer, 0);
 }
 
-void initialize(void) {
-  glClearColor(1.0, 1.0, 1.0, 1.0);
+void newPopulation(){
+  float posX, posY, angle;
+
+  for (int i = 0; i < NumRobots; i++) {
+    posX = (rand()%100 - 50)/5.0;// Some value between -10 and +10
+    posY = (rand()%100 - 50)/5.0;// Some value between -10 and +10
+    angle = rand()%360;
+    robot[i].newOrientation(posX, posY, angle);
+  }
 }
 
-int main(int argc, char** argv)
-{
-    glutInit(&argc, argv);
-    glutInitDisplayMode(GLUT_SINGLE);
-    glutInitWindowSize(WindowWidth, WindowHeight);
-    glutInitWindowPosition((ScreenWidth/2)-(WindowWidth/2), (ScreenHeight/2)-(WindowHeight/2));
-    glutCreateWindow("Hello world!");
+void updatePositions(float seconds){
+  bool canMove;
+  for (int i = 0; i < NumRobots; i++) {
+    canMove = true;
+    for (int j = 0; j < NumRobots; j++) {
+      if(j!=i){
+        if(distance( robot[i].getX(),robot[i].getY(),robot[j].getX(),robot[j].getY() ) < robot[i].getRadius()+robot[j].getRadius()){
+          canMove = false;
+          robot[i].newColor(1,0,0);
+          robot[i].
+        }
+      }
+    }
+    if(canMove){
+      robot[i].newColor(0,0,0);
+      robot[i].move(0.01, 0, seconds);
+    }
+  }
+}
 
-    initialize();
-    glutDisplayFunc(square);
-    glutIdleFunc(idle);
-    glutPostRedisplay();
-
-    glutMainLoop();
-    return 0;
+float distance(float x1, float y1, float x2, float y2){
+  return sqrt( (x1-x2)*(x1-x2) + (y1-y2)*(y1-y2) );
 }
