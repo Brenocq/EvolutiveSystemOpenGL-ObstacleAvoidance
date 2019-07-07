@@ -7,8 +7,11 @@
 
 using namespace std;
 
+float pointsCollision = -50.0;// Points per second in collision
+float pointsMoving    =  10.0;// Points per second in maximum speed
+
 Robot::Robot():
-  x(0), y(0), theta(0), radius(0.15), inCollision(false), inRotation(false), walking(true)
+  x(0), y(0), theta(0), radius(0.15), inCollision(false), fitness(0)
 {
   id = 0;
   color[0] = 0;
@@ -48,10 +51,17 @@ void Robot::newColor(float r, float g, float b){
 }
 
 void Robot::setId(int _id){id=_id;}
+void Robot::setTheta(float _theta){
+  while(_theta>=360)
+    _theta-=360;
+  while(_theta<0)
+    _theta+=360;
 
+  theta=_theta;
+}
 void Robot::draw(void) const{
   // Draw robot body
-  glColor3f(color[0], color[1], color[2]);
+  glColor3f(color[0], fitness/1000, color[2]);
   glBegin(GL_POLYGON);
   for (int i = 0; i < 360; i+=5) {
     glVertex2d( radius/10*cos(i/180.0*M_PI) + x/10, radius/10*sin(i/180.0*M_PI) + y/10);
@@ -109,41 +119,46 @@ void Robot::draw(void) const{
 }
 
 void Robot::move(vector<Robot> robots, float seconds){
-  float distance, angle;
-  bool canMove;
+  bool canMove = true;
+  float angleRotation=0;
   updateSensor(robots);
-  for (int i = 0; i < int(robots.size()); i++) {
-    if(robots[i].getId()!=this->getId()){
-      // Calculation of distance
-      distance = distanceTwoRobots(&robots[i], &robots[id]);
-      // Canculation of angle
-      angle = atan2((robots[i].getY()-this->getY()),(robots[i].getX()-this->getX()));
-      if(angle<0){
-        angle+=M_PI*2;
-      }
-      angle*=180/M_PI;// Convert from radians to degrees
 
-      // Check if can move
-      canMove = true;
-      if(distance <= (this->getRadius()+robots[i].getRadius())){
+  // Calculate rotation
+  if(sensorValues[1]>=0){
+    canMove=false;
+    angleRotation=genes[3];
+  }else if(sensorValues[0]>=0 && sensorValues[2]>=0){
+    angleRotation-=(sensorValues[0]/genes[0]);
+    angleRotation+=(sensorValues[2]/genes[0]);
+    // angleRotation will be some value between +1 and -1
+    angleRotation=genes[3]*angleRotation;
+  }else if(sensorValues[0]>=0){
+    angleRotation=-genes[3];
+  }else if(sensorValues[2]>=0){
+    angleRotation=genes[3];
+  }
+  rotate(angleRotation);
+
+  // Search for pysical contact between robots
+  for (int i = 0; i < int(robots.size()); i++) {
+    if(robots[i].getId()!=robots[id].getId()){
+      if(distanceTwoRobots(&robots[id], &robots[i]) <= (robots[id].getRadius()+robots[i].getRadius())){
         inCollision = true;
-        canMove = false;
-        if(angle<=90 || angle>=270){
-          walking = false;
-          inRotation = true;
-          this->rotate();
-          break;
-        }else{
-          canMove = true;
+        fitness += pointsCollision*seconds;
+        robots[id].newColor(1,0,0);
+        if(distTwoAngles( robots[id].getTheta(), angleTwoRobots(&robots[id],&robots[i]))<=90 ||
+          distTwoAngles( robots[id].getTheta(), angleTwoRobots(&robots[id],&robots[i]))>=270){
+          rotate(genes[3]);
+          canMove = false;
         }
       }
     }
   }
+
   // Move robot if possible
   if(canMove){
-    inRotation = false;
+    fitness+=genes[2]*pointsMoving*seconds;
     inCollision = false;
-    walking = true;
     x += cos(theta/180*M_PI)*genes[2]*seconds;
     y += sin(theta/180*M_PI)*genes[2]*seconds;
     if(x>10-radius){
@@ -170,10 +185,9 @@ void Robot::move(vector<Robot> robots, float seconds){
 }
 
 
-void Robot::rotate(){
-  theta+=genes[3];
-  if(theta>=360)
-    theta-=360;
+
+void Robot::rotate(float angle){
+  setTheta(theta+angle);
 }
 
 void Robot::updateSensor(vector<Robot> robots){
@@ -190,7 +204,6 @@ void Robot::updateSensor(vector<Robot> robots){
   }
   float distance, angle;
   float angleToReadRobot;// Angle interval read the other robot with this sensor
-
   for (int sensor = 0; sensor < 3; sensor++) {
     for (int i = 0; i < int(robots.size()); i++) {
       if(robots[i].getId()!=this->getId()){
@@ -206,13 +219,36 @@ void Robot::updateSensor(vector<Robot> robots){
         }
         angleToReadRobot*=180/M_PI;// Convert from radians to degrees
 
-        if(distance<=sensorActivaton[sensor]+radius){
+        if(distance<=sensorActivaton[sensor]+radius+robots[i].getRadius()){
           if(distTwoAngles(sensorAngle[sensor],angle)<10){
-            sensorValues[sensor]=min(sensorValues[sensor],distance-radius);
+            sensorValues[sensor]=min(sensorValues[sensor],distance-radius-robots[i].getRadius());
           }
         }
       }
     }
+    // Check collisions with walls
+    float aux;
+    if((sensorActivaton[sensor]+radius)*cos(sensorAngle[sensor]/180*M_PI)+x>=10){
+      aux = ((sensorActivaton[sensor]+radius)*cos(sensorAngle[sensor]/180*M_PI)+x-10)/(sensorActivaton[sensor]+radius)*cos(sensorAngle[sensor]/180*M_PI);
+      aux = 1-fabs(aux);
+      sensorValues[sensor]= min(sensorValues[sensor],sensorActivaton[sensor]*aux*(sensorActivaton[sensor]/(radius+sensorActivaton[sensor])));
+    }
+    if((sensorActivaton[sensor]+radius)*cos(sensorAngle[sensor]/180*M_PI)+x<=-10){
+      aux = ((sensorActivaton[sensor]+radius)*cos(sensorAngle[sensor]/180*M_PI)+x+10)/(sensorActivaton[sensor]+radius)*cos(sensorAngle[sensor]/180*M_PI);
+      aux = 1-fabs(aux);
+      sensorValues[sensor]= min(sensorValues[sensor],sensorActivaton[sensor]*aux*(sensorActivaton[sensor]/(radius+sensorActivaton[sensor])));
+    }
+    if((sensorActivaton[sensor]+radius)*sin(sensorAngle[sensor]/180*M_PI)+y>=10){
+      aux = ((sensorActivaton[sensor]+radius)*sin(sensorAngle[sensor]/180*M_PI)+y-10)/(sensorActivaton[sensor]+radius)*sin(sensorAngle[sensor]/180*M_PI);
+      aux = 1-fabs(aux);
+      sensorValues[sensor]= min(sensorValues[sensor],sensorActivaton[sensor]*aux*(sensorActivaton[sensor]/(radius+sensorActivaton[sensor])));
+    }
+    if((sensorActivaton[sensor]+radius)*sin(sensorAngle[sensor]/180*M_PI)+y<=-10){
+      aux = ((sensorActivaton[sensor]+radius)*sin(sensorAngle[sensor]/180*M_PI)+y+10)/(sensorActivaton[sensor]+radius)*sin(sensorAngle[sensor]/180*M_PI);
+      aux = 1-fabs(aux);
+      sensorValues[sensor]= min(sensorValues[sensor],(sensorActivaton[sensor])*aux*(sensorActivaton[sensor]/(radius+sensorActivaton[sensor])));
+    }
+
     if(sensorValues[sensor]==10){
       sensorValues[sensor]=-1;// Set as -1 if sensor was not trigged
     }

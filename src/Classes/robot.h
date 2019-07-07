@@ -20,10 +20,11 @@ public:
   void newColor(float r, float g, float b);// (red, green, blue)
   void newOrientation(float _x, float _y, float _theta);// _x,_y: meters | _theta: degrees
   void setId(int _id);
+  void setTheta(float _theta);
 
   void draw(void) const;
   void move(vector<Robot> robots, float seconds);
-  void rotate();
+  void rotate(float angle);
   void updateSensor(vector<Robot> robots);
 
 private:
@@ -37,7 +38,7 @@ private:
   float x, y, theta, radius;
   float color[3];
   unsigned int id;
-  bool inCollision, inRotation, walking;
+  bool inCollision;
   float sensorValues[3];// Left, Front, Right
 };
 
