@@ -1,10 +1,10 @@
-#include "robot.h"
+#include "object.h"
 
 #ifndef UTILS_H
 #define UTILS_H
 
-float distanceTwoRobots(Robot *r1, Robot *r2);
-float angleTwoRobots(Robot *r1, Robot *r2);
+float distanceTwoObjects(Object *o1, Object *o2);
+float angleTwoObjects(Object *o1, Object *o2);
 float distTwoAngles(float a1, float a2);
 
 #endif// UTILS_H
