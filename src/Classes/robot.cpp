@@ -236,14 +236,14 @@ void Robot::updateSensor(vector<Object> objects){
         angleToReadRobot*=180/M_PI;// Convert from radians to degrees
 
         if(distance<=sensorActivaton[sensor]+radius+objects[i].getRadius()){
-          if(distTwoAngles(sensorAngle[sensor],angle)<10){
+          float angleOtherObject = atan2(objects[i].getRadius(),distance)/M_PI*180;
+          if(distTwoAngles(sensorAngle[sensor],angle)<angleOtherObject){
             sensorValues[sensor]=min(sensorValues[sensor],distance-radius-objects[i].getRadius());
           }
         }
       }
     }
     // Check collisions with walls
-    // TODO better way to detect circular objects
     float aux;
     if((sensorActivaton[sensor]+radius)*cos(sensorAngle[sensor]/180*M_PI)+x>=10){
       aux = ((sensorActivaton[sensor]+radius)*cos(sensorAngle[sensor]/180*M_PI)+x-10)/(sensorActivaton[sensor]+radius)*cos(sensorAngle[sensor]/180*M_PI);

@@ -16,17 +16,20 @@ using namespace std;
 #define screenWidth 1920
 
 // Evolutive System Parameters
-#define numRobots 100
-#define populationTestTime 60
-#define pointsCollision    -30.0// Points per second in collision
+#define numRobots 10
+#define populationTestTime 300
+#define pointsCollision    -50.0// Points per second in collision
 #define pointsMoving       10.0// Points per second in maximum speed
 #define fitnessMean        5   // Number of fitness that will be used to calculate the mean
 #define mutationRate       0.1 // Number of fitness that will be used to calculate the mean
-#define neutralCrossing    0.8 // 0 -> became the best robot, 1-> do not evolve
+#define neutralCrossing    0.5 // 0 -> became the best robot, 1-> do not evolve
 #define neutralMutation    0.5 // 0 -> change to mutation, 1-> do not mutate
 #define controlBackMutationPrevention 1 // Control if will use back mutation prevention
 #define crossingCondition 0  // 0:fitness<fitness, 1:fitness<meanFitness, 2:meanFitness<meanFitness
-#define numObstacles 40
+#define numObstacles 90
+
+// Debug
+#define showAvFitness 1
 
 vector<Robot> robot(numRobots);
 vector<Obstacle> obstacle(numObstacles);
@@ -73,8 +76,8 @@ void draw(){
 }
 
 void timer(int){
-  updatePositions(0.050);// Update every 50ms
-  currTime+=0.050;
+  updatePositions(0.100);// Update as 100ms
+  currTime+=0.100;
   //cout<<currTime<<endl;
   if(currTime>=populationTestTime){
     newPopulation();
@@ -82,7 +85,7 @@ void timer(int){
   }
 
   glutPostRedisplay();
-  glutTimerFunc(10, timer, 0);
+  glutTimerFunc(1, timer, 0);// Update every 1ms
 }
 
 void firstPopulation(){
@@ -168,13 +171,17 @@ void newPopulation(){
   vector<float>averageFitness;
 
   //----- Calculate Average Fitness for each Robot -----//
+
   for(int i = 0; i < numRobots; i++){
+    if(showAvFitness){ cout<<"Robot "<<i<<": "; }
     averageFitness.push_back(0);
     int qtdValuesMean = max(int(robot[i].fitness.size()-fitnessMean),0);
     for (int j = robot[i].fitness.size()-1; j >= qtdValuesMean; j--) {
+      if(showAvFitness){ cout<<robot[i].fitness[j]<<" "; }
       averageFitness.back()+=robot[i].fitness[j];
     }
     averageFitness.back()/=(robot[i].fitness.size()-qtdValuesMean);
+    if(showAvFitness){ cout<<"("<<averageFitness.back()<<")"<<endl; }
   }
   //----- Select Best Robot -----//
   for (int i = 0; i < numRobots; i++){
@@ -190,7 +197,8 @@ void newPopulation(){
   cout<<"\tMaximum Fitness: "<<populationTestTime*pointsMoving<<endl;
   cout<<"\tMinimum Fitness: "<<populationTestTime*pointsCollision<<endl;
   cout<<"\tAverage Fitness: "<<totalFitness/numRobots<<endl;
-  cout<<"\tRobot "<<bestRobot<<" was the best robot with fitness equal to "<<bestRobotFitness<<endl<<endl;
+  cout<<"\tRobot "<<bestRobot<<" was the best robot with mean fitness equal to "<<bestRobotFitness
+      <<" and fitness equal to "<<robot[bestRobot].fitness.back()<<endl<<endl;
   populationNum++;
   //----- Crossing -----//
   bool condition;
@@ -211,64 +219,74 @@ void newPopulation(){
     }
 
     if(condition){
-      for (int i = 0; i < numRobots; i++) {
-        for (int j = 0; j < int(robot[0].genes.size()); j++) {
-          //cout<<robot[i].genes[j]<<"-"<<i<<" "<<robot[bestRobot].genes[j]<<"-"<<bestRobot<<"  ";
-          robot[i].genes[j] = float(neutralCrossing)*robot[i].genes[j]+(1-float(neutralCrossing))*robot[bestRobot].genes[j];
-          //cout<<robot[i].genes[j]<<" ("<<float(neutralCrossing)*robot[i].genes[j]<<"+"<<(1-float(neutralCrossing))*robot[bestRobot].genes[j]<<")"<<endl;
-        }
+      for (int j = 0; j < int(robot[0].genes.size()); j++) {
+        robot[i].genes[j] = float(neutralCrossing)*robot[i].genes[j]+(1-float(neutralCrossing))*robot[bestRobot].genes[j];
       }
     }
   }
   //----- Mutation -----//
   for (int i = 0; i < numRobots; i++) {
     robot[i].setColor(0,0,0);
-    // If will not use BackMutationPrevention
-    int sumBMP;
-    for (int j = 0; j < int(robot[0].mutatedGenes.size()); j++) {
-      sumBMP+=robot[i].mutatedGenes[j];
-    }
-    if(!controlBackMutationPrevention || sumBMP==int(robot[0].mutatedGenes.size())){
-      for (int j = 0; j < int(robot[0].mutatedGenes.size()); j++) {
-        robot[i].mutatedGenes[j]=0;
-      }
-    }
-    // Create new cromossome
-    vector<float>genes(robot[0].genes.size());
-    for (int j = 0; j < int(genes.size()); j++) {
-      genes[j] = robot[i].genes[j];
-    }
 
-    for (int j = 0; j < int(genes.size()); j++) {
-    int chanceMutation = rand()%100;
-      if(chanceMutation < mutationRate*100 && robot[i].mutatedGenes[j]==0){
-        robot[i].setColor(0.5,0.5,0);
-        robot[i].mutatedGenes[j] = 1;
-        switch(j){
-          case 0:
-          // SideSensorActivation   (0-3)meters
-          genes[0] = float(neutralMutation)*genes[0] + (1-float(neutralMutation))*(rand()%300)/100.0;
-          break;
-          case 1:
-          // FrontSensorActivation  (0-3)meters
-          genes[1] = float(neutralMutation)*genes[1] + (1-float(neutralMutation))*(rand()%300)/100.0;
-          break;
-          case 2:
-          // LinearVelocity         (0-1)meters/second
-          genes[2] = float(neutralMutation)*genes[2] + (1-float(neutralMutation))*(rand()%100)/100.0;
-          break;
-          case 3:
-          // MaximumRotation        (0-10)degrees
-          genes[3] = float(neutralMutation)*genes[3] + (1-float(neutralMutation))*(rand()%1000)/100.0;
-          break;
-          case 4:
-          // SensorAngle            (0-90)degrees
-          genes[4] = float(neutralMutation)*genes[4] + (1-float(neutralMutation))*(rand()%9000)/100.0;
-          break;
+    switch(crossingCondition){
+      case 0:
+        condition = robot[i].fitness.back() < robot[bestRobot].fitness.back();
+      break;
+      case 1:
+        condition = robot[i].fitness.back() < averageFitness[bestRobot];
+      break;
+      case 2:
+        condition = averageFitness[i] < averageFitness[bestRobot];
+      break;
+    }
+    if(condition){
+      // If will not use BackMutationPrevention
+      int sumBMP=0;
+      for (int j = 0; j < int(robot[0].mutatedGenes.size()); j++) {
+        sumBMP+=robot[i].mutatedGenes[j];
+      }
+      if(!controlBackMutationPrevention || sumBMP==int(robot[0].mutatedGenes.size())){
+        for (int j = 0; j < int(robot[0].mutatedGenes.size()); j++) {
+          robot[i].mutatedGenes[j]=0;
         }
       }
+      // Create new cromossome
+      vector<float>genes(robot[0].genes.size());
+      for (int j = 0; j < int(genes.size()); j++) {
+        genes[j] = robot[i].genes[j];
+      }
+
+      for (int j = 0; j < int(genes.size()); j++) {
+      int chanceMutation = rand()%100;
+        if(chanceMutation < mutationRate*100 && robot[i].mutatedGenes[j]==0){
+          robot[i].setColor(0.5,0.5,0);
+          robot[i].mutatedGenes[j] = 1;
+          switch(j){
+            case 0:
+            // SideSensorActivation   (0-3)meters
+            genes[0] = float(neutralMutation)*genes[0] + (1-float(neutralMutation))*(rand()%300)/100.0;
+            break;
+            case 1:
+            // FrontSensorActivation  (0-3)meters
+            genes[1] = float(neutralMutation)*genes[1] + (1-float(neutralMutation))*(rand()%300)/100.0;
+            break;
+            case 2:
+            // LinearVelocity         (0-1)meters/second
+            genes[2] = float(neutralMutation)*genes[2] + (1-float(neutralMutation))*(rand()%100)/100.0;
+            break;
+            case 3:
+            // MaximumRotation        (0-10)degrees
+            genes[3] = float(neutralMutation)*genes[3] + (1-float(neutralMutation))*(rand()%1000)/100.0;
+            break;
+            case 4:
+            // SensorAngle            (0-90)degrees
+            genes[4] = float(neutralMutation)*genes[4] + (1-float(neutralMutation))*(rand()%9000)/100.0;
+            break;
+          }
+        }
+      }
+      robot[i].newGene(genes);
     }
-    robot[i].newGene(genes);
   }
   robot[bestRobot].setColor(0,0,1);
 
