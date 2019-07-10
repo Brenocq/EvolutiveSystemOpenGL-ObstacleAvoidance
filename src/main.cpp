@@ -8,7 +8,6 @@
 #include "Classes/utils.h"
 #include "Classes/environment.h"
 
-// TODO mutated robot
 // TODO predator
 // TODO generate file with fitness qtdValuesMean
 // TODO create matlabApp to visualize data
@@ -23,12 +22,12 @@ using namespace std;
 
 // Evolutive system global parameters (fixed)
 #define numRobots 10
-#define numEnvironemnts 3
+#define numEnvironemnts 5
 #define numObstacles 90
 #define pointsCollision -50.0// Points per second in collision
 #define pointsMoving 10.0// Points per second in maximum speed
-#define qtdPopulationsTested 3// Number of populations tested with each environment
-#define populationTestTime 60// Time that each population will be tested
+#define qtdPopulationsTested 30// Number of populations tested with each environment
+#define populationTestTime 120// Time that each population will be tested
 #define qtdRepetitions 3// Number of times that each environment will be tested to define the fitness
 #define envMutationRate 0.1
 
@@ -50,7 +49,8 @@ vector<Robot> robot(numRobots);
 vector<Environment> environment(numEnvironemnts);
 vector<Obstacle> obstacle(numObstacles);
 float currTime;
-int populationNum=1;
+int populationNum = 0;
+int populationEnvironmentNum = 0;
 int environmentBeingTested = 0;// Index of the environement being tested
 int populationMeanFitness;// Mean fitness of all robots
 
@@ -65,6 +65,8 @@ void updatePositions(float seconds);
 void firstPopulationEnvironments();
 void newPopulationEnvironments();
 void setEnvironmentParameters();
+
+void generationProgressBar();
 
 int main(int argc, char** argv){
   srand(time(0));
@@ -97,13 +99,13 @@ void draw(){
   for (int i = 0; i < numObstacles; i++) {
     obstacle[i].draw();
   }
-
+  generationProgressBar();
   glutSwapBuffers();
 }
 
 void timer(int){
-  updatePositions(0.100);// Update as 100ms
-  currTime+=0.100;
+  updatePositions(0.200);// Update as 200ms
+  currTime+=0.200;
 
   if(currTime>=populationTestTime){
     newPopulationRobots();
@@ -112,11 +114,12 @@ void timer(int){
   }
   //----- Tested one repetition in the environment -----//
   if(populationNum == qtdPopulationsTested){
-    populationNum=0;
+    populationNum = 0;
     environment[environmentBeingTested].auxFitness.push_back(populationMeanFitness);
     if(showPopulationEnvironments){
       cout<<"Environment ("<<environmentBeingTested<<"/"<<numEnvironemnts-1<<") - Repetition ("<<
-      environment[environmentBeingTested].auxFitness.size()<<"/"<<qtdRepetitions<<") - Fitness:"<<
+      environment[environmentBeingTested].auxFitness.size()<<"/"<<qtdRepetitions<<
+      ") - Generations:"<<qtdPopulationsTested<<" - best fitness:"<<
       environment[environmentBeingTested].auxFitness.back()<<endl;
     }
   }
@@ -134,7 +137,7 @@ void timer(int){
     environment[environmentBeingTested].fitness.push_back(meanFitness);
 
     if(showPopulationEnvironments){
-      cout<<"Environment "<<environmentBeingTested<<" - Final fitness: "<<
+      cout<<"--- Environment "<<environmentBeingTested<<" - Final fitness: "<<
       environment[environmentBeingTested].fitness.back()<<endl;
     }
 
@@ -146,13 +149,17 @@ void timer(int){
   //----- Tested all environments -----//
   if(environmentBeingTested==numEnvironemnts){
     if(showPopulationEnvironments){
-      cout<<"FINISH TESTING ENVIRONMENTS (Generation 0)"<<endl;
+      cout<<"FINISH TESTING ENVIRONMENTS (Generation "<< populationEnvironmentNum <<")"<<endl;
       for (int i = 0; i < numEnvironemnts; i++) {
         cout<<"\tEnvironment "<<i<<": "<<environment[i].fitness.back()<<endl;
+        for (int j = 0; j < int(environment[0].genes.size()); j++) {
+          cout<<"\t\tGene "<<j<<": "<<environment[i].genes[j]<<endl;
+        }
       }
     }
     environmentBeingTested=0;
-    //TODO generate new population of environments
+    newPopulationEnvironments();
+    populationEnvironmentNum++;
   }
 
   glutPostRedisplay();
@@ -278,7 +285,6 @@ void newPopulationRobots(){
   bool condition;
   for (int i = 0; i < numRobots; i++) {
 
-    // TODO: Test diffenrence fitness<fitness, fitness<meanFitness, meanFitness<meanFitness
     // Select how to cross
     switch(crossingCondition){
       case 0:
@@ -407,7 +413,41 @@ void newPopulationEnvironments(){
       environment[i].genes[j] = (environment[i].genes[j] + environment[bestEnvironment].genes[j])/2;
     }
   }
-  //TODO mutation of environments
+
+  if(showPopulationEnvironments){
+    cout<<"Best environment:"<<bestEnvironment<<endl;
+  }
+
+  //----- Mutation -----//
+  for (int i = 0; i < numEnvironemnts; i++) {
+    if(environment[i].fitness.back()<environment[bestEnvironment].fitness.back()){
+      for (int j = 0; j < int(environment[0].genes.size()); j++) {
+      int chanceMutation = rand()%100;
+        if(chanceMutation < envMutationRate*100){
+          switch(j){
+            case 0:
+            environment[i].genes[0] = (rand()%1000)/100.0;
+            break;
+            case 1:
+            environment[i].genes[1] = (rand()%100)/100.0;
+            break;
+            case 2:
+            environment[i].genes[2] = (rand()%100)/100.0;
+            break;
+            case 3:
+            environment[i].genes[3] = (rand()%100)/100.0;
+            break;
+            case 4:
+            environment[i].genes[4] =  (rand()%100)/100.0;
+            break;
+            case 5:
+            environment[i].genes[5] = (rand()%300)/100.0;
+            break;
+          }
+        }
+      }
+    }
+  }
 }
 
 void setEnvironmentParameters(){
@@ -419,4 +459,16 @@ void setEnvironmentParameters(){
   neutralMutation = environment[i].genes[3];
   controlBackMutationPrevention = (environment[i].genes[4] >= 0.5);
   crossingCondition = int(environment[i].genes[5]);
+}
+
+//----- User Interface -----//
+void generationProgressBar(){
+  // Rrectangle
+  glColor3f(1, 0, 0);
+  glBegin(GL_POLYGON);
+  glVertex2d(-1,1);
+  glVertex2d((float(populationNum)/qtdPopulationsTested+currTime/(qtdPopulationsTested*populationTestTime))*2-1,1);
+  glVertex2d((float(populationNum)/qtdPopulationsTested+currTime/(qtdPopulationsTested*populationTestTime))*2-1,0.99);
+  glVertex2d(-1,0.99);
+  glEnd();
 }
