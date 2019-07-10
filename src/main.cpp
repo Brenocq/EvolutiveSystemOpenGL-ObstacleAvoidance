@@ -6,6 +6,12 @@
 #include "Classes/robot.h"
 #include "Classes/obstacle.h"
 #include "Classes/utils.h"
+#include "Classes/environment.h"
+
+// TODO mutated robot
+// TODO predator
+// TODO generate file with fitness qtdValuesMean
+// TODO create matlabApp to visualize data
 
 using namespace std;
 
@@ -15,46 +21,66 @@ using namespace std;
 #define screenHeight 1080
 #define screenWidth 1920
 
-// Evolutive System Parameters
+// Evolutive system global parameters (fixed)
 #define numRobots 10
-#define populationTestTime 300
-#define pointsCollision    -50.0// Points per second in collision
-#define pointsMoving       10.0// Points per second in maximum speed
-#define fitnessMean        5   // Number of fitness that will be used to calculate the mean
-#define mutationRate       0.1 // Number of fitness that will be used to calculate the mean
-#define neutralCrossing    0.5 // 0 -> became the best robot, 1-> do not evolve
-#define neutralMutation    0.5 // 0 -> change to mutation, 1-> do not mutate
-#define controlBackMutationPrevention 1 // Control if will use back mutation prevention
-#define crossingCondition 0  // 0:fitness<fitness, 1:fitness<meanFitness, 2:meanFitness<meanFitness
+#define numEnvironemnts 3
 #define numObstacles 90
+#define pointsCollision -50.0// Points per second in collision
+#define pointsMoving 10.0// Points per second in maximum speed
+#define qtdPopulationsTested 3// Number of populations tested with each environment
+#define populationTestTime 60// Time that each population will be tested
+#define qtdRepetitions 3// Number of times that each environment will be tested to define the fitness
+#define envMutationRate 0.1
+
+// Environment parameters
+int fitnessMean;// Number of fitness values that will be used to calculate the meanFitness
+float mutationRate;// Chance of each gene suffer mutation
+float neutralCrossing;// 0 -> became the best robot, 1-> do not evolve
+float neutralMutation;// 0 -> change to mutation, 1-> do not mutate
+bool controlBackMutationPrevention;// Control if will use back mutation prevention
+int crossingCondition;// 0:fitness<fitness, 1:fitness<meanFitness, 2:meanFitness<meanFitness
 
 // Debug
-#define showAvFitness 1
+#define showAvFitness 0
+#define showPopulationRobots 0
+#define showPopulationEnvironments 1
 
+// Global variables
 vector<Robot> robot(numRobots);
+vector<Environment> environment(numEnvironemnts);
 vector<Obstacle> obstacle(numObstacles);
 float currTime;
+int populationNum=1;
+int environmentBeingTested = 0;// Index of the environement being tested
+int populationMeanFitness;// Mean fitness of all robots
 
 void draw();
 void timer(int);
-void firstPopulation();
-void newPopulation();
+//----- Functions to test robots -----//
+void firstPopulationRobots();
+void newPopulationRobots();
 void randomPositions();
-
 void updatePositions(float seconds);
+//----- Functions to test environments -----//
+void firstPopulationEnvironments();
+void newPopulationEnvironments();
+void setEnvironmentParameters();
 
 int main(int argc, char** argv){
   srand(time(0));
+  //----- Create window -----//
   glutInit(&argc, argv);
   glutInitDisplayMode(GLUT_RGB | GLUT_DOUBLE);
   glutInitWindowSize(windowWidth, windowHeight);
   glutInitWindowPosition((screenWidth/2)-(windowWidth/2), (screenHeight/2)-(windowHeight/2));
   glutCreateWindow("Obstacle Avoidance Simulation");
 
-  firstPopulation();
-  glClearColor(1.0, 1.0, 1.0, 1.0);
-  glutDisplayFunc(draw);
-  glutPostRedisplay();
+  firstPopulationRobots();// Create the first population of robots
+  firstPopulationEnvironments();// Create the first population of environments
+  setEnvironmentParameters();
+  glClearColor(1.0, 1.0, 1.0, 1.0);// Clear window
+  glutDisplayFunc(draw);// Set the draw function
+
   glutTimerFunc(0, timer, 0);
   glutMainLoop();
 
@@ -78,35 +104,59 @@ void draw(){
 void timer(int){
   updatePositions(0.100);// Update as 100ms
   currTime+=0.100;
-  //cout<<currTime<<endl;
+
   if(currTime>=populationTestTime){
-    newPopulation();
+    newPopulationRobots();
     currTime=0;
+    populationNum++;
+  }
+  //----- Tested one repetition in the environment -----//
+  if(populationNum == qtdPopulationsTested){
+    populationNum=0;
+    environment[environmentBeingTested].auxFitness.push_back(populationMeanFitness);
+    if(showPopulationEnvironments){
+      cout<<"Environment ("<<environmentBeingTested<<"/"<<numEnvironemnts-1<<") - Repetition ("<<
+      environment[environmentBeingTested].auxFitness.size()<<"/"<<qtdRepetitions<<") - Fitness:"<<
+      environment[environmentBeingTested].auxFitness.back()<<endl;
+    }
+  }
+  //----- Tested all repetitions of a environment -----//
+  if(environment[environmentBeingTested].auxFitness.size() == qtdRepetitions){
+    float meanFitness=0;
+    // Calculate mean
+    for (int i = 0; i < qtdRepetitions; i++) {
+      meanFitness+=environment[environmentBeingTested].auxFitness[i];
+    }
+    meanFitness/=qtdRepetitions;
+
+    // Update environment fitness
+    environment[environmentBeingTested].auxFitness.clear();
+    environment[environmentBeingTested].fitness.push_back(meanFitness);
+
+    if(showPopulationEnvironments){
+      cout<<"Environment "<<environmentBeingTested<<" - Final fitness: "<<
+      environment[environmentBeingTested].fitness.back()<<endl;
+    }
+
+    environmentBeingTested++;
+    if(environmentBeingTested<numEnvironemnts){
+      setEnvironmentParameters();
+    }
+  }
+  //----- Tested all environments -----//
+  if(environmentBeingTested==numEnvironemnts){
+    if(showPopulationEnvironments){
+      cout<<"FINISH TESTING ENVIRONMENTS (Generation 0)"<<endl;
+      for (int i = 0; i < numEnvironemnts; i++) {
+        cout<<"\tEnvironment "<<i<<": "<<environment[i].fitness.back()<<endl;
+      }
+    }
+    environmentBeingTested=0;
+    //TODO generate new population of environments
   }
 
   glutPostRedisplay();
-  glutTimerFunc(1, timer, 0);// Update every 1ms
-}
-
-void firstPopulation(){
-  float genes[6];
-  for (int i = 0; i < numRobots; i++){
-    // SideSensorActivation   (0-3)meters
-    genes[0] = (rand()%300)/100.0;
-    // FrontSensorActivation  (0-3)meters
-    genes[1] = (rand()%300)/100.0;
-    // LinearVelocity         (0-1)meters/second
-    genes[2] = (rand()%100)/100.0;
-    // MaximumRotation        (0-10)degrees
-    genes[3] = (rand()%1000)/100.0;
-    // SensorAngle            (0-90)degrees
-    genes[4] = (rand()%9000)/100.0;
-    // Set random genes
-    robot[i].newGene(genes);
-    robot[i].setPoints(pointsCollision, pointsMoving);
-    robot[i].fitness.push_back(0);
-  }
-  randomPositions();
+  glutTimerFunc(0, timer, 0);// Call timer function as fast as possible
 }
 
 void randomPositions(){
@@ -164,8 +214,30 @@ void updatePositions(float seconds){
   }
 }
 
-void newPopulation(){
-  static int populationNum=1;
+
+//----- Robots -----//
+void firstPopulationRobots(){
+  float genes[6];
+  for (int i = 0; i < numRobots; i++){
+    // SideSensorActivation   (0-3)meters
+    genes[0] = (rand()%300)/100.0;
+    // FrontSensorActivation  (0-3)meters
+    genes[1] = (rand()%300)/100.0;
+    // LinearVelocity         (0-1)meters/second
+    genes[2] = (rand()%100)/100.0;
+    // MaximumRotation        (0-10)degrees
+    genes[3] = (rand()%1000)/100.0;
+    // SensorAngle            (0-90)degrees
+    genes[4] = (rand()%9000)/100.0;
+    // Set random genes
+    robot[i].newGene(genes);
+    robot[i].setPoints(pointsCollision, pointsMoving);
+    robot[i].fitness.push_back(0);
+  }
+  randomPositions();
+}
+
+void newPopulationRobots(){
   int bestRobot, bestRobotFitness=0, totalFitness=0;
   vector< pair <int,int> >bestRobots;//first:fitness second:robotNumber
   vector<float>averageFitness;
@@ -193,13 +265,15 @@ void newPopulation(){
   bestRobot = bestRobots[0].second;
   bestRobotFitness = bestRobots[0].first;
   //----- Print population data -----//
-  cout<<endl<<"Fitness Population "<<populationNum<<":"<<endl;
-  cout<<"\tMaximum Fitness: "<<populationTestTime*pointsMoving<<endl;
-  cout<<"\tMinimum Fitness: "<<populationTestTime*pointsCollision<<endl;
-  cout<<"\tAverage Fitness: "<<totalFitness/numRobots<<endl;
-  cout<<"\tRobot "<<bestRobot<<" was the best robot with mean fitness equal to "<<bestRobotFitness
-      <<" and fitness equal to "<<robot[bestRobot].fitness.back()<<endl<<endl;
-  populationNum++;
+  populationMeanFitness = totalFitness/numRobots;
+  if(showPopulationRobots){
+    cout<<endl<<"Fitness Population "<<populationNum<<":"<<endl;
+    cout<<"\tMaximum Fitness: "<<populationTestTime*pointsMoving<<endl;
+    cout<<"\tMinimum Fitness: "<<populationTestTime*pointsCollision<<endl;
+    cout<<"\tAverage Fitness: "<<populationMeanFitness<<endl;
+    cout<<"\tRobot "<<bestRobot<<" was the best robot with mean fitness equal to "<<bestRobotFitness
+        <<" and fitness equal to "<<robot[bestRobot].fitness.back()<<endl<<endl;
+  }
   //----- Crossing -----//
   bool condition;
   for (int i = 0; i < numRobots; i++) {
@@ -296,4 +370,53 @@ void newPopulation(){
   }
   //----- New population positions -----//
   randomPositions();
+}
+
+//----- Environment -----//
+void firstPopulationEnvironments(){
+  for (int i = 0; i < numEnvironemnts; i++){
+    // fitnessMean   (0.0-10.0)qtdRobots
+    environment[i].genes[0] = (rand()%1000)/100.0;
+    // mutationRate  (0.0-1.0)
+    environment[i].genes[1] = (rand()%100)/100.0;
+    // neutralCrossing (0.0-1.0)
+    environment[i].genes[2] = (rand()%100)/100.0;
+    // neutralMutation (0.0-1.0)
+    environment[i].genes[3] = (rand()%100)/100.0;
+    // controlBackMutationPrevention (0.0-1.0) (<0.5)(>=0.5)
+    environment[i].genes[4] = (rand()%100)/100.0;
+    // crossingCondition  (0.0-3.0) (<1)(<2)(<3)
+    environment[i].genes[5] = (rand()%300)/100.0;
+
+    environment[i].fitness.push_back(0);
+  }
+}
+
+void newPopulationEnvironments(){
+  vector< pair<int,int> >bestEnvironments;
+  int bestEnvironment;
+
+  for (int i = 0; i < numEnvironemnts; i++){
+    bestEnvironments.push_back(make_pair(environment[i].fitness.back(),i));
+  }
+  sort(bestEnvironments.rbegin(),bestEnvironments.rend());
+
+  bestEnvironment = bestEnvironments[0].second;
+  for (int i = 0; i < numEnvironemnts; i++) {
+    for (int j = 0; j < int(environment[0].genes.size()); j++) {
+      environment[i].genes[j] = (environment[i].genes[j] + environment[bestEnvironment].genes[j])/2;
+    }
+  }
+  //TODO mutation of environments
+}
+
+void setEnvironmentParameters(){
+  int i = environmentBeingTested;
+
+  fitnessMean = int(environment[i].genes[0]);
+  mutationRate = environment[i].genes[1];
+  neutralCrossing = environment[i].genes[2];
+  neutralMutation = environment[i].genes[3];
+  controlBackMutationPrevention = (environment[i].genes[4] >= 0.5);
+  crossingCondition = int(environment[i].genes[5]);
 }
