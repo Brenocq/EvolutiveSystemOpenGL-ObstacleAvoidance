@@ -15,8 +15,8 @@
 using namespace std;
 
 // Window Parameters
-#define windowHeight 800
-#define windowWidth 800
+#define windowHeight 600
+#define windowWidth 600
 #define screenHeight 1080
 #define screenWidth 1920
 
@@ -28,8 +28,8 @@ using namespace std;
 #define pointsMoving 10.0// Points per second in maximum speed
 #define qtdPopulationsTested 30// Number of populations tested with each environment
 #define populationTestTime 120// Time that each population will be tested
-#define qtdRepetitions 3// Number of times that each environment will be tested to define the fitness
-#define envMutationRate 0.1
+#define qtdRepetitions 5// Number of times that each environment will be tested to define the fitness
+#define envMutationRate 0.2
 
 // Environment parameters
 int fitnessMean;// Number of fitness values that will be used to calculate the meanFitness
@@ -104,66 +104,74 @@ void draw(){
 }
 
 void timer(int){
-  updatePositions(0.200);// Update as 200ms
-  currTime+=0.200;
+  // Show robots every 1000 updates
+  for(int rep=0;rep<1000;rep++){
+    updatePositions(0.200);// Update as 200ms
+    currTime+=0.200;
 
-  if(currTime>=populationTestTime){
-    newPopulationRobots();
-    currTime=0;
-    populationNum++;
-  }
-  //----- Tested one repetition in the environment -----//
-  if(populationNum == qtdPopulationsTested){
-    populationNum = 0;
-    environment[environmentBeingTested].auxFitness.push_back(populationMeanFitness);
-    if(showPopulationEnvironments){
-      cout<<"Environment ("<<environmentBeingTested<<"/"<<numEnvironemnts-1<<") - Repetition ("<<
-      environment[environmentBeingTested].auxFitness.size()<<"/"<<qtdRepetitions<<
-      ") - Generations:"<<qtdPopulationsTested<<" - best fitness:"<<
-      environment[environmentBeingTested].auxFitness.back()<<endl;
+    if(currTime>=populationTestTime){
+      newPopulationRobots();
+      currTime=0;
+      populationNum++;
     }
-  }
-  //----- Tested all repetitions of a environment -----//
-  if(environment[environmentBeingTested].auxFitness.size() == qtdRepetitions){
-    float meanFitness=0;
-    // Calculate mean
-    for (int i = 0; i < qtdRepetitions; i++) {
-      meanFitness+=environment[environmentBeingTested].auxFitness[i];
-    }
-    meanFitness/=qtdRepetitions;
-
-    // Update environment fitness
-    environment[environmentBeingTested].auxFitness.clear();
-    environment[environmentBeingTested].fitness.push_back(meanFitness);
-
-    if(showPopulationEnvironments){
-      cout<<"--- Environment "<<environmentBeingTested<<" - Final fitness: "<<
-      environment[environmentBeingTested].fitness.back()<<endl;
-    }
-
-    environmentBeingTested++;
-    if(environmentBeingTested<numEnvironemnts){
-      setEnvironmentParameters();
-    }
-  }
-  //----- Tested all environments -----//
-  if(environmentBeingTested==numEnvironemnts){
-    if(showPopulationEnvironments){
-      cout<<"FINISH TESTING ENVIRONMENTS (Generation "<< populationEnvironmentNum <<")"<<endl;
-      for (int i = 0; i < numEnvironemnts; i++) {
-        cout<<"\tEnvironment "<<i<<": "<<environment[i].fitness.back()<<endl;
-        for (int j = 0; j < int(environment[0].genes.size()); j++) {
-          cout<<"\t\tGene "<<j<<": "<<environment[i].genes[j]<<endl;
-        }
+    //----- Tested one repetition in the environment -----//
+    if(populationNum == qtdPopulationsTested){
+      populationNum = 0;
+      environment[environmentBeingTested].auxFitness.push_back(populationMeanFitness);
+      if(showPopulationEnvironments){
+        cout<<"Environment ("<<environmentBeingTested<<"/"<<numEnvironemnts-1<<") - Repetition ("<<
+        environment[environmentBeingTested].auxFitness.size()<<"/"<<qtdRepetitions<<
+        ") - Generations:"<<qtdPopulationsTested<<" - best fitness:"<<
+        environment[environmentBeingTested].auxFitness.back()<<endl;
       }
     }
-    environmentBeingTested=0;
-    newPopulationEnvironments();
-    populationEnvironmentNum++;
+    //----- Tested all repetitions of a environment -----//
+    if(environment[environmentBeingTested].auxFitness.size() == qtdRepetitions){
+      float meanFitness=0;
+      // Calculate mean (exclude best and worst value)
+      sort(environment[environmentBeingTested].auxFitness.begin(),
+      environment[environmentBeingTested].auxFitness.end());
+      for (int i = 1; i < qtdRepetitions-1; i++) {
+        meanFitness+=environment[environmentBeingTested].auxFitness[i];
+      }
+      meanFitness/=(qtdRepetitions-2);
+
+      // Update environment fitness
+      environment[environmentBeingTested].auxFitness.clear();
+      environment[environmentBeingTested].fitness.push_back(meanFitness);
+
+      if(showPopulationEnvironments){
+        cout<<"--- Environment "<<environmentBeingTested<<" - Final fitness: "<<
+        environment[environmentBeingTested].fitness.back()<<endl;
+      }
+
+      environmentBeingTested++;
+      if(environmentBeingTested<numEnvironemnts){
+        setEnvironmentParameters();
+      }
+    }
+    //----- Tested all environments -----//
+    if(environmentBeingTested==numEnvironemnts){
+      if(showPopulationEnvironments){
+        cout<<"FINISH TESTING ENVIRONMENTS (Generation "<< populationEnvironmentNum <<")"<<endl;
+        for (int i = 0; i < numEnvironemnts; i++) {
+          cout<<"\tEnvironment "<<i<<": "<<environment[i].fitness.back()<<endl;
+          cout<<"\t\tFitness mean: "<<environment[i].genes[0]<<endl;
+          cout<<"\t\tMutation rate: "<<environment[i].genes[1]<<endl;
+          cout<<"\t\tNeutral crossing: "<<environment[i].genes[2]<<endl;
+          cout<<"\t\tNeutral mutation: "<<environment[i].genes[3]<<endl;
+          cout<<"\t\tBack mutation prevention: "<<environment[i].genes[4]<<endl;
+          cout<<"\t\tCrossing condition: "<<environment[i].genes[5]<<endl;
+        }
+      }
+      environmentBeingTested=0;
+      newPopulationEnvironments();
+      populationEnvironmentNum++;
+    }
   }
 
   glutPostRedisplay();
-  glutTimerFunc(0, timer, 0);// Call timer function as fast as possible
+  glutTimerFunc(1000/60, timer, 0);// Call timer function as fast as possible
 }
 
 void randomPositions(){
