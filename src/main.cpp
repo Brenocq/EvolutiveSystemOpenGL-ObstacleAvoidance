@@ -105,7 +105,7 @@ void draw(){
 
 void timer(int){
   // Show robots every 1000 updates
-  for(int rep=0;rep<1000;rep++){
+  for(int rep=0;rep<1;rep++){
     updatePositions(0.200);// Update as 200ms
     currTime+=0.200;
 

@@ -15,6 +15,7 @@ Object::Object():
 }
 
 Object::~Object(){
+
 }
 
 float Object::getX() const {return x;}
@@ -22,6 +23,8 @@ float Object::getY() const {return y;}
 float Object::getRadius() const {return radius;}
 int Object::getId() const {return id;}
 void Object::setId(int _id){id=_id;}
+
+void Object::draw(void)const{}
 
 void Object::setColor(float r, float g, float b){
     color[0]=r;
