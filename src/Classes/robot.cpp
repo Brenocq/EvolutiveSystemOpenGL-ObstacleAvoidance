@@ -271,3 +271,19 @@ void Robot::updateSensor(vector<Object> objects){
     }
   }
 }
+
+void Robot::updateMeanFitness(int sizeMean){
+  /*
+  for(int i = 0; i < qtdRobots; i++){
+    if(showAvFitness){ cout<<"Robot "<<i<<": "; }
+    averageFitness.push_back(0);
+    int qtdValuesMean = max(int(robot[i].fitness.size()-fitnessMean),0);
+    for (int j = robot[i].fitness.size()-1; j >= qtdValuesMean; j--) {
+      if(showAvFitness){ cout<<robot[i].fitness[j]<<" "; }
+      averageFitness.back()+=robot[i].fitness[j];
+    }
+    averageFitness.back()/=(robot[i].fitness.size()-qtdValuesMean);
+    if(showAvFitness){ cout<<"("<<averageFitness.back()<<")"<<endl; }
+  }
+  */
+}

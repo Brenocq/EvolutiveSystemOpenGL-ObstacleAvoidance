@@ -9,6 +9,12 @@ public:
   Robot();
   ~Robot();
 
+  void draw(void) const;
+  void move(vector<Object> objects, float seconds);
+  void rotate(float angle);
+  void updateSensor(vector<Object> objects);
+  void updateMeanFitness(int sizeMean);// TODO
+
   //----- Getters -----//
   float getTheta() const;
   //----- Setters -----//
@@ -18,12 +24,8 @@ public:
   void setTheta(float _theta);
   void setPoints(float _pointsCollision, float _pointsMoving);
 
-  void draw(void) const;
-  void move(vector<Object> objects, float seconds);
-  void rotate(float angle);
-  void updateSensor(vector<Object> objects);
-
   vector<float> fitness;
+  vector<float> meanFitness;
   vector<float> genes;
   // Genes:
   // 0-SideSensorActivation   (0-3)meters

@@ -16,7 +16,7 @@ utils.o: Classes/utils.cpp
 	@g++ Classes/utils.cpp -Wall -c -lglut -lGLU -lGL object.o
 
 environment.o: Classes/environment.cpp
-	@g++ Classes/environment.cpp -Wall -c -lglut -lGLU -lGL
+	@g++ Classes/environment.cpp -Wall -c -lglut -lGLU -lGL utils.o
 
 clear:
 	@rm run *.o
