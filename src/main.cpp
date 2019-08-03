@@ -23,13 +23,14 @@ using namespace std;
 // Evolutive system global parameters (fixed)
 #define numRobots 10
 #define numEnvironemnts 5
-#define numObstacles 90
+#define numObstacles 50
 #define pointsCollision -50.0// Points per second in collision
 #define pointsMoving 10.0// Points per second in maximum speed
 #define qtdPopulationsTested 30// Number of populations tested with each environment
 #define populationTestTime 120// Time that each population will be tested
-#define qtdRepetitions 5// Number of times that each environment will be tested to define the fitness
-#define envMutationRate 0.2
+#define qtdRepetitions 6// Number of times that each environment will be tested to define the fitness (min=3)
+#define envMutationRate 0.15
+#define envPredator 10
 
 // Environment parameters
 int fitnessMean;// Number of fitness values that will be used to calculate the meanFitness
@@ -53,6 +54,7 @@ int populationNum = 0;
 int populationEnvironmentNum = 0;
 int environmentBeingTested = 0;// Index of the environement being tested
 int populationMeanFitness;// Mean fitness of all robots
+int bestRobotFitness;
 
 void draw();
 void timer(int);
@@ -105,7 +107,7 @@ void draw(){
 
 void timer(int){
   // Show robots every 1000 updates
-  for(int rep=0;rep<1000;rep++){
+  for(int rep=0;rep<10;rep++){
     updatePositions(0.200);// Update as 200ms
     currTime+=0.200;
 
@@ -117,7 +119,7 @@ void timer(int){
     //----- Tested one repetition in the environment -----//
     if(populationNum == qtdPopulationsTested){
       populationNum = 0;
-      environment[environmentBeingTested].auxFitness.push_back(populationMeanFitness);
+      environment[environmentBeingTested].auxFitness.push_back(bestRobotFitness);
       if(showPopulationEnvironments){
         cout<<"Environment ("<<environmentBeingTested<<"/"<<numEnvironemnts-1<<") - Repetition ("<<
         environment[environmentBeingTested].auxFitness.size()<<"/"<<qtdRepetitions<<
@@ -152,8 +154,10 @@ void timer(int){
     }
     //----- Tested all environments -----//
     if(environmentBeingTested==numEnvironemnts){
+      environmentBeingTested=0;
+      newPopulationEnvironments();
       if(showPopulationEnvironments){
-        cout<<"FINISH TESTING ENVIRONMENTS (Generation "<< populationEnvironmentNum <<")"<<endl;
+        cout<<"FINISH TESTING ENVIRONMENTS  - Generation "<< populationEnvironmentNum+1 <<":"<<endl;
         for (int i = 0; i < numEnvironemnts; i++) {
           cout<<"\tEnvironment "<<i<<": "<<environment[i].fitness.back()<<endl;
           cout<<"\t\tFitness mean: "<<environment[i].genes[0]<<endl;
@@ -164,8 +168,6 @@ void timer(int){
           cout<<"\t\tCrossing condition: "<<environment[i].genes[5]<<endl;
         }
       }
-      environmentBeingTested=0;
-      newPopulationEnvironments();
       populationEnvironmentNum++;
     }
   }
@@ -253,7 +255,7 @@ void firstPopulationRobots(){
 }
 
 void newPopulationRobots(){
-  int bestRobot, bestRobotFitness=0, totalFitness=0;
+  int bestRobot, totalFitness=0;
   vector< pair <int,int> >bestRobots;//first:fitness second:robotNumber
   vector<float>averageFitness;
 
@@ -262,8 +264,10 @@ void newPopulationRobots(){
   for(int i = 0; i < numRobots; i++){
     if(showAvFitness){ cout<<"Robot "<<i<<": "; }
     averageFitness.push_back(0);
+
     int qtdValuesMean = max(int(robot[i].fitness.size()-fitnessMean),0);
     for (int j = robot[i].fitness.size()-1; j >= qtdValuesMean; j--) {
+
       if(showAvFitness){ cout<<robot[i].fitness[j]<<" "; }
       averageFitness.back()+=robot[i].fitness[j];
     }
@@ -404,6 +408,18 @@ void firstPopulationEnvironments(){
 
     environment[i].fitness.push_back(0);
   }
+  if(showPopulationEnvironments){
+    cout<<"FINISH TESTING ENVIRONMENTS  - Generation "<< populationEnvironmentNum+1 <<":"<<endl;
+    for (int i = 0; i < numEnvironemnts; i++) {
+      cout<<"\tEnvironment "<<i<<": "<<environment[i].fitness.back()<<endl;
+      cout<<"\t\tFitness mean: "<<environment[i].genes[0]<<endl;
+      cout<<"\t\tMutation rate: "<<environment[i].genes[1]<<endl;
+      cout<<"\t\tNeutral crossing: "<<environment[i].genes[2]<<endl;
+      cout<<"\t\tNeutral mutation: "<<environment[i].genes[3]<<endl;
+      cout<<"\t\tBack mutation prevention: "<<environment[i].genes[4]<<endl;
+      cout<<"\t\tCrossing condition: "<<environment[i].genes[5]<<endl;
+    }
+  }
 }
 
 void newPopulationEnvironments(){
@@ -428,10 +444,13 @@ void newPopulationEnvironments(){
 
   //----- Mutation -----//
   for (int i = 0; i < numEnvironemnts; i++) {
-    if(environment[i].fitness.back()<environment[bestEnvironment].fitness.back()){
+    if(environment[i].fitness.back() < environment[bestEnvironment].fitness.back()){
       for (int j = 0; j < int(environment[0].genes.size()); j++) {
       int chanceMutation = rand()%100;
-        if(chanceMutation < envMutationRate*100){
+        if(chanceMutation <= (envMutationRate*100)){
+          if(showPopulationEnvironments){
+            cout<<"Mutation ("<<i<<"): gene "<<j<<" "<<environment[i].genes[j];
+          }
           switch(j){
             case 0:
             environment[i].genes[0] = (rand()%1000)/100.0;
@@ -452,8 +471,22 @@ void newPopulationEnvironments(){
             environment[i].genes[5] = (rand()%300)/100.0;
             break;
           }
+          cout<<"->"<<environment[i].genes[j]<<endl;
         }
       }
+    }
+  }
+  //----- Predator -----//
+  if(populationEnvironmentNum%envPredator==0){
+    int worstEnvironment = bestEnvironments.back().second;
+    environment[worstEnvironment].genes[0] = (rand()%1000)/100.0;
+    environment[worstEnvironment].genes[1] = (rand()%100)/100.0;
+    environment[worstEnvironment].genes[2] = (rand()%100)/100.0;
+    environment[worstEnvironment].genes[3] = (rand()%100)/100.0;
+    environment[worstEnvironment].genes[4] =  (rand()%100)/100.0;
+    environment[worstEnvironment].genes[5] = (rand()%300)/100.0;
+    if(showPopulationEnvironments){
+      cout<<"Predator killed environment "<<worstEnvironment<<endl;
     }
   }
 }
@@ -461,7 +494,7 @@ void newPopulationEnvironments(){
 void setEnvironmentParameters(){
   int i = environmentBeingTested;
 
-  fitnessMean = int(environment[i].genes[0]);
+  fitnessMean = ceil(environment[i].genes[0]);
   mutationRate = environment[i].genes[1];
   neutralCrossing = environment[i].genes[2];
   neutralMutation = environment[i].genes[3];
