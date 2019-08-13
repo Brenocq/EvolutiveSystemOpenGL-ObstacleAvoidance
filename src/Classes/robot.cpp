@@ -9,7 +9,7 @@
 using namespace std;
 
 Robot::Robot():
-  Object(),theta(0), inCollision(false), pointsCollision(0), pointsMoving(0), lastX(0), lastY(0)
+  Object(),theta(0), inCollision(false), lastX(0), lastY(0)
 {
   radius = 0.15;
   id = 0;
@@ -31,11 +31,12 @@ Robot::~Robot(){
 
 float Robot::getTheta() const {return theta;}
 
-void Robot::newGene(float _genes[6]){
-  for (int i = 0; i < 6; i++) {
+void Robot::newGene(float _genes[5]){
+  for (int i = 0; i < 5; i++) {
     genes[i]=_genes[i];
   }
 }
+
 void Robot::newGene(vector<float> _genes){
   for (int i = 0; i < int(_genes.size()); i++) {
     genes[i]=_genes[i];
@@ -58,11 +59,6 @@ void Robot::setTheta(float _theta){
     _theta+=360;
 
   theta=_theta;
-}
-
-void Robot::setPoints(float _pointsCollision, float _pointsMoving){
-  pointsCollision = _pointsCollision;
-  pointsMoving = _pointsMoving;
 }
 
 void Robot::draw(void) const{
@@ -273,17 +269,11 @@ void Robot::updateSensor(vector<Object> objects){
 }
 
 void Robot::updateMeanFitness(int sizeMean){
-  /*
-  for(int i = 0; i < qtdRobots; i++){
-    if(showAvFitness){ cout<<"Robot "<<i<<": "; }
-    averageFitness.push_back(0);
-    int qtdValuesMean = max(int(robot[i].fitness.size()-fitnessMean),0);
-    for (int j = robot[i].fitness.size()-1; j >= qtdValuesMean; j--) {
-      if(showAvFitness){ cout<<robot[i].fitness[j]<<" "; }
-      averageFitness.back()+=robot[i].fitness[j];
+    meanFitness.push_back(0);
+    int qtdValuesMean = max(int(fitness.size()-fitnessMean),0);
+    for (int j = fitness.size()-1; j >= qtdValuesMean; j--) {
+      meanFitness.back()+=fitness[j];
     }
-    averageFitness.back()/=(robot[i].fitness.size()-qtdValuesMean);
-    if(showAvFitness){ cout<<"("<<averageFitness.back()<<")"<<endl; }
-  }
-  */
+    meanFitness.back()/=(fitness.size()-qtdValuesMean);
+
 }

@@ -1,6 +1,7 @@
 #ifndef ROBOT_H
 #define ROBOT_H
 #include "object.h"
+#include "parameters.h"
 #include <vector>
 using namespace std;
 
@@ -13,7 +14,7 @@ public:
   void move(vector<Object> objects, float seconds);
   void rotate(float angle);
   void updateSensor(vector<Object> objects);
-  void updateMeanFitness(int sizeMean);// TODO
+  void updateMeanFitness(int sizeMean);
 
   //----- Getters -----//
   float getTheta() const;
@@ -22,7 +23,6 @@ public:
   void newGene(vector<float> _genes);
   void newOrientation(float _x, float _y, float _theta);// _x,_y: meters | _theta: degrees
   void setTheta(float _theta);
-  void setPoints(float _pointsCollision, float _pointsMoving);
 
   vector<float> fitness;
   vector<float> meanFitness;
@@ -39,8 +39,6 @@ private:
   float lastX, lastY;
   bool inCollision;
   float sensorValues[3];// Left, Front, Right
-  float pointsCollision;// Points per second in collision
-  float pointsMoving;// Points per second in maximum speed
 };
 
 

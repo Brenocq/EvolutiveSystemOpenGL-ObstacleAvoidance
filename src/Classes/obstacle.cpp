@@ -13,7 +13,7 @@ Obstacle::Obstacle()
   color[0] = 0.4;
   color[1] = 0.4;
   color[2] = 0.4;
-  radius = 0.3;
+  radius = 0.6;
   id = -1;
 }
 

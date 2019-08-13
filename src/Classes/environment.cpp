@@ -1,31 +1,40 @@
 #include "environment.h"
 #include <vector>
 
-Environment::Environment(int _qtdRobots, int _qtdObstacles, int _maxTime, int _maxPopulation, int _pointsMoving, int _pointsCollision):
-  qtdRobots(_qtdRobots), qtdObstacles(_qtdObstacles), currTime(0), maxTime(_maxTime), currentPopulation(0), maxPopulation(_maxPopulation),
-  pointsMoving(_pointsMoving), pointsCollision(_pointsCollision)
+Environment::Environment():
+  currTime(0), currentPopulation(0),finished(false)
 {
-    genes.resize(6,0);
-    robotsMeanFitness.resize(qtdRobots);
-    robotsFitness.resize(qtdRobots);
-    robot.resize(qtdRobots);
-    obstacle.resize(qtdObstacles);
+  srand(time(0));
+
+  robot.resize(qtdRobots);
+  obstacle.resize(qtdObstacles);
+  genes.resize(6,0);
+  fitness.push_back(0);
+
+  initiateRobots();
 }
 
 void Environment::updateRobots(float time){
+  if(finished==true){
+    finished=false;
+    currTime=0;
+    currentPopulation=0;
+    fitness.push_back(0);
+    initiateRobots();
+  }
   if(currentPopulation<maxPopulation){
     vector<Object>objects;
     for (int i = 0; i < qtdRobots; i++) {
       objects.push_back(robot[i]);
     }
-    for (int i = 0; i < numObstacles; i++) {
+    for (int i = 0; i < qtdObstacles; i++){
       objects.push_back(obstacle[i]);
     }
-    for (int i = 0; i < qtdRobots; i++) {
-      robot[i].move(objects, seconds);
+    for (int i = 0; i < qtdRobots; i++){
+      robot[i].move(objects, time);
     }
     currTime+=0.200;
-    if(currTime==maxTime){
+    if(currTime>=maxTime){
       currentPopulation++;
       currTime=0;
       if(currentPopulation<maxPopulation){
@@ -33,6 +42,8 @@ void Environment::updateRobots(float time){
         newRandomPositions();
       }
     }
+  }else{
+    finished = true;
   }
 }
 
@@ -52,19 +63,18 @@ void Environment::initiateRobots(){
     genes[4] = (rand()%9000)/100.0;
     // Set random genes
     robot[i].newGene(genes);
-    robot[i].setPoints(pointsCollision, pointsMoving);
     robot[i].fitness.push_back(0);
   }
 
   //----- new positions -----//
-  newRandomPositions();// TODO
+  newRandomPositions();
 }
 
 void Environment::newRandomPositions(){
   float posX, posY, angle;
 
   //----- Random positions obstacles -----//
-  for (int i = 0; i < numObstacles; i++) {
+  for (int i = 0; i < qtdObstacles; i++) {
     posX = (rand()%100 - 50)/5.0;// Some value between -10 and +10
     posY = (rand()%100 - 50)/5.0;// Some value between -10 and +10
     obstacle[i].setPosition(posX, posY);
@@ -91,7 +101,7 @@ void Environment::newRandomPositions(){
           }
         }
       }
-      for (int j = 0; j < numObstacles; j++) {
+      for (int j = 0; j < qtdObstacles; j++) {
         if(distanceTwoObjects( &robot[i],&obstacle[j] ) <= (robot[i].getRadius()+obstacle[j].getRadius())){
           validposition=false;
           posX = (rand()%100 - 50)/5.0;// Some value between -10 and +10
@@ -103,7 +113,7 @@ void Environment::newRandomPositions(){
 }
 
 void Environment::newPopulationRobots(){
-  int bestRobot;
+  int bestRobot, bestRobotFitness;
   vector< pair <int,int> >bestRobots;//first:fitness second:robotNumber
 
   //----- Calculate Average Fitness for each Robot -----//
@@ -120,6 +130,11 @@ void Environment::newPopulationRobots(){
   bestRobot = bestRobots[0].second;
   bestRobotFitness = bestRobots[0].first;
 
+  // The enviroment fitness is the best robot fitness in the end of the tests
+  if(currentPopulation==maxPopulation-1){
+    fitness.back()=bestRobotFitness;
+  }
+
   //----- Print population data -----//
   /*if(showPopulationRobots){
     cout<<endl<<"Fitness Population "<<populationNum<<":"<<endl;
@@ -133,7 +148,7 @@ void Environment::newPopulationRobots(){
   bool condition;
   for (int i = 0; i < qtdRobots; i++) {
     // Select how to cross
-    switch(int(gene[5])){
+    switch(int(genes[5])){
       case 0:
         condition = robot[i].fitness.back() < robot[bestRobot].fitness.back();
       break;
@@ -147,7 +162,7 @@ void Environment::newPopulationRobots(){
 
     if(condition){
       for (int j = 0; j < int(robot[0].genes.size()); j++) {
-        robot[i].genes[j] = float(neutralCrossing)*robot[i].genes[j]+(1-float(neutralCrossing))*robot[bestRobot].genes[j];
+        robot[i].genes[j] = float(genes[2])*robot[i].genes[j]+(1-float(genes[2]))*robot[bestRobot].genes[j];
       }
     }
   }
@@ -155,15 +170,15 @@ void Environment::newPopulationRobots(){
   for (int i = 0; i < qtdRobots; i++) {
     robot[i].setColor(0,0,0);
 
-    switch(crossingCondition){
+    switch(int(genes[5])){
       case 0:
         condition = robot[i].fitness.back() < robot[bestRobot].fitness.back();
       break;
       case 1:
-        condition = robot[i].fitness.back() < averageFitness[bestRobot];
+        condition = robot[i].fitness.back() < robot[bestRobot].meanFitness.back();
       break;
       case 2:
-        condition = averageFitness[i] < averageFitness[bestRobot];
+        condition = robot[i].meanFitness.back() < robot[bestRobot].meanFitness.back();
       break;
     }
     if(condition){
@@ -172,48 +187,47 @@ void Environment::newPopulationRobots(){
       for (int j = 0; j < int(robot[0].mutatedGenes.size()); j++) {
         sumBMP+=robot[i].mutatedGenes[j];
       }
-      if(!int(gene[4]) || sumBMP==int(robot[0].mutatedGenes.size())){
+      if(!int(genes[4]) || sumBMP==int(robot[0].mutatedGenes.size())){
         // Set all genes as 0 to backMutationPrevention
         for (int j = 0; j < int(robot[0].mutatedGenes.size()); j++) {
           robot[i].mutatedGenes[j]=0;
         }
       }
       // Create new cromossome
-      vector<float>genes(robot[0].genes.size());
+      vector<float>genesRobot(robot[0].genes.size());
       for (int j = 0; j < int(genes.size()); j++) {
-        genes[j] = robot[i].genes[j];
+        genesRobot[j] = robot[i].genes[j];
       }
-
       for (int j = 0; j < int(genes.size()); j++) {
       int chanceMutation = rand()%100;
-        if(chanceMutation < mutationRate*100 && robot[i].mutatedGenes[j]==0){
+        if(chanceMutation < genes[1]*100 && robot[i].mutatedGenes[j]==0){
           robot[i].setColor(0.5,0.5,0);
           robot[i].mutatedGenes[j] = 1;
           switch(j){
             case 0:
             // SideSensorActivation   (0-3)meters
-            genes[0] = float(neutralMutation)*genes[0] + (1-float(neutralMutation))*(rand()%300)/100.0;
+            genesRobot[0] = float(genes[2])*genesRobot[0] + (1-float(genes[2]))*(rand()%300)/100.0;
             break;
             case 1:
             // FrontSensorActivation  (0-3)meters
-            genes[1] = float(neutralMutation)*genes[1] + (1-float(neutralMutation))*(rand()%300)/100.0;
+            genesRobot[1] = float(genes[2])*genesRobot[1] + (1-float(genes[2]))*(rand()%300)/100.0;
             break;
             case 2:
             // LinearVelocity         (0-1)meters/second
-            genes[2] = float(neutralMutation)*genes[2] + (1-float(neutralMutation))*(rand()%100)/100.0;
+            genesRobot[2] = float(genes[2])*genesRobot[2] + (1-float(genes[2]))*(rand()%100)/100.0;
             break;
             case 3:
             // MaximumRotation        (0-10)degrees
-            genes[3] = float(neutralMutation)*genes[3] + (1-float(neutralMutation))*(rand()%1000)/100.0;
+            genesRobot[3] = float(genes[2])*genesRobot[3] + (1-float(genes[2]))*(rand()%1000)/100.0;
             break;
             case 4:
             // SensorAngle            (0-90)degrees
-            genes[4] = float(neutralMutation)*genes[4] + (1-float(neutralMutation))*(rand()%9000)/100.0;
+            genesRobot[4] = float(genes[2])*genesRobot[4] + (1-float(genes[2]))*(rand()%9000)/100.0;
             break;
           }
         }
       }
-      robot[i].newGene(genes);
+      robot[i].newGene(genesRobot);
     }
   }
   robot[bestRobot].setColor(0,0,1);
@@ -222,4 +236,26 @@ void Environment::newPopulationRobots(){
   for (int i = 0; i < qtdRobots; i++) {
     robot[i].fitness.push_back(0);
   }
+}
+
+void Environment::draw(){
+  // Progress bar
+  glColor3f(1, 0, 0);
+  glBegin(GL_POLYGON);
+  glVertex2d(-1,1);
+  glVertex2d((float(currentPopulation)/maxPopulation+currTime/(maxPopulation*maxTime))*2-1,1);
+  glVertex2d((float(currentPopulation)/maxPopulation+currTime/(maxPopulation*maxTime))*2-1,0.99);
+  glVertex2d(-1,0.99);
+  glEnd();
+
+  for (int i = 0; i < qtdRobots; i++) {
+    robot[i].draw();
+  }
+  for (int i = 0; i < qtdObstacles; i++) {
+    obstacle[i].draw();
+  }
+}
+
+bool Environment::getFinished() const{
+  return finished;
 }

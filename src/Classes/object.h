@@ -1,8 +1,9 @@
 #ifndef OBJECT_H
 #define OBJECT_H
-
 #include <vector>
 using namespace std;
+
+#define fitnessMean 3
 
 class Object{
 public:
