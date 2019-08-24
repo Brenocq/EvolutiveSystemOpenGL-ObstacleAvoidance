@@ -9,7 +9,6 @@
 #include <iomanip>
 #include "Classes/manager.h"
 // TODO predator
-// TODO generate file with fitness qtdValuesMean
 // TODO create matlabApp to visualize data
 
 using namespace std;
@@ -28,6 +27,7 @@ void draw();
 void timer(int);
 //----- Data generation -----//
 void setFileName(string name);
+void writeHeaderFile();
 
 int main(int argc, char** argv){
   srand(time(0));
@@ -38,7 +38,7 @@ int main(int argc, char** argv){
   }else{
     setFileName("temp.txt");
   }
-
+   writeHeaderFile();// Write header of output file
   //----- Create window -----//
   glutInit(&argc, argv);
   glutInitDisplayMode(GLUT_RGB | GLUT_DOUBLE);
@@ -110,7 +110,6 @@ void timer(int){
   glutTimerFunc(1000/60, timer, 0);// Call timer function as fast as possible
 }
 
-
 //----- Data generation -----//
 void setFileName(string name){
   string fileNameStr;
@@ -123,5 +122,19 @@ void setFileName(string name){
   cout << "This simulation will be saved to: " << fileName<<endl;
   // Clean file
   outputFile.open(fileName);
+  outputFile.close();
+}
+
+void writeHeaderFile(){
+  outputFile.open(fileName, ios::out | ios::app);
+  outputFile<<"QtdRobots: " << qtdRobots << endl;
+  outputFile<<"QtdEnvironments: " << qtdEnvironments << endl;
+  outputFile<<"QtdRepetitions: " << qtdRepetitions << endl;
+  outputFile<<"QtdObstacles: " << qtdObstacles << endl;
+  outputFile<<"PointsCollision: " << pointsCollision << endl;
+  outputFile<<"PointsMoving: " << pointsMoving << endl;
+  outputFile<<"MaxPopulation: " << maxPopulation << endl;
+  outputFile<<"MaxTime: " << maxTime << endl;
+  outputFile<<"EnvMutationRate: " << envMutationRate << endl << endl;
   outputFile.close();
 }
