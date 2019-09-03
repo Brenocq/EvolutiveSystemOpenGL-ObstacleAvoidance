@@ -43,6 +43,9 @@ private:
   //----- Simulation parameters -----//
   float currTime;// current time in the simulation
   int currentPopulation;// Number of the current population
+
+  //----- Improve collision testing -----//
+  //QuadTree *qTree;
 };
 
 #endif // ENVIRONMENT_H

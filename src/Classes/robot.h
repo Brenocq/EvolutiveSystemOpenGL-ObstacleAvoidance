@@ -2,6 +2,7 @@
 #define ROBOT_H
 #include "object.h"
 #include "parameters.h"
+#include "quadtree.h"
 #include <vector>
 using namespace std;
 

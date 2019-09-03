@@ -9,7 +9,7 @@
 using namespace std;
 
 Robot::Robot():
-  Object(),theta(0), inCollision(false), lastX(0), lastY(0)
+  Object(),theta(0), lastX(0), lastY(0), inCollision(false)
 {
   radius = 0.15;
   id = 0;
@@ -126,29 +126,39 @@ void Robot::draw(void) const{
 void Robot::move(vector<Object> objects, float seconds){
   bool canMove = true;
   float angleRotation=0;
+  QuadTree *qTree;
+  float maxRadius=0;
+  qTree = new QuadTree(0,0,20,20,4);
+
+  for (int i = 0; i < int(objects.size()); i++) {
+    qTree->insert(&objects[i]);
+    maxRadius = max(maxRadius, objects[i].getRadius());
+  }
+
   updateSensor(objects);
 
   // Search for pysical contact between robots
+  vector<Object*> nearObjects = qTree->inCollision(&objects[id], maxRadius);
   inCollision = false;
-  for (int i = 0; i < int(objects.size()); i++) {
-    if(objects[i].getId()!=objects[id].getId()){
-      if(distanceTwoObjects(&objects[id], &objects[i]) <= (objects[id].getRadius()+objects[i].getRadius())){
+  for (int i = 0; i < int(nearObjects.size()); i++) {
+    if(nearObjects[i]->getId()!=objects[id].getId()){
+      if(distanceTwoObjects(&objects[id], nearObjects[i]) <= (objects[id].getRadius()+nearObjects[i]->getRadius())){
         inCollision = true;
         fitness.back() = fitness.back()+pointsCollision*seconds;
         objects[id].setColor(1,0,0);
-        if(distTwoAngles( this->getTheta(), angleTwoObjects(&objects[id],&objects[i]))<90 ||
-          distTwoAngles( this->getTheta(), angleTwoObjects(&objects[id],&objects[i]))>270){
+        if(distTwoAngles( this->getTheta(), angleTwoObjects(&objects[id],nearObjects[i]))<90 ||
+          distTwoAngles( this->getTheta(), angleTwoObjects(&objects[id],nearObjects[i]))>270){
           canMove = false;
         }
       }
     }
   }
+  delete qTree;
 
   if(inCollision){
     rotate(genes[3]);
   }
   else{
-
     // Calculate rotation
     if(sensorValues[1]>=0){
       canMove=false;
@@ -196,8 +206,6 @@ void Robot::move(vector<Object> objects, float seconds){
   lastY = y;
 }
 
-
-
 void Robot::rotate(float angle){
   setTheta(theta+angle);
 }
@@ -205,6 +213,15 @@ void Robot::rotate(float angle){
 void Robot::updateSensor(vector<Object> objects){
   float sensorActivaton[3] = {genes[0],genes[1],genes[0]};
   float sensorAngle[3] = {genes[4]+theta,0+theta,-genes[4]+theta};
+  QuadTree *qTree;
+  float maxRadius=0;
+  qTree = new QuadTree(0,0,20,20,1);
+  for (int i = 0; i < int(objects.size()); i++) {
+    qTree->insert(&objects[i]);
+    maxRadius = max(maxRadius, objects[i].getRadius());
+  }
+
+
   for (int i = 0; i < 3; i++) {
     sensorValues[i] = 10;// Set to a big value to change to the minimum
     if(sensorAngle[i]<0){
@@ -213,17 +230,21 @@ void Robot::updateSensor(vector<Object> objects){
     if(sensorAngle[i]>=360){
       sensorAngle[i]-=360;
     }
+
   }
   float distance, angle;
   float angleToReadRobot;// Angle interval read the other robot with this sensor
+
+  // Check detection of robots
   for (int sensor = 0; sensor < 3; sensor++) {
-    for (int i = 0; i < int(objects.size()); i++) {
-      if(objects[i].getId()!=this->getId()){
+    vector<Object*> nearObjects = qTree->queryCircle(&objects[id], sensorActivaton[sensor]/2+maxRadius);
+    for (int i = 0; i < int(nearObjects.size()); i++) {
+      if(nearObjects[i]->getId()!=this->getId()){
 
         // Calculation of distance
-        distance = distanceTwoObjects(&objects[id], &objects[i]);
+        distance = distanceTwoObjects(&objects[id], nearObjects[i]);
         // Canculation of angle
-        angle = angleTwoObjects(&objects[id], &objects[i]);
+        angle = angleTwoObjects(&objects[id], nearObjects[i]);
 
         angleToReadRobot = atan2(distance,radius);
         if(angleToReadRobot<0){
@@ -231,15 +252,16 @@ void Robot::updateSensor(vector<Object> objects){
         }
         angleToReadRobot*=180/M_PI;// Convert from radians to degrees
 
-        if(distance<=sensorActivaton[sensor]+radius+objects[i].getRadius()){
-          float angleOtherObject = atan2(objects[i].getRadius(),distance)/M_PI*180;
+        if(distance<=sensorActivaton[sensor]+radius+nearObjects[i]->getRadius()){
+          float angleOtherObject = atan2(nearObjects[i]->getRadius(),distance)/M_PI*180;
           if(distTwoAngles(sensorAngle[sensor],angle)<angleOtherObject){
-            sensorValues[sensor]=min(sensorValues[sensor],distance-radius-objects[i].getRadius());
+            sensorValues[sensor]=min(sensorValues[sensor],distance-radius-nearObjects[i]->getRadius());
           }
         }
       }
     }
-    // Check collisions with walls
+
+    // Check detection of walls
     float aux;
     if((sensorActivaton[sensor]+radius)*cos(sensorAngle[sensor]/180*M_PI)+x>=10){
       aux = ((sensorActivaton[sensor]+radius)*cos(sensorAngle[sensor]/180*M_PI)+x-10)/(sensorActivaton[sensor]+radius)*cos(sensorAngle[sensor]/180*M_PI);
@@ -270,7 +292,7 @@ void Robot::updateSensor(vector<Object> objects){
 
 void Robot::updateMeanFitness(int sizeMean){
     meanFitness.push_back(0);
-    int qtdValuesMean = max(int(fitness.size()-fitnessMean),0);
+    int qtdValuesMean = max(int(fitness.size()-sizeMean),0);
     for (int j = fitness.size()-1; j >= qtdValuesMean; j--) {
       meanFitness.back()+=fitness[j];
     }

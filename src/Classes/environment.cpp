@@ -2,7 +2,7 @@
 #include <vector>
 
 Environment::Environment():
-  currTime(0), currentPopulation(0),finished(false)
+  finished(false), currTime(0), currentPopulation(0)
 {
   srand(time(0));
 
@@ -30,6 +30,7 @@ void Environment::updateRobots(float time){
     for (int i = 0; i < qtdObstacles; i++){
       objects.push_back(obstacle[i]);
     }
+    
     for (int i = 0; i < qtdRobots; i++){
       robot[i].move(objects, time);
     }

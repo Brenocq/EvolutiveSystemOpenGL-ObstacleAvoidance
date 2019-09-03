@@ -65,11 +65,18 @@ void draw(){
 void timer(int){
   for(int rep=0;rep<displaySteps;rep++){
     for (int i = 0; i < qtdEnvironments; i++) {
-      manager.updateEnvironment(0.050);// Update as 100ms
+      manager.updateEnvironment(0.0200);// Update as 200ms
       if(manager.getCurrEnvironment()!=lastEnvironment){
         lastEnvironment = manager.getCurrEnvironment();
         outputFile.open(fileName, ios::out | ios::app);
-        outputFile<<"Environment "<< lastEnvironment <<"\n";
+        outputFile<< "Environment "<< lastEnvironment;
+        outputFile<< "\t h: " << manager.environment[lastEnvironment].genes[0];
+        outputFile<< "\t mr: " << manager.environment[lastEnvironment].genes[1];
+        outputFile<< "\t nc: " << manager.environment[lastEnvironment].genes[2];
+        outputFile<< "\t nm: " << manager.environment[lastEnvironment].genes[3];
+        outputFile<< "\t bmp: " << manager.environment[lastEnvironment].genes[4];
+        outputFile<< "\t cc: " << manager.environment[lastEnvironment].genes[5];
+        outputFile<< "\n";
         outputFile.close();
       }
       if(manager.getCurrRepetition()!=lastRepetition){
@@ -79,7 +86,10 @@ void timer(int){
         outputFile.close();
       }
       if(manager.environment[manager.getCurrEnvironment()].getFinished()){
-        cout<<"finished";
+        outputFile.open(fileName, ios::out | ios::app);
+        outputFile<< "\tfinalFitness: "<< manager.environment[lastEnvironment].fitness.back();
+        outputFile<< "\n";
+        outputFile.close();
       }
       if(manager.environment[lastEnvironment].getCurrentPopulation()!=lastPopulation){
         lastPopulation = manager.environment[lastEnvironment].getCurrentPopulation();
@@ -93,11 +103,13 @@ void timer(int){
             outputFile<<fixed<<setprecision(2);
             outputFile<<" \tf:"  << robot->fitness[robot->fitness.size()-2];
             outputFile<<" \tmf: " << robot->meanFitness[robot->meanFitness.size()-1];
-            outputFile<<" \tg0: " << robot->genes[0];
-            outputFile<<" \tg1: " << robot->genes[1];
-            outputFile<<" \tg2: " << robot->genes[2];
-            outputFile<<" \tg3: " << robot->genes[3];
-            outputFile<<" \tg4: " << robot->genes[4];
+            if(printEverything){
+              outputFile<<" \tg0: " << robot->genes[0];
+              outputFile<<" \tg1: " << robot->genes[1];
+              outputFile<<" \tg2: " << robot->genes[2];
+              outputFile<<" \tg3: " << robot->genes[3];
+              outputFile<<" \tg4: " << robot->genes[4];
+            }
             outputFile<<"\n";
           }
         }

@@ -3,8 +3,6 @@
 #include <vector>
 using namespace std;
 
-#define fitnessMean 3
-
 class Object{
 public:
   Object();
