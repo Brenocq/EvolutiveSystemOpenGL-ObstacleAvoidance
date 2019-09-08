@@ -1,4 +1,5 @@
 #include "environment.h"
+#include "quadtree.h"
 #include <vector>
 
 Environment::Environment():
@@ -30,7 +31,7 @@ void Environment::updateRobots(float time){
     for (int i = 0; i < qtdObstacles; i++){
       objects.push_back(obstacle[i]);
     }
-    
+
     for (int i = 0; i < qtdRobots; i++){
       robot[i].move(objects, time);
     }
@@ -255,6 +256,29 @@ void Environment::draw(){
   for (int i = 0; i < qtdObstacles; i++) {
     obstacle[i].draw();
   }
+
+  // Draw QuadTree
+  vector<Object>objects;
+  int cont=0;
+  for (int i = 0; i < qtdRobots; i++) {
+    objects.push_back(robot[i]);
+  }
+  for (int i = 0; i < qtdObstacles; i++){
+    objects.push_back(obstacle[i]);
+  }
+  QuadTree *qTree = new QuadTree(0,0,20,20,1);
+  for(object : objects){
+    glColor3f(1, 1, 0);
+    glBegin(GL_POLYGON);
+    glVertex2d(object.getX()/10+0.005, object.getY()/10+0.005);
+    glVertex2d(object.getX()/10+0.005, object.getY()/10-0.005);
+    glVertex2d(object.getX()/10-0.005, object.getY()/10-0.005);
+    glVertex2d(object.getX()/10-0.005, object.getY()/10+0.005);
+    glEnd();
+    qTree->insert(&object);
+  }
+  qTree->draw();
+
 }
 
 bool Environment::getFinished() const{

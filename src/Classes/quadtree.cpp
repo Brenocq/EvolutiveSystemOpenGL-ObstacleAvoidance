@@ -26,22 +26,22 @@ QuadTree::~QuadTree()
 
 bool QuadTree::insert(Object* obj)
 {
-    if(!containObject(obj)){
-        return false;
-    }
+  if(!containObject(obj)){
+      return false;
+  }
 
-    if(int(objects.size())<nodeCapacity){
-        objects.push_back(obj);
-        return true;
-    }else{
-        if(!isSubdivaded) subdivide();
+  if(int(objects.size())<nodeCapacity){
+      objects.push_back(obj);
+      return true;
+  }else{
+      if(!isSubdivaded) subdivide();
 
-        if (northEast->insert(obj)) return true;
-        if (northWest->insert(obj)) return true;
-        if (southEast->insert(obj)) return true;
-        if (southWest->insert(obj)) return true;
-        return false;
-    }
+      if(northEast->insert(obj))return true;
+      if(northWest->insert(obj))return true;
+      if(southEast->insert(obj))return true;
+      if(southWest->insert(obj))return true;
+      return false;
+  }
 }
 
 void QuadTree::subdivide()
@@ -90,10 +90,10 @@ QuadTree* QuadTree::getQtreeAtObject(Object* obj){
 
 bool QuadTree::intersects(float _rectX, float _rectY, float _rectW, float _rectH)
 {
-    return !(centerX+width/2  < _rectX-_rectW/2 ||
-             centerX-width/2  > _rectX+_rectW/2 ||
-             centerY+height/2 < _rectY-_rectH/2 ||
-             centerY-height/2 > _rectY+_rectH/2
+    return !(centerX+width/2  <= _rectX-_rectW/2 ||
+             centerX-width/2  >= _rectX+_rectW/2 ||
+             centerY+height/2 <= _rectY-_rectH/2 ||
+             centerY-height/2 >= _rectY+_rectH/2
              );
 }
 
@@ -146,31 +146,31 @@ vector<Object*> QuadTree::inCollision(Object* circle, float maxRadius){
 
 void QuadTree::draw()
 {
-    if(!drawn){
-      glLineWidth(2);
-      glColor3f(1.0, 0.0, 0.0);
-      glBegin(GL_LINES);
-      glVertex3f((centerX-width/2)/10, (centerY-height/2)/10,0);
-      glVertex3f((centerX-width/2)/10, (centerY+height/2)/10,0);
-      glEnd();glBegin(GL_LINES);
-      glVertex3f((centerX-width/2)/10, (centerY+height/2)/10,0);
-      glVertex3f((centerX+width/2)/10, (centerY+height/2)/10,0);
-      glEnd();glBegin(GL_LINES);
-      glVertex3f((centerX+width/2)/10, (centerY+height/2)/10,0);
-      glVertex3f((centerX+width/2)/10, (centerY-height/2)/10,0);
-      glEnd();glBegin(GL_LINES);
-      glVertex3f((centerX+width/2)/10, (centerY-height/2)/10,0);
-      glVertex3f((centerX-width/2)/10, (centerY-height/2)/10,0);
-      glEnd();
+  if(!drawn){
+    glLineWidth(1);
+    glColor3f(0.0, 0.0, 0.0);
+    glBegin(GL_LINES);
+    glVertex3f((centerX-width/2)/10, (centerY-height/2)/10,0);
+    glVertex3f((centerX-width/2)/10, (centerY+height/2)/10,0);
+    glEnd();glBegin(GL_LINES);
+    glVertex3f((centerX-width/2)/10, (centerY+height/2)/10,0);
+    glVertex3f((centerX+width/2)/10, (centerY+height/2)/10,0);
+    glEnd();glBegin(GL_LINES);
+    glVertex3f((centerX+width/2)/10, (centerY+height/2)/10,0);
+    glVertex3f((centerX+width/2)/10, (centerY-height/2)/10,0);
+    glEnd();glBegin(GL_LINES);
+    glVertex3f((centerX+width/2)/10, (centerY-height/2)/10,0);
+    glVertex3f((centerX-width/2)/10, (centerY-height/2)/10,0);
+    glEnd();
 
-      if(isSubdivaded){
-          northEast->draw();
-          northWest->draw();
-          southEast->draw();
-          southWest->draw();
-      }
+    if(isSubdivaded){
+        northEast->draw();
+        northWest->draw();
+        southEast->draw();
+        southWest->draw();
     }
-    drawn=true;
+  }
+  drawn=true;
 }
 
 void QuadTree::clean()

@@ -13,7 +13,7 @@
 #define pointsCollision -100.0// Points per second in collision
 #define pointsMoving 10.0// Points per second in maximum speed
 #define maxPopulation 40// Number of populations tested with each environment
-#define maxTime 120// Time that each population will be tested
+#define maxTime 600// Time that each population will be tested
 #define envMutationRate 0.2
 
 // OutputFile

@@ -215,7 +215,7 @@ void Robot::updateSensor(vector<Object> objects){
   float sensorAngle[3] = {genes[4]+theta,0+theta,-genes[4]+theta};
   QuadTree *qTree;
   float maxRadius=0;
-  qTree = new QuadTree(0,0,20,20,1);
+  qTree = new QuadTree(0,0,20,20,4);
   for (int i = 0; i < int(objects.size()); i++) {
     qTree->insert(&objects[i]);
     maxRadius = max(maxRadius, objects[i].getRadius());
@@ -237,7 +237,7 @@ void Robot::updateSensor(vector<Object> objects){
 
   // Check detection of robots
   for (int sensor = 0; sensor < 3; sensor++) {
-    vector<Object*> nearObjects = qTree->queryCircle(&objects[id], sensorActivaton[sensor]/2+maxRadius);
+    vector<Object*> nearObjects = qTree->queryCircle(&objects[id], sensorActivaton[sensor]+maxRadius);
     for (int i = 0; i < int(nearObjects.size()); i++) {
       if(nearObjects[i]->getId()!=this->getId()){
 
