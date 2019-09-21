@@ -101,7 +101,7 @@ void timer(int){
             Robot *robot = &manager.environment[lastEnvironment].robot[i];
             outputFile<<"\t\t\tRobot "<< i;
             outputFile<<fixed<<setprecision(2);
-            outputFile<<" \tf:"  << robot->fitness[robot->fitness.size()-2];
+            outputFile<<" \tf: "  << robot->fitness[robot->fitness.size()-2];
             outputFile<<" \tmf: " << robot->meanFitness[robot->meanFitness.size()-1];
             if(printEverything){
               outputFile<<" \tg0: " << robot->genes[0];

@@ -6,7 +6,7 @@
 
 QT       += core gui
 
-greaterThan(QT_MAJOR_VERSION, 4): QT += widgets
+greaterThan(QT_MAJOR_VERSION, 4): QT += widgets printsupport
 
 TARGET = DataAnalyzer
 TEMPLATE = app
@@ -26,9 +26,11 @@ CONFIG += c++11
 
 SOURCES += \
         main.cpp \
+        qcustomplot.cpp \
         widget.cpp
 
 HEADERS += \
+        qcustomplot.h \
         widget.h
 
 FORMS += \

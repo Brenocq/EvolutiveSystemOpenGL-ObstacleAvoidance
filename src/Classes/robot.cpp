@@ -288,6 +288,7 @@ void Robot::updateSensor(vector<Object> objects){
       sensorValues[sensor]=-1;// Set as -1 if sensor was not trigged
     }
   }
+  delete qTree;
 }
 
 void Robot::updateMeanFitness(int sizeMean){

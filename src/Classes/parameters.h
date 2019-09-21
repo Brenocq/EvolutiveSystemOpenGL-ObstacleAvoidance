@@ -3,7 +3,7 @@
 #define windowWidth 600
 #define screenHeight 1080
 #define screenWidth 1920
-#define displaySteps 1
+#define displaySteps 10000
 
 // Evolutive system global parameters (fixed)
 #define qtdRobots 10

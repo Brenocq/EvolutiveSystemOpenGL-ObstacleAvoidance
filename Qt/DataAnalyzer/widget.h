@@ -15,8 +15,18 @@ public:
     explicit Widget(QWidget *parent = nullptr);
     ~Widget();
 
+private slots:
+    void on_importButton_clicked();
+
+    void on_envComboBox_currentIndexChanged(int index);
+
+    void on_genComboBox_currentIndexChanged(int index);
+
 private:
+    void updatePlot();
+    QVector<QVector<float> > getRobotsFitness(int gen, int env, int rep);
     Ui::Widget *ui;
+    QString _fileName;
 };
 
 #endif // WIDGET_H

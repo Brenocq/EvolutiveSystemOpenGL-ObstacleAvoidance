@@ -266,8 +266,9 @@ void Environment::draw(){
   for (int i = 0; i < qtdObstacles; i++){
     objects.push_back(obstacle[i]);
   }
+
   QuadTree *qTree = new QuadTree(0,0,20,20,1);
-  for(object : objects){
+  for(auto object : objects){
     glColor3f(1, 1, 0);
     glBegin(GL_POLYGON);
     glVertex2d(object.getX()/10+0.005, object.getY()/10+0.005);
@@ -278,7 +279,7 @@ void Environment::draw(){
     qTree->insert(&object);
   }
   qTree->draw();
-
+  delete qTree;
 }
 
 bool Environment::getFinished() const{
