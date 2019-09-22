@@ -1,4 +1,4 @@
-flags = -lglut -lGLU -lGL -march=native -funroll-loops -Wall -Wextra -std=c++11
+flags = -lglut -lGLU -lGL -march=native -funroll-loops -Wall -Wextra -std=c++11 -fopenmp
 
 all: build
 
