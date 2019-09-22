@@ -24,12 +24,12 @@ void Environment::updateRobots(float time){
     initiateRobots();
   }
   if(currentPopulation<maxPopulation){
-    vector<Object>objects;
+    vector<Object*>objects;
     for (int i = 0; i < qtdRobots; i++) {
-      objects.push_back(robot[i]);
+      objects.push_back(&robot[i]);
     }
     for (int i = 0; i < qtdObstacles; i++){
-      objects.push_back(obstacle[i]);
+      objects.push_back(&obstacle[i]);
     }
 
     for (int i = 0; i < qtdRobots; i++){
@@ -259,7 +259,6 @@ void Environment::draw(){
 
   // Draw QuadTree
   vector<Object>objects;
-  int cont=0;
   for (int i = 0; i < qtdRobots; i++) {
     objects.push_back(robot[i]);
   }

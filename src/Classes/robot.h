@@ -12,9 +12,9 @@ public:
   ~Robot();
 
   void draw(void) const;
-  void move(vector<Object> objects, float seconds);
+  void move(vector<Object*> objects, float seconds);
   void rotate(float angle);
-  void updateSensor(vector<Object> objects);
+  void updateSensor(vector<Object*> objects);
   void updateMeanFitness(int sizeMean);
 
   //----- Getters -----//

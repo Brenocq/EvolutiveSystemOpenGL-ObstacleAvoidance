@@ -24,11 +24,16 @@ private slots:
 
     void on_repComboBox_currentIndexChanged(int index);
 
+    void callUpdate();
+
 private:
     void updatePlot();
     void getRobotsFitness(int gen, int env, int rep, QVector<QVector<double> >&fitness, QVector<QVector<double> >&meanFitness);
     Ui::Widget *ui;
     QString _fileName;
+    QTimer *timer;
+
+    int _sizeEnv, _sizeGen, _sizeRep;
 };
 
 #endif // WIDGET_H

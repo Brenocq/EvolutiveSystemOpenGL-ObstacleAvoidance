@@ -12,6 +12,13 @@ Widget::Widget(QWidget *parent) :
 {
     ui->setupUi(this);
     _fileName = "";
+    timer = new QTimer(this);
+    QObject::connect(timer, SIGNAL(timeout()), this, SLOT(callUpdate()));
+    timer->start(1000);
+
+    _sizeEnv = -1;
+    _sizeGen = -1;
+    _sizeRep = -1;
 }
 
 Widget::~Widget()
@@ -87,9 +94,14 @@ void Widget::on_importButton_clicked()
     for(int i=0;i<qtdEnv;i++){
         itemList += QString::number(i);
     }
-    ui->envComboBox->clear();
-    ui->envComboBox->addItems(itemList);
-    ui->genComboBox->setEnabled(true);
+
+    qDebug() << "_sizeEnv" <<_sizeEnv <<" -> " << itemList.size();
+    if(_sizeEnv != itemList.size()){
+        _sizeEnv = itemList.size();
+        ui->envComboBox->clear();
+        ui->envComboBox->addItems(itemList);
+        ui->genComboBox->setEnabled(true);
+    }
 }
 
 void Widget::on_envComboBox_currentIndexChanged(int index)
@@ -121,11 +133,14 @@ void Widget::on_envComboBox_currentIndexChanged(int index)
         itemList += QString::number(i);
 
     }
-    ui->genComboBox->clear();
-    ui->genComboBox->addItems(itemList);
-    ui->genComboBox->setEnabled(qtdGen>0?true:false);
-    ui->repComboBox->setEnabled(qtdGen>0?true:false);
-
+    qDebug() << "_sizeGen" <<_sizeGen <<" -> " << itemList.size();
+    if(_sizeGen != itemList.size()){
+        _sizeGen = itemList.size();
+        ui->genComboBox->clear();
+        ui->genComboBox->addItems(itemList);
+        ui->genComboBox->setEnabled(qtdGen>0?true:false);
+        ui->repComboBox->setEnabled(qtdGen>0?true:false);
+    }
 }
 
 void Widget::on_genComboBox_currentIndexChanged(int index)
@@ -174,9 +189,13 @@ void Widget::on_genComboBox_currentIndexChanged(int index)
         itemList += QString::number(i);
 
     }
-    ui->repComboBox->clear();
-    ui->repComboBox->addItems(itemList);
-    ui->repComboBox->setEnabled(qtdRep>0?true:false);
+    qDebug() << "_sizeRep" <<_sizeRep <<" -> " << itemList.size();
+    if(_sizeRep != itemList.size()){
+        _sizeRep = itemList.size();
+        ui->repComboBox->clear();
+        ui->repComboBox->addItems(itemList);
+        ui->repComboBox->setEnabled(qtdRep>0?true:false);
+    }
     updatePlot();
 }
 
@@ -253,7 +272,7 @@ void Widget::getRobotsFitness(int gen, int env, int rep, QVector<QVector<double>
             int cmp = QString::compare(fields[0], "Environment", Qt::CaseInsensitive);
             if(cmp==0){
                currEnv = fields[1].toInt();
-               qDebug() << "currEnv "<<currEnv;
+               //qDebug() << "currEnv "<<currEnv;
                if(currEnv == ui->envComboBox->currentIndex()){
                    currGen++;
                }
@@ -286,4 +305,16 @@ void Widget::getRobotsFitness(int gen, int env, int rep, QVector<QVector<double>
 void Widget::on_repComboBox_currentIndexChanged(int index)
 {
     updatePlot();
+}
+
+void Widget::callUpdate()
+{
+    if(ui->repComboBox->isEnabled()){
+        //----- Update combobox -----//
+        on_genComboBox_currentIndexChanged(ui->genComboBox->currentIndex());
+        on_envComboBox_currentIndexChanged(ui->envComboBox->currentIndex());
+        on_repComboBox_currentIndexChanged(ui->repComboBox->currentIndex());
+        //----- Update plots -----//
+        updatePlot();
+    }
 }

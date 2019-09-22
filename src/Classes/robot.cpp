@@ -123,40 +123,40 @@ void Robot::draw(void) const{
   }
 }
 
-void Robot::move(vector<Object> objects, float seconds){
+void Robot::move(vector<Object*> objects, float seconds){
   bool canMove = true;
   float angleRotation=0;
-  QuadTree *qTree;
+  /*QuadTree *qTree;
   float maxRadius=0;
   qTree = new QuadTree(0,0,20,20,4);
 
   for (int i = 0; i < int(objects.size()); i++) {
     qTree->insert(&objects[i]);
     maxRadius = max(maxRadius, objects[i].getRadius());
-  }
+  }*/
 
-  updateSensor(objects);// !!!
+  updateSensor(objects);
 
   // Search for pysical contact between robots
-  vector<Object*> nearObjects = qTree->inCollision(&objects[id], maxRadius);
+  vector<Object*> nearObjects = objects;//qTree->inCollision(&objects[id], maxRadius);
   inCollision = false;
   float fitnessBack = fitness.back();
-  #pragma omp parallel for private(canMove, inCollision, fitnessBack)
+  //#pragma omp parallel for private(canMove, inCollision, fitnessBack)
   for (int i = 0; i < int(nearObjects.size()); i++) {
-    if(nearObjects[i]->getId()!=objects[id].getId()){
-      if(distanceTwoObjects(&objects[id], nearObjects[i]) <= (objects[id].getRadius()+nearObjects[i]->getRadius())){
+    if(nearObjects[i]->getId()!=objects[id]->getId()){
+      if(distanceTwoObjects(objects[id], nearObjects[i]) <= (objects[id]->getRadius()+nearObjects[i]->getRadius())){
         inCollision = true;
         fitnessBack+=pointsCollision*seconds;
-        objects[id].setColor(1,0,0);
-        if(distTwoAngles( this->getTheta(), angleTwoObjects(&objects[id],nearObjects[i]))<90 ||
-          distTwoAngles( this->getTheta(), angleTwoObjects(&objects[id],nearObjects[i]))>270){
+        objects[id]->setColor(1,0,0);
+        if(distTwoAngles( this->getTheta(), angleTwoObjects(objects[id],nearObjects[i]))<90 ||
+          distTwoAngles( this->getTheta(), angleTwoObjects(objects[id],nearObjects[i]))>270){
           canMove = false;
         }
       }
     }
   }
   fitness.back() = fitnessBack;
-  delete qTree;
+  //delete qTree;
 
   if(inCollision){
     rotate(genes[3]);
@@ -213,17 +213,17 @@ void Robot::rotate(float angle){
   setTheta(theta+angle);
 }
 
-void Robot::updateSensor(vector<Object> objects){
+void Robot::updateSensor(vector<Object*> objects){
   float sensorActivaton[3] = {genes[0],genes[1],genes[0]};
   float sensorAngle[3] = {genes[4]+theta,0+theta,-genes[4]+theta};
-  QuadTree *qTree;
+  /*QuadTree *qTree;
   float maxRadius=0;
   qTree = new QuadTree(0,0,20,20,4);
 
   for (int i = 0; i < int(objects.size()); i++) {
     qTree->insert(&objects[i]);
     maxRadius = max(maxRadius, objects[i].getRadius());
-  }
+  }*/
 
 
   for (int i = 0; i < 3; i++) {
@@ -240,15 +240,15 @@ void Robot::updateSensor(vector<Object> objects){
   // Check detection of robots
   #pragma omp parallel for
   for (int sensor = 0; sensor < 3; sensor++) {
-    vector<Object*> nearObjects = qTree->queryCircle(&objects[id], sensorActivaton[sensor]+maxRadius);
+    vector<Object*> nearObjects = objects;//qTree->queryCircle(&objects[id], sensorActivaton[sensor]+maxRadius);
     for (int i = 0; i < int(nearObjects.size()); i++) {
       if(nearObjects[i]->getId()!=this->getId()){
         float distance, angle;
         float angleToReadRobot;// Angle interval read the other robot with this sensor
         // Calculation of distance
-        distance = distanceTwoObjects(&objects[id], nearObjects[i]);
+        distance = distanceTwoObjects(objects[id], nearObjects[i]);
         // Canculation of angle
-        angle = angleTwoObjects(&objects[id], nearObjects[i]);
+        angle = angleTwoObjects(objects[id], nearObjects[i]);
 
         angleToReadRobot = atan2(distance,radius);
         if(angleToReadRobot<0){
@@ -292,7 +292,7 @@ void Robot::updateSensor(vector<Object> objects){
       sensorValues[sensor]=-1;// Set as -1 if sensor was not trigged
     }
   }
-  delete qTree;
+  //delete qTree;
 }
 
 void Robot::updateMeanFitness(int sizeMean){

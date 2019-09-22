@@ -9,7 +9,6 @@
 #include <iomanip>
 #include "Classes/manager.h"
 // TODO predator
-// TODO create matlabApp to visualize data
 
 using namespace std;
 
