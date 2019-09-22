@@ -22,9 +22,11 @@ private slots:
 
     void on_genComboBox_currentIndexChanged(int index);
 
+    void on_repComboBox_currentIndexChanged(int index);
+
 private:
     void updatePlot();
-    QVector<QVector<float> > getRobotsFitness(int gen, int env, int rep);
+    void getRobotsFitness(int gen, int env, int rep, QVector<QVector<double> >&fitness, QVector<QVector<double> >&meanFitness);
     Ui::Widget *ui;
     QString _fileName;
 };

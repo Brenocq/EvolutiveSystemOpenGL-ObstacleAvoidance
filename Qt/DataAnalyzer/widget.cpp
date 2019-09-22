@@ -4,6 +4,7 @@
 #include <QDebug>
 #include <QMessageBox>
 #include <QFile>
+#include <QtMath>
 
 Widget::Widget(QWidget *parent) :
     QWidget(parent),
@@ -149,7 +150,7 @@ void Widget::on_genComboBox_currentIndexChanged(int index)
             int cmp = QString::compare(fields[0], "Environment", Qt::CaseInsensitive);
             if(cmp==0){
                currEnv = fields[1].toInt();
-               qDebug() << "currEnv "<<currEnv;
+               //qDebug() << "currEnv "<<currEnv;
                if(currEnv == ui->envComboBox->currentIndex()){
                    currGen++;
                }
@@ -158,7 +159,7 @@ void Widget::on_genComboBox_currentIndexChanged(int index)
             cmp = QString::compare(fields[0], "\tRepetition", Qt::CaseInsensitive);
             if(cmp==0){
                currRep = fields[1].toInt();
-               qDebug() << "    currRep "<<currRep;
+               //qDebug() << "    currRep "<<currRep;
 
                if(currEnv == ui->envComboBox->currentIndex() && currGen == ui->genComboBox->currentIndex()){
                    qtdRep++;
@@ -182,43 +183,107 @@ void Widget::on_genComboBox_currentIndexChanged(int index)
 void Widget::updatePlot()
 {
     // generate some data:
-    QVector<double> x(101), y(101); // initialize with entries 0..100
-    for (int i=0; i<101; ++i)
-    {
-      x[i] = i/50.0 - 1; // x goes from -1 to 1
-      y[i] = x[i]*x[i]; // let's plot a quadratic function
+    QVector<QVector<double> > fitness, meanFitness; // initialize with entries 0..100
+    QVector<double> generation;
+    getRobotsFitness(ui->genComboBox->currentIndex(), ui->envComboBox->currentIndex(), ui->repComboBox->currentIndex(), fitness, meanFitness);
+
+    for (int i=0;i<fitness[0].size();i++) {
+        generation.push_back(i);
     }
 
     //----- Update gross graph -----//
     // create graph and assign data to it
-    ui->graphGross->addGraph();
-    ui->graphGross->graph(0)->setPen(QPen(Qt::blue));
-    ui->graphGross->graph(0)->setData(x, y);
+    int qtdRobots = ui->qtdRobotsEdit->text().toInt();
+    for (int i=1;i<=qtdRobots;i++) {
+        ui->graphGross->addGraph();
+        ui->graphGross->graph(i-1)->setPen(QPen(QColor(int(i%2)*255,int((i/2)%2)*255,int((i/4)%2)*255,255 )));
+        ui->graphGross->graph(i-1)->setData(generation, fitness[i-1]);
+    }
     // give the axes some labels
     ui->graphGross->xAxis->setLabel("Generation");
     ui->graphGross->yAxis->setLabel("Fitness");
 
     // set axes ranges, so we see all data
-    ui->graphGross->xAxis->setRange(-1, 1);
-    ui->graphGross->yAxis->setRange(0, 1);
+    ui->graphGross->xAxis->setRange(0, fitness[0].size());
+    ui->graphGross->yAxis->setRange(-200, 1000);
     ui->graphGross->replot();
 
     //----- Update mean graph -----//
     // create graph and assign data to it
-    ui->graphMean->addGraph();
-    ui->graphMean->graph(0)->setData(x, y);
+    for (int i=1;i<=qtdRobots;i++) {
+        ui->graphMean->addGraph();
+        ui->graphMean->graph(i-1)->setPen(QPen(QColor(int(i%2)*255,int((i/2)%2)*255,int((i/4)%2)*255,255 )));
+        ui->graphMean->graph(i-1)->setData(generation, meanFitness[i-1]);
+    }
     // give the axes some labels
     ui->graphMean->xAxis->setLabel("Generation");
     ui->graphMean->yAxis->setLabel("Fitness");
     // set axes ranges, so we see all data
-    ui->graphMean->xAxis->setRange(-1, 1);
-    ui->graphMean->yAxis->setRange(0, 1);
+    ui->graphMean->xAxis->setRange(0, meanFitness[0].size());
+    ui->graphMean->yAxis->setRange(-200, 1000);
     ui->graphMean->replot();
 
 }
 
-QVector<QVector<float> > Widget::getRobotsFitness(int gen, int env, int rep)
+void Widget::getRobotsFitness(int gen, int env, int rep, QVector<QVector<double> >&fitness, QVector<QVector<double> >&meanFitness)
 {
+    int qtdRobots = ui->qtdRobotsEdit->text().toInt();
+    fitness.clear();
+    meanFitness.clear();
+    fitness.resize(qtdRobots);
+    meanFitness.resize(qtdRobots);
 
+    //----- Get data from file -----//
+    int currEnv=-1;
+    int currGen=-1;
+    int currRep=-1;
+    int currPopNum=-1;
+
+    QFile file(_fileName);
+
+    if(!file.open(QIODevice::ReadOnly)) {
+        QMessageBox::information(this, "error", file.errorString());
+    }
+    QTextStream in(&file);
+
+    while(!in.atEnd()){
+        QString line = in.readLine();
+        QStringList fields = line.split(" ");
+        if(fields.size()>=2){
+            int cmp = QString::compare(fields[0], "Environment", Qt::CaseInsensitive);
+            if(cmp==0){
+               currEnv = fields[1].toInt();
+               qDebug() << "currEnv "<<currEnv;
+               if(currEnv == ui->envComboBox->currentIndex()){
+                   currGen++;
+               }
+            }
+
+            cmp = QString::compare(fields[0], "\tRepetition", Qt::CaseInsensitive);
+            if(cmp==0){
+               currRep = fields[1].toInt();
+            }
+
+            cmp = QString::compare(fields[0], "\t\tPopulation", Qt::CaseInsensitive);
+            if(cmp==0){
+               currPopNum = fields[1].toInt();
+
+               if(currEnv == env && currGen==gen && currRep == rep && cmp==0){
+                   for(int i=0; i<qtdRobots; i++){
+                       QString robotLine = in.readLine();
+                       QStringList robotFields = robotLine.split(" ");
+                       //qDebug()<<"fitness "<< robotFields[3].toDouble()<<" mean:"<<robotFields[5].toDouble();
+                       fitness[i].push_back(robotFields[3].toDouble());
+                       meanFitness[i].push_back(robotFields[5].toDouble());
+                   }
+               }
+            }
+        }
+    }
 }
 
+
+void Widget::on_repComboBox_currentIndexChanged(int index)
+{
+    updatePlot();
+}
