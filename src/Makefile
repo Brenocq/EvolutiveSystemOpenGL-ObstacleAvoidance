@@ -2,6 +2,9 @@ flags = -lglut -lGLU -lGL -march=native -funroll-loops -Wall -Wextra -std=c++11 
 
 all: build
 
+run: build
+	./run
+
 build: utils.o object.o quadtree.o robot.o obstacle.o environment.o manager.o main.o
 
 main.o: main.cpp Classes/parameters.h

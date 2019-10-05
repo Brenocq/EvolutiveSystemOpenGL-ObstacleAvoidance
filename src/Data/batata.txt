@@ -1,0 +1,67 @@
+QtdRobots: 10
+QtdEnvironments: 10
+QtdRepetitions: 10
+QtdObstacles: 80
+PointsCollision: -150
+PointsMoving: 10
+MaxPopulation: 40
+MaxTime: 600
+EnvMutationRate: 0.2
+
+Environment 0	 h: 4	 mr: 0.2	 nc: 0.4	 nm: 0.2	 bmp: 0	 cc: 0
+	Repetition 0
+		Population 0
+			Robot 0 	f: -3187.71 	mf: -3187.00
+			Robot 1 	f: -2077.13 	mf: -2077.00
+			Robot 2 	f: -1884.78 	mf: -1884.00
+			Robot 3 	f: -1827.18 	mf: -1827.00
+			Robot 4 	f: -173.90 	mf: -173.00
+			Robot 5 	f: -32.03 	mf: -32.00
+			Robot 6 	f: 64.23 	mf: 64.00
+			Robot 7 	f: -1323.00 	mf: -1323.00
+			Robot 8 	f: -52.56 	mf: -52.00
+			Robot 9 	f: 300.64 	mf: 300.00
+		Population 1
+			Robot 0 	f: 188.65 	mf: -1499.50
+			Robot 1 	f: 246.34 	mf: -915.50
+			Robot 2 	f: 376.55 	mf: -754.00
+			Robot 3 	f: 198.96 	mf: -814.50
+			Robot 4 	f: 274.99 	mf: 50.50
+			Robot 5 	f: 160.31 	mf: 64.00
+			Robot 6 	f: 299.82 	mf: 181.50
+			Robot 7 	f: 226.25 	mf: -548.50
+			Robot 8 	f: 48.12 	mf: -2.00
+			Robot 9 	f: 331.11 	mf: 315.50
+		Population 2
+			Robot 0 	f: 369.82 	mf: -876.67
+			Robot 1 	f: 366.93 	mf: -488.33
+			Robot 2 	f: 438.26 	mf: -356.67
+			Robot 3 	f: 315.60 	mf: -438.00
+			Robot 4 	f: 283.85 	mf: 128.00
+			Robot 5 	f: 3.22 	mf: 43.67
+			Robot 6 	f: 226.89 	mf: 196.33
+			Robot 7 	f: 181.56 	mf: -305.33
+			Robot 8 	f: 327.22 	mf: 107.67
+			Robot 9 	f: 381.14 	mf: 337.33
+		Population 3
+			Robot 0 	f: 401.67 	mf: -557.25
+			Robot 1 	f: 223.75 	mf: -310.50
+			Robot 2 	f: 406.32 	mf: -166.00
+			Robot 3 	f: 228.23 	mf: -271.50
+			Robot 4 	f: 411.33 	mf: 198.75
+			Robot 5 	f: -565.63 	mf: -108.50
+			Robot 6 	f: 389.39 	mf: 244.50
+			Robot 7 	f: -39.14 	mf: -238.75
+			Robot 8 	f: 63.97 	mf: 96.50
+			Robot 9 	f: 357.76 	mf: 342.25
+		Population 4
+			Robot 0 	f: 289.54 	mf: 311.75
+			Robot 1 	f: 194.52 	mf: 257.25
+			Robot 2 	f: 245.94 	mf: 366.25
+			Robot 3 	f: 290.43 	mf: 257.75
+			Robot 4 	f: 305.34 	mf: 318.25
+			Robot 5 	f: 158.94 	mf: -61.00
+			Robot 6 	f: 174.13 	mf: 272.00
+			Robot 7 	f: 150.76 	mf: 129.50
+			Robot 8 	f: 368.14 	mf: 201.50
+			Robot 9 	f: 19.00 	mf: 272.00

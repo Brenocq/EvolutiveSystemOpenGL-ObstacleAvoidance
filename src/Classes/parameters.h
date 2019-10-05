@@ -9,10 +9,10 @@
 #define qtdRobots 10
 #define qtdEnvironments 10
 #define qtdRepetitions 10// Number of times that each environment will be tested to define the fitness
-#define qtdObstacles 80
+#define qtdObstacles 70
 #define pointsCollision -150.0// Points per second in collision
 #define pointsMoving 10.0// Points per second in maximum speed
-#define maxPopulation 40// Number of populations tested with each environment
+#define maxPopulation 60// Number of populations tested with each environment
 #define maxTime 600// Time that each population will be tested
 #define envMutationRate 0.2
 
@@ -23,3 +23,20 @@
 #define showAvFitness 0
 #define showPopulationRobots 0
 #define showPopulationEnvironments 1
+
+// Fixed genes robots
+// Set as -1 if you want to change
+#define controlSideSensorActivation -1
+#define controlFrontSensorActivation -1
+#define controlLinearVelocity -1
+#define controlMaximumRotation -1
+#define controlSensorAngle -1
+
+// Fixed genes environments
+// Set as -1 if you want to change
+#define controlFitnessMean 5
+#define controlMutationRate 0.2
+#define controlNeutralCrossing 0.5
+#define controlNeutralMutation 0.5
+#define controlBackMutationPrevention 1
+#define controlCrossingCondition 2

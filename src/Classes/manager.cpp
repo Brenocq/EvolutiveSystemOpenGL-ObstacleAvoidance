@@ -13,17 +13,40 @@ Manager::Manager():
 void Manager::initiateEnvironments(){
   for (int i = 0; i < qtdEnvironments; i++){
     // fitnessMean   (0.0-10.0)qtdRobots
-    environment[i].genes[0] = (rand()%1000)/100.0;
+    if(controlFitnessMean!=-1)
+      environment[i].genes[0] = controlFitnessMean;
+    else
+      environment[i].genes[0] = 4;//(rand()%1000)/100.0;
+
     // mutationRate  (0.0-1.0)
-    environment[i].genes[1] = (rand()%100)/100.0;
+    if(controlMutationRate!=-1)
+      environment[i].genes[1] = controlMutationRate;
+    else
+      environment[i].genes[1] = 0.2;//(rand()%100)/100.0;
+
     // neutralCrossing (0.0-1.0)
-    environment[i].genes[2] = (rand()%100)/100.0;
+    if(controlNeutralCrossing!=-1)
+      environment[i].genes[2] = controlNeutralCrossing;
+    else
+      environment[i].genes[2] = 0.4;//(rand()%100)/100.0;
+
     // neutralMutation (0.0-1.0)
-    environment[i].genes[3] = (rand()%100)/100.0;
+    if(controlNeutralMutation!=-1)
+      environment[i].genes[3] = controlNeutralMutation;
+    else
+      environment[i].genes[3] = 0.2;//(rand()%100)/100.0;
+
     // controlBackMutationPrevention (0.0-1.0) (<0.5)(>=0.5)
-    environment[i].genes[4] = (rand()%100)/100.0;
+    if(controlBackMutationPrevention!=-1)
+      environment[i].genes[4] = controlBackMutationPrevention;
+    else
+      environment[i].genes[4] = 0;//(rand()%100)/100.0;
+
     // crossingCondition  (0.0-3.0) (<1)(<2)(<3)
-    environment[i].genes[5] = (rand()%300)/100.0;
+    if(controlCrossingCondition!=-1)
+      environment[i].genes[5] = controlCrossingCondition;
+    else
+      environment[i].genes[5] = 0;//(rand()%300)/100.0;
 
     environment[i].fitness.push_back(0);
   }
@@ -44,7 +67,7 @@ void Manager::updateEnvironment(float time){
       }
     }
   }
-  
+
   environment[currEnvironment].updateRobots(time);
 
   if(environment[currEnvironment].getFinished()){
@@ -78,22 +101,28 @@ void Manager::newPopulationEnvironments(){
         if(chanceMutation < envMutationRate*100){
           switch(j){
             case 0:
-            environment[i].genes[0] = (rand()%1000)/100.0;
+            if(controlFitnessMean==-1)
+              environment[i].genes[0] = (rand()%1000)/100.0;
             break;
             case 1:
-            environment[i].genes[1] = (rand()%100)/100.0;
+            if(controlMutationRate==-1)
+              environment[i].genes[1] = (rand()%100)/100.0;
             break;
             case 2:
-            environment[i].genes[2] = (rand()%100)/100.0;
+            if(controlNeutralCrossing==-1)
+              environment[i].genes[2] = (rand()%100)/100.0;
             break;
             case 3:
-            environment[i].genes[3] = (rand()%100)/100.0;
+            if(controlNeutralMutation==-1)
+              environment[i].genes[3] = (rand()%100)/100.0;
             break;
             case 4:
-            environment[i].genes[4] =  (rand()%100)/100.0;
+            if(controlBackMutationPrevention==-1)
+              environment[i].genes[4] =  (rand()%100)/100.0;
             break;
             case 5:
-            environment[i].genes[5] = (rand()%300)/100.0;
+            if(controlCrossingCondition==-1)
+              environment[i].genes[5] = (rand()%300)/100.0;
             break;
           }
         }

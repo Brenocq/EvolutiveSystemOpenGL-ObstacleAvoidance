@@ -8,5 +8,5 @@ MaxPopulation: 40
 MaxTime: 600
 EnvMutationRate: 0.2
 
-Environment 0	 h: 0.79	 mr: 0.24	 nc: 0.51	 nm: 0.7	 bmp: 0.25	 cc: 0.17
+Environment 0	 h: 4	 mr: 0.2	 nc: 0.4	 nm: 0.2	 bmp: 0	 cc: 0
 	Repetition 0

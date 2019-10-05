@@ -1,0 +1,2224 @@
+QtdRobots: 2
+QtdEnvironments: 10
+QtdRepetitions: 10
+QtdObstacles: 80
+PointsCollision: -150
+PointsMoving: 10
+MaxPopulation: 40
+MaxTime: 600
+EnvMutationRate: 0.2
+
+Environment 0	 h: 4	 mr: 0.2	 nc: 0.4	 nm: 0.2	 bmp: 0	 cc: 0
+	Repetition 0
+		Population 0
+			Robot 0 	f: -365.21 	mf: -365.00
+			Robot 1 	f: 140.31 	mf: 140.00
+		Population 1
+			Robot 0 	f: 208.17 	mf: -78.50
+			Robot 1 	f: 212.19 	mf: 176.00
+		Population 2
+			Robot 0 	f: 196.04 	mf: 13.00
+			Robot 1 	f: 213.55 	mf: 188.33
+		Population 3
+			Robot 0 	f: 213.10 	mf: 63.00
+			Robot 1 	f: 212.33 	mf: 194.25
+		Population 4
+			Robot 0 	f: 214.62 	mf: 207.75
+			Robot 1 	f: 142.44 	mf: 194.75
+		Population 5
+			Robot 0 	f: 128.02 	mf: 187.75
+			Robot 1 	f: 148.03 	mf: 178.75
+		Population 6
+			Robot 0 	f: 118.81 	mf: 168.25
+			Robot 1 	f: 191.68 	mf: 173.25
+		Population 7
+			Robot 0 	f: 210.95 	mf: 167.50
+			Robot 1 	f: 213.81 	mf: 173.50
+		Population 8
+			Robot 0 	f: 214.88 	mf: 167.50
+			Robot 1 	f: 211.93 	mf: 190.75
+		Population 9
+			Robot 0 	f: 211.63 	mf: 188.25
+			Robot 1 	f: 19.68 	mf: 158.50
+		Population 10
+			Robot 0 	f: 213.73 	mf: 212.00
+			Robot 1 	f: 357.61 	mf: 200.00
+		Population 11
+			Robot 0 	f: 147.08 	mf: 196.25
+			Robot 1 	f: 425.25 	mf: 253.00
+		Population 12
+			Robot 0 	f: 234.45 	mf: 201.25
+			Robot 1 	f: 423.37 	mf: 306.00
+		Population 13
+			Robot 0 	f: 227.98 	mf: 205.25
+			Robot 1 	f: 422.22 	mf: 406.75
+		Population 14
+			Robot 0 	f: 265.43 	mf: 218.25
+			Robot 1 	f: 356.17 	mf: 406.50
+		Population 15
+			Robot 0 	f: 306.69 	mf: 258.00
+			Robot 1 	f: 426.54 	mf: 406.75
+		Population 16
+			Robot 0 	f: 359.32 	mf: 289.25
+			Robot 1 	f: 341.90 	mf: 386.25
+		Population 17
+			Robot 0 	f: 416.91 	mf: 336.50
+			Robot 1 	f: 414.00 	mf: 384.25
+		Population 18
+			Robot 0 	f: -219.62 	mf: 215.50
+			Robot 1 	f: 414.58 	mf: 398.75
+		Population 19
+			Robot 0 	f: 397.49 	mf: 238.25
+			Robot 1 	f: 303.42 	mf: 368.00
+		Population 20
+			Robot 0 	f: 374.76 	mf: 242.00
+			Robot 1 	f: 424.95 	mf: 388.75
+		Population 21
+			Robot 0 	f: 399.18 	mf: 237.75
+			Robot 1 	f: 393.12 	mf: 383.50
+		Population 22
+			Robot 0 	f: 355.60 	mf: 381.25
+			Robot 1 	f: 403.63 	mf: 380.75
+		Population 23
+			Robot 0 	f: 354.04 	mf: 370.50
+			Robot 1 	f: 428.27 	mf: 412.00
+		Population 24
+			Robot 0 	f: 305.78 	mf: 353.25
+			Robot 1 	f: 410.69 	mf: 408.50
+		Population 25
+			Robot 0 	f: 370.40 	mf: 346.00
+			Robot 1 	f: 343.91 	mf: 396.00
+		Population 26
+			Robot 0 	f: 157.51 	mf: 296.50
+			Robot 1 	f: 404.64 	mf: 396.25
+		Population 27
+			Robot 0 	f: 395.16 	mf: 306.75
+			Robot 1 	f: 421.50 	mf: 394.50
+		Population 28
+			Robot 0 	f: 418.88 	mf: 335.00
+			Robot 1 	f: -114.73 	mf: 263.50
+		Population 29
+			Robot 0 	f: 404.51 	mf: 343.50
+			Robot 1 	f: 470.19 	mf: 295.25
+		Population 30
+			Robot 0 	f: 405.13 	mf: 405.50
+			Robot 1 	f: 318.79 	mf: 273.75
+		Population 31
+			Robot 0 	f: 336.42 	mf: 390.75
+			Robot 1 	f: 439.39 	mf: 278.25
+		Population 32
+			Robot 0 	f: 400.33 	mf: 386.25
+			Robot 1 	f: 419.30 	mf: 411.50
+		Population 33
+			Robot 0 	f: 413.87 	mf: 388.50
+			Robot 1 	f: 437.30 	mf: 403.25
+		Population 34
+			Robot 0 	f: 434.21 	mf: 395.75
+			Robot 1 	f: 443.28 	mf: 434.50
+		Population 35
+			Robot 0 	f: 437.48 	mf: 421.00
+			Robot 1 	f: 290.63 	mf: 397.25
+		Population 36
+			Robot 0 	f: 278.28 	mf: 390.50
+			Robot 1 	f: 357.40 	mf: 381.75
+		Population 37
+			Robot 0 	f: 368.50 	mf: 379.25
+			Robot 1 	f: 438.35 	mf: 382.00
+		Population 38
+			Robot 0 	f: 411.00 	mf: 373.50
+			Robot 1 	f: 437.16 	mf: 380.50
+		Population 39
+			Robot 0 	f: 411.00 	mf: 373.50
+			Robot 1 	f: 437.16 	mf: 380.50
+	finalFitness: 380
+	Repetition 1
+		Population 0
+			Robot 0 	f: 12.00 	mf: 299.50
+			Robot 1 	f: 368.43 	mf: 418.25
+		Population 1
+			Robot 0 	f: 226.03 	mf: 264.00
+			Robot 1 	f: 346.55 	mf: 395.25
+		Population 2
+			Robot 0 	f: 228.09 	mf: 218.25
+			Robot 1 	f: 372.46 	mf: 379.00
+		Population 3
+			Robot 0 	f: 343.83 	mf: 202.25
+			Robot 1 	f: 369.32 	mf: 363.75
+		Population 4
+			Robot 0 	f: 162.42 	mf: 239.75
+			Robot 1 	f: 368.56 	mf: 363.75
+		Population 5
+			Robot 0 	f: 282.47 	mf: 253.75
+			Robot 1 	f: 369.18 	mf: 369.50
+		Population 6
+			Robot 0 	f: 315.19 	mf: 275.50
+			Robot 1 	f: 368.69 	mf: 368.50
+		Population 7
+			Robot 0 	f: 350.14 	mf: 277.25
+			Robot 1 	f: 276.82 	mf: 345.25
+		Population 8
+			Robot 0 	f: 342.26 	mf: 322.25
+			Robot 1 	f: 346.10 	mf: 339.75
+		Population 9
+			Robot 0 	f: -18.80 	mf: 247.25
+			Robot 1 	f: 194.93 	mf: 296.00
+		Population 10
+			Robot 0 	f: 144.47 	mf: 204.50
+			Robot 1 	f: 199.02 	mf: 253.75
+		Population 11
+			Robot 0 	f: 368.15 	mf: 209.00
+			Robot 1 	f: 362.25 	mf: 275.25
+		Population 12
+			Robot 0 	f: 64.57 	mf: 139.50
+			Robot 1 	f: 306.60 	mf: 265.25
+		Population 13
+			Robot 0 	f: 333.07 	mf: 227.25
+			Robot 1 	f: -419.33 	mf: 112.00
+		Population 14
+			Robot 0 	f: 354.84 	mf: 279.75
+			Robot 1 	f: 254.10 	mf: 125.75
+		Population 15
+			Robot 0 	f: 340.12 	mf: 272.75
+			Robot 1 	f: 368.76 	mf: 127.25
+		Population 16
+			Robot 0 	f: 357.87 	mf: 346.00
+			Robot 1 	f: 401.30 	mf: 151.00
+		Population 17
+			Robot 0 	f: 356.23 	mf: 351.75
+			Robot 1 	f: 385.94 	mf: 352.00
+		Population 18
+			Robot 0 	f: 363.23 	mf: 354.00
+			Robot 1 	f: 384.44 	mf: 384.50
+		Population 19
+			Robot 0 	f: 290.74 	mf: 341.50
+			Robot 1 	f: 386.08 	mf: 389.00
+		Population 20
+			Robot 0 	f: 213.41 	mf: 305.50
+			Robot 1 	f: 351.07 	mf: 376.50
+		Population 21
+			Robot 0 	f: 292.78 	mf: 289.50
+			Robot 1 	f: 401.17 	mf: 380.50
+		Population 22
+			Robot 0 	f: 385.81 	mf: 295.00
+			Robot 1 	f: 360.10 	mf: 374.50
+		Population 23
+			Robot 0 	f: 391.69 	mf: 320.25
+			Robot 1 	f: 353.37 	mf: 366.25
+		Population 24
+			Robot 0 	f: 348.60 	mf: 354.00
+			Robot 1 	f: 383.76 	mf: 374.25
+		Population 25
+			Robot 0 	f: 357.58 	mf: 370.25
+			Robot 1 	f: 401.44 	mf: 374.25
+		Population 26
+			Robot 0 	f: 400.92 	mf: 374.00
+			Robot 1 	f: 383.49 	mf: 380.00
+		Population 27
+			Robot 0 	f: 396.17 	mf: 375.25
+			Robot 1 	f: 386.47 	mf: 388.25
+		Population 28
+			Robot 0 	f: 378.54 	mf: 382.75
+			Robot 1 	f: 399.27 	mf: 392.25
+		Population 29
+			Robot 0 	f: 109.12 	mf: 320.75
+			Robot 1 	f: 372.75 	mf: 385.00
+		Population 30
+			Robot 0 	f: 391.21 	mf: 318.50
+			Robot 1 	f: 394.78 	mf: 387.75
+		Population 31
+			Robot 0 	f: 403.28 	mf: 320.25
+			Robot 1 	f: 382.54 	mf: 386.75
+		Population 32
+			Robot 0 	f: 284.46 	mf: 296.75
+			Robot 1 	f: -389.60 	mf: 189.75
+		Population 33
+			Robot 0 	f: 400.42 	mf: 369.50
+			Robot 1 	f: 448.14 	mf: 208.75
+		Population 34
+			Robot 0 	f: 394.04 	mf: 370.25
+			Robot 1 	f: 398.46 	mf: 209.75
+		Population 35
+			Robot 0 	f: 299.88 	mf: 344.25
+			Robot 1 	f: 467.56 	mf: 231.00
+		Population 36
+			Robot 0 	f: 360.95 	mf: 363.25
+			Robot 1 	f: 468.64 	mf: 445.25
+		Population 37
+			Robot 0 	f: 190.53 	mf: 310.75
+			Robot 1 	f: 462.81 	mf: 448.75
+		Population 38
+			Robot 0 	f: 246.52 	mf: 273.75
+			Robot 1 	f: 62.61 	mf: 364.75
+		Population 39
+			Robot 0 	f: 246.52 	mf: 273.75
+			Robot 1 	f: 62.61 	mf: 364.75
+	finalFitness: 364
+	Repetition 2
+		Population 0
+			Robot 0 	f: 95.87 	mf: 222.50
+			Robot 1 	f: 0.00 	mf: 200.50
+		Population 1
+			Robot 0 	f: 95.26 	mf: 198.75
+			Robot 1 	f: 50.38 	mf: 97.50
+		Population 2
+			Robot 0 	f: 95.52 	mf: 161.00
+			Robot 1 	f: 80.34 	mf: 102.00
+		Population 3
+			Robot 0 	f: 95.90 	mf: 95.00
+			Robot 1 	f: 88.84 	mf: 54.50
+		Population 4
+			Robot 0 	f: 95.87 	mf: 95.00
+			Robot 1 	f: 93.04 	mf: 77.75
+		Population 5
+			Robot 0 	f: 95.68 	mf: 95.00
+			Robot 1 	f: 45.38 	mf: 76.50
+		Population 6
+			Robot 0 	f: 94.65 	mf: 94.75
+			Robot 1 	f: 87.60 	mf: 78.25
+		Population 7
+			Robot 0 	f: 95.33 	mf: 94.75
+			Robot 1 	f: 99.47 	mf: 81.00
+		Population 8
+			Robot 0 	f: 95.62 	mf: 94.75
+			Robot 1 	f: 98.97 	mf: 82.25
+		Population 9
+			Robot 0 	f: 95.78 	mf: 94.75
+			Robot 1 	f: 98.84 	mf: 95.50
+		Population 10
+			Robot 0 	f: 97.63 	mf: 95.50
+			Robot 1 	f: 99.28 	mf: 98.50
+		Population 11
+			Robot 0 	f: 93.28 	mf: 95.00
+			Robot 1 	f: 22.50 	mf: 79.25
+		Population 12
+			Robot 0 	f: 96.98 	mf: 95.25
+			Robot 1 	f: 98.16 	mf: 79.25
+		Population 13
+			Robot 0 	f: 97.18 	mf: 95.75
+			Robot 1 	f: 98.20 	mf: 79.25
+		Population 14
+			Robot 0 	f: 94.54 	mf: 95.00
+			Robot 1 	f: 94.72 	mf: 78.00
+		Population 15
+			Robot 0 	f: 96.00 	mf: 95.75
+			Robot 1 	f: 92.88 	mf: 95.50
+		Population 16
+			Robot 0 	f: 23.97 	mf: 77.50
+			Robot 1 	f: 92.09 	mf: 94.00
+		Population 17
+			Robot 0 	f: 91.10 	mf: 76.00
+			Robot 1 	f: 51.33 	mf: 82.25
+		Population 18
+			Robot 0 	f: 97.54 	mf: 76.75
+			Robot 1 	f: 18.05 	mf: 63.25
+		Population 19
+			Robot 0 	f: 96.14 	mf: 76.75
+			Robot 1 	f: 97.91 	mf: 64.50
+		Population 20
+			Robot 0 	f: 92.80 	mf: 94.00
+			Robot 1 	f: 97.19 	mf: 65.75
+		Population 21
+			Robot 0 	f: 95.81 	mf: 95.00
+			Robot 1 	f: 91.69 	mf: 75.75
+		Population 22
+			Robot 0 	f: 88.27 	mf: 92.75
+			Robot 1 	f: 93.98 	mf: 94.50
+		Population 23
+			Robot 0 	f: 96.86 	mf: 92.75
+			Robot 1 	f: 96.50 	mf: 94.25
+		Population 24
+			Robot 0 	f: 97.06 	mf: 94.00
+			Robot 1 	f: 97.61 	mf: 94.25
+		Population 25
+			Robot 0 	f: 105.32 	mf: 96.50
+			Robot 1 	f: 96.47 	mf: 95.50
+		Population 26
+			Robot 0 	f: 110.41 	mf: 102.00
+			Robot 1 	f: 114.32 	mf: 100.75
+		Population 27
+			Robot 0 	f: -11.09 	mf: 75.25
+			Robot 1 	f: 114.43 	mf: 105.25
+		Population 28
+			Robot 0 	f: 20.02 	mf: 56.00
+			Robot 1 	f: 114.82 	mf: 109.50
+		Population 29
+			Robot 0 	f: -216.33 	mf: -24.25
+			Robot 1 	f: 115.01 	mf: 114.25
+		Population 30
+			Robot 0 	f: -262.60 	mf: -117.25
+			Robot 1 	f: -112.44 	mf: 57.75
+		Population 31
+			Robot 0 	f: 110.06 	mf: -87.00
+			Robot 1 	f: 114.82 	mf: 57.75
+		Population 32
+			Robot 0 	f: 112.98 	mf: -64.00
+			Robot 1 	f: 114.51 	mf: 57.75
+		Population 33
+			Robot 0 	f: 106.88 	mf: 16.50
+			Robot 1 	f: 110.94 	mf: 56.50
+		Population 34
+			Robot 0 	f: -4.17 	mf: 81.00
+			Robot 1 	f: 66.88 	mf: 101.00
+		Population 35
+			Robot 0 	f: 108.52 	mf: 80.50
+			Robot 1 	f: 113.67 	mf: 100.75
+		Population 36
+			Robot 0 	f: 106.22 	mf: 79.00
+			Robot 1 	f: 114.89 	mf: 100.75
+		Population 37
+			Robot 0 	f: 114.26 	mf: 81.00
+			Robot 1 	f: 113.36 	mf: 101.50
+		Population 38
+			Robot 0 	f: 114.61 	mf: 110.50
+			Robot 1 	f: 105.33 	mf: 111.25
+		Population 39
+			Robot 0 	f: 114.61 	mf: 110.50
+			Robot 1 	f: 105.33 	mf: 111.25
+	finalFitness: 111
+	Repetition 3
+		Population 0
+			Robot 0 	f: -224.08 	mf: 28.75
+			Robot 1 	f: 266.12 	mf: 149.50
+		Population 1
+			Robot 0 	f: 486.86 	mf: 121.75
+			Robot 1 	f: 138.07 	mf: 155.75
+		Population 2
+			Robot 0 	f: 389.65 	mf: 190.50
+			Robot 1 	f: 543.54 	mf: 265.25
+		Population 3
+			Robot 0 	f: 346.19 	mf: 249.25
+			Robot 1 	f: 517.68 	mf: 366.00
+		Population 4
+			Robot 0 	f: 480.14 	mf: 425.25
+			Robot 1 	f: 430.39 	mf: 407.00
+		Population 5
+			Robot 0 	f: 201.06 	mf: 354.00
+			Robot 1 	f: -361.35 	mf: 282.25
+		Population 6
+			Robot 0 	f: 420.79 	mf: 361.75
+			Robot 1 	f: 216.96 	mf: 200.50
+		Population 7
+			Robot 0 	f: 304.24 	mf: 351.25
+			Robot 1 	f: 308.08 	mf: 148.25
+		Population 8
+			Robot 0 	f: 394.98 	mf: 329.75
+			Robot 1 	f: 359.09 	mf: 130.50
+		Population 9
+			Robot 0 	f: 374.07 	mf: 373.00
+			Robot 1 	f: 517.87 	mf: 350.00
+		Population 10
+			Robot 0 	f: 266.08 	mf: 334.50
+			Robot 1 	f: 240.91 	mf: 356.00
+		Population 11
+			Robot 0 	f: 452.71 	mf: 371.50
+			Robot 1 	f: -76.14 	mf: 260.00
+		Population 12
+			Robot 0 	f: 493.69 	mf: 396.25
+			Robot 1 	f: 512.22 	mf: 298.25
+		Population 13
+			Robot 0 	f: 335.08 	mf: 386.50
+			Robot 1 	f: 187.72 	mf: 215.75
+		Population 14
+			Robot 0 	f: 524.22 	mf: 451.00
+			Robot 1 	f: 172.98 	mf: 198.75
+		Population 15
+			Robot 0 	f: 205.71 	mf: 389.25
+			Robot 1 	f: 252.05 	mf: 280.75
+		Population 16
+			Robot 0 	f: 484.00 	mf: 386.75
+			Robot 1 	f: 128.91 	mf: 184.75
+		Population 17
+			Robot 0 	f: 500.93 	mf: 428.00
+			Robot 1 	f: 203.06 	mf: 188.75
+		Population 18
+			Robot 0 	f: 312.56 	mf: 375.00
+			Robot 1 	f: 434.15 	mf: 254.25
+		Population 19
+			Robot 0 	f: 167.05 	mf: 365.50
+			Robot 1 	f: 106.37 	mf: 217.75
+		Population 20
+			Robot 0 	f: 322.28 	mf: 325.25
+			Robot 1 	f: 453.75 	mf: 299.00
+		Population 21
+			Robot 0 	f: 394.45 	mf: 298.75
+			Robot 1 	f: 388.01 	mf: 345.25
+		Population 22
+			Robot 0 	f: 337.34 	mf: 305.00
+			Robot 1 	f: 4.00 	mf: 237.50
+		Population 23
+			Robot 0 	f: 411.61 	mf: 366.00
+			Robot 1 	f: 165.10 	mf: 252.25
+		Population 24
+			Robot 0 	f: 227.07 	mf: 342.25
+			Robot 1 	f: 424.36 	mf: 245.00
+		Population 25
+			Robot 0 	f: 359.86 	mf: 333.50
+			Robot 1 	f: 102.97 	mf: 173.50
+		Population 26
+			Robot 0 	f: 278.59 	mf: 318.75
+			Robot 1 	f: 444.80 	mf: 283.75
+		Population 27
+			Robot 0 	f: 171.72 	mf: 258.75
+			Robot 1 	f: 378.24 	mf: 337.00
+		Population 28
+			Robot 0 	f: 452.07 	mf: 315.00
+			Robot 1 	f: 515.57 	mf: 359.75
+		Population 29
+			Robot 0 	f: 380.64 	mf: 320.25
+			Robot 1 	f: 420.25 	mf: 439.25
+		Population 30
+			Robot 0 	f: 418.69 	mf: 355.25
+			Robot 1 	f: 417.07 	mf: 432.50
+		Population 31
+			Robot 0 	f: 508.11 	mf: 439.50
+			Robot 1 	f: 513.10 	mf: 466.25
+		Population 32
+			Robot 0 	f: 361.27 	mf: 416.75
+			Robot 1 	f: 381.09 	mf: 432.75
+		Population 33
+			Robot 0 	f: 373.92 	mf: 415.00
+			Robot 1 	f: 464.04 	mf: 443.75
+		Population 34
+			Robot 0 	f: 248.16 	mf: 372.50
+			Robot 1 	f: 341.90 	mf: 424.75
+		Population 35
+			Robot 0 	f: 276.38 	mf: 314.50
+			Robot 1 	f: 525.46 	mf: 427.75
+		Population 36
+			Robot 0 	f: 293.29 	mf: 297.50
+			Robot 1 	f: 417.95 	mf: 436.75
+		Population 37
+			Robot 0 	f: 463.49 	mf: 320.00
+			Robot 1 	f: 429.97 	mf: 428.00
+		Population 38
+			Robot 0 	f: 438.78 	mf: 367.50
+			Robot 1 	f: 477.80 	mf: 462.00
+		Population 39
+			Robot 0 	f: 438.78 	mf: 367.50
+			Robot 1 	f: 477.80 	mf: 462.00
+	finalFitness: 462
+	Repetition 4
+		Population 0
+			Robot 0 	f: 46.51 	mf: 325.25
+			Robot 1 	f: -57.81 	mf: 294.50
+		Population 1
+			Robot 0 	f: 47.49 	mf: 221.25
+			Robot 1 	f: 141.44 	mf: 222.50
+		Population 2
+			Robot 0 	f: -104.45 	mf: 85.75
+			Robot 1 	f: 137.54 	mf: 137.50
+		Population 3
+			Robot 0 	f: 56.80 	mf: 11.25
+			Robot 1 	f: 148.78 	mf: 92.25
+		Population 4
+			Robot 0 	f: 139.26 	mf: 34.50
+			Robot 1 	f: 64.53 	mf: 122.50
+		Population 5
+			Robot 0 	f: 53.37 	mf: 36.00
+			Robot 1 	f: 132.53 	mf: 120.25
+		Population 6
+			Robot 0 	f: 108.36 	mf: 89.00
+			Robot 1 	f: 140.93 	mf: 121.00
+		Population 7
+			Robot 0 	f: 145.33 	mf: 111.25
+			Robot 1 	f: -98.82 	mf: 59.50
+		Population 8
+			Robot 0 	f: 136.07 	mf: 110.50
+			Robot 1 	f: 138.88 	mf: 78.00
+		Population 9
+			Robot 0 	f: 133.16 	mf: 130.50
+			Robot 1 	f: 16.00 	mf: 49.00
+		Population 10
+			Robot 0 	f: 63.92 	mf: 119.25
+			Robot 1 	f: -67.57 	mf: -2.75
+		Population 11
+			Robot 0 	f: -196.14 	mf: 34.00
+			Robot 1 	f: 161.79 	mf: 62.00
+		Population 12
+			Robot 0 	f: 147.22 	mf: 36.75
+			Robot 1 	f: 69.06 	mf: 44.75
+		Population 13
+			Robot 0 	f: 23.25 	mf: 9.25
+			Robot 1 	f: 49.31 	mf: 53.00
+		Population 14
+			Robot 0 	f: 72.69 	mf: 11.50
+			Robot 1 	f: 154.80 	mf: 108.25
+		Population 15
+			Robot 0 	f: 130.28 	mf: 93.00
+			Robot 1 	f: 148.37 	mf: 105.00
+		Population 16
+			Robot 0 	f: 182.00 	mf: 101.50
+			Robot 1 	f: 154.15 	mf: 126.25
+		Population 17
+			Robot 0 	f: -214.88 	mf: 42.25
+			Robot 1 	f: 158.40 	mf: 153.50
+		Population 18
+			Robot 0 	f: 168.97 	mf: 66.25
+			Robot 1 	f: 41.95 	mf: 125.25
+		Population 19
+			Robot 0 	f: 59.27 	mf: 48.50
+			Robot 1 	f: 161.40 	mf: 128.50
+		Population 20
+			Robot 0 	f: 84.07 	mf: 24.25
+			Robot 1 	f: 118.53 	mf: 119.50
+		Population 21
+			Robot 0 	f: 161.28 	mf: 118.00
+			Robot 1 	f: 149.84 	mf: 117.25
+		Population 22
+			Robot 0 	f: -7.73 	mf: 74.25
+			Robot 1 	f: 159.82 	mf: 146.75
+		Population 23
+			Robot 0 	f: 201.72 	mf: 109.75
+			Robot 1 	f: 162.56 	mf: 147.00
+		Population 24
+			Robot 0 	f: 33.50 	mf: 97.00
+			Robot 1 	f: 20.67 	mf: 122.50
+		Population 25
+			Robot 0 	f: -7.01 	mf: 55.00
+			Robot 1 	f: 153.85 	mf: 123.50
+		Population 26
+			Robot 0 	f: 121.55 	mf: 87.00
+			Robot 1 	f: 111.74 	mf: 111.50
+		Population 27
+			Robot 0 	f: 50.91 	mf: 49.25
+			Robot 1 	f: 159.66 	mf: 110.75
+		Population 28
+			Robot 0 	f: 146.01 	mf: 77.50
+			Robot 1 	f: 147.93 	mf: 142.50
+		Population 29
+			Robot 0 	f: 90.49 	mf: 101.75
+			Robot 1 	f: 75.07 	mf: 123.00
+		Population 30
+			Robot 0 	f: 17.28 	mf: 75.75
+			Robot 1 	f: 162.34 	mf: 135.75
+		Population 31
+			Robot 0 	f: 106.23 	mf: 89.75
+			Robot 1 	f: 160.75 	mf: 136.00
+		Population 32
+			Robot 0 	f: 140.17 	mf: 88.25
+			Robot 1 	f: 144.81 	mf: 135.25
+		Population 33
+			Robot 0 	f: 100.28 	mf: 90.75
+			Robot 1 	f: 152.64 	mf: 154.50
+		Population 34
+			Robot 0 	f: 92.22 	mf: 109.50
+			Robot 1 	f: 79.29 	mf: 133.75
+		Population 35
+			Robot 0 	f: 160.22 	mf: 123.00
+			Robot 1 	f: 134.95 	mf: 127.25
+		Population 36
+			Robot 0 	f: 102.61 	mf: 113.50
+			Robot 1 	f: 96.40 	mf: 115.25
+		Population 37
+			Robot 0 	f: 145.20 	mf: 124.75
+			Robot 1 	f: 93.63 	mf: 100.50
+		Population 38
+			Robot 0 	f: 160.72 	mf: 141.75
+			Robot 1 	f: 50.42 	mf: 93.25
+		Population 39
+			Robot 0 	f: 160.72 	mf: 141.75
+			Robot 1 	f: 50.42 	mf: 93.25
+	finalFitness: 141
+	Repetition 5
+		Population 0
+			Robot 0 	f: 68.32 	mf: 133.75
+			Robot 1 	f: 242.43 	mf: 112.50
+		Population 1
+			Robot 0 	f: 71.63 	mf: 115.25
+			Robot 1 	f: 252.58 	mf: 152.25
+		Population 2
+			Robot 0 	f: 261.61 	mf: 140.50
+			Robot 1 	f: 224.28 	mf: 195.75
+		Population 3
+			Robot 0 	f: 341.95 	mf: 185.25
+			Robot 1 	f: 250.69 	mf: 242.00
+		Population 4
+			Robot 0 	f: 291.04 	mf: 241.00
+			Robot 1 	f: 237.22 	mf: 240.75
+		Population 5
+			Robot 0 	f: 298.08 	mf: 297.75
+			Robot 1 	f: 197.62 	mf: 227.00
+		Population 6
+			Robot 0 	f: 291.51 	mf: 305.25
+			Robot 1 	f: 279.04 	mf: 240.75
+		Population 7
+			Robot 0 	f: 316.67 	mf: 299.00
+			Robot 1 	f: 347.42 	mf: 265.00
+		Population 8
+			Robot 0 	f: 221.22 	mf: 281.50
+			Robot 1 	f: 357.12 	mf: 295.00
+		Population 9
+			Robot 0 	f: 348.64 	mf: 294.00
+			Robot 1 	f: 350.33 	mf: 333.25
+		Population 10
+			Robot 0 	f: 353.41 	mf: 309.50
+			Robot 1 	f: 354.21 	mf: 352.00
+		Population 11
+			Robot 0 	f: 210.01 	mf: 283.00
+			Robot 1 	f: 353.61 	mf: 353.50
+		Population 12
+			Robot 0 	f: 310.23 	mf: 305.25
+			Robot 1 	f: 27.87 	mf: 271.00
+		Population 13
+			Robot 0 	f: 307.01 	mf: 295.00
+			Robot 1 	f: 322.05 	mf: 264.00
+		Population 14
+			Robot 0 	f: 310.03 	mf: 284.25
+			Robot 1 	f: 229.72 	mf: 232.75
+		Population 15
+			Robot 0 	f: 304.41 	mf: 307.75
+			Robot 1 	f: 224.70 	mf: 200.50
+		Population 16
+			Robot 0 	f: 305.04 	mf: 306.50
+			Robot 1 	f: 273.84 	mf: 262.00
+		Population 17
+			Robot 0 	f: 2.54 	mf: 230.25
+			Robot 1 	f: 125.19 	mf: 212.75
+		Population 18
+			Robot 0 	f: 309.92 	mf: 230.00
+			Robot 1 	f: 312.07 	mf: 233.50
+		Population 19
+			Robot 0 	f: 270.44 	mf: 221.50
+			Robot 1 	f: 280.13 	mf: 247.50
+		Population 20
+			Robot 0 	f: 165.42 	mf: 186.50
+			Robot 1 	f: 216.45 	mf: 233.25
+		Population 21
+			Robot 0 	f: 307.19 	mf: 262.75
+			Robot 1 	f: 307.68 	mf: 278.75
+		Population 22
+			Robot 0 	f: 202.88 	mf: 236.00
+			Robot 1 	f: 308.21 	mf: 277.75
+		Population 23
+			Robot 0 	f: 208.81 	mf: 220.50
+			Robot 1 	f: 308.63 	mf: 284.75
+		Population 24
+			Robot 0 	f: 253.56 	mf: 242.50
+			Robot 1 	f: 309.77 	mf: 308.00
+		Population 25
+			Robot 0 	f: 286.95 	mf: 237.25
+			Robot 1 	f: 310.09 	mf: 308.75
+		Population 26
+			Robot 0 	f: 298.19 	mf: 261.25
+			Robot 1 	f: 285.96 	mf: 303.00
+		Population 27
+			Robot 0 	f: 302.80 	mf: 284.75
+			Robot 1 	f: 304.65 	mf: 302.00
+		Population 28
+			Robot 0 	f: -49.91 	mf: 209.25
+			Robot 1 	f: 309.04 	mf: 302.00
+		Population 29
+			Robot 0 	f: 301.56 	mf: 213.00
+			Robot 1 	f: 232.94 	mf: 282.50
+		Population 30
+			Robot 0 	f: 342.12 	mf: 224.00
+			Robot 1 	f: 309.67 	mf: 288.50
+		Population 31
+			Robot 0 	f: 418.68 	mf: 253.00
+			Robot 1 	f: 292.55 	mf: 285.50
+		Population 32
+			Robot 0 	f: 374.85 	mf: 358.75
+			Robot 1 	f: 310.61 	mf: 285.75
+		Population 33
+			Robot 0 	f: 335.44 	mf: 367.25
+			Robot 1 	f: 337.40 	mf: 312.00
+		Population 34
+			Robot 0 	f: 417.54 	mf: 386.00
+			Robot 1 	f: 374.53 	mf: 328.25
+		Population 35
+			Robot 0 	f: 418.11 	mf: 386.00
+			Robot 1 	f: 235.13 	mf: 314.00
+		Population 36
+			Robot 0 	f: 302.32 	mf: 368.00
+			Robot 1 	f: 250.80 	mf: 299.00
+		Population 37
+			Robot 0 	f: 418.96 	mf: 388.75
+			Robot 1 	f: 287.95 	mf: 286.50
+		Population 38
+			Robot 0 	f: 333.42 	mf: 367.75
+			Robot 1 	f: 361.91 	mf: 283.25
+		Population 39
+			Robot 0 	f: 333.42 	mf: 367.75
+			Robot 1 	f: 361.91 	mf: 283.25
+	finalFitness: 367
+	Repetition 6
+		Population 0
+			Robot 0 	f: 110.86 	mf: 321.00
+			Robot 1 	f: 208.91 	mf: 303.50
+		Population 1
+			Robot 0 	f: -674.10 	mf: 48.00
+			Robot 1 	f: 102.83 	mf: 257.25
+		Population 2
+			Robot 0 	f: 253.93 	mf: 28.00
+			Robot 1 	f: 293.13 	mf: 240.25
+		Population 3
+			Robot 0 	f: 218.35 	mf: -23.25
+			Robot 1 	f: 162.93 	mf: 191.25
+		Population 4
+			Robot 0 	f: 106.50 	mf: -24.25
+			Robot 1 	f: 169.23 	mf: 181.50
+		Population 5
+			Robot 0 	f: 220.12 	mf: 199.25
+			Robot 1 	f: 164.54 	mf: 197.00
+		Population 6
+			Robot 0 	f: 152.95 	mf: 174.00
+			Robot 1 	f: -215.11 	mf: 70.00
+		Population 7
+			Robot 0 	f: 186.99 	mf: 166.00
+			Robot 1 	f: 218.09 	mf: 84.00
+		Population 8
+			Robot 0 	f: 352.00 	mf: 227.25
+			Robot 1 	f: 186.26 	mf: 88.25
+		Population 9
+			Robot 0 	f: 308.76 	mf: 249.25
+			Robot 1 	f: 311.63 	mf: 125.00
+		Population 10
+			Robot 0 	f: 347.06 	mf: 298.00
+			Robot 1 	f: 327.05 	mf: 260.50
+		Population 11
+			Robot 0 	f: 278.11 	mf: 321.00
+			Robot 1 	f: 205.47 	mf: 257.25
+		Population 12
+			Robot 0 	f: -353.97 	mf: 145.00
+			Robot 1 	f: 309.61 	mf: 288.00
+		Population 13
+			Robot 0 	f: 99.78 	mf: 92.75
+			Robot 1 	f: 263.48 	mf: 276.00
+		Population 14
+			Robot 0 	f: 211.88 	mf: 58.75
+			Robot 1 	f: 194.24 	mf: 242.75
+		Population 15
+			Robot 0 	f: -274.07 	mf: -79.25
+			Robot 1 	f: 160.88 	mf: 231.50
+		Population 16
+			Robot 0 	f: 236.11 	mf: 68.00
+			Robot 1 	f: 245.25 	mf: 215.50
+		Population 17
+			Robot 0 	f: 199.20 	mf: 93.00
+			Robot 1 	f: 131.47 	mf: 182.50
+		Population 18
+			Robot 0 	f: 297.30 	mf: 114.50
+			Robot 1 	f: -128.11 	mf: 102.00
+		Population 19
+			Robot 0 	f: 306.71 	mf: 259.50
+			Robot 1 	f: 32.04 	mf: 70.00
+		Population 20
+			Robot 0 	f: 60.79 	mf: 215.50
+			Robot 1 	f: 296.61 	mf: 82.75
+		Population 21
+			Robot 0 	f: 276.05 	mf: 234.75
+			Robot 1 	f: 276.27 	mf: 119.00
+		Population 22
+			Robot 0 	f: 163.04 	mf: 201.25
+			Robot 1 	f: 173.11 	mf: 194.25
+		Population 23
+			Robot 0 	f: 210.25 	mf: 177.25
+			Robot 1 	f: -34.31 	mf: 177.75
+		Population 24
+			Robot 0 	f: 332.27 	mf: 245.25
+			Robot 1 	f: 301.49 	mf: 179.00
+		Population 25
+			Robot 0 	f: 133.90 	mf: 209.50
+			Robot 1 	f: 251.23 	mf: 172.75
+		Population 26
+			Robot 0 	f: 209.19 	mf: 221.00
+			Robot 1 	f: 185.85 	mf: 175.75
+		Population 27
+			Robot 0 	f: 331.28 	mf: 251.25
+			Robot 1 	f: 246.03 	mf: 245.75
+		Population 28
+			Robot 0 	f: 225.79 	mf: 224.50
+			Robot 1 	f: 332.42 	mf: 253.50
+		Population 29
+			Robot 0 	f: 264.61 	mf: 257.25
+			Robot 1 	f: 287.92 	mf: 262.50
+		Population 30
+			Robot 0 	f: 356.20 	mf: 294.00
+			Robot 1 	f: 308.42 	mf: 293.25
+		Population 31
+			Robot 0 	f: 337.05 	mf: 295.50
+			Robot 1 	f: 201.97 	mf: 282.00
+		Population 32
+			Robot 0 	f: 357.13 	mf: 328.50
+			Robot 1 	f: 258.88 	mf: 263.50
+		Population 33
+			Robot 0 	f: 325.94 	mf: 343.75
+			Robot 1 	f: 272.98 	mf: 259.75
+		Population 34
+			Robot 0 	f: 361.21 	mf: 345.00
+			Robot 1 	f: 223.25 	mf: 238.50
+		Population 35
+			Robot 0 	f: 164.12 	mf: 301.75
+			Robot 1 	f: 120.17 	mf: 218.25
+		Population 36
+			Robot 0 	f: 161.63 	mf: 252.75
+			Robot 1 	f: 189.53 	mf: 201.00
+		Population 37
+			Robot 0 	f: 323.02 	mf: 252.25
+			Robot 1 	f: 327.32 	mf: 214.75
+		Population 38
+			Robot 0 	f: 246.41 	mf: 223.50
+			Robot 1 	f: 253.24 	mf: 222.25
+		Population 39
+			Robot 0 	f: 246.41 	mf: 223.50
+			Robot 1 	f: 253.24 	mf: 222.25
+	finalFitness: 223
+	Repetition 7
+		Population 0
+			Robot 0 	f: 209.78 	mf: 284.50
+			Robot 1 	f: 2.16 	mf: 229.00
+		Population 1
+			Robot 0 	f: 320.98 	mf: 283.75
+			Robot 1 	f: 31.88 	mf: 155.00
+		Population 2
+			Robot 0 	f: 253.39 	mf: 285.50
+			Robot 1 	f: 198.73 	mf: 141.25
+		Population 3
+			Robot 0 	f: 285.49 	mf: 266.75
+			Robot 1 	f: 281.70 	mf: 128.00
+		Population 4
+			Robot 0 	f: 323.36 	mf: 295.25
+			Robot 1 	f: 360.06 	mf: 217.50
+		Population 5
+			Robot 0 	f: 320.98 	mf: 295.25
+			Robot 1 	f: 178.98 	mf: 254.25
+		Population 6
+			Robot 0 	f: 281.09 	mf: 302.25
+			Robot 1 	f: 288.04 	mf: 276.75
+		Population 7
+			Robot 0 	f: -2.61 	mf: 230.50
+			Robot 1 	f: 312.57 	mf: 284.50
+		Population 8
+			Robot 0 	f: 148.33 	mf: 186.75
+			Robot 1 	f: -59.08 	mf: 179.75
+		Population 9
+			Robot 0 	f: 293.30 	mf: 180.00
+			Robot 1 	f: 87.82 	mf: 157.00
+		Population 10
+			Robot 0 	f: 85.14 	mf: 131.00
+			Robot 1 	f: 90.26 	mf: 107.50
+		Population 11
+			Robot 0 	f: 18.24 	mf: 136.00
+			Robot 1 	f: 114.27 	mf: 58.00
+		Population 12
+			Robot 0 	f: 143.74 	mf: 134.75
+			Robot 1 	f: 116.35 	mf: 101.75
+		Population 13
+			Robot 0 	f: 18.12 	mf: 66.00
+			Robot 1 	f: 113.68 	mf: 108.25
+		Population 14
+			Robot 0 	f: 178.15 	mf: 89.25
+			Robot 1 	f: 209.00 	mf: 137.75
+		Population 15
+			Robot 0 	f: 218.77 	mf: 139.25
+			Robot 1 	f: 190.14 	mf: 156.75
+		Population 16
+			Robot 0 	f: 118.26 	mf: 133.00
+			Robot 1 	f: 148.49 	mf: 164.75
+		Population 17
+			Robot 0 	f: 158.96 	mf: 168.00
+			Robot 1 	f: 253.89 	mf: 199.75
+		Population 18
+			Robot 0 	f: 139.92 	mf: 158.25
+			Robot 1 	f: 89.65 	mf: 170.00
+		Population 19
+			Robot 0 	f: 53.99 	mf: 117.00
+			Robot 1 	f: 102.05 	mf: 148.00
+		Population 20
+			Robot 0 	f: 108.22 	mf: 114.50
+			Robot 1 	f: 251.41 	mf: 173.75
+		Population 21
+			Robot 0 	f: 114.67 	mf: 103.50
+			Robot 1 	f: 198.49 	mf: 160.00
+		Population 22
+			Robot 0 	f: -135.42 	mf: 35.00
+			Robot 1 	f: 203.32 	mf: 188.50
+		Population 23
+			Robot 0 	f: 135.59 	mf: 55.50
+			Robot 1 	f: 98.83 	mf: 187.50
+		Population 24
+			Robot 0 	f: 158.28 	mf: 68.00
+			Robot 1 	f: 176.56 	mf: 168.75
+		Population 25
+			Robot 0 	f: -195.98 	mf: -9.25
+			Robot 1 	f: 21.73 	mf: 124.50
+		Population 26
+			Robot 0 	f: 197.84 	mf: 73.75
+			Robot 1 	f: 197.72 	mf: 123.00
+		Population 27
+			Robot 0 	f: 144.33 	mf: 76.00
+			Robot 1 	f: -70.38 	mf: 81.00
+		Population 28
+			Robot 0 	f: 18.93 	mf: 41.00
+			Robot 1 	f: 82.03 	mf: 57.50
+		Population 29
+			Robot 0 	f: 180.79 	mf: 134.75
+			Robot 1 	f: 148.90 	mf: 89.25
+		Population 30
+			Robot 0 	f: 422.05 	mf: 191.00
+			Robot 1 	f: 333.90 	mf: 123.25
+		Population 31
+			Robot 0 	f: 366.40 	mf: 246.50
+			Robot 1 	f: 180.98 	mf: 185.75
+		Population 32
+			Robot 0 	f: 210.56 	mf: 294.50
+			Robot 1 	f: 311.53 	mf: 243.00
+		Population 33
+			Robot 0 	f: 24.32 	mf: 255.50
+			Robot 1 	f: 295.48 	mf: 279.75
+		Population 34
+			Robot 0 	f: 339.74 	mf: 234.75
+			Robot 1 	f: 281.02 	mf: 266.75
+		Population 35
+			Robot 0 	f: -5.94 	mf: 142.00
+			Robot 1 	f: 416.01 	mf: 325.75
+		Population 36
+			Robot 0 	f: 40.69 	mf: 99.50
+			Robot 1 	f: 203.67 	mf: 298.75
+		Population 37
+			Robot 0 	f: 77.16 	mf: 112.75
+			Robot 1 	f: 85.23 	mf: 246.25
+		Population 38
+			Robot 0 	f: 213.42 	mf: 81.25
+			Robot 1 	f: 416.57 	mf: 280.00
+		Population 39
+			Robot 0 	f: 213.42 	mf: 81.25
+			Robot 1 	f: 416.57 	mf: 280.00
+	finalFitness: 280
+	Repetition 8
+		Population 0
+			Robot 0 	f: 161.68 	mf: 170.25
+			Robot 1 	f: 338.71 	mf: 291.50
+		Population 1
+			Robot 0 	f: 173.45 	mf: 194.25
+			Robot 1 	f: 325.95 	mf: 351.50
+		Population 2
+			Robot 0 	f: 469.71 	mf: 258.25
+			Robot 1 	f: 301.74 	mf: 322.75
+		Population 3
+			Robot 0 	f: 167.35 	mf: 242.50
+			Robot 1 	f: 304.96 	mf: 317.00
+		Population 4
+			Robot 0 	f: 340.08 	mf: 287.25
+			Robot 1 	f: 281.93 	mf: 302.75
+		Population 5
+			Robot 0 	f: 368.70 	mf: 336.00
+			Robot 1 	f: 308.19 	mf: 298.50
+		Population 6
+			Robot 0 	f: 362.91 	mf: 309.25
+			Robot 1 	f: 328.47 	mf: 305.25
+		Population 7
+			Robot 0 	f: 353.10 	mf: 355.75
+			Robot 1 	f: 291.29 	mf: 302.00
+		Population 8
+			Robot 0 	f: 305.90 	mf: 347.00
+			Robot 1 	f: 401.04 	mf: 332.00
+		Population 9
+			Robot 0 	f: 319.39 	mf: 334.75
+			Robot 1 	f: 438.65 	mf: 364.50
+		Population 10
+			Robot 0 	f: 188.75 	mf: 291.25
+			Robot 1 	f: 417.30 	mf: 386.75
+		Population 11
+			Robot 0 	f: 280.14 	mf: 273.00
+			Robot 1 	f: 372.55 	mf: 407.00
+		Population 12
+			Robot 0 	f: 139.31 	mf: 231.50
+			Robot 1 	f: 388.55 	mf: 403.75
+		Population 13
+			Robot 0 	f: 204.04 	mf: 202.75
+			Robot 1 	f: 376.21 	mf: 388.25
+		Population 14
+			Robot 0 	f: 140.71 	mf: 190.75
+			Robot 1 	f: 424.23 	mf: 390.00
+		Population 15
+			Robot 0 	f: 364.84 	mf: 211.75
+			Robot 1 	f: 142.34 	mf: 332.50
+		Population 16
+			Robot 0 	f: 374.97 	mf: 270.50
+			Robot 1 	f: 163.15 	mf: 276.25
+		Population 17
+			Robot 0 	f: 361.40 	mf: 309.75
+			Robot 1 	f: 202.23 	mf: 232.75
+		Population 18
+			Robot 0 	f: 300.41 	mf: 349.75
+			Robot 1 	f: 337.25 	mf: 211.00
+		Population 19
+			Robot 0 	f: 93.90 	mf: 282.00
+			Robot 1 	f: 353.20 	mf: 263.75
+		Population 20
+			Robot 0 	f: 285.04 	mf: 259.75
+			Robot 1 	f: 435.63 	mf: 331.75
+		Population 21
+			Robot 0 	f: 271.63 	mf: 237.25
+			Robot 1 	f: 377.95 	mf: 375.50
+		Population 22
+			Robot 0 	f: 143.39 	mf: 198.00
+			Robot 1 	f: 430.88 	mf: 398.75
+		Population 23
+			Robot 0 	f: 279.95 	mf: 244.50
+			Robot 1 	f: 372.61 	mf: 403.50
+		Population 24
+			Robot 0 	f: 353.40 	mf: 261.50
+			Robot 1 	f: 435.92 	mf: 403.50
+		Population 25
+			Robot 0 	f: 251.01 	mf: 256.50
+			Robot 1 	f: 138.07 	mf: 343.75
+		Population 26
+			Robot 0 	f: 284.88 	mf: 291.75
+			Robot 1 	f: 278.34 	mf: 305.75
+		Population 27
+			Robot 0 	f: 308.23 	mf: 299.00
+			Robot 1 	f: 194.04 	mf: 261.25
+		Population 28
+			Robot 0 	f: 281.91 	mf: 281.00
+			Robot 1 	f: 150.66 	mf: 190.00
+		Population 29
+			Robot 0 	f: 368.53 	mf: 310.25
+			Robot 1 	f: 301.45 	mf: 230.75
+		Population 30
+			Robot 0 	f: 392.20 	mf: 337.25
+			Robot 1 	f: 412.28 	mf: 264.25
+		Population 31
+			Robot 0 	f: 349.48 	mf: 347.50
+			Robot 1 	f: 260.52 	mf: 280.75
+		Population 32
+			Robot 0 	f: 316.73 	mf: 356.25
+			Robot 1 	f: 339.83 	mf: 328.00
+		Population 33
+			Robot 0 	f: 224.84 	mf: 320.25
+			Robot 1 	f: 353.44 	mf: 341.00
+		Population 34
+			Robot 0 	f: 95.83 	mf: 246.00
+			Robot 1 	f: 188.32 	mf: 285.00
+		Population 35
+			Robot 0 	f: 289.45 	mf: 231.00
+			Robot 1 	f: -1988.01 	mf: -277.00
+		Population 36
+			Robot 0 	f: 162.68 	mf: 192.50
+			Robot 1 	f: -163.44 	mf: -402.50
+		Population 37
+			Robot 0 	f: 250.16 	mf: 199.00
+			Robot 1 	f: 300.38 	mf: -415.75
+		Population 38
+			Robot 0 	f: 343.14 	mf: 261.00
+			Robot 1 	f: 272.56 	mf: -394.75
+		Population 39
+			Robot 0 	f: 343.14 	mf: 261.00
+			Robot 1 	f: 272.56 	mf: -394.75
+	finalFitness: 261
+	Repetition 9
+		Population 0
+			Robot 0 	f: 224.63 	mf: 187.50
+			Robot 1 	f: 48.90 	mf: 230.50
+		Population 1
+			Robot 0 	f: -145.54 	mf: 88.75
+			Robot 1 	f: 9.49 	mf: 157.75
+		Population 2
+			Robot 0 	f: -241.92 	mf: -57.25
+			Robot 1 	f: 26.19 	mf: 96.25
+		Population 3
+			Robot 0 	f: 218.54 	mf: 14.00
+			Robot 1 	f: 164.52 	mf: 61.75
+		Population 4
+			Robot 0 	f: 94.89 	mf: -18.50
+			Robot 1 	f: -46.43 	mf: 38.25
+		Population 5
+			Robot 0 	f: 218.54 	mf: 72.25
+			Robot 1 	f: 35.97 	mf: 44.75
+		Population 6
+			Robot 0 	f: 209.69 	mf: 184.75
+			Robot 1 	f: 10.23 	mf: 40.75
+		Population 7
+			Robot 0 	f: 146.99 	mf: 166.75
+			Robot 1 	f: 167.99 	mf: 41.50
+		Population 8
+			Robot 0 	f: 58.16 	mf: 157.75
+			Robot 1 	f: 208.10 	mf: 105.00
+		Population 9
+			Robot 0 	f: 219.12 	mf: 158.00
+			Robot 1 	f: -1.84 	mf: 96.00
+		Population 10
+			Robot 0 	f: 170.85 	mf: 148.25
+			Robot 1 	f: 242.52 	mf: 154.00
+		Population 11
+			Robot 0 	f: 128.91 	mf: 143.75
+			Robot 1 	f: 199.38 	mf: 162.00
+		Population 12
+			Robot 0 	f: 237.90 	mf: 188.50
+			Robot 1 	f: 128.72 	mf: 142.00
+		Population 13
+			Robot 0 	f: 206.40 	mf: 185.25
+			Robot 1 	f: 244.89 	mf: 203.25
+		Population 14
+			Robot 0 	f: 200.88 	mf: 192.75
+			Robot 1 	f: 178.54 	mf: 187.25
+		Population 15
+			Robot 0 	f: 1.86 	mf: 161.00
+			Robot 1 	f: 257.24 	mf: 201.75
+		Population 16
+			Robot 0 	f: 287.18 	mf: 173.50
+			Robot 1 	f: 278.95 	mf: 239.25
+		Population 17
+			Robot 0 	f: 224.62 	mf: 178.00
+			Robot 1 	f: 262.54 	mf: 243.75
+		Population 18
+			Robot 0 	f: 219.76 	mf: 182.75
+			Robot 1 	f: 129.22 	mf: 231.50
+		Population 19
+			Robot 0 	f: 225.76 	mf: 238.75
+			Robot 1 	f: 117.44 	mf: 196.50
+		Population 20
+			Robot 0 	f: 267.75 	mf: 233.75
+			Robot 1 	f: 157.37 	mf: 166.25
+		Population 21
+			Robot 0 	f: 258.86 	mf: 242.25
+			Robot 1 	f: 190.94 	mf: 148.25
+		Population 22
+			Robot 0 	f: 257.65 	mf: 251.75
+			Robot 1 	f: 234.70 	mf: 174.50
+		Population 23
+			Robot 0 	f: -57.19 	mf: 181.25
+			Robot 1 	f: 255.44 	mf: 209.00
+		Population 24
+			Robot 0 	f: 243.50 	mf: 175.25
+			Robot 1 	f: 256.71 	mf: 233.75
+		Population 25
+			Robot 0 	f: 282.03 	mf: 181.25
+			Robot 1 	f: 134.90 	mf: 219.75
+		Population 26
+			Robot 0 	f: 320.43 	mf: 197.00
+			Robot 1 	f: 289.95 	mf: 233.50
+		Population 27
+			Robot 0 	f: 292.49 	mf: 284.25
+			Robot 1 	f: -102.17 	mf: 144.25
+		Population 28
+			Robot 0 	f: 274.79 	mf: 292.00
+			Robot 1 	f: 314.46 	mf: 158.75
+		Population 29
+			Robot 0 	f: 337.68 	mf: 305.75
+			Robot 1 	f: 317.55 	mf: 204.50
+		Population 30
+			Robot 0 	f: 298.98 	mf: 300.25
+			Robot 1 	f: 344.53 	mf: 218.25
+		Population 31
+			Robot 0 	f: 306.41 	mf: 303.75
+			Robot 1 	f: 437.57 	mf: 353.00
+		Population 32
+			Robot 0 	f: 267.94 	mf: 302.00
+			Robot 1 	f: 304.83 	mf: 350.50
+		Population 33
+			Robot 0 	f: 376.58 	mf: 311.75
+			Robot 1 	f: 434.25 	mf: 379.75
+		Population 34
+			Robot 0 	f: 285.78 	mf: 308.50
+			Robot 1 	f: 250.66 	mf: 356.25
+		Population 35
+			Robot 0 	f: 422.95 	mf: 337.50
+			Robot 1 	f: 425.02 	mf: 353.25
+		Population 36
+			Robot 0 	f: 205.19 	mf: 322.00
+			Robot 1 	f: 329.42 	mf: 359.50
+		Population 37
+			Robot 0 	f: 270.21 	mf: 295.50
+			Robot 1 	f: 430.65 	mf: 358.50
+		Population 38
+			Robot 0 	f: 182.95 	mf: 269.75
+			Robot 1 	f: 387.36 	mf: 392.75
+		Population 39
+			Robot 0 	f: 182.95 	mf: 269.75
+			Robot 1 	f: 387.36 	mf: 392.75
+	finalFitness: 392
+Environment 1	 h: 4.00	 mr: 0.20	 nc: 0.40	 nm: 0.20	 bmp: 0.00	 cc: 0.00
+	Repetition 0
+		Population 0
+			Robot 0 	f: -365.21 	mf: -365.00
+			Robot 1 	f: 140.31 	mf: 140.00
+		Population 1
+			Robot 0 	f: -259.32 	mf: -312.00
+			Robot 1 	f: 212.84 	mf: 176.00
+		Population 2
+			Robot 0 	f: 189.04 	mf: -145.00
+			Robot 1 	f: 183.58 	mf: 178.33
+		Population 3
+			Robot 0 	f: 205.17 	mf: -57.50
+			Robot 1 	f: 213.77 	mf: 187.00
+		Population 4
+			Robot 0 	f: 193.85 	mf: 82.00
+			Robot 1 	f: 209.37 	mf: 204.25
+		Population 5
+			Robot 0 	f: 214.81 	mf: 200.25
+			Robot 1 	f: 206.29 	mf: 202.75
+		Population 6
+			Robot 0 	f: 215.38 	mf: 206.75
+			Robot 1 	f: 211.69 	mf: 209.75
+		Population 7
+			Robot 0 	f: 132.79 	mf: 188.50
+			Robot 1 	f: 214.21 	mf: 210.00
+		Population 8
+			Robot 0 	f: 213.88 	mf: 193.50
+			Robot 1 	f: -8.23 	mf: 155.75
+		Population 9
+			Robot 0 	f: 209.92 	mf: 192.25
+			Robot 1 	f: 47.81 	mf: 116.00
+		Population 10
+			Robot 0 	f: 139.39 	mf: 173.25
+			Robot 1 	f: 214.71 	mf: 116.75
+		Population 11
+			Robot 0 	f: 213.88 	mf: 193.50
+			Robot 1 	f: 141.75 	mf: 98.50
+		Population 12
+			Robot 0 	f: 214.46 	mf: 193.75
+			Robot 1 	f: 197.79 	mf: 149.75
+		Population 13
+			Robot 0 	f: 214.24 	mf: 195.00
+			Robot 1 	f: 204.65 	mf: 189.00
+		Population 14
+			Robot 0 	f: 215.18 	mf: 214.00
+			Robot 1 	f: 242.67 	mf: 196.00
+		Population 15
+			Robot 0 	f: 204.65 	mf: 211.75
+			Robot 1 	f: 243.89 	mf: 221.50
+		Population 16
+			Robot 0 	f: 222.12 	mf: 213.75
+			Robot 1 	f: 240.29 	mf: 232.25
+		Population 17
+			Robot 0 	f: 169.71 	mf: 202.50
+			Robot 1 	f: 228.79 	mf: 238.25
+		Population 18
+			Robot 0 	f: 168.70 	mf: 190.75
+			Robot 1 	f: 243.40 	mf: 238.50
+		Population 19
+			Robot 0 	f: 140.06 	mf: 174.75
+			Robot 1 	f: 174.16 	mf: 221.25
+		Population 20
+			Robot 0 	f: 202.18 	mf: 169.75
+			Robot 1 	f: 240.71 	mf: 221.25
+		Population 21
+			Robot 0 	f: -7240.50 	mf: -1682.50
+			Robot 1 	f: 236.54 	mf: 223.25
+		Population 22
+			Robot 0 	f: 217.31 	mf: -1670.25
+			Robot 1 	f: 211.79 	mf: 215.25
+		Population 23
+			Robot 0 	f: 242.25 	mf: -1644.75
+			Robot 1 	f: 238.99 	mf: 231.25
+		Population 24
+			Robot 0 	f: 226.63 	mf: -1638.75
+			Robot 1 	f: 238.83 	mf: 230.75
+		Population 25
+			Robot 0 	f: 344.09 	mf: 257.25
+			Robot 1 	f: 170.54 	mf: 214.25
+		Population 26
+			Robot 0 	f: 305.88 	mf: 279.25
+			Robot 1 	f: 304.96 	mf: 237.50
+		Population 27
+			Robot 0 	f: 283.13 	mf: 289.50
+			Robot 1 	f: 242.17 	mf: 238.50
+		Population 28
+			Robot 0 	f: 348.21 	mf: 320.00
+			Robot 1 	f: 335.81 	mf: 262.75
+		Population 29
+			Robot 0 	f: 337.72 	mf: 318.25
+			Robot 1 	f: 322.53 	mf: 300.75
+		Population 30
+			Robot 0 	f: 347.38 	mf: 328.75
+			Robot 1 	f: 333.00 	mf: 308.00
+		Population 31
+			Robot 0 	f: 202.39 	mf: 308.50
+			Robot 1 	f: 347.65 	mf: 334.25
+		Population 32
+			Robot 0 	f: -14522.42 	mf: -3409.00
+			Robot 1 	f: 340.95 	mf: 335.50
+		Population 33
+			Robot 0 	f: 299.33 	mf: -3418.50
+			Robot 1 	f: 333.29 	mf: 338.25
+		Population 34
+			Robot 0 	f: 444.46 	mf: -3394.25
+			Robot 1 	f: 0.32 	mf: 255.00
+		Population 35
+			Robot 0 	f: 355.53 	mf: -3356.00
+			Robot 1 	f: 341.65 	mf: 253.50
+		Population 36
+			Robot 0 	f: 338.53 	mf: 359.00
+			Robot 1 	f: 334.11 	mf: 252.00
+		Population 37
+			Robot 0 	f: 425.99 	mf: 390.50
+			Robot 1 	f: 381.68 	mf: 264.00
+		Population 38
+			Robot 0 	f: 442.30 	mf: 390.00
+			Robot 1 	f: 423.72 	mf: 369.75
+		Population 39
+			Robot 0 	f: 442.30 	mf: 390.00
+			Robot 1 	f: 423.72 	mf: 369.75
+	finalFitness: 390
+	Repetition 1
+		Population 0
+			Robot 0 	f: 52.38 	mf: 320.25
+			Robot 1 	f: 346.82 	mf: 374.25
+		Population 1
+			Robot 0 	f: 400.30 	mf: 314.00
+			Robot 1 	f: 394.50 	mf: 377.50
+		Population 2
+			Robot 0 	f: 270.02 	mf: 271.00
+			Robot 1 	f: 152.81 	mf: 309.75
+		Population 3
+			Robot 0 	f: 250.64 	mf: 243.00
+			Robot 1 	f: 129.67 	mf: 255.25
+		Population 4
+			Robot 0 	f: 148.99 	mf: 267.00
+			Robot 1 	f: 210.78 	mf: 221.25
+		Population 5
+			Robot 0 	f: 439.11 	mf: 276.75
+			Robot 1 	f: 172.26 	mf: 165.75
+		Population 6
+			Robot 0 	f: 178.63 	mf: 253.75
+			Robot 1 	f: -2112.89 	mf: -400.25
+		Population 7
+			Robot 0 	f: -336.61 	mf: 107.25
+			Robot 1 	f: 463.07 	mf: -316.75
+		Population 8
+			Robot 0 	f: 387.15 	mf: 167.00
+			Robot 1 	f: 417.78 	mf: -265.00
+		Population 9
+			Robot 0 	f: 463.77 	mf: 173.00
+			Robot 1 	f: 416.22 	mf: -204.00
+		Population 10
+			Robot 0 	f: 155.67 	mf: 167.25
+			Robot 1 	f: 312.79 	mf: 402.00
+		Population 11
+			Robot 0 	f: 365.65 	mf: 342.50
+			Robot 1 	f: -113.00 	mf: 258.25
+		Population 12
+			Robot 0 	f: 389.75 	mf: 343.00
+			Robot 1 	f: 174.66 	mf: 197.50
+		Population 13
+			Robot 0 	f: 393.07 	mf: 325.50
+			Robot 1 	f: 280.34 	mf: 163.50
+		Population 14
+			Robot 0 	f: -149.21 	mf: 249.50
+			Robot 1 	f: 261.27 	mf: 150.75
+		Population 15
+			Robot 0 	f: 330.09 	mf: 240.75
+			Robot 1 	f: 215.55 	mf: 232.50
+		Population 16
+			Robot 0 	f: 263.04 	mf: 209.25
+			Robot 1 	f: 331.94 	mf: 271.75
+		Population 17
+			Robot 0 	f: 145.18 	mf: 147.25
+			Robot 1 	f: 263.54 	mf: 267.50
+		Population 18
+			Robot 0 	f: 192.46 	mf: 232.50
+			Robot 1 	f: 213.28 	mf: 255.50
+		Population 19
+			Robot 0 	f: 388.91 	mf: 247.00
+			Robot 1 	f: 72.33 	mf: 219.75
+		Population 20
+			Robot 0 	f: 388.99 	mf: 278.25
+			Robot 1 	f: -425.88 	mf: 30.75
+		Population 21
+			Robot 0 	f: -251.72 	mf: 179.25
+			Robot 1 	f: 262.88 	mf: 30.50
+		Population 22
+			Robot 0 	f: -4087.82 	mf: -890.50
+			Robot 1 	f: 249.66 	mf: 39.50
+		Population 23
+			Robot 0 	f: 95.02 	mf: -963.75
+			Robot 1 	f: 384.02 	mf: 117.50
+		Population 24
+			Robot 0 	f: 108.49 	mf: -1033.75
+			Robot 1 	f: 163.86 	mf: 264.50
+		Population 25
+			Robot 0 	f: 386.82 	mf: -874.50
+			Robot 1 	f: 359.50 	mf: 288.75
+		Population 26
+			Robot 0 	f: 301.14 	mf: 222.50
+			Robot 1 	f: 239.31 	mf: 286.25
+		Population 27
+			Robot 0 	f: 402.15 	mf: 299.25
+			Robot 1 	f: 402.91 	mf: 290.75
+		Population 28
+			Robot 0 	f: 413.11 	mf: 375.50
+			Robot 1 	f: 405.43 	mf: 351.25
+		Population 29
+			Robot 0 	f: 395.96 	mf: 377.75
+			Robot 1 	f: 383.83 	mf: 357.25
+		Population 30
+			Robot 0 	f: 382.09 	mf: 398.00
+			Robot 1 	f: 177.55 	mf: 341.75
+		Population 31
+			Robot 0 	f: 393.66 	mf: 395.75
+			Robot 1 	f: 235.78 	mf: 300.00
+		Population 32
+			Robot 0 	f: 376.42 	mf: 386.50
+			Robot 1 	f: 320.14 	mf: 278.75
+		Population 33
+			Robot 0 	f: 324.10 	mf: 368.75
+			Robot 1 	f: -3432.00 	mf: -674.75
+		Population 34
+			Robot 0 	f: 398.63 	mf: 372.75
+			Robot 1 	f: 338.47 	mf: -634.50
+		Population 35
+			Robot 0 	f: 400.18 	mf: 374.50
+			Robot 1 	f: 379.29 	mf: -598.50
+		Population 36
+			Robot 0 	f: 346.32 	mf: 367.00
+			Robot 1 	f: 378.31 	mf: -584.00
+		Population 37
+			Robot 0 	f: 402.43 	mf: 386.50
+			Robot 1 	f: 392.10 	mf: 371.75
+		Population 38
+			Robot 0 	f: 339.01 	mf: 371.75
+			Robot 1 	f: 189.27 	mf: 334.50
+		Population 39
+			Robot 0 	f: 339.01 	mf: 371.75
+			Robot 1 	f: 189.27 	mf: 334.50
+	finalFitness: 371
+	Repetition 2
+		Population 0
+			Robot 0 	f: 116.26 	mf: 285.50
+			Robot 1 	f: 0.75 	mf: 153.00
+		Population 1
+			Robot 0 	f: 108.74 	mf: 212.00
+			Robot 1 	f: -199.22 	mf: 5.25
+		Population 2
+			Robot 0 	f: 120.33 	mf: 157.25
+			Robot 1 	f: 149.27 	mf: -4.75
+		Population 3
+			Robot 0 	f: 103.44 	mf: 111.75
+			Robot 1 	f: 151.17 	mf: 25.25
+		Population 4
+			Robot 0 	f: 119.03 	mf: 112.50
+			Robot 1 	f: 1.42 	mf: 25.50
+		Population 5
+			Robot 0 	f: -349.47 	mf: -1.75
+			Robot 1 	f: 126.70 	mf: 106.75
+		Population 6
+			Robot 0 	f: 130.71 	mf: 0.75
+			Robot 1 	f: -86.89 	mf: 48.00
+		Population 7
+			Robot 0 	f: 130.49 	mf: 7.50
+			Robot 1 	f: 131.96 	mf: 43.00
+		Population 8
+			Robot 0 	f: 120.45 	mf: 7.75
+			Robot 1 	f: 33.96 	mf: 51.00
+		Population 9
+			Robot 0 	f: 134.08 	mf: 128.50
+			Robot 1 	f: -204.65 	mf: -31.50
+		Population 10
+			Robot 0 	f: 130.60 	mf: 128.50
+			Robot 1 	f: 27.00 	mf: -3.50
+		Population 11
+			Robot 0 	f: -124.11 	mf: 65.00
+			Robot 1 	f: 130.29 	mf: -3.75
+		Population 12
+			Robot 0 	f: 129.38 	mf: 67.25
+			Robot 1 	f: 108.90 	mf: 15.00
+		Population 13
+			Robot 0 	f: -233.71 	mf: -24.50
+			Robot 1 	f: 43.70 	mf: 76.75
+		Population 14
+			Robot 0 	f: 125.52 	mf: -25.75
+			Robot 1 	f: 134.10 	mf: 103.75
+		Population 15
+			Robot 0 	f: 132.63 	mf: 38.25
+			Robot 1 	f: -109.94 	mf: 44.00
+		Population 16
+			Robot 0 	f: 36.53 	mf: 15.00
+			Robot 1 	f: 128.23 	mf: 49.00
+		Population 17
+			Robot 0 	f: 133.28 	mf: 106.50
+			Robot 1 	f: 123.39 	mf: 69.00
+		Population 18
+			Robot 0 	f: 109.98 	mf: 102.50
+			Robot 1 	f: 343.51 	mf: 121.25
+		Population 19
+			Robot 0 	f: 267.59 	mf: 136.25
+			Robot 1 	f: 320.93 	mf: 228.50
+		Population 20
+			Robot 0 	f: 242.77 	mf: 187.75
+			Robot 1 	f: 363.45 	mf: 287.25
+		Population 21
+			Robot 0 	f: 236.48 	mf: 213.50
+			Robot 1 	f: 347.61 	mf: 343.25
+		Population 22
+			Robot 0 	f: 118.10 	mf: 215.75
+			Robot 1 	f: -703.87 	mf: 81.75
+		Population 23
+			Robot 0 	f: 250.44 	mf: 211.50
+			Robot 1 	f: 335.86 	mf: 85.50
+		Population 24
+			Robot 0 	f: 292.27 	mf: 224.00
+			Robot 1 	f: 305.50 	mf: 71.00
+		Population 25
+			Robot 0 	f: -540.98 	mf: 30.00
+			Robot 1 	f: 369.85 	mf: 76.50
+		Population 26
+			Robot 0 	f: 117.66 	mf: 29.75
+			Robot 1 	f: 337.30 	mf: 336.50
+		Population 27
+			Robot 0 	f: 290.73 	mf: 39.75
+			Robot 1 	f: 286.82 	mf: 324.25
+		Population 28
+			Robot 0 	f: 308.24 	mf: 43.75
+			Robot 1 	f: 329.58 	mf: 330.25
+		Population 29
+			Robot 0 	f: 344.20 	mf: 264.75
+			Robot 1 	f: 297.02 	mf: 312.25
+		Population 30
+			Robot 0 	f: 337.54 	mf: 319.75
+			Robot 1 	f: 337.16 	mf: 312.25
+		Population 31
+			Robot 0 	f: 325.46 	mf: 328.50
+			Robot 1 	f: 316.12 	mf: 319.75
+		Population 32
+			Robot 0 	f: 358.57 	mf: 341.00
+			Robot 1 	f: 237.86 	mf: 296.75
+		Population 33
+			Robot 0 	f: 357.14 	mf: 344.25
+			Robot 1 	f: 379.09 	mf: 317.25
+		Population 34
+			Robot 0 	f: 238.38 	mf: 319.50
+			Robot 1 	f: 322.70 	mf: 313.50
+		Population 35
+			Robot 0 	f: 309.92 	mf: 315.50
+			Robot 1 	f: 374.78 	mf: 328.00
+		Population 36
+			Robot 0 	f: 255.11 	mf: 289.75
+			Robot 1 	f: 302.49 	mf: 344.25
+		Population 37
+			Robot 0 	f: 278.79 	mf: 270.00
+			Robot 1 	f: 336.36 	mf: 333.50
+		Population 38
+			Robot 0 	f: 194.04 	mf: 259.00
+			Robot 1 	f: 357.42 	mf: 342.25
+		Population 39
+			Robot 0 	f: 194.04 	mf: 259.00
+			Robot 1 	f: 357.42 	mf: 342.25
+	finalFitness: 342
+	Repetition 3
+		Population 0
+			Robot 0 	f: -332.15 	mf: 128.00
+			Robot 1 	f: 11.99 	mf: 212.25
+		Population 1
+			Robot 0 	f: 11.64 	mf: 61.25
+			Robot 1 	f: 12.00 	mf: 131.25
+		Population 2
+			Robot 0 	f: 43.37 	mf: 23.50
+			Robot 1 	f: 12.00 	mf: 45.00
+		Population 3
+			Robot 0 	f: -43.89 	mf: -80.25
+			Robot 1 	f: 2.96 	mf: 9.25
+		Population 4
+			Robot 0 	f: -107.89 	mf: -24.00
+			Robot 1 	f: 12.01 	mf: 9.50
+		Population 5
+			Robot 0 	f: 17.00 	mf: -22.75
+			Robot 1 	f: 2.99 	mf: 7.00
+		Population 6
+			Robot 0 	f: 17.07 	mf: -29.25
+			Robot 1 	f: 11.97 	mf: 6.75
+		Population 7
+			Robot 0 	f: 17.06 	mf: -14.25
+			Robot 1 	f: -45.09 	mf: -5.00
+		Population 8
+			Robot 0 	f: 17.07 	mf: 16.75
+			Robot 1 	f: 11.98 	mf: -5.25
+		Population 9
+			Robot 0 	f: 2.00 	mf: 13.25
+			Robot 1 	f: 14.96 	mf: -2.25
+		Population 10
+			Robot 0 	f: 17.06 	mf: 13.25
+			Robot 1 	f: 15.04 	mf: -1.25
+		Population 11
+			Robot 0 	f: 17.05 	mf: 13.25
+			Robot 1 	f: 16.23 	mf: 14.00
+		Population 12
+			Robot 0 	f: 16.99 	mf: 13.00
+			Robot 1 	f: 16.26 	mf: 15.25
+		Population 13
+			Robot 0 	f: -6.97 	mf: 11.00
+			Robot 1 	f: 16.26 	mf: 15.75
+		Population 14
+			Robot 0 	f: 16.58 	mf: 10.75
+			Robot 1 	f: 16.26 	mf: 16.00
+		Population 15
+			Robot 0 	f: 16.58 	mf: 10.50
+			Robot 1 	f: 16.26 	mf: 16.00
+		Population 16
+			Robot 0 	f: 16.57 	mf: 10.50
+			Robot 1 	f: 16.20 	mf: 16.00
+		Population 17
+			Robot 0 	f: 16.57 	mf: 16.00
+			Robot 1 	f: 15.39 	mf: 15.75
+		Population 18
+			Robot 0 	f: 16.44 	mf: 16.00
+			Robot 1 	f: 1.41 	mf: 12.00
+		Population 19
+			Robot 0 	f: -16.66 	mf: 8.00
+			Robot 1 	f: 16.49 	mf: 12.00
+		Population 20
+			Robot 0 	f: 16.53 	mf: 8.00
+			Robot 1 	f: -14.08 	mf: 4.50
+		Population 21
+			Robot 0 	f: 16.55 	mf: 8.00
+			Robot 1 	f: 16.54 	mf: 4.75
+		Population 22
+			Robot 0 	f: 16.55 	mf: 8.00
+			Robot 1 	f: -47.17 	mf: -7.25
+		Population 23
+			Robot 0 	f: 16.51 	mf: 16.00
+			Robot 1 	f: 16.51 	mf: -7.25
+		Population 24
+			Robot 0 	f: 18.01 	mf: 16.50
+			Robot 1 	f: 16.50 	mf: 0.25
+		Population 25
+			Robot 0 	f: -1.55 	mf: 12.25
+			Robot 1 	f: 16.55 	mf: 0.25
+		Population 26
+			Robot 0 	f: -22.48 	mf: 2.75
+			Robot 1 	f: 10.25 	mf: 14.50
+		Population 27
+			Robot 0 	f: 14.85 	mf: 2.25
+			Robot 1 	f: 13.84 	mf: 13.75
+		Population 28
+			Robot 0 	f: 16.55 	mf: 1.75
+			Robot 1 	f: 13.95 	mf: 13.00
+		Population 29
+			Robot 0 	f: 16.55 	mf: 6.00
+			Robot 1 	f: 16.53 	mf: 13.00
+		Population 30
+			Robot 0 	f: 16.54 	mf: 15.50
+			Robot 1 	f: 16.54 	mf: 14.50
+		Population 31
+			Robot 0 	f: 16.55 	mf: 16.00
+			Robot 1 	f: 13.81 	mf: 14.50
+		Population 32
+			Robot 0 	f: 16.53 	mf: 16.00
+			Robot 1 	f: 63.87 	mf: 27.00
+		Population 33
+			Robot 0 	f: -63.67 	mf: -3.75
+			Robot 1 	f: 60.81 	mf: 38.00
+		Population 34
+			Robot 0 	f: 56.37 	mf: 6.25
+			Robot 1 	f: -41.59 	mf: 23.75
+		Population 35
+			Robot 0 	f: 56.57 	mf: 16.25
+			Robot 1 	f: 63.99 	mf: 36.25
+		Population 36
+			Robot 0 	f: 60.92 	mf: 27.25
+			Robot 1 	f: 64.22 	mf: 36.50
+		Population 37
+			Robot 0 	f: 61.91 	mf: 58.25
+			Robot 1 	f: 62.01 	mf: 37.00
+		Population 38
+			Robot 0 	f: 59.72 	mf: 59.00
+			Robot 1 	f: 52.61 	mf: 60.25
+		Population 39
+			Robot 0 	f: 59.72 	mf: 59.00
+			Robot 1 	f: 52.61 	mf: 60.25
+	finalFitness: 60
+	Repetition 4
+		Population 0
+			Robot 0 	f: 405.13 	mf: 146.75
+			Robot 1 	f: 325.81 	mf: 125.50
+		Population 1
+			Robot 0 	f: 395.83 	mf: 230.25
+			Robot 1 	f: 423.54 	mf: 215.75
+		Population 2
+			Robot 0 	f: 456.63 	mf: 329.50
+			Robot 1 	f: 420.62 	mf: 307.75
+		Population 3
+			Robot 0 	f: 482.64 	mf: 434.50
+			Robot 1 	f: 460.99 	mf: 407.00
+		Population 4
+			Robot 0 	f: 384.74 	mf: 429.25
+			Robot 1 	f: 467.91 	mf: 442.50
+		Population 5
+			Robot 0 	f: 468.71 	mf: 447.50
+			Robot 1 	f: 308.54 	mf: 413.75
+		Population 6
+			Robot 0 	f: 453.28 	mf: 446.75
+			Robot 1 	f: 354.14 	mf: 397.25
+		Population 7
+			Robot 0 	f: 134.74 	mf: 359.75
+			Robot 1 	f: 464.42 	mf: 398.25
+		Population 8
+			Robot 0 	f: 256.50 	mf: 327.75
+			Robot 1 	f: 403.77 	mf: 382.25
+		Population 9
+			Robot 0 	f: 437.04 	mf: 320.00
+			Robot 1 	f: 394.20 	mf: 403.75
+		Population 10
+			Robot 0 	f: 280.54 	mf: 276.75
+			Robot 1 	f: 446.29 	mf: 426.75
+		Population 11
+			Robot 0 	f: 293.33 	mf: 316.50
+			Robot 1 	f: 427.76 	mf: 417.50
+		Population 12
+			Robot 0 	f: 477.16 	mf: 371.75
+			Robot 1 	f: 337.88 	mf: 401.00
+		Population 13
+			Robot 0 	f: -6529.94 	mf: -1369.75
+			Robot 1 	f: 446.68 	mf: 414.00
+		Population 14
+			Robot 0 	f: 487.02 	mf: -1318.00
+			Robot 1 	f: 417.30 	mf: 406.75
+		Population 15
+			Robot 0 	f: 460.80 	mf: -1276.25
+			Robot 1 	f: 460.50 	mf: 415.00
+		Population 16
+			Robot 0 	f: 427.50 	mf: -1288.75
+			Robot 1 	f: 438.67 	mf: 440.25
+		Population 17
+			Robot 0 	f: 431.45 	mf: 451.25
+			Robot 1 	f: 486.25 	mf: 450.25
+		Population 18
+			Robot 0 	f: 388.40 	mf: 426.50
+			Robot 1 	f: 474.14 	mf: 464.50
+		Population 19
+			Robot 0 	f: 219.92 	mf: 366.25
+			Robot 1 	f: -650.98 	mf: 187.00
+		Population 20
+			Robot 0 	f: 67.54 	mf: 276.25
+			Robot 1 	f: 332.30 	mf: 160.50
+		Population 21
+			Robot 0 	f: 155.12 	mf: 207.25
+			Robot 1 	f: 307.02 	mf: 115.75
+		Population 22
+			Robot 0 	f: -17.05 	mf: 106.00
+			Robot 1 	f: 253.99 	mf: 60.50
+		Population 23
+			Robot 0 	f: 157.81 	mf: 90.50
+			Robot 1 	f: 291.16 	mf: 295.75
+		Population 24
+			Robot 0 	f: 298.32 	mf: 148.25
+			Robot 1 	f: 331.00 	mf: 295.50
+		Population 25
+			Robot 0 	f: 70.30 	mf: 127.00
+			Robot 1 	f: 286.76 	mf: 290.25
+		Population 26
+			Robot 0 	f: 328.60 	mf: 213.25
+			Robot 1 	f: 327.82 	mf: 308.75
+		Population 27
+			Robot 0 	f: 264.08 	mf: 240.00
+			Robot 1 	f: 333.95 	mf: 319.25
+		Population 28
+			Robot 0 	f: 104.65 	mf: 191.50
+			Robot 1 	f: 251.63 	mf: 299.25
+		Population 29
+			Robot 0 	f: 242.83 	mf: 234.50
+			Robot 1 	f: 331.12 	mf: 310.50
+		Population 30
+			Robot 0 	f: 206.78 	mf: 204.00
+			Robot 1 	f: 338.07 	mf: 313.25
+		Population 31
+			Robot 0 	f: 237.86 	mf: 197.25
+			Robot 1 	f: 20.62 	mf: 235.00
+		Population 32
+			Robot 0 	f: -3924.09 	mf: -809.75
+			Robot 1 	f: 253.57 	mf: 235.50
+		Population 33
+			Robot 0 	f: 306.38 	mf: -793.75
+			Robot 1 	f: 272.68 	mf: 220.75
+		Population 34
+			Robot 0 	f: 260.57 	mf: -780.25
+			Robot 1 	f: 242.42 	mf: 196.75
+		Population 35
+			Robot 0 	f: 314.13 	mf: -761.00
+			Robot 1 	f: 236.99 	mf: 250.75
+		Population 36
+			Robot 0 	f: 308.48 	mf: 297.00
+			Robot 1 	f: 305.83 	mf: 263.75
+		Population 37
+			Robot 0 	f: 280.05 	mf: 290.50
+			Robot 1 	f: 300.27 	mf: 270.75
+		Population 38
+			Robot 0 	f: 295.09 	mf: 299.25
+			Robot 1 	f: 287.71 	mf: 282.00
+		Population 39
+			Robot 0 	f: 295.09 	mf: 299.25
+			Robot 1 	f: 287.71 	mf: 282.00
+	finalFitness: 299
+	Repetition 5
+		Population 0
+			Robot 0 	f: 123.77 	mf: 254.25
+			Robot 1 	f: 331.52 	mf: 299.25
+		Population 1
+			Robot 0 	f: -806.90 	mf: -17.25
+			Robot 1 	f: -107.85 	mf: 197.50
+		Population 2
+			Robot 0 	f: -739.41 	mf: -275.75
+			Robot 1 	f: -400.21 	mf: 25.75
+		Population 3
+			Robot 0 	f: -585.79 	mf: -501.75
+			Robot 1 	f: 229.38 	mf: 13.25
+		Population 4
+			Robot 0 	f: -28.64 	mf: -539.50
+			Robot 1 	f: 7.17 	mf: -67.75
+		Population 5
+			Robot 0 	f: 302.59 	mf: -262.50
+			Robot 1 	f: 255.24 	mf: 22.75
+		Population 6
+			Robot 0 	f: 178.44 	mf: -33.25
+			Robot 1 	f: 135.45 	mf: 156.50
+		Population 7
+			Robot 0 	f: 245.90 	mf: 174.25
+			Robot 1 	f: 262.33 	mf: 164.75
+		Population 8
+			Robot 0 	f: -86.29 	mf: 159.75
+			Robot 1 	f: -112.92 	mf: 135.00
+		Population 9
+			Robot 0 	f: -9.42 	mf: 82.00
+			Robot 1 	f: -40.25 	mf: 61.25
+		Population 10
+			Robot 0 	f: -63.20 	mf: 21.75
+			Robot 1 	f: 74.42 	mf: 46.00
+		Population 11
+			Robot 0 	f: 195.05 	mf: 9.25
+			Robot 1 	f: 26.71 	mf: -13.00
+		Population 12
+			Robot 0 	f: 94.68 	mf: 54.25
+			Robot 1 	f: 0.92 	mf: 15.00
+		Population 13
+			Robot 0 	f: 192.28 	mf: 104.50
+			Robot 1 	f: 143.13 	mf: 60.75
+		Population 14
+			Robot 0 	f: 156.58 	mf: 159.25
+			Robot 1 	f: 217.67 	mf: 96.50
+		Population 15
+			Robot 0 	f: 201.93 	mf: 160.75
+			Robot 1 	f: 258.22 	mf: 154.50
+		Population 16
+			Robot 0 	f: 270.39 	mf: 204.75
+			Robot 1 	f: 78.78 	mf: 174.00
+		Population 17
+			Robot 0 	f: 245.52 	mf: 218.00
+			Robot 1 	f: 193.27 	mf: 186.50
+		Population 18
+			Robot 0 	f: -30.98 	mf: 171.50
+			Robot 1 	f: 310.23 	mf: 209.75
+		Population 19
+			Robot 0 	f: 218.08 	mf: 175.75
+			Robot 1 	f: -31.08 	mf: 137.50
+		Population 20
+			Robot 0 	f: 217.15 	mf: 162.50
+			Robot 1 	f: 219.76 	mf: 172.75
+		Population 21
+			Robot 0 	f: 137.26 	mf: 135.50
+			Robot 1 	f: 274.01 	mf: 193.00
+		Population 22
+			Robot 0 	f: 230.32 	mf: 200.50
+			Robot 1 	f: 111.63 	mf: 143.25
+		Population 23
+			Robot 0 	f: 223.35 	mf: 201.75
+			Robot 1 	f: 56.39 	mf: 165.00
+		Population 24
+			Robot 0 	f: 312.20 	mf: 225.50
+			Robot 1 	f: 242.23 	mf: 170.75
+		Population 25
+			Robot 0 	f: -70.62 	mf: 173.75
+			Robot 1 	f: -81.77 	mf: 82.00
+		Population 26
+			Robot 0 	f: 263.89 	mf: 182.00
+			Robot 1 	f: 81.30 	mf: 74.50
+		Population 27
+			Robot 0 	f: 117.30 	mf: 155.50
+			Robot 1 	f: -18.80 	mf: 56.00
+		Population 28
+			Robot 0 	f: 154.06 	mf: 116.00
+			Robot 1 	f: 236.52 	mf: 54.50
+		Population 29
+			Robot 0 	f: 278.19 	mf: 203.00
+			Robot 1 	f: 97.54 	mf: 99.00
+		Population 30
+			Robot 0 	f: 185.61 	mf: 183.50
+			Robot 1 	f: 323.47 	mf: 159.50
+		Population 31
+			Robot 0 	f: 276.64 	mf: 223.25
+			Robot 1 	f: 44.55 	mf: 175.00
+		Population 32
+			Robot 0 	f: 302.89 	mf: 260.25
+			Robot 1 	f: 405.71 	mf: 217.25
+		Population 33
+			Robot 0 	f: 267.11 	mf: 257.50
+			Robot 1 	f: 393.98 	mf: 291.25
+		Population 34
+			Robot 0 	f: 398.34 	mf: 310.75
+			Robot 1 	f: 273.77 	mf: 278.75
+		Population 35
+			Robot 0 	f: 356.78 	mf: 330.75
+			Robot 1 	f: 331.74 	mf: 350.50
+		Population 36
+			Robot 0 	f: 312.49 	mf: 333.25
+			Robot 1 	f: 269.61 	mf: 316.50
+		Population 37
+			Robot 0 	f: 251.47 	mf: 329.25
+			Robot 1 	f: 232.71 	mf: 276.25
+		Population 38
+			Robot 0 	f: 143.15 	mf: 265.50
+			Robot 1 	f: 107.93 	mf: 234.75
+		Population 39
+			Robot 0 	f: 143.15 	mf: 265.50
+			Robot 1 	f: 107.93 	mf: 234.75
+	finalFitness: 265
+	Repetition 6
+		Population 0
+			Robot 0 	f: 41.96 	mf: 183.25
+			Robot 1 	f: 125.62 	mf: 168.50
+		Population 1
+			Robot 0 	f: 17.62 	mf: 124.75
+			Robot 1 	f: 193.84 	mf: 158.75
+		Population 2
+			Robot 0 	f: 125.47 	mf: 120.25
+			Robot 1 	f: 114.46 	mf: 160.50
+		Population 3
+			Robot 0 	f: 126.19 	mf: 77.25
+			Robot 1 	f: 195.16 	mf: 156.75
+		Population 4
+			Robot 0 	f: -36.73 	mf: 58.00
+			Robot 1 	f: 189.22 	mf: 172.75
+		Population 5
+			Robot 0 	f: 231.03 	mf: 111.50
+			Robot 1 	f: 75.29 	mf: 143.25
+		Population 6
+			Robot 0 	f: 227.29 	mf: 137.00
+			Robot 1 	f: 196.35 	mf: 163.75
+		Population 7
+			Robot 0 	f: 230.80 	mf: 163.00
+			Robot 1 	f: 189.35 	mf: 162.25
+		Population 8
+			Robot 0 	f: -35.10 	mf: 163.25
+			Robot 1 	f: 201.01 	mf: 165.25
+		Population 9
+			Robot 0 	f: 395.43 	mf: 204.25
+			Robot 1 	f: 128.65 	mf: 178.50
+		Population 10
+			Robot 0 	f: 379.59 	mf: 242.25
+			Robot 1 	f: 288.13 	mf: 201.50
+		Population 11
+			Robot 0 	f: 306.58 	mf: 261.25
+			Robot 1 	f: 203.82 	mf: 205.00
+		Population 12
+			Robot 0 	f: 323.01 	mf: 350.75
+			Robot 1 	f: 334.41 	mf: 238.25
+		Population 13
+			Robot 0 	f: 226.73 	mf: 308.50
+			Robot 1 	f: -64.00 	mf: 190.50
+		Population 14
+			Robot 0 	f: 379.17 	mf: 308.50
+			Robot 1 	f: 375.31 	mf: 212.25
+		Population 15
+			Robot 0 	f: 409.15 	mf: 334.25
+			Robot 1 	f: 378.58 	mf: 256.00
+		Population 16
+			Robot 0 	f: 405.16 	mf: 354.75
+			Robot 1 	f: 381.35 	mf: 267.75
+		Population 17
+			Robot 0 	f: 379.72 	mf: 393.00
+			Robot 1 	f: 415.57 	mf: 387.25
+		Population 18
+			Robot 0 	f: 398.58 	mf: 397.75
+			Robot 1 	f: 346.41 	mf: 380.00
+		Population 19
+			Robot 0 	f: 380.87 	mf: 390.50
+			Robot 1 	f: 386.75 	mf: 382.00
+		Population 20
+			Robot 0 	f: 404.73 	mf: 390.25
+			Robot 1 	f: 318.59 	mf: 366.25
+		Population 21
+			Robot 0 	f: 407.73 	mf: 397.25
+			Robot 1 	f: 344.91 	mf: 348.50
+		Population 22
+			Robot 0 	f: 114.88 	mf: 326.25
+			Robot 1 	f: 318.38 	mf: 341.50
+		Population 23
+			Robot 0 	f: 356.59 	mf: 320.25
+			Robot 1 	f: -868.05 	mf: 28.00
+		Population 24
+			Robot 0 	f: 358.66 	mf: 308.75
+			Robot 1 	f: 226.56 	mf: 5.00
+		Population 25
+			Robot 0 	f: 356.71 	mf: 296.00
+			Robot 1 	f: 351.77 	mf: 6.75
+		Population 26
+			Robot 0 	f: 349.04 	mf: 354.75
+			Robot 1 	f: 319.76 	mf: 7.00
+		Population 27
+			Robot 0 	f: 281.26 	mf: 336.00
+			Robot 1 	f: 334.86 	mf: 307.50
+		Population 28
+			Robot 0 	f: 269.26 	mf: 313.75
+			Robot 1 	f: 343.70 	mf: 336.75
+		Population 29
+			Robot 0 	f: 341.49 	mf: 310.00
+			Robot 1 	f: 309.70 	mf: 326.25
+		Population 30
+			Robot 0 	f: 342.91 	mf: 308.25
+			Robot 1 	f: 163.51 	mf: 287.25
+		Population 31
+			Robot 0 	f: 350.85 	mf: 325.50
+			Robot 1 	f: 215.96 	mf: 257.50
+		Population 32
+			Robot 0 	f: 343.50 	mf: 344.00
+			Robot 1 	f: 343.21 	mf: 257.50
+		Population 33
+			Robot 0 	f: 346.94 	mf: 345.25
+			Robot 1 	f: 347.36 	mf: 267.00
+		Population 34
+			Robot 0 	f: -99.06 	mf: 235.00
+			Robot 1 	f: 341.08 	mf: 311.50
+		Population 35
+			Robot 0 	f: 338.53 	mf: 232.00
+			Robot 1 	f: 348.19 	mf: 344.75
+		Population 36
+			Robot 0 	f: 309.39 	mf: 223.50
+			Robot 1 	f: 246.79 	mf: 320.50
+		Population 37
+			Robot 0 	f: 348.27 	mf: 224.00
+			Robot 1 	f: 322.74 	mf: 314.25
+		Population 38
+			Robot 0 	f: 345.19 	mf: 335.00
+			Robot 1 	f: 323.72 	mf: 309.75
+		Population 39
+			Robot 0 	f: 345.19 	mf: 335.00
+			Robot 1 	f: 323.72 	mf: 309.75
+	finalFitness: 335
+	Repetition 7
+		Population 0
+			Robot 0 	f: 197.34 	mf: 309.00
+			Robot 1 	f: 25.05 	mf: 230.75
+		Population 1
+			Robot 0 	f: 117.89 	mf: 251.25
+			Robot 1 	f: 130.80 	mf: 182.75
+		Population 2
+			Robot 0 	f: 197.73 	mf: 214.25
+			Robot 1 	f: 86.70 	mf: 123.50
+		Population 3
+			Robot 0 	f: 197.61 	mf: 177.00
+			Robot 1 	f: -304.40 	mf: -15.75
+		Population 4
+			Robot 0 	f: 72.46 	mf: 145.75
+			Robot 1 	f: 260.28 	mf: 43.00
+		Population 5
+			Robot 0 	f: 6.19 	mf: 118.00
+			Robot 1 	f: 370.82 	mf: 103.00
+		Population 6
+			Robot 0 	f: -694.52 	mf: -104.75
+			Robot 1 	f: 388.02 	mf: 178.50
+		Population 7
+			Robot 0 	f: 222.12 	mf: -98.50
+			Robot 1 	f: 244.19 	mf: 315.50
+		Population 8
+			Robot 0 	f: 169.95 	mf: -74.25
+			Robot 1 	f: 412.05 	mf: 353.50
+		Population 9
+			Robot 0 	f: 157.41 	mf: -36.50
+			Robot 1 	f: 265.63 	mf: 327.25
+		Population 10
+			Robot 0 	f: 371.17 	mf: 229.75
+			Robot 1 	f: 367.93 	mf: 322.00
+		Population 11
+			Robot 0 	f: 102.20 	mf: 199.75
+			Robot 1 	f: -0.34 	mf: 261.00
+		Population 12
+			Robot 0 	f: 440.82 	mf: 267.50
+			Robot 1 	f: 369.20 	mf: 250.25
+		Population 13
+			Robot 0 	f: 475.28 	mf: 347.00
+			Robot 1 	f: 347.55 	mf: 270.75
+		Population 14
+			Robot 0 	f: 99.10 	mf: 279.00
+			Robot 1 	f: -169.95 	mf: 136.75
+		Population 15
+			Robot 0 	f: 91.30 	mf: 276.25
+			Robot 1 	f: -143.21 	mf: 101.00
+		Population 16
+			Robot 0 	f: 140.36 	mf: 201.25
+			Robot 1 	f: 241.38 	mf: 69.00
+		Population 17
+			Robot 0 	f: 455.76 	mf: 196.25
+			Robot 1 	f: -5.86 	mf: -19.00
+		Population 18
+			Robot 0 	f: 466.69 	mf: 288.00
+			Robot 1 	f: 66.23 	mf: 39.75
+		Population 19
+			Robot 0 	f: 494.48 	mf: 388.75
+			Robot 1 	f: 261.88 	mf: 140.75
+		Population 20
+			Robot 0 	f: 331.12 	mf: 436.50
+			Robot 1 	f: 237.14 	mf: 139.75
+		Population 21
+			Robot 0 	f: 308.91 	mf: 399.75
+			Robot 1 	f: 383.30 	mf: 236.75
+		Population 22
+			Robot 0 	f: 361.53 	mf: 373.50
+			Robot 1 	f: -117.99 	mf: 191.00
+		Population 23
+			Robot 0 	f: 313.17 	mf: 328.25
+			Robot 1 	f: 306.98 	mf: 202.25
+		Population 24
+			Robot 0 	f: 285.38 	mf: 316.75
+			Robot 1 	f: 399.32 	mf: 242.75
+		Population 25
+			Robot 0 	f: -301.17 	mf: 164.50
+			Robot 1 	f: 482.43 	mf: 267.50
+		Population 26
+			Robot 0 	f: 112.29 	mf: 102.25
+			Robot 1 	f: 383.23 	mf: 392.50
+		Population 27
+			Robot 0 	f: 367.22 	mf: 115.75
+			Robot 1 	f: 231.18 	mf: 373.75
+		Population 28
+			Robot 0 	f: 340.94 	mf: 129.50
+			Robot 1 	f: 484.78 	mf: 395.00
+		Population 29
+			Robot 0 	f: 360.10 	mf: 294.75
+			Robot 1 	f: 384.05 	mf: 370.50
+		Population 30
+			Robot 0 	f: 328.40 	mf: 348.75
+			Robot 1 	f: 481.43 	mf: 395.00
+		Population 31
+			Robot 0 	f: 487.68 	mf: 378.75
+			Robot 1 	f: 431.93 	mf: 445.00
+		Population 32
+			Robot 0 	f: 440.21 	mf: 403.75
+			Robot 1 	f: 463.78 	mf: 439.75
+		Population 33
+			Robot 0 	f: 431.91 	mf: 421.50
+			Robot 1 	f: 381.04 	mf: 439.00
+		Population 34
+			Robot 0 	f: 425.56 	mf: 445.75
+			Robot 1 	f: 444.63 	mf: 429.75
+		Population 35
+			Robot 0 	f: 439.40 	mf: 433.75
+			Robot 1 	f: 294.10 	mf: 395.50
+		Population 36
+			Robot 0 	f: 484.55 	mf: 444.75
+			Robot 1 	f: -78.03 	mf: 260.25
+		Population 37
+			Robot 0 	f: 431.76 	mf: 444.75
+			Robot 1 	f: 117.05 	mf: 194.25
+		Population 38
+			Robot 0 	f: 375.74 	mf: 432.25
+			Robot 1 	f: 158.24 	mf: 122.75
+		Population 39
+			Robot 0 	f: 375.74 	mf: 432.25
+			Robot 1 	f: 158.24 	mf: 122.75
+	finalFitness: 432
+	Repetition 8
+		Population 0
+			Robot 0 	f: 304.44 	mf: 289.00
+			Robot 1 	f: -12.70 	mf: 158.75
+		Population 1
+			Robot 0 	f: 132.32 	mf: 214.25
+			Robot 1 	f: 221.87 	mf: 184.75
+		Population 2
+			Robot 0 	f: 333.82 	mf: 203.75
+			Robot 1 	f: 153.31 	mf: 183.50
+		Population 3
+			Robot 0 	f: 303.26 	mf: 268.00
+			Robot 1 	f: 286.44 	mf: 162.00
+		Population 4
+			Robot 0 	f: -588.19 	mf: 45.00
+			Robot 1 	f: 276.38 	mf: 234.00

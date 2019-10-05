@@ -54,20 +54,40 @@ void Environment::initiateRobots(){
   float genes[6];
   for (int i = 0; i < qtdRobots; i++){
     // SideSensorActivation   (0-3)meters
-    genes[0] = (rand()%300)/100.0;
+    if(controlSideSensorActivation==-1)
+      genes[0] = (rand()%300)/100.0;
+    else
+      genes[0] = controlSideSensorActivation;
+
     // FrontSensorActivation  (0-3)meters
-    genes[1] = (rand()%300)/100.0;
+    if(controlFrontSensorActivation==-1)
+      genes[1] = (rand()%300)/100.0;
+    else
+      genes[1] = controlFrontSensorActivation;
+
     // LinearVelocity         (0-1)meters/second
-    genes[2] = (rand()%100)/100.0;
+    if(controlLinearVelocity==-1)
+      genes[2] = (rand()%100)/100.0;
+    else
+      genes[2] = controlLinearVelocity;
+
     // MaximumRotation        (0-10)degrees
-    genes[3] = (rand()%1000)/100.0;
+    if(controlMaximumRotation==-1)
+      genes[3] = (rand()%1000)/100.0;
+    else
+      genes[3] = controlMaximumRotation;
+
     // SensorAngle            (0-90)degrees
-    genes[4] = (rand()%9000)/100.0;
+    if(controlSensorAngle==-1)
+      genes[4] = (rand()%9000)/100.0;
+    else
+      genes[4] = controlSensorAngle;
+
+
     // Set random genes
     robot[i].newGene(genes);
     robot[i].fitness.push_back(0);
   }
-
   //----- new positions -----//
   newRandomPositions();
 }
@@ -208,23 +228,28 @@ void Environment::newPopulationRobots(){
           switch(j){
             case 0:
             // SideSensorActivation   (0-3)meters
-            genesRobot[0] = float(genes[2])*genesRobot[0] + (1-float(genes[2]))*(rand()%300)/100.0;
+            if(controlSideSensorActivation==-1)
+              genesRobot[0] = float(genes[2])*genesRobot[0] + (1-float(genes[2]))*(rand()%300)/100.0;
             break;
             case 1:
             // FrontSensorActivation  (0-3)meters
-            genesRobot[1] = float(genes[2])*genesRobot[1] + (1-float(genes[2]))*(rand()%300)/100.0;
+            if(controlFrontSensorActivation==-1)
+              genesRobot[1] = float(genes[2])*genesRobot[1] + (1-float(genes[2]))*(rand()%300)/100.0;
             break;
             case 2:
             // LinearVelocity         (0-1)meters/second
-            genesRobot[2] = float(genes[2])*genesRobot[2] + (1-float(genes[2]))*(rand()%100)/100.0;
+            if(controlLinearVelocity==-1)
+              genesRobot[2] = float(genes[2])*genesRobot[2] + (1-float(genes[2]))*(rand()%100)/100.0;
             break;
             case 3:
             // MaximumRotation        (0-10)degrees
-            genesRobot[3] = float(genes[2])*genesRobot[3] + (1-float(genes[2]))*(rand()%1000)/100.0;
+            if(controlMaximumRotation==-1)
+              genesRobot[3] = float(genes[2])*genesRobot[3] + (1-float(genes[2]))*(rand()%1000)/100.0;
             break;
             case 4:
             // SensorAngle            (0-90)degrees
-            genesRobot[4] = float(genes[2])*genesRobot[4] + (1-float(genes[2]))*(rand()%9000)/100.0;
+            if(controlSensorAngle==-1)
+              genesRobot[4] = float(genes[2])*genesRobot[4] + (1-float(genes[2]))*(rand()%9000)/100.0;
             break;
           }
         }
@@ -266,7 +291,7 @@ void Environment::draw(){
     objects.push_back(obstacle[i]);
   }
 
-  QuadTree *qTree = new QuadTree(0,0,20,20,1);
+  /*QuadTree *qTree = new QuadTree(0,0,20,20,1);
   for(auto object : objects){
     glColor3f(1, 1, 0);
     glBegin(GL_POLYGON);
@@ -278,7 +303,7 @@ void Environment::draw(){
     qTree->insert(&object);
   }
   qTree->draw();
-  delete qTree;
+  delete qTree;*/
 }
 
 bool Environment::getFinished() const{

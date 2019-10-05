@@ -9,7 +9,7 @@
 using namespace std;
 
 Robot::Robot():
-  Object(),theta(0), lastX(0), lastY(0), inCollision(false)
+  Object(),theta(0), lastX(0), lastY(0),timeLastXY(0), inCollision(false)
 {
   radius = 0.15;
   id = 0;
@@ -161,7 +161,7 @@ void Robot::move(vector<Object*> objects, float seconds){
   if(inCollision){
     rotate(genes[3]);
   }
-  else{
+  /*else{
     // Calculate rotation
     if(sensorValues[1]>=0){
       canMove=false;
@@ -177,10 +177,17 @@ void Robot::move(vector<Object*> objects, float seconds){
       angleRotation=genes[3];
     }
     rotate(angleRotation);
+  }*/
+  else{
+    if(sensorValues[1]>=0 || sensorValues[0]>=0 || sensorValues[2]>=0){
+      angleRotation=genes[3];
+    }
+    rotate(angleRotation);
   }
 
   // Move robot if possible
-  if(canMove){
+  //if(canMove){
+  if(sensorValues[0]==-1 && sensorValues[1]==-1 && sensorValues[2]==-1){
     x += cos(theta/180*M_PI)*genes[2]*seconds;
     y += sin(theta/180*M_PI)*genes[2]*seconds;
     if(x>10-radius){
@@ -201,12 +208,17 @@ void Robot::move(vector<Object*> objects, float seconds){
     }
   }
 
-  // Calculate fitness
-  float displacedDistance = sqrt(pow(lastX-x,2)+pow(lastY-y,2));
-  fitness.back() = fitness.back() + displacedDistance*pointsMoving;
-  // Equal to genes[2]*seconds*pointsMoving when maximum is 1m/s
-  lastX = x;
-  lastY = y;
+  timeLastXY+=seconds;
+  if(timeLastXY>=2){
+    // Calculate fitness
+    float displacedDistance = sqrt(pow(lastX-x,2)+pow(lastY-y,2));
+    fitness.back() = fitness.back() + displacedDistance*pointsMoving;
+    // Equal to genes[2]*seconds*pointsMoving when maximum is 1m/s
+    lastX = x;
+    lastY = y;
+    timeLastXY = 0;
+  }
+
 }
 
 void Robot::rotate(float angle){

@@ -38,6 +38,7 @@ public:
 private:
   float theta;
   float lastX, lastY;
+  float timeLastXY;
   bool inCollision;
   float sensorValues[3];// Left, Front, Right
 };

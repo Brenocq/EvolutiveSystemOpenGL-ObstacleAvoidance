@@ -1,0 +1,122 @@
+QtdRobots: 10
+QtdEnvironments: 10
+QtdRepetitions: 10
+QtdObstacles: 120
+PointsCollision: -150
+PointsMoving: 10
+MaxPopulation: 40
+MaxTime: 600
+EnvMutationRate: 0.2
+
+Environment 0	 h: 5	 mr: 0.2	 nc: 0.5	 nm: 0.5	 bmp: 1	 cc: 2
+	Repetition 0
+		Population 0
+			Robot 0 	f: 422.77 	mf: 422.00
+			Robot 1 	f: 439.61 	mf: 439.00
+			Robot 2 	f: 435.85 	mf: 435.00
+			Robot 3 	f: 394.25 	mf: 394.00
+			Robot 4 	f: 464.33 	mf: 464.00
+			Robot 5 	f: 422.73 	mf: 422.00
+			Robot 6 	f: 460.01 	mf: 460.00
+			Robot 7 	f: 453.45 	mf: 453.00
+			Robot 8 	f: 449.93 	mf: 449.00
+			Robot 9 	f: 439.96 	mf: 439.00
+		Population 1
+			Robot 0 	f: 454.89 	mf: 438.00
+			Robot 1 	f: 444.33 	mf: 441.50
+			Robot 2 	f: 456.97 	mf: 445.50
+			Robot 3 	f: 436.37 	mf: 415.00
+			Robot 4 	f: 452.49 	mf: 458.00
+			Robot 5 	f: 457.77 	mf: 439.50
+			Robot 6 	f: 425.41 	mf: 442.50
+			Robot 7 	f: 456.97 	mf: 454.50
+			Robot 8 	f: 458.89 	mf: 453.50
+			Robot 9 	f: 453.65 	mf: 446.00
+		Population 2
+			Robot 0 	f: 437.45 	mf: 437.67
+			Robot 1 	f: 449.17 	mf: 444.00
+			Robot 2 	f: 448.89 	mf: 446.33
+			Robot 3 	f: 452.05 	mf: 427.33
+			Robot 4 	f: 449.61 	mf: 455.00
+			Robot 5 	f: 438.41 	mf: 439.00
+			Robot 6 	f: 452.01 	mf: 445.67
+			Robot 7 	f: 451.05 	mf: 453.33
+			Robot 8 	f: 465.13 	mf: 457.33
+			Robot 9 	f: 461.77 	mf: 451.00
+		Population 3
+			Robot 0 	f: 460.81 	mf: 443.25
+			Robot 1 	f: 441.61 	mf: 443.25
+			Robot 2 	f: 451.85 	mf: 447.50
+			Robot 3 	f: 429.13 	mf: 427.75
+			Robot 4 	f: 452.33 	mf: 454.25
+			Robot 5 	f: 449.29 	mf: 441.50
+			Robot 6 	f: 452.49 	mf: 447.25
+			Robot 7 	f: 453.13 	mf: 453.25
+			Robot 8 	f: 435.05 	mf: 451.75
+			Robot 9 	f: 461.77 	mf: 453.50
+		Population 4
+			Robot 0 	f: 404.57 	mf: 435.40
+			Robot 1 	f: 415.89 	mf: 437.60
+			Robot 2 	f: 448.17 	mf: 447.60
+			Robot 3 	f: 434.41 	mf: 429.00
+			Robot 4 	f: 448.49 	mf: 453.00
+			Robot 5 	f: 450.25 	mf: 443.20
+			Robot 6 	f: 456.81 	mf: 449.00
+			Robot 7 	f: 451.37 	mf: 452.80
+			Robot 8 	f: 452.13 	mf: 451.80
+			Robot 9 	f: 442.41 	mf: 451.20
+		Population 5
+			Robot 0 	f: 450.25 	mf: 441.00
+			Robot 1 	f: 454.57 	mf: 440.60
+			Robot 2 	f: 454.73 	mf: 451.40
+			Robot 3 	f: 447.05 	mf: 439.60
+			Robot 4 	f: 398.25 	mf: 439.80
+			Robot 5 	f: 382.25 	mf: 435.20
+			Robot 6 	f: 448.17 	mf: 446.60
+			Robot 7 	f: 452.01 	mf: 452.60
+			Robot 8 	f: 448.81 	mf: 451.60
+			Robot 9 	f: 450.89 	mf: 453.40
+		Population 6
+			Robot 0 	f: 437.29 	mf: 437.60
+			Robot 1 	f: 443.91 	mf: 440.40
+			Robot 2 	f: 447.53 	mf: 449.60
+			Robot 3 	f: 353.13 	mf: 423.00
+			Robot 4 	f: 433.77 	mf: 436.00
+			Robot 5 	f: 451.37 	mf: 434.00
+			Robot 6 	f: 453.61 	mf: 452.20
+			Robot 7 	f: 420.93 	mf: 445.40
+			Robot 8 	f: 425.92 	mf: 445.00
+			Robot 9 	f: 461.93 	mf: 455.00
+		Population 7
+			Robot 0 	f: 446.41 	mf: 439.40
+			Robot 1 	f: 448.33 	mf: 440.20
+			Robot 2 	f: 445.45 	mf: 449.00
+			Robot 3 	f: 444.33 	mf: 421.40
+			Robot 4 	f: 454.25 	mf: 437.00
+			Robot 5 	f: 436.81 	mf: 433.60
+			Robot 6 	f: 449.93 	mf: 451.60
+			Robot 7 	f: 441.61 	mf: 443.40
+			Robot 8 	f: 449.29 	mf: 441.80
+			Robot 9 	f: 445.13 	mf: 451.80
+		Population 8
+			Robot 0 	f: 464.81 	mf: 440.20
+			Robot 1 	f: 444.81 	mf: 440.80
+			Robot 2 	f: 433.45 	mf: 445.40
+			Robot 3 	f: 439.21 	mf: 423.40
+			Robot 4 	f: 432.33 	mf: 433.00
+			Robot 5 	f: 460.17 	mf: 435.80
+			Robot 6 	f: 459.85 	mf: 453.00
+			Robot 7 	f: 404.33 	mf: 433.60
+			Robot 8 	f: 412.81 	mf: 437.20
+			Robot 9 	f: 448.33 	mf: 449.20
+		Population 9
+			Robot 0 	f: 447.37 	mf: 448.80
+			Robot 1 	f: 432.81 	mf: 444.20
+			Robot 2 	f: 362.88 	mf: 428.20
+			Robot 3 	f: 444.49 	mf: 425.40
+			Robot 4 	f: 440.01 	mf: 431.40
+			Robot 5 	f: 452.65 	mf: 436.20
+			Robot 6 	f: 454.09 	mf: 452.60
+			Robot 7 	f: 439.21 	mf: 431.20
+			Robot 8 	f: 445.57 	mf: 435.80
+			Robot 9 	f: 456.39 	mf: 452.00
