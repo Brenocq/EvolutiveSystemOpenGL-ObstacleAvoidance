@@ -224,7 +224,7 @@ void Widget::updatePlot()
 
     // set axes ranges, so we see all data
     ui->graphGross->xAxis->setRange(0, fitness[0].size());
-    ui->graphGross->yAxis->setRange(-200, 1000);
+    ui->graphGross->yAxis->setRange(-400, 700);
     ui->graphGross->replot();
 
     //----- Update mean graph -----//
@@ -239,7 +239,7 @@ void Widget::updatePlot()
     ui->graphMean->yAxis->setLabel("Fitness");
     // set axes ranges, so we see all data
     ui->graphMean->xAxis->setRange(0, meanFitness[0].size());
-    ui->graphMean->yAxis->setRange(-200, 1000);
+    ui->graphMean->yAxis->setRange(-400, 700);
     ui->graphMean->replot();
 
 }

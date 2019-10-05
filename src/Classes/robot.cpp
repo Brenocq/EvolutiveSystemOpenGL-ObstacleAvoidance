@@ -124,22 +124,13 @@ void Robot::draw(void) const{
 }
 
 void Robot::move(vector<Object*> objects, float seconds){
-  bool canMove = true;
-  float angleRotation=0;
-  /*QuadTree *qTree;
-  float maxRadius=0;
-  qTree = new QuadTree(0,0,20,20,4);
-
-  for (int i = 0; i < int(objects.size()); i++) {
-    qTree->insert(&objects[i]);
-    maxRadius = max(maxRadius, objects[i].getRadius());
-  }*/
+  bool sensorTrigged=false;
+  inCollision = false;
 
   updateSensor(objects);
-
   // Search for pysical contact between robots
   vector<Object*> nearObjects = objects;//qTree->inCollision(&objects[id], maxRadius);
-  inCollision = false;
+
   float fitnessBack = fitness.back();
   //#pragma omp parallel for private(canMove, inCollision, fitnessBack)
   for (int i = 0; i < int(nearObjects.size()); i++) {
@@ -147,49 +138,18 @@ void Robot::move(vector<Object*> objects, float seconds){
       if(distanceTwoObjects(objects[id], nearObjects[i]) <= (objects[id]->getRadius()+nearObjects[i]->getRadius())){
         inCollision = true;
         fitnessBack+=pointsCollision*seconds;
-        objects[id]->setColor(1,0,0);
         if(distTwoAngles( this->getTheta(), angleTwoObjects(objects[id],nearObjects[i]))<90 ||
           distTwoAngles( this->getTheta(), angleTwoObjects(objects[id],nearObjects[i]))>270){
-          canMove = false;
         }
       }
     }
   }
   fitness.back() = fitnessBack;
-  //delete qTree;
 
-  if(inCollision){
-    rotate(genes[3]);
-  }
-  /*else{
-    // Calculate rotation
-    if(sensorValues[1]>=0){
-      canMove=false;
-      angleRotation=genes[3];
-    }else if(sensorValues[0]>=0 && sensorValues[2]>=0){
-      angleRotation-=(sensorValues[0]/genes[0]);
-      angleRotation+=(sensorValues[2]/genes[0]);
-      // angleRotation will be some value between +1 and -1
-      angleRotation=genes[3]*angleRotation;
-    }else if(sensorValues[0]>=0){
-      angleRotation=-genes[3];
-    }else if(sensorValues[2]>=0){
-      angleRotation=genes[3];
-    }
-    rotate(angleRotation);
-  }*/
-  else{
-    if(sensorValues[1]>=0 || sensorValues[0]>=0 || sensorValues[2]>=0){
-      angleRotation=genes[3];
-    }
-    rotate(angleRotation);
-  }
-
-  // Move robot if possible
-  //if(canMove){
   if(sensorValues[0]==-1 && sensorValues[1]==-1 && sensorValues[2]==-1){
     x += cos(theta/180*M_PI)*genes[2]*seconds;
     y += sin(theta/180*M_PI)*genes[2]*seconds;
+    // Check collision with walls
     if(x>10-radius){
       inCollision = true;
       x=10-radius;
@@ -206,11 +166,21 @@ void Robot::move(vector<Object*> objects, float seconds){
       inCollision = true;
       y=-10+radius;
     }
+  }else{
+    sensorTrigged = true;
   }
 
+  objects[id]->setColor(0,0,0);
+  if(inCollision){
+    objects[id]->setColor(1,0,0);
+    rotate(genes[3]);
+  }else if(sensorTrigged){
+    rotate(genes[3]);
+  }
+
+  // Calculate fitness each 2 seconds
   timeLastXY+=seconds;
   if(timeLastXY>=2){
-    // Calculate fitness
     float displacedDistance = sqrt(pow(lastX-x,2)+pow(lastY-y,2));
     fitness.back() = fitness.back() + displacedDistance*pointsMoving;
     // Equal to genes[2]*seconds*pointsMoving when maximum is 1m/s
@@ -228,15 +198,6 @@ void Robot::rotate(float angle){
 void Robot::updateSensor(vector<Object*> objects){
   float sensorActivaton[3] = {genes[0],genes[1],genes[0]};
   float sensorAngle[3] = {genes[4]+theta,0+theta,-genes[4]+theta};
-  /*QuadTree *qTree;
-  float maxRadius=0;
-  qTree = new QuadTree(0,0,20,20,4);
-
-  for (int i = 0; i < int(objects.size()); i++) {
-    qTree->insert(&objects[i]);
-    maxRadius = max(maxRadius, objects[i].getRadius());
-  }*/
-
 
   for (int i = 0; i < 3; i++) {
     sensorValues[i] = 10;// Set to a big value to change to the minimum
@@ -304,7 +265,6 @@ void Robot::updateSensor(vector<Object*> objects){
       sensorValues[sensor]=-1;// Set as -1 if sensor was not trigged
     }
   }
-  //delete qTree;
 }
 
 void Robot::updateMeanFitness(int sizeMean){
