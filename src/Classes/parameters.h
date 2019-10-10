@@ -3,10 +3,10 @@
 #define windowWidth 600
 #define screenHeight 1080
 #define screenWidth 1920
-#define displaySteps 100000
+#define displaySteps 1
 
 // Evolutive system global parameters (fixed)
-#define qtdRobots 5
+#define qtdRobots 10
 #define qtdEnvironments 10
 #define qtdRepetitions 10// Number of times that each environment will be tested to define the fitness
 #define qtdObstacles 70
@@ -26,17 +26,17 @@
 
 // Fixed genes robots
 // Set as -1 if you want to change
-#define controlSideSensorActivation 0
-#define controlFrontSensorActivation 0
+#define controlSideSensorActivation -1
+#define controlFrontSensorActivation -1
 #define controlLinearVelocity -1
 #define controlMaximumRotation -1
 #define controlSensorAngle -1
 
 // Fixed genes environments
 // Set as -1 if you want to change
-#define controlFitnessMean 5
-#define controlMutationRate 0.0
-#define controlNeutralCrossing 0.0
-#define controlNeutralMutation 0.5
-#define controlBackMutationPrevention 1
-#define controlCrossingCondition 2
+#define controlFitnessMean -1
+#define controlMutationRate -1
+#define controlNeutralCrossing -1
+#define controlNeutralMutation -1
+#define controlBackMutationPrevention -1
+#define controlCrossingCondition -1
