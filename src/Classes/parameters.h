@@ -1,6 +1,6 @@
 // Window Parameters
-#define windowHeight 600
-#define windowWidth 600
+#define windowHeight 800
+#define windowWidth 800
 #define screenHeight 1080
 #define screenWidth 1920
 #define displaySteps 1

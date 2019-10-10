@@ -27,20 +27,21 @@ public:
 
   vector<float> fitness;
   vector<float> meanFitness;
-  vector<float> genes;
+  vector<float> genesAnatomy;
+  vector<float> genesBrain;
   // Genes:
-  // 0-SideSensorActivation   (0-3)meters
-  // 1-FrontSensorActivation  (0-3)meters
-  // 2-LinearVelocity         (0-1)meters/second
-  // 3-MaximumRotation        (0-10)degrees
-  // 4-SensorAngle            (0-90)degrees
-  vector<bool> mutatedGenes;
+  // 0-MaximumVelocity        (0-1)meters/second
+  // 1-MaximumRotation        (0-10)degrees
+  // 2-QtdIRsensors           (0-10)sensors
+  // ...-SensorsInfo
+  // ...-SensorsParam
+
 private:
   float theta;
   float lastX, lastY;
   float timeLastXY;
   bool inCollision;
-  float sensorValues[3];// Left, Front, Right
+  vector<float> sensorValues;// Left, Front, Right
 };
 
 
