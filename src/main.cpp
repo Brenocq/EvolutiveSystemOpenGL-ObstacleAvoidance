@@ -8,7 +8,6 @@
 #include <fstream>
 #include <iomanip>
 #include "Classes/manager.h"
-// TODO predator
 
 using namespace std;
 
@@ -103,11 +102,16 @@ void timer(int){
             outputFile<<" \tf: "  << robot->fitness[robot->fitness.size()-2];
             outputFile<<" \tmf: " << robot->meanFitness[robot->meanFitness.size()-1];
             if(printEverything){
-              outputFile<<" \tg0: " << robot->genes[0];
-              outputFile<<" \tg1: " << robot->genes[1];
-              outputFile<<" \tg2: " << robot->genes[2];
-              outputFile<<" \tg3: " << robot->genes[3];
-              outputFile<<" \tg4: " << robot->genes[4];
+              int i=0;
+              for(float value : robot->genesAnatomy){
+                outputFile<<" \tga"<<i<<": " << value;
+                i++;
+              }
+              i=0;
+              for(float value : robot->genesBrain){
+                outputFile<<" \tgb"<<i<<": " << value;
+                i++;
+              }
             }
             outputFile<<"\n";
           }

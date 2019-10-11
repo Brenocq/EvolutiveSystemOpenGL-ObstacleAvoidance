@@ -1,6 +1,7 @@
 #include "environment.h"
 #include "quadtree.h"
 #include <vector>
+#include <math.h>
 
 Environment::Environment():
   finished(false), currTime(0), currentPopulation(0)
@@ -51,44 +52,45 @@ void Environment::updateRobots(float time){
 
 void Environment::initiateRobots(){
   //----- Set random genes -----//
-  float genes[6];
   for (int i = 0; i < qtdRobots; i++){
-    // SideSensorActivation   (0-3)meters
-    if(controlSideSensorActivation==-1)
-      genes[0] = (rand()%300)/100.0;
-    else
-      genes[0] = controlSideSensorActivation;
+    vector<float> genesAnatomy;
+    vector<float> genesBrain;
+    int qtdSensors = 0;
 
-    // FrontSensorActivation  (0-3)meters
-    if(controlFrontSensorActivation==-1)
-      genes[1] = (rand()%300)/100.0;
-    else
-      genes[1] = controlFrontSensorActivation;
+    // MaximumVelocity         (0-1) meters/second
+    if(controlMaximumVelocity==-1) genesAnatomy.push_back( float(rand()%100)/100.0 );
+    else                           genesAnatomy.push_back( controlMaximumVelocity );
+    // MaximumRotation        (0-10) degrees
+    if(controlMaximumRotation==-1) genesAnatomy.push_back( float(rand()%1000)/100.0 );
+    else                           genesAnatomy.push_back( controlMaximumRotation );
+    // Qtd infrared sensors   (0-10) sensors
+    int qtdIR=0;
+    if(controlQtdIR==-1) qtdIR = rand()%11;
+    else                 qtdIR = controlQtdIR;
+    qtdSensors += qtdIR;
 
-    // LinearVelocity         (0-1)meters/second
-    if(controlLinearVelocity==-1)
-      genes[2] = (rand()%100)/100.0;
-    else
-      genes[2] = controlLinearVelocity;
+    genesAnatomy.push_back(qtdIR);
+    //--- Create infrared Sensors ---//
+    for(int j=0;j<qtdIR;j++){
+      // For each sensor will be defined angle and maxDist
+      // Angle              (0-360) degrees
+      genesAnatomy.push_back( float(rand()%(360*100))/100 );
+      // MaxDist            (0-5) meters
+      genesAnatomy.push_back( float(rand()%(5*100))/100 );
+    }
 
-    // MaximumRotation        (0-10)degrees
-    if(controlMaximumRotation==-1)
-      genes[3] = (rand()%1000)/100.0;
-    else
-      genes[3] = controlMaximumRotation;
+    //--- Create Brain ---//
+    for (int j = 0; j < 2*qtdSensors; j++) {
+      // Will create a weight to each sensor (-10,10) to calculate the velocity
+      // Will create a weight to each sensor (-10,10) to calculate the rotation
+      genesBrain.push_back( float(rand()%(2*1*100))/100 -1);
+    }
 
-    // SensorAngle            (0-90)degrees
-    if(controlSensorAngle==-1)
-      genes[4] = (rand()%9000)/100.0;
-    else
-      genes[4] = controlSensorAngle;
-
-
-    // Set random genes
-    robot[i].newGene(genes);
+    //--- Set random genes ---//
+    robot[i].newGenes(genesAnatomy, genesBrain);
     robot[i].fitness.push_back(0);
   }
-  //----- new positions -----//
+  //----- New positions -----//
   newRandomPositions();
 }
 
@@ -183,13 +185,16 @@ void Environment::newPopulationRobots(){
     }
 
     if(condition){
-      for (int j = 0; j < int(robot[0].genes.size()); j++) {
-        robot[i].genes[j] = float(genes[2])*robot[i].genes[j]+(1-float(genes[2]))*robot[bestRobot].genes[j];
+      for (int j = 0; j < int(robot[0].genesAnatomy.size()); j++) {
+        robot[i].genesAnatomy[j] = float(genes[2])*robot[i].genesAnatomy[j]+(1-float(genes[2]))*robot[bestRobot].genesAnatomy[j];
+      }
+      for (int j = 0; j < int(robot[0].genesBrain.size()); j++) {
+        robot[i].genesBrain[j] = float(genes[2])*robot[i].genesBrain[j]+(1-float(genes[2]))*robot[bestRobot].genesBrain[j];
       }
     }
   }
   //----- Mutation -----//
-  for (int i = 0; i < qtdRobots; i++) {
+  /*for (int i = 0; i < qtdRobots; i++) {
     robot[i].setColor(0,0,0);
 
     switch(int(genes[5])){
@@ -204,27 +209,17 @@ void Environment::newPopulationRobots(){
       break;
     }
     if(condition){
-      // If will not use BackMutationPrevention
-      int sumBMP=0;
-      for (int j = 0; j < int(robot[0].mutatedGenes.size()); j++) {
-        sumBMP+=robot[i].mutatedGenes[j];
-      }
-      if(!int(genes[4]) || sumBMP==int(robot[0].mutatedGenes.size())){
-        // Set all genes as 0 to backMutationPrevention
-        for (int j = 0; j < int(robot[0].mutatedGenes.size()); j++) {
-          robot[i].mutatedGenes[j]=0;
-        }
-      }
       // Create new cromossome
-      vector<float>genesRobot(robot[0].genes.size());
-      for (int j = 0; j < int(genes.size()); j++) {
-        genesRobot[j] = robot[i].genes[j];
-      }
-      for (int j = 0; j < int(genes.size()); j++) {
-      int chanceMutation = rand()%100;
-        if(chanceMutation < genes[1]*100 && robot[i].mutatedGenes[j]==0){
+      vector<float>mutatedGenesAnatomy;
+      mutatedGenesAnatomy = robot[i].genesAnatomy;
+
+      vector<float>mutatedGenesBrain;
+      mutatedGenesBrain = robot[i].genesBrain;
+
+      for (int j = 0; j < int(mutatedGenesAnatomy.size()); j++) {
+        int chanceMutation = rand()%100;
+        if(chanceMutation < genes[1]*100){
           robot[i].setColor(0.5,0.5,0);
-          robot[i].mutatedGenes[j] = 1;
           switch(j){
             case 0:
             // SideSensorActivation   (0-3)meters
@@ -256,7 +251,7 @@ void Environment::newPopulationRobots(){
       }
       robot[i].newGene(genesRobot);
     }
-  }
+  }*/
   robot[bestRobot].setColor(0,0,1);
 
   //----- New population fitness -----//
@@ -290,20 +285,6 @@ void Environment::draw(){
   for (int i = 0; i < qtdObstacles; i++){
     objects.push_back(obstacle[i]);
   }
-
-  /*QuadTree *qTree = new QuadTree(0,0,20,20,1);
-  for(auto object : objects){
-    glColor3f(1, 1, 0);
-    glBegin(GL_POLYGON);
-    glVertex2d(object.getX()/10+0.005, object.getY()/10+0.005);
-    glVertex2d(object.getX()/10+0.005, object.getY()/10-0.005);
-    glVertex2d(object.getX()/10-0.005, object.getY()/10-0.005);
-    glVertex2d(object.getX()/10-0.005, object.getY()/10+0.005);
-    glEnd();
-    qTree->insert(&object);
-  }
-  qTree->draw();
-  delete qTree;*/
 }
 
 bool Environment::getFinished() const{

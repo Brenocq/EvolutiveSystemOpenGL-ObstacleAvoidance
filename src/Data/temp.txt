@@ -1,4 +1,4 @@
-QtdRobots: 5
+QtdRobots: 10
 QtdEnvironments: 10
 QtdRepetitions: 10
 QtdObstacles: 70
@@ -8,11 +8,5 @@ MaxPopulation: 60
 MaxTime: 600
 EnvMutationRate: 0.2
 
-Environment 0	 h: 5	 mr: 0	 nc: 0	 nm: 0.5	 bmp: 1	 cc: 2
+Environment 0	 h: 4	 mr: 0.2	 nc: 0.4	 nm: 0.2	 bmp: 0	 cc: 0
 	Repetition 0
-		Population 0
-			Robot 0 	f: 13.71 	mf: 13.00
-			Robot 1 	f: -230.76 	mf: -230.00
-			Robot 2 	f: 183.70 	mf: 183.00
-			Robot 3 	f: -153.41 	mf: -153.00
-			Robot 4 	f: -755.99 	mf: -755.00
