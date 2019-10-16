@@ -30,17 +30,16 @@ public:
   // Genes:
   // 0-MaximumVelocity        (0-1)meters/second
   // 1-MaximumRotation        (0-10)degrees
-  // 2-QtdIRsensors           (0-10)sensors
-  // ...-SensorsInfo
+  // [2..6]-SensorActivated   (0-10)sensors
   vector<float> genesBrain;
-  // size = 2*qtdSensors
+  // neural network
 
 private:
   float theta;
   float lastX, lastY;
   float timeLastXY;
   bool inCollision;
-  vector<float> sensorValues;
+  vector<char> sensorValues;// 4 Possible values: Near / Middle / Far / Too Far
 };
 
 

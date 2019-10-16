@@ -9,13 +9,15 @@
 using namespace std;
 
 Robot::Robot():
-  Object(),theta(0), lastX(0), lastY(0),timeLastXY(0), inCollision(false)
+  Object(), theta(0), lastX(0), lastY(0),timeLastXY(0), inCollision(false)
 {
   radius = 0.15;
   id = 0;
   color[0] = 0;
   color[1] = 0;
   color[2] = 0;
+  sensorValues.resize(controlQtdSensors);
+  genesAnatomy.resize(controlQtdSensors);
 }
 
 Robot::~Robot(){
@@ -53,8 +55,6 @@ void Robot::setTheta(float _theta){
 }
 
 void Robot::draw(void) const{
-  int qtdIR = genesAnatomy[2];
-  int qtdSensors = qtdIR;
   // Draw robot body
   if(inCollision)
     glColor3f(1, 0, 0);
@@ -73,25 +73,27 @@ void Robot::draw(void) const{
   }
   glEnd();
 
-  //----- Draw IR sensors -----//
-  if(sensorValues.size()>=qtdIR){
-    int startIndexIR = 3;// IR sensor info first index
+  //----- Draw sensors -----//
+  for(int i=2;i<int(genesAnatomy.size());i++){
 
-    int sensorValuesIndex = 0;
-    for(int i=startIndexIR ; i<startIndexIR+qtdIR*2 ; i+=2){
-      float angle = genesAnatomy[i];
-      float maxDist = genesAnatomy[i+1];
-
-      float sensorValue = sensorValues[sensorValuesIndex];
-
-      glColor3f(0.8, 0, 0);
+    int sensorIndex = i-2;
+    float angle = sensorIndex*(M_PI/float(controlQtdSensors)) + theta/180.0f*M_PI - M_PI/2;
+    //cout<<i<<"("<<int(genesAnatomy[i])<<")";
+    if(genesAnatomy[i]>controlEnableSensor){// If sensor is activated
+      if(sensorValues[i-2]==controlSensorQtdDivisions){
+        glColor3f(0.0, 0.8, 0);
+      }else{
+        glColor3f(0.8, 0, 0);
+      }
+      float metersPerDivision = float(controlSensorMaxDist)/controlSensorQtdDivisions;
       glBegin(GL_LINES);
-        glVertex2d( x/10 + (radius)/10*cos((theta+angle)/180.0*M_PI), y/10 + (radius)/10*sin((theta+angle)/180.0*M_PI));
-        glVertex2d( x/10 + (radius+sensorValue)/10*cos((theta+angle)/180.0*M_PI), y/10 + (radius+sensorValue)/10*sin((theta+angle)/180.0*M_PI));
+        glVertex2d( x/10 + (radius)/10*cos(angle), y/10 + (radius)/10*sin(angle));
+        glVertex2d( x/10 + (radius+sensorValues[i-2]*metersPerDivision)/10*cos(angle),
+                    y/10 + (radius+sensorValues[i-2]*metersPerDivision)/10*sin(angle));
       glEnd();
-      sensorValuesIndex++;
     }
   }
+  //cout<<endl;
 }
 
 void Robot::move(vector<Object*> objects, float seconds){
@@ -101,8 +103,31 @@ void Robot::move(vector<Object*> objects, float seconds){
   float velocity=0;
   float rotation=0;
 
-
   updateSensor(objects);
+
+  //----- Calculate velocity -----//
+  float maxVel = genesAnatomy[0];
+  for(int i=0 ; i< int(genesBrain.size()/2) ; i++){
+    if(genesAnatomy[i+2]>controlEnableSensor)
+      velocity+=sensorValues[i]*genesBrain[i];
+  }
+  velocity = min(velocity, maxVel);
+  //----- Calculate rotation -----//
+  float maxRot = genesAnatomy[1];
+  for(int i=int(genesBrain.size()/2) ; i<int(genesBrain.size()) ; i++){
+    if(genesAnatomy[i-int(genesBrain.size()/2)+2]>controlEnableSensor)
+      rotation+=sensorValues[i-int(genesBrain.size()/2)]*genesBrain[i];
+  }
+
+  rotation = ( int(rotation*100) % int(360*100) )/100.0f;
+  if(rotation<=180) rotation = min(rotation, maxRot);
+  else              rotation = max(rotation, 360-maxRot);
+
+  //----- Rotate robot -----//
+  rotate(rotation);
+  //----- Move robot -----//
+  x += cos((theta+rotation)/180*M_PI)*velocity*seconds;
+  y += sin((theta+rotation)/180*M_PI)*velocity*seconds;
 
   // Search for pysical contact between robots
   vector<Object*> nearObjects = objects;
@@ -113,36 +138,10 @@ void Robot::move(vector<Object*> objects, float seconds){
       if(distanceTwoObjects(objects[id], nearObjects[i]) <= (objects[id]->getRadius()+nearObjects[i]->getRadius())){
         inCollision = true;
         fitnessBack+=pointsCollision*seconds;
-        if(distTwoAngles( this->getTheta(), angleTwoObjects(objects[id],nearObjects[i]))<90 ||
-          distTwoAngles( this->getTheta(), angleTwoObjects(objects[id],nearObjects[i]))>270){
-        }
       }
     }
   }
   fitness.back() = fitnessBack;
-
-  //----- Calculate velocity -----//
-  float maxVel = genesAnatomy[0];
-  for(int i=0 ; i< int(genesBrain.size()/2) ; i++){
-    velocity+=sensorValues[i]*genesBrain[i];
-  }
-  velocity = min(velocity, maxVel);
-  //----- Calculate rotation -----//
-  float maxRot = genesAnatomy[1];
-  for(int i=int(genesBrain.size()/2) ; i<int(genesBrain.size()) ; i++){
-    rotation+=sensorValues[i]*genesBrain[i];
-  }
-  rotation = ( int(rotation*100) % int(360*100) )/100.0f;
-  if(rotation<=180) rotation = min(rotation, maxRot);
-  else              rotation = max(rotation, 360-maxRot);
-
-  //----- Rotate robot -----//
-  cout<<"flag1 - "<<rotation<<endl;
-  rotate(rotation);
-  cout<<"flag2"<<endl;
-  //----- Move robot -----//
-  x += cos((theta+rotation)/180*M_PI)*velocity*seconds;
-  y += sin((theta+rotation)/180*M_PI)*velocity*seconds;
 
   // Check collision with walls
   if(x>10-radius){
@@ -162,13 +161,18 @@ void Robot::move(vector<Object*> objects, float seconds){
     y=-10+radius;
   }
 
+  if(inCollision){
+    x -= cos((theta+rotation)/180*M_PI)*velocity*seconds;
+    y -= sin((theta+rotation)/180*M_PI)*velocity*seconds;
+  }
+
   //----- Color robot -----//
   objects[id]->setColor(0,0,0);
   if(inCollision) objects[id]->setColor(1,0,0);
 
   // Calculate fitness each 2 seconds
   timeLastXY+=seconds;
-  if(timeLastXY>=2){
+  if(timeLastXY>=5){
     float displacedDistance = sqrt(pow(lastX-x,2)+pow(lastY-y,2));
     fitness.back() = fitness.back() + displacedDistance*pointsMoving;
     // Equal to genes[2]*seconds*pointsMoving when maximum is 1m/s
@@ -184,42 +188,24 @@ void Robot::rotate(float angle){
 }
 
 void Robot::updateSensor(vector<Object*> objects){
-  int qtdIR = genesAnatomy[2];
-  int qtdSensors = qtdIR;
-  sensorValues.resize(qtdSensors);
-  sensorValues.assign(qtdSensors, 10);// Set to a big value to change to the minimum
+  int qtdSensors = controlQtdSensors;
+  vector<float> realSensorValue;
+  realSensorValue.resize(qtdSensors);
+  realSensorValue.assign(qtdSensors, controlSensorMaxDist);// Set to a big value to change to the minimum
   //-----------------------------------//
-  //----- Update infrared sensors -----//
+  //----- Update distance sensors -----//
   //-----------------------------------//
-  vector<float> IRangle;
-  vector<float> IRactivation;
-
-  int startIndexIR = 3;// IR sensor info first index
-  int sensorValuesIndex = 0;
-  // Loop for each IR sensor
-  for(int i=startIndexIR ; i<startIndexIR+qtdIR*2 ; i+=2){
-    float angle = genesAnatomy[i];
-    float maxDist = genesAnatomy[i+1];
-
-    IRangle.push_back(angle+theta);
-    IRactivation.push_back(maxDist);
-
-    sensorValuesIndex++;
-  }
-
-  // Change to correct range
-  for (int i = 0; i < qtdIR; i++) {
-    while(IRangle[i]<0){
-      IRangle[i]+=360;
-    }
-    while(IRangle[i]>=360){
-      IRangle[i]-=360;
-    }
-  }
 
   // Check detection of robots
-  for (int sensor = 0; sensor < qtdIR; sensor++) {
-    vector<Object*> nearObjects = objects;//qTree->queryCircle(&objects[id], IRactivation[sensor]+maxRadius);
+  for (int sensor = 0; sensor < qtdSensors; sensor++) {
+    // Only check activated sensors
+    if(genesAnatomy[2+sensor]<=controlEnableSensor)
+      continue;
+
+    float sensorAngle = sensor*(180/float(controlQtdSensors)) + theta - 90;
+    float sensorAngleRad = sensorAngle/180.0f*M_PI;
+
+    vector<Object*> nearObjects = objects;//qTree->queryCircle(&objects[id], controlSensorMaxDist+maxRadius);
     for (int i = 0; i < int(nearObjects.size()); i++) {
       if(nearObjects[i]->getId()!=this->getId()){
         float distance, angle;
@@ -235,10 +221,10 @@ void Robot::updateSensor(vector<Object*> objects){
         }
         angleToReadRobot*=180/M_PI;// Convert from radians to degrees
 
-        if(distance<=IRactivation[sensor]+radius+nearObjects[i]->getRadius()){
+        if(distance<=controlSensorMaxDist+radius+nearObjects[i]->getRadius()){
           float angleOtherObject = atan2(nearObjects[i]->getRadius(),distance)/M_PI*180;
-          if(distTwoAngles(IRangle[sensor],angle)<angleOtherObject){
-            sensorValues[sensor]=min(sensorValues[sensor],distance-radius-nearObjects[i]->getRadius());
+          if(distTwoAngles(sensorAngle,angle)<angleOtherObject){
+            realSensorValue[sensor] = min(realSensorValue[sensor],distance-radius-nearObjects[i]->getRadius());
           }
         }
       }
@@ -246,30 +232,32 @@ void Robot::updateSensor(vector<Object*> objects){
 
     // Check detection of walls
     float aux;
-    if((IRactivation[sensor]+radius)*cos(IRangle[sensor]/180*M_PI)+x>=10){
-      aux = ((IRactivation[sensor]+radius)*cos(IRangle[sensor]/180*M_PI)+x-10)/(IRactivation[sensor]+radius)*cos(IRangle[sensor]/180*M_PI);
+    if((controlSensorMaxDist+radius)*cos(sensorAngleRad)+x>=10){
+      aux = ((controlSensorMaxDist+radius)*cos(sensorAngleRad)+x-10)/(controlSensorMaxDist+radius)*cos(sensorAngleRad);
       aux = 1-fabs(aux);
-      sensorValues[sensor]= min(sensorValues[sensor],IRactivation[sensor]*aux*(IRactivation[sensor]/(radius+IRactivation[sensor])));
+      realSensorValue[sensor]= min(realSensorValue[sensor],controlSensorMaxDist*aux*(controlSensorMaxDist/(radius+controlSensorMaxDist)));
     }
-    if((IRactivation[sensor]+radius)*cos(IRangle[sensor]/180*M_PI)+x<=-10){
-      aux = ((IRactivation[sensor]+radius)*cos(IRangle[sensor]/180*M_PI)+x+10)/(IRactivation[sensor]+radius)*cos(IRangle[sensor]/180*M_PI);
+    if((controlSensorMaxDist+radius)*cos(sensorAngleRad)+x<=-10){
+      aux = ((controlSensorMaxDist+radius)*cos(sensorAngleRad)+x+10)/(controlSensorMaxDist+radius)*cos(sensorAngleRad);
       aux = 1-fabs(aux);
-      sensorValues[sensor]= min(sensorValues[sensor],IRactivation[sensor]*aux*(IRactivation[sensor]/(radius+IRactivation[sensor])));
+      realSensorValue[sensor]= min(realSensorValue[sensor],controlSensorMaxDist*aux*(controlSensorMaxDist/(radius+controlSensorMaxDist)));
     }
-    if((IRactivation[sensor]+radius)*sin(IRangle[sensor]/180*M_PI)+y>=10){
-      aux = ((IRactivation[sensor]+radius)*sin(IRangle[sensor]/180*M_PI)+y-10)/(IRactivation[sensor]+radius)*sin(IRangle[sensor]/180*M_PI);
+    if((controlSensorMaxDist+radius)*sin(sensorAngleRad)+y>=10){
+      aux = ((controlSensorMaxDist+radius)*sin(sensorAngleRad)+y-10)/(controlSensorMaxDist+radius)*sin(sensorAngleRad);
       aux = 1-fabs(aux);
-      sensorValues[sensor]= min(sensorValues[sensor],IRactivation[sensor]*aux*(IRactivation[sensor]/(radius+IRactivation[sensor])));
+      realSensorValue[sensor]= min(realSensorValue[sensor],controlSensorMaxDist*aux*(controlSensorMaxDist/(radius+controlSensorMaxDist)));
     }
-    if((IRactivation[sensor]+radius)*sin(IRangle[sensor]/180*M_PI)+y<=-10){
-      aux = ((IRactivation[sensor]+radius)*sin(IRangle[sensor]/180*M_PI)+y+10)/(IRactivation[sensor]+radius)*sin(IRangle[sensor]/180*M_PI);
+    if((controlSensorMaxDist+radius)*sin(sensorAngleRad)+y<=-10){
+      aux = ((controlSensorMaxDist+radius)*sin(sensorAngleRad)+y+10)/(controlSensorMaxDist+radius)*sin(sensorAngleRad);
       aux = 1-fabs(aux);
-      sensorValues[sensor]= min(sensorValues[sensor],(IRactivation[sensor])*aux*(IRactivation[sensor]/(radius+IRactivation[sensor])));
+      realSensorValue[sensor]= min(realSensorValue[sensor],(controlSensorMaxDist)*aux*(controlSensorMaxDist/(radius+controlSensorMaxDist)));
     }
+  }
 
-    if(sensorValues[sensor]==10){
-      sensorValues[sensor]=IRactivation[sensor];// Set as maxDist if sensor was not trigged
-    }
+  // Convert from real value to char
+  float metersPerDivision = float(controlSensorMaxDist)/controlSensorQtdDivisions;
+  for(int i=0; i<int(realSensorValue.size()); i++){
+    sensorValues[i] = int(realSensorValue[i]/metersPerDivision);
   }
 }
 

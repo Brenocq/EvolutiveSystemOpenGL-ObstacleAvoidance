@@ -94,13 +94,16 @@ void timer(int){
         outputFile.open(fileName, ios::out | ios::app);
 
         if(lastPopulation!=0){
+
           outputFile<<"\t\tPopulation "<< lastPopulation-1 <<"\n";
           for (int i = 0; i < qtdRobots; i++) {
             Robot *robot = &manager.environment[lastEnvironment].robot[i];
+
             outputFile<<"\t\t\tRobot "<< i;
             outputFile<<fixed<<setprecision(2);
             outputFile<<" \tf: "  << robot->fitness[robot->fitness.size()-2];
-            outputFile<<" \tmf: " << robot->meanFitness[robot->meanFitness.size()-1];
+            //outputFile<<" \tmf: " << robot->meanFitness[robot->meanFitness.size()-1];// Core Dumped
+
             if(printEverything){
               int i=0;
               for(float value : robot->genesAnatomy){
@@ -114,7 +117,9 @@ void timer(int){
               }
             }
             outputFile<<"\n";
+
           }
+
         }
         outputFile.close();
       }
@@ -122,6 +127,7 @@ void timer(int){
   }
 
   glutPostRedisplay();
+
   glutTimerFunc(1000/60, timer, 0);// Call timer function as fast as possible
 }
 
