@@ -97,6 +97,7 @@ void Robot::draw(void) const{
 }
 
 void Robot::move(vector<Object*> objects, float seconds){
+  bool wasInCollision = inCollision;
   inCollision = false;
 
   float velocity=0;
@@ -135,7 +136,7 @@ void Robot::move(vector<Object*> objects, float seconds){
   float fitnessBack = fitness.back();
   //----- Rotate robot -----//
   rotate(rotation);
-  fitnessBack+=-(5/360)*abs(rotation)*seconds;
+  fitnessBack+=-(pointsRotation/360)*abs(rotation)*seconds;
   //----- Move robot -----//
   x += cos((theta+rotation)/180*M_PI)*velocity*seconds;
   y += sin((theta+rotation)/180*M_PI)*velocity*seconds;
@@ -147,13 +148,9 @@ void Robot::move(vector<Object*> objects, float seconds){
     if(nearObjects[i]->getId()!=objects[id]->getId()){
       if(distanceTwoObjects(objects[id], nearObjects[i]) <= (objects[id]->getRadius()+nearObjects[i]->getRadius())){
         inCollision = true;
-        fitnessBack+=pointsCollision*seconds;
       }
     }
   }
-  fitnessBack = max(fitnessBack,-200.0f);
-  fitness.back() = fitnessBack;
-
 
   // Check collision with walls
   if(x>10-radius){
@@ -173,9 +170,16 @@ void Robot::move(vector<Object*> objects, float seconds){
     y=-10+radius;
   }
 
+  // Avoid entering objects
   if(inCollision){
     x -= cos((theta+rotation)/180*M_PI)*velocity*seconds;
     y -= sin((theta+rotation)/180*M_PI)*velocity*seconds;
+  }
+
+  // Add points for each collision
+  if(inCollision==true && wasInCollision==false){
+      fitnessBack+=pointsCollision*seconds;
+      fitness.back() = fitnessBack;
   }
 
   //----- Color robot -----//

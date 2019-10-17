@@ -9,8 +9,9 @@
 #define qtdRobots 15
 #define qtdEnvironments 10
 #define qtdRepetitions 10// Number of times that each environment will be tested to define the fitness
-#define qtdObstacles 50
-#define pointsCollision -50.0// Points per second in collision
+#define qtdObstacles 30
+#define pointsCollision -100.0// Points per collision
+#define pointsRotation -10.0// Points every 360 degrees rotation
 #define pointsMoving 10.0// Points per second in maximum speed
 #define maxPopulation 500// Number of populations tested with each environment
 #define maxTime 600// Time that each population will be tested
@@ -32,9 +33,9 @@
 // Fixed genes environments
 // Set as -1 if you want to evolute the gene
 #define controlFitnessMean 5
-#define controlMutationRate .2
+#define controlMutationRate .4
 #define controlNeutralCrossing 0.5
-#define controlNeutralMutation 0.5
+#define controlNeutralMutation 0.2
 #define controlBackMutationPrevention 1
 #define controlCrossingCondition 0
 

@@ -70,8 +70,8 @@ void Environment::initiateRobots(){
 
     //--- Create Brain ---//
     for (int j = 0; j < qtdSensors; j++) {
-      // Will create a weight to each sensor (-1,1) to calculate the velocity
-      genesBrain.push_back( float(rand()%(2*100))/100 -1);
+      // Will create a weight to each sensor (0,1) to calculate the velocity
+      genesBrain.push_back( float(rand()%(1*100))/100);
     }
     for (int j = 0; j < qtdSensors; j++) {
       // Will create a weight to each sensor (-5,5) to calculate the rotation
@@ -232,8 +232,11 @@ void Environment::newPopulationRobots(){
       }
 
       // Mutate brain
-      for (int i = 0; i < int(mutatedGenesBrain.size()); i++) {
-        mutatedGenesBrain[i] = float(genes[2])*mutatedGenesBrain[i] + (1-float(genes[2]))*(mutatedGenesAnatomy[i] + float(rand()%(4*10))/100 -0.2);
+      for (int i = 0; i < int(mutatedGenesBrain.size())/2; i++) {
+        mutatedGenesBrain[i] = float(genes[2])*mutatedGenesBrain[i] + (1-float(genes[2]))*(float(rand()%(1*100))/100);
+      }
+      for (int i = int(mutatedGenesBrain.size())/2; i < int(mutatedGenesBrain.size()); i++) {
+        mutatedGenesBrain[i] = float(genes[2])*mutatedGenesBrain[i] + (1-float(genes[2]))*(float(rand()%(10*100))/100 -5);
       }
       robot[i].newGenes(mutatedGenesAnatomy, mutatedGenesBrain);
     }
