@@ -102,7 +102,7 @@ void timer(int){
             outputFile<<"\t\t\tRobot "<< i;
             outputFile<<fixed<<setprecision(2);
             outputFile<<" \tf: "  << robot->fitness[robot->fitness.size()-2];
-            //outputFile<<" \tmf: " << robot->meanFitness[robot->meanFitness.size()-1];// Core Dumped
+            outputFile<<" \tmf: " << robot->meanFitness[robot->meanFitness.size()-1];// Core Dumped
 
             if(printEverything){
               int i=0;

@@ -214,9 +214,9 @@ void Environment::newPopulationRobots(){
           robot[i].setColor(0.5,0.5,0);
 
           if(j==0){// Max velocity
-            mutatedGenesAnatomy[0] = float(genes[2])*mutatedGenesAnatomy[0] + (1-float(genes[2]))*((rand()%2*100)/100.0-10);
+            mutatedGenesAnatomy[0] = float(genes[2])*mutatedGenesAnatomy[0] + (1-float(genes[2]))*((rand()%1*100)/100.0);
           }else if(j==1){// Max rotation
-            mutatedGenesAnatomy[1] = float(genes[2])*mutatedGenesAnatomy[1] + (1-float(genes[2]))*((rand()%10*100)/100.0-5);
+            mutatedGenesAnatomy[1] = float(genes[2])*mutatedGenesAnatomy[1] + (1-float(genes[2]))*((rand()%5*100)/100.0);
           }
         }
       }

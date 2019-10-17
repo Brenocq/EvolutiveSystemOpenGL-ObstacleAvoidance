@@ -77,7 +77,7 @@ void Robot::draw(void) const{
   for(int i=2;i<int(genesAnatomy.size());i++){
 
     int sensorIndex = i-2;
-    float angle = sensorIndex*(M_PI/float(controlQtdSensors)) + theta/180.0f*M_PI - M_PI/2;
+    float angle = sensorIndex*(M_PI/float(controlQtdSensors-1)) + theta/180.0f*M_PI - M_PI/2;
     //cout<<i<<"("<<int(genesAnatomy[i])<<")";
     if(genesAnatomy[i]>controlEnableSensor){// If sensor is activated
       if(sensorValues[i-2]==controlSensorQtdDivisions){
@@ -97,7 +97,6 @@ void Robot::draw(void) const{
 }
 
 void Robot::move(vector<Object*> objects, float seconds){
-  bool sensorTrigged=false;
   inCollision = false;
 
   float velocity=0;
@@ -105,26 +104,38 @@ void Robot::move(vector<Object*> objects, float seconds){
 
   updateSensor(objects);
 
+  float qtdActiveSensors=0;
+  for (int i = 2; i < int(genesAnatomy.size()); i++) {
+    if(genesAnatomy[i]>controlEnableSensor)
+      qtdActiveSensors++;
+  }
+  qtdActiveSensors = qtdActiveSensors==0?1:qtdActiveSensors;
   //----- Calculate velocity -----//
   float maxVel = genesAnatomy[0];
   for(int i=0 ; i< int(genesBrain.size()/2) ; i++){
     if(genesAnatomy[i+2]>controlEnableSensor)
-      velocity+=sensorValues[i]*genesBrain[i];
+      velocity+=(sensorValues[i]*genesBrain[i])/qtdActiveSensors;
   }
-  velocity = min(velocity, maxVel);
+  if(velocity<0)
+    velocity = max(velocity, -maxVel);
+  else
+    velocity = min(velocity, maxVel);
+
   //----- Calculate rotation -----//
   float maxRot = genesAnatomy[1];
   for(int i=int(genesBrain.size()/2) ; i<int(genesBrain.size()) ; i++){
     if(genesAnatomy[i-int(genesBrain.size()/2)+2]>controlEnableSensor)
-      rotation+=sensorValues[i-int(genesBrain.size()/2)]*genesBrain[i];
+      rotation+=(sensorValues[i-int(genesBrain.size()/2)]*genesBrain[i])/qtdActiveSensors;
   }
 
   rotation = ( int(rotation*100) % int(360*100) )/100.0f;
   if(rotation<=180) rotation = min(rotation, maxRot);
   else              rotation = max(rotation, 360-maxRot);
 
+  float fitnessBack = fitness.back();
   //----- Rotate robot -----//
   rotate(rotation);
+  fitnessBack+=-(5/360)*abs(rotation)*seconds;
   //----- Move robot -----//
   x += cos((theta+rotation)/180*M_PI)*velocity*seconds;
   y += sin((theta+rotation)/180*M_PI)*velocity*seconds;
@@ -132,7 +143,6 @@ void Robot::move(vector<Object*> objects, float seconds){
   // Search for pysical contact between robots
   vector<Object*> nearObjects = objects;
 
-  float fitnessBack = fitness.back();
   for (int i = 0; i < int(nearObjects.size()); i++) {
     if(nearObjects[i]->getId()!=objects[id]->getId()){
       if(distanceTwoObjects(objects[id], nearObjects[i]) <= (objects[id]->getRadius()+nearObjects[i]->getRadius())){
@@ -141,7 +151,9 @@ void Robot::move(vector<Object*> objects, float seconds){
       }
     }
   }
+  fitnessBack = max(fitnessBack,-200.0f);
   fitness.back() = fitnessBack;
+
 
   // Check collision with walls
   if(x>10-radius){
@@ -202,7 +214,7 @@ void Robot::updateSensor(vector<Object*> objects){
     if(genesAnatomy[2+sensor]<=controlEnableSensor)
       continue;
 
-    float sensorAngle = sensor*(180/float(controlQtdSensors)) + theta - 90;
+    float sensorAngle = sensor*(180/float(controlQtdSensors-1)) + theta - 90;
     float sensorAngleRad = sensorAngle/180.0f*M_PI;
 
     vector<Object*> nearObjects = objects;//qTree->queryCircle(&objects[id], controlSensorMaxDist+maxRadius);
