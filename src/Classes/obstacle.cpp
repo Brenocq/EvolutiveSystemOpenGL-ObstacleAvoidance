@@ -1,6 +1,7 @@
 #include <GL/glut.h>
 #include <math.h>
 #include <iostream>
+#include <cstdlib>
 #include "object.h"
 #include "obstacle.h"
 #include "utils.h"
@@ -10,10 +11,10 @@ using namespace std;
 Obstacle::Obstacle()
   :Object()
 {
-  color[0] = 0.4;
-  color[1] = 0.4;
-  color[2] = 0.4;
-  radius = 0.6;
+  color[0] = 0;
+  color[1] = 1;
+  color[2] = 0.5;
+  radius = (float)(std::rand() % 10 + 1) / 11;
   id = -1;
 }
 
