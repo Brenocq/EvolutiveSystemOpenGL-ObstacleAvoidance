@@ -223,12 +223,12 @@ void Environment::newPopulationRobots(){
       }
 
       // Mutate active sensors
-      for (int i = 2; i < controlQtdSensors+2; i++) {
+      for (int j = 2; j < controlQtdSensors+2; j++) {
         int chanceMutation = rand()%100;
 
         if(chanceMutation < genes[1]*100){
             robot[i].setColor(0.5,0.5,0);
-            mutatedGenesAnatomy[i] = float(genes[2])*mutatedGenesAnatomy[i] + (1-float(genes[2]))*(mutatedGenesAnatomy[i]+(rand()%50)/100.0f);
+            mutatedGenesAnatomy[j] = float(genes[2])*mutatedGenesAnatomy[j] + (1-float(genes[2]))*(mutatedGenesAnatomy[j]+(rand()%50)/100.0f);
         }
       }
 

@@ -40,6 +40,9 @@ private:
   float timeLastXY;
   bool inCollision;
   vector<char> sensorValues;// 4 Possible values: Near / Middle / Far / Too Far
+  // Calculatio fitness with area explored
+  float minX, maxX, minY, maxY;
+  float lastFitnessExploration;
 };
 
 

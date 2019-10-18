@@ -3,7 +3,7 @@
 #define windowWidth 600
 #define screenHeight 1080
 #define screenWidth 1920
-#define displaySteps 3
+#define displaySteps 3000
 
 // Evolutive system global parameters (fixed)
 #define qtdRobots 6
@@ -13,6 +13,7 @@
 #define pointsCollision -50.0// Points per collision
 #define pointsRotation -2.0// Points every 360 degrees rotation
 #define pointsMoving 10.0// Points per second in maximum speed
+#define pointsExploration 1000// Points when explored all the world
 #define maxPopulation 500// Number of populations tested with each environment
 #define maxTime 600// Time that each population will be tested
 #define envMutationRate 0.2

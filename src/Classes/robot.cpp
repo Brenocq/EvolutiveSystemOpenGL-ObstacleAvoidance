@@ -9,7 +9,7 @@
 using namespace std;
 
 Robot::Robot():
-  Object(), theta(0), lastX(0), lastY(0),timeLastXY(0), inCollision(false)
+  Object(), theta(0), lastX(0), lastY(0),timeLastXY(0), inCollision(false), lastFitnessExploration(0)
 {
   radius = 0.15;
   id = 0;
@@ -17,7 +17,7 @@ Robot::Robot():
   color[1] = 0;
   color[2] = 0;
   sensorValues.resize(controlQtdSensors);
-  genesAnatomy.resize(controlQtdSensors);
+  genesAnatomy.resize(2+controlQtdSensors);
 }
 
 Robot::~Robot(){
@@ -43,6 +43,8 @@ void Robot::newOrientation(float _x, float _y, float _theta){
   y = _y;
   lastY = y;
   theta = _theta;
+  minX = maxX = x;
+  minY = maxY = y;
 }
 
 void Robot::setTheta(float _theta){
@@ -78,7 +80,7 @@ void Robot::draw(void) const{
 
     int sensorIndex = i-2;
     float angle = sensorIndex*(M_PI/float(controlQtdSensors-1)) + theta/180.0f*M_PI - M_PI/2;
-    //cout<<i<<"("<<int(genesAnatomy[i])<<")";
+
     if(genesAnatomy[i]>controlEnableSensor){// If sensor is activated
       if(sensorValues[i-2]==controlSensorQtdDivisions){
         glColor3f(0.0, 0.8, 0);
@@ -93,7 +95,6 @@ void Robot::draw(void) const{
       glEnd();
     }
   }
-  //cout<<endl;
 }
 
 void Robot::move(vector<Object*> objects, float seconds){
@@ -185,9 +186,9 @@ void Robot::move(vector<Object*> objects, float seconds){
   //----- Color robot -----//
   if(inCollision) objects[id]->setColor(1,0,0);
 
-  // Calculate fitness each 2 seconds
+  // Calculate fitness each second
   timeLastXY+=seconds;
-  if(timeLastXY>=5){
+  if(timeLastXY>=1){
     float displacedDistance = sqrt(pow(lastX-x,2)+pow(lastY-y,2));
     fitness.back() = fitness.back() + displacedDistance*pointsMoving;
     // Equal to genes[2]*seconds*pointsMoving when maximum is 1m/s
@@ -196,6 +197,15 @@ void Robot::move(vector<Object*> objects, float seconds){
     timeLastXY = 0;
   }
 
+  // Calculate fitness with area explored
+  minX = min(minX, x);
+  maxX = max(maxX, x);
+  minY = min(minY, y);
+  maxY = max(maxY, y);
+  fitness.back()-=lastFitnessExploration;
+  float fitnessExploration = (maxX-minX)*(maxX-minY)/400 * pointsExploration;
+  fitness.back()+=fitnessExploration;
+  lastFitnessExploration = fitnessExploration;
 }
 
 void Robot::rotate(float angle){
@@ -280,7 +290,6 @@ void Robot::updateMeanFitness(int sizeMean){
     meanFitness.push_back(0);
     int qtdValuesMean = max(int(fitness.size()-sizeMean),0);
     int total = meanFitness.back();
-    #pragma omp parallel for reduction(+:total)
     for (int j = fitness.size()-1; j >= qtdValuesMean; j--) {
       total+=fitness[j];
     }
