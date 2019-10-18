@@ -3,15 +3,15 @@
 #define windowWidth 600
 #define screenHeight 1080
 #define screenWidth 1920
-#define displaySteps 1
+#define displaySteps 3
 
 // Evolutive system global parameters (fixed)
-#define qtdRobots 15
+#define qtdRobots 6
 #define qtdEnvironments 10
 #define qtdRepetitions 10// Number of times that each environment will be tested to define the fitness
-#define qtdObstacles 30
-#define pointsCollision -100.0// Points per collision
-#define pointsRotation -10.0// Points every 360 degrees rotation
+#define qtdObstacles 40
+#define pointsCollision -50.0// Points per collision
+#define pointsRotation -2.0// Points every 360 degrees rotation
 #define pointsMoving 10.0// Points per second in maximum speed
 #define maxPopulation 500// Number of populations tested with each environment
 #define maxTime 600// Time that each population will be tested
@@ -32,15 +32,15 @@
 
 // Fixed genes environments
 // Set as -1 if you want to evolute the gene
-#define controlFitnessMean 5
+#define controlFitnessMean 10
 #define controlMutationRate .4
-#define controlNeutralCrossing 0.5
-#define controlNeutralMutation 0.2
+#define controlNeutralCrossing 0.6
+#define controlNeutralMutation 0.3
 #define controlBackMutationPrevention 1
 #define controlCrossingCondition 0
 
 // Robot info
-#define controlQtdSensors 5
-#define controlSensorQtdDivisions 5// SensorValue: [0..n-1] when object | n when is not reading obstacle (n+1 divisions)
-#define controlSensorMaxDist 3// meters
-#define controlEnableSensor 0.3//  0 = always enable | 1 = never enable
+#define controlQtdSensors 10
+#define controlSensorQtdDivisions 10.0f// SensorValue: [0..n-1] when object | n when is not reading obstacle (n+1 divisions)
+#define controlSensorMaxDist 1.5f// meters
+#define controlEnableSensor 0.35f//  0 = always enable | 1 = never enable

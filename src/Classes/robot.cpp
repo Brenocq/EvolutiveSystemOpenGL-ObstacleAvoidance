@@ -113,9 +113,9 @@ void Robot::move(vector<Object*> objects, float seconds){
   qtdActiveSensors = qtdActiveSensors==0?1:qtdActiveSensors;
   //----- Calculate velocity -----//
   float maxVel = genesAnatomy[0];
-  for(int i=0 ; i< int(genesBrain.size()/2) ; i++){
+  for(int i=0 ; i< int(genesBrain.size())/2 ; i++){
     if(genesAnatomy[i+2]>controlEnableSensor)
-      velocity+=(sensorValues[i]*genesBrain[i])/qtdActiveSensors;
+      velocity+=(sensorValues[i]/controlSensorQtdDivisions*genesBrain[i])/qtdActiveSensors;
   }
   if(velocity<0)
     velocity = max(velocity, -maxVel);
@@ -124,9 +124,9 @@ void Robot::move(vector<Object*> objects, float seconds){
 
   //----- Calculate rotation -----//
   float maxRot = genesAnatomy[1];
-  for(int i=int(genesBrain.size()/2) ; i<int(genesBrain.size()) ; i++){
+  for(int i=int(genesBrain.size()/2+1) ; i<int(genesBrain.size()) ; i++){
     if(genesAnatomy[i-int(genesBrain.size()/2)+2]>controlEnableSensor)
-      rotation+=(sensorValues[i-int(genesBrain.size()/2)]*genesBrain[i])/qtdActiveSensors;
+      rotation+=(controlSensorQtdDivisions-sensorValues[i-int(genesBrain.size()/2)])*genesBrain[i]/qtdActiveSensors;
   }
 
   rotation = ( int(rotation*100) % int(360*100) )/100.0f;
@@ -183,7 +183,6 @@ void Robot::move(vector<Object*> objects, float seconds){
   }
 
   //----- Color robot -----//
-  objects[id]->setColor(0,0,0);
   if(inCollision) objects[id]->setColor(1,0,0);
 
   // Calculate fitness each 2 seconds

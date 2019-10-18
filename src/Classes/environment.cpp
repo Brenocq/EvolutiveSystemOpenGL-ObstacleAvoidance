@@ -57,8 +57,8 @@ void Environment::initiateRobots(){
     vector<float> genesBrain;
     int qtdSensors = controlQtdSensors;
 
-    // MaximumVelocity          (0-1) meters/second
-    if(controlMaximumVelocity==-1) genesAnatomy.push_back( float(rand()%100)/100.0 );
+    // MaximumVelocity          (0-2) meters/second
+    if(controlMaximumVelocity==-1) genesAnatomy.push_back( float(rand()%200)/100.0 );
     else                           genesAnatomy.push_back( controlMaximumVelocity );
     // MaximumRotation          (0-10) degrees
     if(controlMaximumRotation==-1) genesAnatomy.push_back( float(rand()%100)/10.0 );
@@ -139,6 +139,7 @@ void Environment::newPopulationRobots(){
   //----- Select Best Robot -----//
   // The best one has the greater meanFitness
   for (int i = 0; i < qtdRobots; i++){
+    robot[i].setColor(0,0,0);
     bestRobots.push_back(make_pair(robot[i].meanFitness.back(),i));
   }
   sort(bestRobots.rbegin(),bestRobots.rend());
@@ -214,7 +215,7 @@ void Environment::newPopulationRobots(){
           robot[i].setColor(0.5,0.5,0);
 
           if(j==0){// Max velocity
-            mutatedGenesAnatomy[0] = float(genes[2])*mutatedGenesAnatomy[0] + (1-float(genes[2]))*((rand()%1*100)/100.0);
+            mutatedGenesAnatomy[0] = float(genes[2])*mutatedGenesAnatomy[0] + (1-float(genes[2]))*((rand()%2*100)/100.0);
           }else if(j==1){// Max rotation
             mutatedGenesAnatomy[1] = float(genes[2])*mutatedGenesAnatomy[1] + (1-float(genes[2]))*((rand()%5*100)/100.0);
           }
