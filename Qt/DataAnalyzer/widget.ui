@@ -7,7 +7,7 @@
     <x>0</x>
     <y>0</y>
     <width>900</width>
-    <height>700</height>
+    <height>901</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -611,6 +611,16 @@
     <rect>
      <x>20</x>
      <y>500</y>
+     <width>839</width>
+     <height>191</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QCustomPlot" name="graphSensors" native="true">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>700</y>
      <width>839</width>
      <height>191</height>
     </rect>

@@ -59,12 +59,13 @@ public:
     QWidget *envEvolution;
     QCustomPlot *graphGross;
     QCustomPlot *graphMean;
+    QCustomPlot *graphSensors;
 
     void setupUi(QWidget *Widget)
     {
         if (Widget->objectName().isEmpty())
             Widget->setObjectName(QString::fromUtf8("Widget"));
-        Widget->resize(900, 700);
+        Widget->resize(900, 901);
         fileManagerBox = new QGroupBox(Widget);
         fileManagerBox->setObjectName(QString::fromUtf8("fileManagerBox"));
         fileManagerBox->setGeometry(QRect(20, 10, 221, 271));
@@ -222,6 +223,9 @@ public:
         graphMean = new QCustomPlot(Widget);
         graphMean->setObjectName(QString::fromUtf8("graphMean"));
         graphMean->setGeometry(QRect(20, 500, 839, 191));
+        graphSensors = new QCustomPlot(Widget);
+        graphSensors->setObjectName(QString::fromUtf8("graphSensors"));
+        graphSensors->setGeometry(QRect(20, 700, 839, 191));
 
         retranslateUi(Widget);
 

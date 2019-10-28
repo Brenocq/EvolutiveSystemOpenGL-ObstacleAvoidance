@@ -1,0 +1,2107 @@
+QtdRobots: 1
+QtdEnvironments: 10
+QtdRepetitions: 10
+QtdObstacles: 40
+PointsCollision: -1000
+PointsMoving: 10
+MaxPopulation: 100
+MaxTime: 3000
+EnvMutationRate: 0.2
+
+Environment 0	 h: 10	 mr: 0	 nc: 0.6	 nm: 0	 bmp: 1	 cc: 0
+	Repetition 0
+		Population 0
+			Robot 0 	f: 1357.70 	mf: 1357.00 	ga0: 1.00 	ga1: 6.50 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.47 	gb1: 0.55 	gb2: 0.34 	gb3: 4.51 	gb4: 1.51 	gb5: 4.97
+		Population 1
+			Robot 0 	f: 1232.06 	mf: 1294.50 	ga0: 1.00 	ga1: 6.50 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.47 	gb1: 0.55 	gb2: 0.34 	gb3: 4.51 	gb4: 1.51 	gb5: 4.97
+		Population 2
+			Robot 0 	f: 1064.80 	mf: 1217.67 	ga0: 1.00 	ga1: 6.50 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.47 	gb1: 0.55 	gb2: 0.34 	gb3: 4.51 	gb4: 1.51 	gb5: 4.97
+		Population 3
+			Robot 0 	f: 1285.33 	mf: 1234.50 	ga0: 1.00 	ga1: 6.50 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.47 	gb1: 0.55 	gb2: 0.34 	gb3: 4.51 	gb4: 1.51 	gb5: 4.97
+		Population 4
+			Robot 0 	f: 1206.79 	mf: 1228.80 	ga0: 1.00 	ga1: 6.50 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.47 	gb1: 0.55 	gb2: 0.34 	gb3: 4.51 	gb4: 1.51 	gb5: 4.97
+		Population 5
+			Robot 0 	f: 1059.20 	mf: 1200.50 	ga0: 1.00 	ga1: 6.50 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.47 	gb1: 0.55 	gb2: 0.34 	gb3: 4.51 	gb4: 1.51 	gb5: 4.97
+		Population 6
+			Robot 0 	f: 1229.21 	mf: 1204.57 	ga0: 1.00 	ga1: 6.50 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.47 	gb1: 0.55 	gb2: 0.34 	gb3: 4.51 	gb4: 1.51 	gb5: 4.97
+		Population 7
+			Robot 0 	f: 1352.31 	mf: 1223.00 	ga0: 1.00 	ga1: 6.50 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.47 	gb1: 0.55 	gb2: 0.34 	gb3: 4.51 	gb4: 1.51 	gb5: 4.97
+		Population 8
+			Robot 0 	f: 819.06 	mf: 1178.11 	ga0: 1.00 	ga1: 6.50 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.47 	gb1: 0.55 	gb2: 0.34 	gb3: 4.51 	gb4: 1.51 	gb5: 4.97
+		Population 9
+			Robot 0 	f: 890.95 	mf: 1149.30 	ga0: 1.00 	ga1: 6.50 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.47 	gb1: 0.55 	gb2: 0.34 	gb3: 4.51 	gb4: 1.51 	gb5: 4.97
+		Population 10
+			Robot 0 	f: 1281.65 	mf: 1141.70 	ga0: 1.00 	ga1: 6.50 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.47 	gb1: 0.55 	gb2: 0.34 	gb3: 4.51 	gb4: 1.51 	gb5: 4.97
+		Population 11
+			Robot 0 	f: 1290.04 	mf: 1147.50 	ga0: 1.00 	ga1: 6.50 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.47 	gb1: 0.55 	gb2: 0.34 	gb3: 4.51 	gb4: 1.51 	gb5: 4.97
+		Population 12
+			Robot 0 	f: 1469.08 	mf: 1188.00 	ga0: 1.00 	ga1: 6.50 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.47 	gb1: 0.55 	gb2: 0.34 	gb3: 4.51 	gb4: 1.51 	gb5: 4.97
+		Population 13
+			Robot 0 	f: 598.35 	mf: 1119.30 	ga0: 1.00 	ga1: 6.50 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.47 	gb1: 0.55 	gb2: 0.34 	gb3: 4.51 	gb4: 1.51 	gb5: 4.97
+		Population 14
+			Robot 0 	f: 882.93 	mf: 1086.90 	ga0: 1.00 	ga1: 6.50 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.47 	gb1: 0.55 	gb2: 0.34 	gb3: 4.51 	gb4: 1.51 	gb5: 4.97
+		Population 15
+			Robot 0 	f: 1168.10 	mf: 1097.80 	ga0: 1.00 	ga1: 6.50 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.47 	gb1: 0.55 	gb2: 0.34 	gb3: 4.51 	gb4: 1.51 	gb5: 4.97
+		Population 16
+			Robot 0 	f: 1018.29 	mf: 1076.70 	ga0: 1.00 	ga1: 6.50 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.47 	gb1: 0.55 	gb2: 0.34 	gb3: 4.51 	gb4: 1.51 	gb5: 4.97
+		Population 17
+			Robot 0 	f: 1217.76 	mf: 1063.20 	ga0: 1.00 	ga1: 6.50 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.47 	gb1: 0.55 	gb2: 0.34 	gb3: 4.51 	gb4: 1.51 	gb5: 4.97
+		Population 18
+			Robot 0 	f: 1169.87 	mf: 1098.20 	ga0: 1.00 	ga1: 6.50 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.47 	gb1: 0.55 	gb2: 0.34 	gb3: 4.51 	gb4: 1.51 	gb5: 4.97
+		Population 19
+			Robot 0 	f: 1026.14 	mf: 1111.80 	ga0: 1.00 	ga1: 6.50 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.47 	gb1: 0.55 	gb2: 0.34 	gb3: 4.51 	gb4: 1.51 	gb5: 4.97
+		Population 20
+			Robot 0 	f: 1196.71 	mf: 1103.30 	ga0: 1.00 	ga1: 6.50 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.47 	gb1: 0.55 	gb2: 0.34 	gb3: 4.51 	gb4: 1.51 	gb5: 4.97
+		Population 21
+			Robot 0 	f: 1309.03 	mf: 1105.20 	ga0: 1.00 	ga1: 6.50 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.47 	gb1: 0.55 	gb2: 0.34 	gb3: 4.51 	gb4: 1.51 	gb5: 4.97
+		Population 22
+			Robot 0 	f: 1246.40 	mf: 1082.90 	ga0: 1.00 	ga1: 6.50 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.47 	gb1: 0.55 	gb2: 0.34 	gb3: 4.51 	gb4: 1.51 	gb5: 4.97
+		Population 23
+			Robot 0 	f: 1361.70 	mf: 1159.20 	ga0: 1.00 	ga1: 6.50 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.47 	gb1: 0.55 	gb2: 0.34 	gb3: 4.51 	gb4: 1.51 	gb5: 4.97
+		Population 24
+			Robot 0 	f: 1179.99 	mf: 1188.90 	ga0: 1.00 	ga1: 6.50 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.47 	gb1: 0.55 	gb2: 0.34 	gb3: 4.51 	gb4: 1.51 	gb5: 4.97
+		Population 25
+			Robot 0 	f: 1306.63 	mf: 1202.70 	ga0: 1.00 	ga1: 6.50 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.47 	gb1: 0.55 	gb2: 0.34 	gb3: 4.51 	gb4: 1.51 	gb5: 4.97
+		Population 26
+			Robot 0 	f: 983.39 	mf: 1199.20 	ga0: 1.00 	ga1: 6.50 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.47 	gb1: 0.55 	gb2: 0.34 	gb3: 4.51 	gb4: 1.51 	gb5: 4.97
+		Population 27
+			Robot 0 	f: 1272.38 	mf: 1204.70 	ga0: 1.00 	ga1: 6.50 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.47 	gb1: 0.55 	gb2: 0.34 	gb3: 4.51 	gb4: 1.51 	gb5: 4.97
+		Population 28
+			Robot 0 	f: 1245.20 	mf: 1212.30 	ga0: 1.00 	ga1: 6.50 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.47 	gb1: 0.55 	gb2: 0.34 	gb3: 4.51 	gb4: 1.51 	gb5: 4.97
+		Population 29
+			Robot 0 	f: 1054.96 	mf: 1215.10 	ga0: 1.00 	ga1: 6.50 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.47 	gb1: 0.55 	gb2: 0.34 	gb3: 4.51 	gb4: 1.51 	gb5: 4.97
+		Population 30
+			Robot 0 	f: 1218.00 	mf: 1217.30 	ga0: 1.00 	ga1: 6.50 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.47 	gb1: 0.55 	gb2: 0.34 	gb3: 4.51 	gb4: 1.51 	gb5: 4.97
+		Population 31
+			Robot 0 	f: 1089.39 	mf: 1195.30 	ga0: 1.00 	ga1: 6.50 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.47 	gb1: 0.55 	gb2: 0.34 	gb3: 4.51 	gb4: 1.51 	gb5: 4.97
+		Population 32
+			Robot 0 	f: 1279.25 	mf: 1198.60 	ga0: 1.00 	ga1: 6.50 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.47 	gb1: 0.55 	gb2: 0.34 	gb3: 4.51 	gb4: 1.51 	gb5: 4.97
+		Population 33
+			Robot 0 	f: 1197.90 	mf: 1182.20 	ga0: 1.00 	ga1: 6.50 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.47 	gb1: 0.55 	gb2: 0.34 	gb3: 4.51 	gb4: 1.51 	gb5: 4.97
+		Population 34
+			Robot 0 	f: 995.94 	mf: 1163.80 	ga0: 1.00 	ga1: 6.50 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.47 	gb1: 0.55 	gb2: 0.34 	gb3: 4.51 	gb4: 1.51 	gb5: 4.97
+		Population 35
+			Robot 0 	f: 1302.17 	mf: 1163.40 	ga0: 1.00 	ga1: 6.50 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.47 	gb1: 0.55 	gb2: 0.34 	gb3: 4.51 	gb4: 1.51 	gb5: 4.97
+		Population 36
+			Robot 0 	f: 1194.78 	mf: 1184.50 	ga0: 1.00 	ga1: 6.50 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.47 	gb1: 0.55 	gb2: 0.34 	gb3: 4.51 	gb4: 1.51 	gb5: 4.97
+		Population 37
+			Robot 0 	f: 1270.86 	mf: 1184.30 	ga0: 1.00 	ga1: 6.50 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.47 	gb1: 0.55 	gb2: 0.34 	gb3: 4.51 	gb4: 1.51 	gb5: 4.97
+		Population 38
+			Robot 0 	f: 1131.93 	mf: 1172.90 	ga0: 1.00 	ga1: 6.50 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.47 	gb1: 0.55 	gb2: 0.34 	gb3: 4.51 	gb4: 1.51 	gb5: 4.97
+		Population 39
+			Robot 0 	f: 1211.82 	mf: 1188.60 	ga0: 1.00 	ga1: 6.50 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.47 	gb1: 0.55 	gb2: 0.34 	gb3: 4.51 	gb4: 1.51 	gb5: 4.97
+		Population 40
+			Robot 0 	f: 1131.14 	mf: 1179.90 	ga0: 1.00 	ga1: 6.50 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.47 	gb1: 0.55 	gb2: 0.34 	gb3: 4.51 	gb4: 1.51 	gb5: 4.97
+		Population 41
+			Robot 0 	f: 1029.17 	mf: 1173.90 	ga0: 1.00 	ga1: 6.50 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.47 	gb1: 0.55 	gb2: 0.34 	gb3: 4.51 	gb4: 1.51 	gb5: 4.97
+		Population 42
+			Robot 0 	f: 1157.38 	mf: 1161.70 	ga0: 1.00 	ga1: 6.50 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.47 	gb1: 0.55 	gb2: 0.34 	gb3: 4.51 	gb4: 1.51 	gb5: 4.97
+		Population 43
+			Robot 0 	f: 1248.52 	mf: 1166.80 	ga0: 1.00 	ga1: 6.50 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.47 	gb1: 0.55 	gb2: 0.34 	gb3: 4.51 	gb4: 1.51 	gb5: 4.97
+		Population 44
+			Robot 0 	f: 1278.24 	mf: 1195.10 	ga0: 1.00 	ga1: 6.50 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.47 	gb1: 0.55 	gb2: 0.34 	gb3: 4.51 	gb4: 1.51 	gb5: 4.97
+		Population 45
+			Robot 0 	f: 1028.39 	mf: 1167.70 	ga0: 1.00 	ga1: 6.50 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.47 	gb1: 0.55 	gb2: 0.34 	gb3: 4.51 	gb4: 1.51 	gb5: 4.97
+		Population 46
+			Robot 0 	f: 1101.22 	mf: 1158.40 	ga0: 1.00 	ga1: 6.50 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.47 	gb1: 0.55 	gb2: 0.34 	gb3: 4.51 	gb4: 1.51 	gb5: 4.97
+		Population 47
+			Robot 0 	f: 1146.63 	mf: 1146.00 	ga0: 1.00 	ga1: 6.50 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.47 	gb1: 0.55 	gb2: 0.34 	gb3: 4.51 	gb4: 1.51 	gb5: 4.97
+		Population 48
+			Robot 0 	f: 1230.00 	mf: 1155.80 	ga0: 1.00 	ga1: 6.50 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.47 	gb1: 0.55 	gb2: 0.34 	gb3: 4.51 	gb4: 1.51 	gb5: 4.97
+		Population 49
+			Robot 0 	f: 1031.36 	mf: 1137.80 	ga0: 1.00 	ga1: 6.50 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.47 	gb1: 0.55 	gb2: 0.34 	gb3: 4.51 	gb4: 1.51 	gb5: 4.97
+		Population 50
+			Robot 0 	f: 1361.33 	mf: 1160.80 	ga0: 1.00 	ga1: 6.50 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.47 	gb1: 0.55 	gb2: 0.34 	gb3: 4.51 	gb4: 1.51 	gb5: 4.97
+		Population 51
+			Robot 0 	f: 1044.58 	mf: 1162.40 	ga0: 1.00 	ga1: 6.50 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.47 	gb1: 0.55 	gb2: 0.34 	gb3: 4.51 	gb4: 1.51 	gb5: 4.97
+		Population 52
+			Robot 0 	f: 1310.32 	mf: 1177.70 	ga0: 1.00 	ga1: 6.50 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.47 	gb1: 0.55 	gb2: 0.34 	gb3: 4.51 	gb4: 1.51 	gb5: 4.97
+		Population 53
+			Robot 0 	f: 952.89 	mf: 1148.10 	ga0: 1.00 	ga1: 6.50 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.47 	gb1: 0.55 	gb2: 0.34 	gb3: 4.51 	gb4: 1.51 	gb5: 4.97
+		Population 54
+			Robot 0 	f: 1051.59 	mf: 1125.40 	ga0: 1.00 	ga1: 6.50 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.47 	gb1: 0.55 	gb2: 0.34 	gb3: 4.51 	gb4: 1.51 	gb5: 4.97
+		Population 55
+			Robot 0 	f: 1283.44 	mf: 1150.90 	ga0: 1.00 	ga1: 6.50 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.47 	gb1: 0.55 	gb2: 0.34 	gb3: 4.51 	gb4: 1.51 	gb5: 4.97
+		Population 56
+			Robot 0 	f: 1188.92 	mf: 1159.60 	ga0: 1.00 	ga1: 6.50 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.47 	gb1: 0.55 	gb2: 0.34 	gb3: 4.51 	gb4: 1.51 	gb5: 4.97
+		Population 57
+			Robot 0 	f: 1211.89 	mf: 1166.10 	ga0: 1.00 	ga1: 6.50 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.47 	gb1: 0.55 	gb2: 0.34 	gb3: 4.51 	gb4: 1.51 	gb5: 4.97
+		Population 58
+			Robot 0 	f: 1099.38 	mf: 1153.00 	ga0: 1.00 	ga1: 6.50 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.47 	gb1: 0.55 	gb2: 0.34 	gb3: 4.51 	gb4: 1.51 	gb5: 4.97
+		Population 59
+			Robot 0 	f: 1395.88 	mf: 1189.40 	ga0: 1.00 	ga1: 6.50 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.47 	gb1: 0.55 	gb2: 0.34 	gb3: 4.51 	gb4: 1.51 	gb5: 4.97
+		Population 60
+			Robot 0 	f: 1234.07 	mf: 1176.70 	ga0: 1.00 	ga1: 6.50 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.47 	gb1: 0.55 	gb2: 0.34 	gb3: 4.51 	gb4: 1.51 	gb5: 4.97
+		Population 61
+			Robot 0 	f: 1224.29 	mf: 1194.70 	ga0: 1.00 	ga1: 6.50 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.47 	gb1: 0.55 	gb2: 0.34 	gb3: 4.51 	gb4: 1.51 	gb5: 4.97
+		Population 62
+			Robot 0 	f: 1140.41 	mf: 1177.70 	ga0: 1.00 	ga1: 6.50 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.47 	gb1: 0.55 	gb2: 0.34 	gb3: 4.51 	gb4: 1.51 	gb5: 4.97
+		Population 63
+			Robot 0 	f: 1139.02 	mf: 1196.40 	ga0: 1.00 	ga1: 6.50 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.47 	gb1: 0.55 	gb2: 0.34 	gb3: 4.51 	gb4: 1.51 	gb5: 4.97
+		Population 64
+			Robot 0 	f: 1065.40 	mf: 1197.80 	ga0: 1.00 	ga1: 6.50 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.47 	gb1: 0.55 	gb2: 0.34 	gb3: 4.51 	gb4: 1.51 	gb5: 4.97
+		Population 65
+			Robot 0 	f: 1036.22 	mf: 1173.10 	ga0: 1.00 	ga1: 6.50 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.47 	gb1: 0.55 	gb2: 0.34 	gb3: 4.51 	gb4: 1.51 	gb5: 4.97
+		Population 66
+			Robot 0 	f: 1317.00 	mf: 1186.00 	ga0: 1.00 	ga1: 6.50 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.47 	gb1: 0.55 	gb2: 0.34 	gb3: 4.51 	gb4: 1.51 	gb5: 4.97
+		Population 67
+			Robot 0 	f: 1157.37 	mf: 1180.60 	ga0: 1.00 	ga1: 6.50 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.47 	gb1: 0.55 	gb2: 0.34 	gb3: 4.51 	gb4: 1.51 	gb5: 4.97
+		Population 68
+			Robot 0 	f: 1101.48 	mf: 1180.80 	ga0: 1.00 	ga1: 6.50 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.47 	gb1: 0.55 	gb2: 0.34 	gb3: 4.51 	gb4: 1.51 	gb5: 4.97
+		Population 69
+			Robot 0 	f: 1015.59 	mf: 1142.80 	ga0: 1.00 	ga1: 6.50 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.47 	gb1: 0.55 	gb2: 0.34 	gb3: 4.51 	gb4: 1.51 	gb5: 4.97
+		Population 70
+			Robot 0 	f: 952.58 	mf: 1114.60 	ga0: 1.00 	ga1: 6.50 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.47 	gb1: 0.55 	gb2: 0.34 	gb3: 4.51 	gb4: 1.51 	gb5: 4.97
+		Population 71
+			Robot 0 	f: 1155.64 	mf: 1107.70 	ga0: 1.00 	ga1: 6.50 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.47 	gb1: 0.55 	gb2: 0.34 	gb3: 4.51 	gb4: 1.51 	gb5: 4.97
+		Population 72
+			Robot 0 	f: 1115.72 	mf: 1105.20 	ga0: 1.00 	ga1: 6.50 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.47 	gb1: 0.55 	gb2: 0.34 	gb3: 4.51 	gb4: 1.51 	gb5: 4.97
+		Population 73
+			Robot 0 	f: 1023.83 	mf: 1093.60 	ga0: 1.00 	ga1: 6.50 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.47 	gb1: 0.55 	gb2: 0.34 	gb3: 4.51 	gb4: 1.51 	gb5: 4.97
+		Population 74
+			Robot 0 	f: 1145.98 	mf: 1101.60 	ga0: 1.00 	ga1: 6.50 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.47 	gb1: 0.55 	gb2: 0.34 	gb3: 4.51 	gb4: 1.51 	gb5: 4.97
+		Population 75
+			Robot 0 	f: 1238.45 	mf: 1121.80 	ga0: 1.00 	ga1: 6.50 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.47 	gb1: 0.55 	gb2: 0.34 	gb3: 4.51 	gb4: 1.51 	gb5: 4.97
+		Population 76
+			Robot 0 	f: 1279.47 	mf: 1118.00 	ga0: 1.00 	ga1: 6.50 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.47 	gb1: 0.55 	gb2: 0.34 	gb3: 4.51 	gb4: 1.51 	gb5: 4.97
+		Population 77
+			Robot 0 	f: 1223.01 	mf: 1124.60 	ga0: 1.00 	ga1: 6.50 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.47 	gb1: 0.55 	gb2: 0.34 	gb3: 4.51 	gb4: 1.51 	gb5: 4.97
+		Population 78
+			Robot 0 	f: 1383.38 	mf: 1152.80 	ga0: 1.00 	ga1: 6.50 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.47 	gb1: 0.55 	gb2: 0.34 	gb3: 4.51 	gb4: 1.51 	gb5: 4.97
+		Population 79
+			Robot 0 	f: 1012.84 	mf: 1152.50 	ga0: 1.00 	ga1: 6.50 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.47 	gb1: 0.55 	gb2: 0.34 	gb3: 4.51 	gb4: 1.51 	gb5: 4.97
+		Population 80
+			Robot 0 	f: 1241.75 	mf: 1181.40 	ga0: 1.00 	ga1: 6.50 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.47 	gb1: 0.55 	gb2: 0.34 	gb3: 4.51 	gb4: 1.51 	gb5: 4.97
+		Population 81
+			Robot 0 	f: 1005.77 	mf: 1166.40 	ga0: 1.00 	ga1: 6.50 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.47 	gb1: 0.55 	gb2: 0.34 	gb3: 4.51 	gb4: 1.51 	gb5: 4.97
+		Population 82
+			Robot 0 	f: 1241.41 	mf: 1179.00 	ga0: 1.00 	ga1: 6.50 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.47 	gb1: 0.55 	gb2: 0.34 	gb3: 4.51 	gb4: 1.51 	gb5: 4.97
+		Population 83
+			Robot 0 	f: 1303.35 	mf: 1207.00 	ga0: 1.00 	ga1: 6.50 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.47 	gb1: 0.55 	gb2: 0.34 	gb3: 4.51 	gb4: 1.51 	gb5: 4.97
+		Population 84
+			Robot 0 	f: 1182.29 	mf: 1210.70 	ga0: 1.00 	ga1: 6.50 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.47 	gb1: 0.55 	gb2: 0.34 	gb3: 4.51 	gb4: 1.51 	gb5: 4.97
+		Population 85
+			Robot 0 	f: 1117.80 	mf: 1198.60 	ga0: 1.00 	ga1: 6.50 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.47 	gb1: 0.55 	gb2: 0.34 	gb3: 4.51 	gb4: 1.51 	gb5: 4.97
+		Population 86
+			Robot 0 	f: 1154.68 	mf: 1186.10 	ga0: 1.00 	ga1: 6.50 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.47 	gb1: 0.55 	gb2: 0.34 	gb3: 4.51 	gb4: 1.51 	gb5: 4.97
+		Population 87
+			Robot 0 	f: 1457.61 	mf: 1209.50 	ga0: 1.00 	ga1: 6.50 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.47 	gb1: 0.55 	gb2: 0.34 	gb3: 4.51 	gb4: 1.51 	gb5: 4.97
+		Population 88
+			Robot 0 	f: 1266.82 	mf: 1197.80 	ga0: 1.00 	ga1: 6.50 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.47 	gb1: 0.55 	gb2: 0.34 	gb3: 4.51 	gb4: 1.51 	gb5: 4.97
+		Population 89
+			Robot 0 	f: 1143.05 	mf: 1210.90 	ga0: 1.00 	ga1: 6.50 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.47 	gb1: 0.55 	gb2: 0.34 	gb3: 4.51 	gb4: 1.51 	gb5: 4.97
+		Population 90
+			Robot 0 	f: 1137.43 	mf: 1200.50 	ga0: 1.00 	ga1: 6.50 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.47 	gb1: 0.55 	gb2: 0.34 	gb3: 4.51 	gb4: 1.51 	gb5: 4.97
+		Population 91
+			Robot 0 	f: 895.45 	mf: 1189.50 	ga0: 1.00 	ga1: 6.50 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.47 	gb1: 0.55 	gb2: 0.34 	gb3: 4.51 	gb4: 1.51 	gb5: 4.97
+		Population 92
+			Robot 0 	f: 1170.49 	mf: 1182.40 	ga0: 1.00 	ga1: 6.50 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.47 	gb1: 0.55 	gb2: 0.34 	gb3: 4.51 	gb4: 1.51 	gb5: 4.97
+		Population 93
+			Robot 0 	f: 889.58 	mf: 1141.00 	ga0: 1.00 	ga1: 6.50 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.47 	gb1: 0.55 	gb2: 0.34 	gb3: 4.51 	gb4: 1.51 	gb5: 4.97
+		Population 94
+			Robot 0 	f: 1147.21 	mf: 1137.50 	ga0: 1.00 	ga1: 6.50 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.47 	gb1: 0.55 	gb2: 0.34 	gb3: 4.51 	gb4: 1.51 	gb5: 4.97
+		Population 95
+			Robot 0 	f: 1215.34 	mf: 1147.30 	ga0: 1.00 	ga1: 6.50 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.47 	gb1: 0.55 	gb2: 0.34 	gb3: 4.51 	gb4: 1.51 	gb5: 4.97
+		Population 96
+			Robot 0 	f: 1155.90 	mf: 1147.40 	ga0: 1.00 	ga1: 6.50 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.47 	gb1: 0.55 	gb2: 0.34 	gb3: 4.51 	gb4: 1.51 	gb5: 4.97
+		Population 97
+			Robot 0 	f: 1321.00 	mf: 1133.80 	ga0: 1.00 	ga1: 6.50 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.47 	gb1: 0.55 	gb2: 0.34 	gb3: 4.51 	gb4: 1.51 	gb5: 4.97
+		Population 98
+			Robot 0 	f: 1211.90 	mf: 1128.30 	ga0: 1.00 	ga1: 6.50 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.47 	gb1: 0.55 	gb2: 0.34 	gb3: 4.51 	gb4: 1.51 	gb5: 4.97
+		Population 99
+			Robot 0 	f: 1211.90 	mf: 1128.30 	ga0: 1.00 	ga1: 6.50 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.47 	gb1: 0.55 	gb2: 0.34 	gb3: 4.51 	gb4: 1.51 	gb5: 4.97
+	finalFitness: 1128
+	Repetition 1
+		Population 0
+			Robot 0 	f: 1467.61 	mf: 1467.00 	ga0: 1.00 	ga1: 1.80 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.99 	gb1: 0.51 	gb2: 0.54 	gb3: 2.48 	gb4: 2.82 	gb5: 1.41
+		Population 1
+			Robot 0 	f: 790.24 	mf: 1128.50 	ga0: 1.00 	ga1: 1.80 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.99 	gb1: 0.51 	gb2: 0.54 	gb3: 2.48 	gb4: 2.82 	gb5: 1.41
+		Population 2
+			Robot 0 	f: 1234.87 	mf: 1163.67 	ga0: 1.00 	ga1: 1.80 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.99 	gb1: 0.51 	gb2: 0.54 	gb3: 2.48 	gb4: 2.82 	gb5: 1.41
+		Population 3
+			Robot 0 	f: 1175.87 	mf: 1166.50 	ga0: 1.00 	ga1: 1.80 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.99 	gb1: 0.51 	gb2: 0.54 	gb3: 2.48 	gb4: 2.82 	gb5: 1.41
+		Population 4
+			Robot 0 	f: 1237.98 	mf: 1180.60 	ga0: 1.00 	ga1: 1.80 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.99 	gb1: 0.51 	gb2: 0.54 	gb3: 2.48 	gb4: 2.82 	gb5: 1.41
+		Population 5
+			Robot 0 	f: 1271.13 	mf: 1195.67 	ga0: 1.00 	ga1: 1.80 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.99 	gb1: 0.51 	gb2: 0.54 	gb3: 2.48 	gb4: 2.82 	gb5: 1.41
+		Population 6
+			Robot 0 	f: 755.50 	mf: 1132.71 	ga0: 1.00 	ga1: 1.80 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.99 	gb1: 0.51 	gb2: 0.54 	gb3: 2.48 	gb4: 2.82 	gb5: 1.41
+		Population 7
+			Robot 0 	f: 1110.57 	mf: 1129.88 	ga0: 1.00 	ga1: 1.80 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.99 	gb1: 0.51 	gb2: 0.54 	gb3: 2.48 	gb4: 2.82 	gb5: 1.41
+		Population 8
+			Robot 0 	f: 1248.85 	mf: 1143.00 	ga0: 1.00 	ga1: 1.80 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.99 	gb1: 0.51 	gb2: 0.54 	gb3: 2.48 	gb4: 2.82 	gb5: 1.41
+		Population 9
+			Robot 0 	f: 1116.91 	mf: 1140.30 	ga0: 1.00 	ga1: 1.80 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.99 	gb1: 0.51 	gb2: 0.54 	gb3: 2.48 	gb4: 2.82 	gb5: 1.41
+		Population 10
+			Robot 0 	f: 1359.98 	mf: 1129.50 	ga0: 1.00 	ga1: 1.80 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.99 	gb1: 0.51 	gb2: 0.54 	gb3: 2.48 	gb4: 2.82 	gb5: 1.41
+		Population 11
+			Robot 0 	f: 1218.84 	mf: 1172.30 	ga0: 1.00 	ga1: 1.80 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.99 	gb1: 0.51 	gb2: 0.54 	gb3: 2.48 	gb4: 2.82 	gb5: 1.41
+		Population 12
+			Robot 0 	f: 1248.29 	mf: 1173.70 	ga0: 1.00 	ga1: 1.80 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.99 	gb1: 0.51 	gb2: 0.54 	gb3: 2.48 	gb4: 2.82 	gb5: 1.41
+		Population 13
+			Robot 0 	f: 1310.74 	mf: 1187.20 	ga0: 1.00 	ga1: 1.80 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.99 	gb1: 0.51 	gb2: 0.54 	gb3: 2.48 	gb4: 2.82 	gb5: 1.41
+		Population 14
+			Robot 0 	f: 1113.67 	mf: 1174.80 	ga0: 1.00 	ga1: 1.80 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.99 	gb1: 0.51 	gb2: 0.54 	gb3: 2.48 	gb4: 2.82 	gb5: 1.41
+		Population 15
+			Robot 0 	f: 1276.48 	mf: 1175.30 	ga0: 1.00 	ga1: 1.80 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.99 	gb1: 0.51 	gb2: 0.54 	gb3: 2.48 	gb4: 2.82 	gb5: 1.41
+		Population 16
+			Robot 0 	f: 1190.60 	mf: 1218.80 	ga0: 1.00 	ga1: 1.80 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.99 	gb1: 0.51 	gb2: 0.54 	gb3: 2.48 	gb4: 2.82 	gb5: 1.41
+		Population 17
+			Robot 0 	f: 1136.09 	mf: 1221.40 	ga0: 1.00 	ga1: 1.80 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.99 	gb1: 0.51 	gb2: 0.54 	gb3: 2.48 	gb4: 2.82 	gb5: 1.41
+		Population 18
+			Robot 0 	f: 1226.39 	mf: 1219.20 	ga0: 1.00 	ga1: 1.80 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.99 	gb1: 0.51 	gb2: 0.54 	gb3: 2.48 	gb4: 2.82 	gb5: 1.41
+		Population 19
+			Robot 0 	f: 1179.06 	mf: 1225.50 	ga0: 1.00 	ga1: 1.80 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.99 	gb1: 0.51 	gb2: 0.54 	gb3: 2.48 	gb4: 2.82 	gb5: 1.41
+		Population 20
+			Robot 0 	f: 1144.37 	mf: 1204.00 	ga0: 1.00 	ga1: 1.80 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.99 	gb1: 0.51 	gb2: 0.54 	gb3: 2.48 	gb4: 2.82 	gb5: 1.41
+		Population 21
+			Robot 0 	f: 1197.42 	mf: 1201.90 	ga0: 1.00 	ga1: 1.80 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.99 	gb1: 0.51 	gb2: 0.54 	gb3: 2.48 	gb4: 2.82 	gb5: 1.41
+		Population 22
+			Robot 0 	f: 1173.91 	mf: 1194.40 	ga0: 1.00 	ga1: 1.80 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.99 	gb1: 0.51 	gb2: 0.54 	gb3: 2.48 	gb4: 2.82 	gb5: 1.41
+		Population 23
+			Robot 0 	f: 1154.94 	mf: 1178.80 	ga0: 1.00 	ga1: 1.80 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.99 	gb1: 0.51 	gb2: 0.54 	gb3: 2.48 	gb4: 2.82 	gb5: 1.41
+		Population 24
+			Robot 0 	f: 1325.81 	mf: 1200.00 	ga0: 1.00 	ga1: 1.80 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.99 	gb1: 0.51 	gb2: 0.54 	gb3: 2.48 	gb4: 2.82 	gb5: 1.41
+		Population 25
+			Robot 0 	f: 1168.10 	mf: 1189.20 	ga0: 1.00 	ga1: 1.80 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.99 	gb1: 0.51 	gb2: 0.54 	gb3: 2.48 	gb4: 2.82 	gb5: 1.41
+		Population 26
+			Robot 0 	f: 1307.91 	mf: 1200.90 	ga0: 1.00 	ga1: 1.80 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.99 	gb1: 0.51 	gb2: 0.54 	gb3: 2.48 	gb4: 2.82 	gb5: 1.41
+		Population 27
+			Robot 0 	f: 1327.44 	mf: 1220.00 	ga0: 1.00 	ga1: 1.80 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.99 	gb1: 0.51 	gb2: 0.54 	gb3: 2.48 	gb4: 2.82 	gb5: 1.41
+		Population 28
+			Robot 0 	f: 1114.23 	mf: 1208.80 	ga0: 1.00 	ga1: 1.80 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.99 	gb1: 0.51 	gb2: 0.54 	gb3: 2.48 	gb4: 2.82 	gb5: 1.41
+		Population 29
+			Robot 0 	f: 1048.10 	mf: 1195.70 	ga0: 1.00 	ga1: 1.80 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.99 	gb1: 0.51 	gb2: 0.54 	gb3: 2.48 	gb4: 2.82 	gb5: 1.41
+		Population 30
+			Robot 0 	f: 1130.87 	mf: 1194.30 	ga0: 1.00 	ga1: 1.80 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.99 	gb1: 0.51 	gb2: 0.54 	gb3: 2.48 	gb4: 2.82 	gb5: 1.41
+		Population 31
+			Robot 0 	f: 1250.08 	mf: 1199.60 	ga0: 1.00 	ga1: 1.80 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.99 	gb1: 0.51 	gb2: 0.54 	gb3: 2.48 	gb4: 2.82 	gb5: 1.41
+		Population 32
+			Robot 0 	f: 1282.05 	mf: 1210.50 	ga0: 1.00 	ga1: 1.80 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.99 	gb1: 0.51 	gb2: 0.54 	gb3: 2.48 	gb4: 2.82 	gb5: 1.41
+		Population 33
+			Robot 0 	f: 1117.07 	mf: 1206.80 	ga0: 1.00 	ga1: 1.80 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.99 	gb1: 0.51 	gb2: 0.54 	gb3: 2.48 	gb4: 2.82 	gb5: 1.41
+		Population 34
+			Robot 0 	f: 1374.32 	mf: 1211.70 	ga0: 1.00 	ga1: 1.80 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.99 	gb1: 0.51 	gb2: 0.54 	gb3: 2.48 	gb4: 2.82 	gb5: 1.41
+		Population 35
+			Robot 0 	f: 1260.73 	mf: 1220.90 	ga0: 1.00 	ga1: 1.80 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.99 	gb1: 0.51 	gb2: 0.54 	gb3: 2.48 	gb4: 2.82 	gb5: 1.41
+		Population 36
+			Robot 0 	f: 1063.32 	mf: 1196.50 	ga0: 1.00 	ga1: 1.80 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.99 	gb1: 0.51 	gb2: 0.54 	gb3: 2.48 	gb4: 2.82 	gb5: 1.41
+		Population 37
+			Robot 0 	f: 1046.73 	mf: 1168.40 	ga0: 1.00 	ga1: 1.80 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.99 	gb1: 0.51 	gb2: 0.54 	gb3: 2.48 	gb4: 2.82 	gb5: 1.41
+		Population 38
+			Robot 0 	f: 1182.42 	mf: 1175.20 	ga0: 1.00 	ga1: 1.80 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.99 	gb1: 0.51 	gb2: 0.54 	gb3: 2.48 	gb4: 2.82 	gb5: 1.41
+		Population 39
+			Robot 0 	f: 1126.93 	mf: 1183.00 	ga0: 1.00 	ga1: 1.80 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.99 	gb1: 0.51 	gb2: 0.54 	gb3: 2.48 	gb4: 2.82 	gb5: 1.41
+		Population 40
+			Robot 0 	f: 1135.11 	mf: 1183.50 	ga0: 1.00 	ga1: 1.80 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.99 	gb1: 0.51 	gb2: 0.54 	gb3: 2.48 	gb4: 2.82 	gb5: 1.41
+		Population 41
+			Robot 0 	f: 1252.54 	mf: 1183.70 	ga0: 1.00 	ga1: 1.80 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.99 	gb1: 0.51 	gb2: 0.54 	gb3: 2.48 	gb4: 2.82 	gb5: 1.41
+		Population 42
+			Robot 0 	f: 1136.10 	mf: 1169.10 	ga0: 1.00 	ga1: 1.80 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.99 	gb1: 0.51 	gb2: 0.54 	gb3: 2.48 	gb4: 2.82 	gb5: 1.41
+		Population 43
+			Robot 0 	f: 1229.30 	mf: 1180.30 	ga0: 1.00 	ga1: 1.80 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.99 	gb1: 0.51 	gb2: 0.54 	gb3: 2.48 	gb4: 2.82 	gb5: 1.41
+		Population 44
+			Robot 0 	f: 1178.77 	mf: 1160.70 	ga0: 1.00 	ga1: 1.80 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.99 	gb1: 0.51 	gb2: 0.54 	gb3: 2.48 	gb4: 2.82 	gb5: 1.41
+		Population 45
+			Robot 0 	f: 1163.22 	mf: 1151.00 	ga0: 1.00 	ga1: 1.80 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.99 	gb1: 0.51 	gb2: 0.54 	gb3: 2.48 	gb4: 2.82 	gb5: 1.41
+		Population 46
+			Robot 0 	f: 1225.25 	mf: 1167.20 	ga0: 1.00 	ga1: 1.80 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.99 	gb1: 0.51 	gb2: 0.54 	gb3: 2.48 	gb4: 2.82 	gb5: 1.41
+		Population 47
+			Robot 0 	f: 1114.53 	mf: 1174.00 	ga0: 1.00 	ga1: 1.80 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.99 	gb1: 0.51 	gb2: 0.54 	gb3: 2.48 	gb4: 2.82 	gb5: 1.41
+		Population 48
+			Robot 0 	f: 1302.21 	mf: 1186.00 	ga0: 1.00 	ga1: 1.80 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.99 	gb1: 0.51 	gb2: 0.54 	gb3: 2.48 	gb4: 2.82 	gb5: 1.41
+		Population 49
+			Robot 0 	f: 1152.39 	mf: 1188.60 	ga0: 1.00 	ga1: 1.80 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.99 	gb1: 0.51 	gb2: 0.54 	gb3: 2.48 	gb4: 2.82 	gb5: 1.41
+		Population 50
+			Robot 0 	f: 1105.08 	mf: 1185.60 	ga0: 1.00 	ga1: 1.80 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.99 	gb1: 0.51 	gb2: 0.54 	gb3: 2.48 	gb4: 2.82 	gb5: 1.41
+		Population 51
+			Robot 0 	f: 1149.47 	mf: 1175.30 	ga0: 1.00 	ga1: 1.80 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.99 	gb1: 0.51 	gb2: 0.54 	gb3: 2.48 	gb4: 2.82 	gb5: 1.41
+		Population 52
+			Robot 0 	f: 1286.19 	mf: 1190.30 	ga0: 1.00 	ga1: 1.80 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.99 	gb1: 0.51 	gb2: 0.54 	gb3: 2.48 	gb4: 2.82 	gb5: 1.41
+		Population 53
+			Robot 0 	f: 1277.87 	mf: 1195.10 	ga0: 1.00 	ga1: 1.80 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.99 	gb1: 0.51 	gb2: 0.54 	gb3: 2.48 	gb4: 2.82 	gb5: 1.41
+		Population 54
+			Robot 0 	f: 1280.13 	mf: 1205.30 	ga0: 1.00 	ga1: 1.80 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.99 	gb1: 0.51 	gb2: 0.54 	gb3: 2.48 	gb4: 2.82 	gb5: 1.41
+		Population 55
+			Robot 0 	f: 1063.18 	mf: 1195.30 	ga0: 1.00 	ga1: 1.80 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.99 	gb1: 0.51 	gb2: 0.54 	gb3: 2.48 	gb4: 2.82 	gb5: 1.41
+		Population 56
+			Robot 0 	f: 1240.22 	mf: 1196.80 	ga0: 1.00 	ga1: 1.80 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.99 	gb1: 0.51 	gb2: 0.54 	gb3: 2.48 	gb4: 2.82 	gb5: 1.41
+		Population 57
+			Robot 0 	f: 1306.63 	mf: 1216.00 	ga0: 1.00 	ga1: 1.80 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.99 	gb1: 0.51 	gb2: 0.54 	gb3: 2.48 	gb4: 2.82 	gb5: 1.41
+		Population 58
+			Robot 0 	f: 1240.28 	mf: 1209.80 	ga0: 1.00 	ga1: 1.80 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.99 	gb1: 0.51 	gb2: 0.54 	gb3: 2.48 	gb4: 2.82 	gb5: 1.41
+		Population 59
+			Robot 0 	f: 910.36 	mf: 1185.60 	ga0: 1.00 	ga1: 1.80 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.99 	gb1: 0.51 	gb2: 0.54 	gb3: 2.48 	gb4: 2.82 	gb5: 1.41
+		Population 60
+			Robot 0 	f: 1161.17 	mf: 1191.20 	ga0: 1.00 	ga1: 1.80 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.99 	gb1: 0.51 	gb2: 0.54 	gb3: 2.48 	gb4: 2.82 	gb5: 1.41
+		Population 61
+			Robot 0 	f: 1195.62 	mf: 1195.80 	ga0: 1.00 	ga1: 1.80 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.99 	gb1: 0.51 	gb2: 0.54 	gb3: 2.48 	gb4: 2.82 	gb5: 1.41
+		Population 62
+			Robot 0 	f: 1141.38 	mf: 1181.30 	ga0: 1.00 	ga1: 1.80 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.99 	gb1: 0.51 	gb2: 0.54 	gb3: 2.48 	gb4: 2.82 	gb5: 1.41
+		Population 63
+			Robot 0 	f: 1316.38 	mf: 1185.20 	ga0: 1.00 	ga1: 1.80 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.99 	gb1: 0.51 	gb2: 0.54 	gb3: 2.48 	gb4: 2.82 	gb5: 1.41
+		Population 64
+			Robot 0 	f: 1125.26 	mf: 1169.70 	ga0: 1.00 	ga1: 1.80 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.99 	gb1: 0.51 	gb2: 0.54 	gb3: 2.48 	gb4: 2.82 	gb5: 1.41
+		Population 65
+			Robot 0 	f: 1209.45 	mf: 1184.30 	ga0: 1.00 	ga1: 1.80 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.99 	gb1: 0.51 	gb2: 0.54 	gb3: 2.48 	gb4: 2.82 	gb5: 1.41
+		Population 66
+			Robot 0 	f: 1422.53 	mf: 1202.50 	ga0: 1.00 	ga1: 1.80 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.99 	gb1: 0.51 	gb2: 0.54 	gb3: 2.48 	gb4: 2.82 	gb5: 1.41
+		Population 67
+			Robot 0 	f: 1324.76 	mf: 1204.30 	ga0: 1.00 	ga1: 1.80 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.99 	gb1: 0.51 	gb2: 0.54 	gb3: 2.48 	gb4: 2.82 	gb5: 1.41
+		Population 68
+			Robot 0 	f: 1090.19 	mf: 1189.30 	ga0: 1.00 	ga1: 1.80 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.99 	gb1: 0.51 	gb2: 0.54 	gb3: 2.48 	gb4: 2.82 	gb5: 1.41
+		Population 69
+			Robot 0 	f: 1292.29 	mf: 1227.50 	ga0: 1.00 	ga1: 1.80 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.99 	gb1: 0.51 	gb2: 0.54 	gb3: 2.48 	gb4: 2.82 	gb5: 1.41
+		Population 70
+			Robot 0 	f: 1140.72 	mf: 1225.40 	ga0: 1.00 	ga1: 1.80 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.99 	gb1: 0.51 	gb2: 0.54 	gb3: 2.48 	gb4: 2.82 	gb5: 1.41
+		Population 71
+			Robot 0 	f: 1278.49 	mf: 1233.70 	ga0: 1.00 	ga1: 1.80 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.99 	gb1: 0.51 	gb2: 0.54 	gb3: 2.48 	gb4: 2.82 	gb5: 1.41
+		Population 72
+			Robot 0 	f: 1189.76 	mf: 1238.50 	ga0: 1.00 	ga1: 1.80 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.99 	gb1: 0.51 	gb2: 0.54 	gb3: 2.48 	gb4: 2.82 	gb5: 1.41
+		Population 73
+			Robot 0 	f: 1166.92 	mf: 1223.50 	ga0: 1.00 	ga1: 1.80 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.99 	gb1: 0.51 	gb2: 0.54 	gb3: 2.48 	gb4: 2.82 	gb5: 1.41
+		Population 74
+			Robot 0 	f: 1233.15 	mf: 1234.30 	ga0: 1.00 	ga1: 1.80 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.99 	gb1: 0.51 	gb2: 0.54 	gb3: 2.48 	gb4: 2.82 	gb5: 1.41
+		Population 75
+			Robot 0 	f: 1216.99 	mf: 1235.00 	ga0: 1.00 	ga1: 1.80 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.99 	gb1: 0.51 	gb2: 0.54 	gb3: 2.48 	gb4: 2.82 	gb5: 1.41
+		Population 76
+			Robot 0 	f: 1125.54 	mf: 1205.30 	ga0: 1.00 	ga1: 1.80 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.99 	gb1: 0.51 	gb2: 0.54 	gb3: 2.48 	gb4: 2.82 	gb5: 1.41
+		Population 77
+			Robot 0 	f: 1249.92 	mf: 1197.80 	ga0: 1.00 	ga1: 1.80 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.99 	gb1: 0.51 	gb2: 0.54 	gb3: 2.48 	gb4: 2.82 	gb5: 1.41
+		Population 78
+			Robot 0 	f: 1155.77 	mf: 1204.30 	ga0: 1.00 	ga1: 1.80 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.99 	gb1: 0.51 	gb2: 0.54 	gb3: 2.48 	gb4: 2.82 	gb5: 1.41
+		Population 79
+			Robot 0 	f: 1319.03 	mf: 1207.00 	ga0: 1.00 	ga1: 1.80 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.99 	gb1: 0.51 	gb2: 0.54 	gb3: 2.48 	gb4: 2.82 	gb5: 1.41
+		Population 80
+			Robot 0 	f: 1442.90 	mf: 1237.20 	ga0: 1.00 	ga1: 1.80 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.99 	gb1: 0.51 	gb2: 0.54 	gb3: 2.48 	gb4: 2.82 	gb5: 1.41
+		Population 81
+			Robot 0 	f: 1329.63 	mf: 1242.30 	ga0: 1.00 	ga1: 1.80 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.99 	gb1: 0.51 	gb2: 0.54 	gb3: 2.48 	gb4: 2.82 	gb5: 1.41
+		Population 82
+			Robot 0 	f: 1254.35 	mf: 1248.80 	ga0: 1.00 	ga1: 1.80 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.99 	gb1: 0.51 	gb2: 0.54 	gb3: 2.48 	gb4: 2.82 	gb5: 1.41
+		Population 83
+			Robot 0 	f: 1219.88 	mf: 1254.10 	ga0: 1.00 	ga1: 1.80 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.99 	gb1: 0.51 	gb2: 0.54 	gb3: 2.48 	gb4: 2.82 	gb5: 1.41
+		Population 84
+			Robot 0 	f: 1329.92 	mf: 1263.70 	ga0: 1.00 	ga1: 1.80 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.99 	gb1: 0.51 	gb2: 0.54 	gb3: 2.48 	gb4: 2.82 	gb5: 1.41
+		Population 85
+			Robot 0 	f: 1210.98 	mf: 1263.10 	ga0: 1.00 	ga1: 1.80 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.99 	gb1: 0.51 	gb2: 0.54 	gb3: 2.48 	gb4: 2.82 	gb5: 1.41
+		Population 86
+			Robot 0 	f: 1164.56 	mf: 1267.00 	ga0: 1.00 	ga1: 1.80 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.99 	gb1: 0.51 	gb2: 0.54 	gb3: 2.48 	gb4: 2.82 	gb5: 1.41
+		Population 87
+			Robot 0 	f: 1268.13 	mf: 1268.90 	ga0: 1.00 	ga1: 1.80 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.99 	gb1: 0.51 	gb2: 0.54 	gb3: 2.48 	gb4: 2.82 	gb5: 1.41
+		Population 88
+			Robot 0 	f: 1385.65 	mf: 1291.90 	ga0: 1.00 	ga1: 1.80 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.99 	gb1: 0.51 	gb2: 0.54 	gb3: 2.48 	gb4: 2.82 	gb5: 1.41
+		Population 89
+			Robot 0 	f: 1241.48 	mf: 1284.10 	ga0: 1.00 	ga1: 1.80 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.99 	gb1: 0.51 	gb2: 0.54 	gb3: 2.48 	gb4: 2.82 	gb5: 1.41
+		Population 90
+			Robot 0 	f: 1074.99 	mf: 1247.30 	ga0: 1.00 	ga1: 1.80 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.99 	gb1: 0.51 	gb2: 0.54 	gb3: 2.48 	gb4: 2.82 	gb5: 1.41
+		Population 91
+			Robot 0 	f: 1044.48 	mf: 1218.80 	ga0: 1.00 	ga1: 1.80 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.99 	gb1: 0.51 	gb2: 0.54 	gb3: 2.48 	gb4: 2.82 	gb5: 1.41
+		Population 92
+			Robot 0 	f: 1107.29 	mf: 1204.10 	ga0: 1.00 	ga1: 1.80 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.99 	gb1: 0.51 	gb2: 0.54 	gb3: 2.48 	gb4: 2.82 	gb5: 1.41
+		Population 93
+			Robot 0 	f: 1355.58 	mf: 1217.70 	ga0: 1.00 	ga1: 1.80 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.99 	gb1: 0.51 	gb2: 0.54 	gb3: 2.48 	gb4: 2.82 	gb5: 1.41
+		Population 94
+			Robot 0 	f: 1192.24 	mf: 1204.00 	ga0: 1.00 	ga1: 1.80 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.99 	gb1: 0.51 	gb2: 0.54 	gb3: 2.48 	gb4: 2.82 	gb5: 1.41
+		Population 95
+			Robot 0 	f: 1216.80 	mf: 1204.60 	ga0: 1.00 	ga1: 1.80 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.99 	gb1: 0.51 	gb2: 0.54 	gb3: 2.48 	gb4: 2.82 	gb5: 1.41
+		Population 96
+			Robot 0 	f: 1437.46 	mf: 1231.90 	ga0: 1.00 	ga1: 1.80 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.99 	gb1: 0.51 	gb2: 0.54 	gb3: 2.48 	gb4: 2.82 	gb5: 1.41
+		Population 97
+			Robot 0 	f: 1117.78 	mf: 1216.80 	ga0: 1.00 	ga1: 1.80 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.99 	gb1: 0.51 	gb2: 0.54 	gb3: 2.48 	gb4: 2.82 	gb5: 1.41
+		Population 98
+			Robot 0 	f: 1225.31 	mf: 1200.80 	ga0: 1.00 	ga1: 1.80 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.99 	gb1: 0.51 	gb2: 0.54 	gb3: 2.48 	gb4: 2.82 	gb5: 1.41
+		Population 99
+			Robot 0 	f: 1225.31 	mf: 1200.80 	ga0: 1.00 	ga1: 1.80 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.99 	gb1: 0.51 	gb2: 0.54 	gb3: 2.48 	gb4: 2.82 	gb5: 1.41
+	finalFitness: 1200
+	Repetition 2
+		Population 0
+			Robot 0 	f: 1251.98 	mf: 1251.00 	ga0: 1.00 	ga1: 9.50 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.86 	gb1: 0.04 	gb2: 0.48 	gb3: 1.91 	gb4: 3.35 	gb5: 2.22
+		Population 1
+			Robot 0 	f: 716.81 	mf: 983.50 	ga0: 1.00 	ga1: 9.50 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.86 	gb1: 0.04 	gb2: 0.48 	gb3: 1.91 	gb4: 3.35 	gb5: 2.22
+		Population 2
+			Robot 0 	f: 1289.81 	mf: 1085.33 	ga0: 1.00 	ga1: 9.50 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.86 	gb1: 0.04 	gb2: 0.48 	gb3: 1.91 	gb4: 3.35 	gb5: 2.22
+		Population 3
+			Robot 0 	f: 1333.83 	mf: 1147.25 	ga0: 1.00 	ga1: 9.50 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.86 	gb1: 0.04 	gb2: 0.48 	gb3: 1.91 	gb4: 3.35 	gb5: 2.22
+		Population 4
+			Robot 0 	f: 1157.83 	mf: 1149.20 	ga0: 1.00 	ga1: 9.50 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.86 	gb1: 0.04 	gb2: 0.48 	gb3: 1.91 	gb4: 3.35 	gb5: 2.22
+		Population 5
+			Robot 0 	f: 867.19 	mf: 1102.17 	ga0: 1.00 	ga1: 9.50 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.86 	gb1: 0.04 	gb2: 0.48 	gb3: 1.91 	gb4: 3.35 	gb5: 2.22
+		Population 6
+			Robot 0 	f: 1258.06 	mf: 1124.43 	ga0: 1.00 	ga1: 9.50 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.86 	gb1: 0.04 	gb2: 0.48 	gb3: 1.91 	gb4: 3.35 	gb5: 2.22
+		Population 7
+			Robot 0 	f: 1224.65 	mf: 1136.88 	ga0: 1.00 	ga1: 9.50 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.86 	gb1: 0.04 	gb2: 0.48 	gb3: 1.91 	gb4: 3.35 	gb5: 2.22
+		Population 8
+			Robot 0 	f: 1374.70 	mf: 1163.22 	ga0: 1.00 	ga1: 9.50 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.86 	gb1: 0.04 	gb2: 0.48 	gb3: 1.91 	gb4: 3.35 	gb5: 2.22
+		Population 9
+			Robot 0 	f: 1151.53 	mf: 1162.00 	ga0: 1.00 	ga1: 9.50 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.86 	gb1: 0.04 	gb2: 0.48 	gb3: 1.91 	gb4: 3.35 	gb5: 2.22
+		Population 10
+			Robot 0 	f: 831.99 	mf: 1120.00 	ga0: 1.00 	ga1: 9.50 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.86 	gb1: 0.04 	gb2: 0.48 	gb3: 1.91 	gb4: 3.35 	gb5: 2.22
+		Population 11
+			Robot 0 	f: 1185.73 	mf: 1166.90 	ga0: 1.00 	ga1: 9.50 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.86 	gb1: 0.04 	gb2: 0.48 	gb3: 1.91 	gb4: 3.35 	gb5: 2.22
+		Population 12
+			Robot 0 	f: 1232.49 	mf: 1161.20 	ga0: 1.00 	ga1: 9.50 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.86 	gb1: 0.04 	gb2: 0.48 	gb3: 1.91 	gb4: 3.35 	gb5: 2.22
+		Population 13
+			Robot 0 	f: 1274.41 	mf: 1155.30 	ga0: 1.00 	ga1: 9.50 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.86 	gb1: 0.04 	gb2: 0.48 	gb3: 1.91 	gb4: 3.35 	gb5: 2.22
+		Population 14
+			Robot 0 	f: 1363.89 	mf: 1175.90 	ga0: 1.00 	ga1: 9.50 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.86 	gb1: 0.04 	gb2: 0.48 	gb3: 1.91 	gb4: 3.35 	gb5: 2.22
+		Population 15
+			Robot 0 	f: 1156.51 	mf: 1204.80 	ga0: 1.00 	ga1: 9.50 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.86 	gb1: 0.04 	gb2: 0.48 	gb3: 1.91 	gb4: 3.35 	gb5: 2.22
+		Population 16
+			Robot 0 	f: 916.92 	mf: 1170.60 	ga0: 1.00 	ga1: 9.50 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.86 	gb1: 0.04 	gb2: 0.48 	gb3: 1.91 	gb4: 3.35 	gb5: 2.22
+		Population 17
+			Robot 0 	f: 1104.45 	mf: 1158.60 	ga0: 1.00 	ga1: 9.50 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.86 	gb1: 0.04 	gb2: 0.48 	gb3: 1.91 	gb4: 3.35 	gb5: 2.22
+		Population 18
+			Robot 0 	f: 1083.83 	mf: 1129.50 	ga0: 1.00 	ga1: 9.50 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.86 	gb1: 0.04 	gb2: 0.48 	gb3: 1.91 	gb4: 3.35 	gb5: 2.22
+		Population 19
+			Robot 0 	f: 1190.07 	mf: 1133.40 	ga0: 1.00 	ga1: 9.50 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.86 	gb1: 0.04 	gb2: 0.48 	gb3: 1.91 	gb4: 3.35 	gb5: 2.22
+		Population 20
+			Robot 0 	f: 1316.59 	mf: 1181.90 	ga0: 1.00 	ga1: 9.50 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.86 	gb1: 0.04 	gb2: 0.48 	gb3: 1.91 	gb4: 3.35 	gb5: 2.22
+		Population 21
+			Robot 0 	f: 1092.81 	mf: 1172.60 	ga0: 1.00 	ga1: 9.50 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.86 	gb1: 0.04 	gb2: 0.48 	gb3: 1.91 	gb4: 3.35 	gb5: 2.22
+		Population 22
+			Robot 0 	f: 998.23 	mf: 1149.20 	ga0: 1.00 	ga1: 9.50 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.86 	gb1: 0.04 	gb2: 0.48 	gb3: 1.91 	gb4: 3.35 	gb5: 2.22
+		Population 23
+			Robot 0 	f: 1147.58 	mf: 1136.50 	ga0: 1.00 	ga1: 9.50 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.86 	gb1: 0.04 	gb2: 0.48 	gb3: 1.91 	gb4: 3.35 	gb5: 2.22
+		Population 24
+			Robot 0 	f: 1250.15 	mf: 1125.20 	ga0: 1.00 	ga1: 9.50 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.86 	gb1: 0.04 	gb2: 0.48 	gb3: 1.91 	gb4: 3.35 	gb5: 2.22
+		Population 25
+			Robot 0 	f: 1190.94 	mf: 1128.60 	ga0: 1.00 	ga1: 9.50 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.86 	gb1: 0.04 	gb2: 0.48 	gb3: 1.91 	gb4: 3.35 	gb5: 2.22
+		Population 26
+			Robot 0 	f: 859.37 	mf: 1122.90 	ga0: 1.00 	ga1: 9.50 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.86 	gb1: 0.04 	gb2: 0.48 	gb3: 1.91 	gb4: 3.35 	gb5: 2.22
+		Population 27
+			Robot 0 	f: 1275.30 	mf: 1140.00 	ga0: 1.00 	ga1: 9.50 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.86 	gb1: 0.04 	gb2: 0.48 	gb3: 1.91 	gb4: 3.35 	gb5: 2.22
+		Population 28
+			Robot 0 	f: 1075.41 	mf: 1139.20 	ga0: 1.00 	ga1: 9.50 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.86 	gb1: 0.04 	gb2: 0.48 	gb3: 1.91 	gb4: 3.35 	gb5: 2.22
+		Population 29
+			Robot 0 	f: 1305.91 	mf: 1150.70 	ga0: 1.00 	ga1: 9.50 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.86 	gb1: 0.04 	gb2: 0.48 	gb3: 1.91 	gb4: 3.35 	gb5: 2.22
+		Population 30
+			Robot 0 	f: 1313.52 	mf: 1150.40 	ga0: 1.00 	ga1: 9.50 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.86 	gb1: 0.04 	gb2: 0.48 	gb3: 1.91 	gb4: 3.35 	gb5: 2.22
+		Population 31
+			Robot 0 	f: 1322.80 	mf: 1173.40 	ga0: 1.00 	ga1: 9.50 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.86 	gb1: 0.04 	gb2: 0.48 	gb3: 1.91 	gb4: 3.35 	gb5: 2.22
+		Population 32
+			Robot 0 	f: 1249.16 	mf: 1198.50 	ga0: 1.00 	ga1: 9.50 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.86 	gb1: 0.04 	gb2: 0.48 	gb3: 1.91 	gb4: 3.35 	gb5: 2.22
+		Population 33
+			Robot 0 	f: 1184.94 	mf: 1202.20 	ga0: 1.00 	ga1: 9.50 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.86 	gb1: 0.04 	gb2: 0.48 	gb3: 1.91 	gb4: 3.35 	gb5: 2.22
+		Population 34
+			Robot 0 	f: 889.09 	mf: 1166.10 	ga0: 1.00 	ga1: 9.50 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.86 	gb1: 0.04 	gb2: 0.48 	gb3: 1.91 	gb4: 3.35 	gb5: 2.22
+		Population 35
+			Robot 0 	f: 988.86 	mf: 1145.90 	ga0: 1.00 	ga1: 9.50 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.86 	gb1: 0.04 	gb2: 0.48 	gb3: 1.91 	gb4: 3.35 	gb5: 2.22
+		Population 36
+			Robot 0 	f: 1290.69 	mf: 1189.00 	ga0: 1.00 	ga1: 9.50 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.86 	gb1: 0.04 	gb2: 0.48 	gb3: 1.91 	gb4: 3.35 	gb5: 2.22
+		Population 37
+			Robot 0 	f: 1229.99 	mf: 1184.40 	ga0: 1.00 	ga1: 9.50 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.86 	gb1: 0.04 	gb2: 0.48 	gb3: 1.91 	gb4: 3.35 	gb5: 2.22
+		Population 38
+			Robot 0 	f: 1130.04 	mf: 1189.90 	ga0: 1.00 	ga1: 9.50 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.86 	gb1: 0.04 	gb2: 0.48 	gb3: 1.91 	gb4: 3.35 	gb5: 2.22
+		Population 39
+			Robot 0 	f: 1090.60 	mf: 1168.40 	ga0: 1.00 	ga1: 9.50 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.86 	gb1: 0.04 	gb2: 0.48 	gb3: 1.91 	gb4: 3.35 	gb5: 2.22
+		Population 40
+			Robot 0 	f: 1109.24 	mf: 1148.00 	ga0: 1.00 	ga1: 9.50 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.86 	gb1: 0.04 	gb2: 0.48 	gb3: 1.91 	gb4: 3.35 	gb5: 2.22
+		Population 41
+			Robot 0 	f: 1284.97 	mf: 1144.20 	ga0: 1.00 	ga1: 9.50 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.86 	gb1: 0.04 	gb2: 0.48 	gb3: 1.91 	gb4: 3.35 	gb5: 2.22
+		Population 42
+			Robot 0 	f: 1086.46 	mf: 1127.90 	ga0: 1.00 	ga1: 9.50 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.86 	gb1: 0.04 	gb2: 0.48 	gb3: 1.91 	gb4: 3.35 	gb5: 2.22
+		Population 43
+			Robot 0 	f: 1200.04 	mf: 1129.50 	ga0: 1.00 	ga1: 9.50 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.86 	gb1: 0.04 	gb2: 0.48 	gb3: 1.91 	gb4: 3.35 	gb5: 2.22
+		Population 44
+			Robot 0 	f: 1231.01 	mf: 1163.70 	ga0: 1.00 	ga1: 9.50 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.86 	gb1: 0.04 	gb2: 0.48 	gb3: 1.91 	gb4: 3.35 	gb5: 2.22
+		Population 45
+			Robot 0 	f: 1129.29 	mf: 1177.80 	ga0: 1.00 	ga1: 9.50 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.86 	gb1: 0.04 	gb2: 0.48 	gb3: 1.91 	gb4: 3.35 	gb5: 2.22
+		Population 46
+			Robot 0 	f: 1272.10 	mf: 1176.00 	ga0: 1.00 	ga1: 9.50 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.86 	gb1: 0.04 	gb2: 0.48 	gb3: 1.91 	gb4: 3.35 	gb5: 2.22
+		Population 47
+			Robot 0 	f: 1263.30 	mf: 1179.40 	ga0: 1.00 	ga1: 9.50 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.86 	gb1: 0.04 	gb2: 0.48 	gb3: 1.91 	gb4: 3.35 	gb5: 2.22
+		Population 48
+			Robot 0 	f: 1226.16 	mf: 1189.00 	ga0: 1.00 	ga1: 9.50 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.86 	gb1: 0.04 	gb2: 0.48 	gb3: 1.91 	gb4: 3.35 	gb5: 2.22
+		Population 49
+			Robot 0 	f: 1421.25 	mf: 1222.10 	ga0: 1.00 	ga1: 9.50 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.86 	gb1: 0.04 	gb2: 0.48 	gb3: 1.91 	gb4: 3.35 	gb5: 2.22
+		Population 50
+			Robot 0 	f: 1298.61 	mf: 1241.00 	ga0: 1.00 	ga1: 9.50 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.86 	gb1: 0.04 	gb2: 0.48 	gb3: 1.91 	gb4: 3.35 	gb5: 2.22
+		Population 51
+			Robot 0 	f: 1137.72 	mf: 1226.30 	ga0: 1.00 	ga1: 9.50 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.86 	gb1: 0.04 	gb2: 0.48 	gb3: 1.91 	gb4: 3.35 	gb5: 2.22
+		Population 52
+			Robot 0 	f: 1313.06 	mf: 1249.00 	ga0: 1.00 	ga1: 9.50 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.86 	gb1: 0.04 	gb2: 0.48 	gb3: 1.91 	gb4: 3.35 	gb5: 2.22
+		Population 53
+			Robot 0 	f: 1199.69 	mf: 1248.90 	ga0: 1.00 	ga1: 9.50 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.86 	gb1: 0.04 	gb2: 0.48 	gb3: 1.91 	gb4: 3.35 	gb5: 2.22
+		Population 54
+			Robot 0 	f: 1298.38 	mf: 1255.60 	ga0: 1.00 	ga1: 9.50 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.86 	gb1: 0.04 	gb2: 0.48 	gb3: 1.91 	gb4: 3.35 	gb5: 2.22
+		Population 55
+			Robot 0 	f: 1134.19 	mf: 1256.10 	ga0: 1.00 	ga1: 9.50 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.86 	gb1: 0.04 	gb2: 0.48 	gb3: 1.91 	gb4: 3.35 	gb5: 2.22
+		Population 56
+			Robot 0 	f: 1209.86 	mf: 1249.80 	ga0: 1.00 	ga1: 9.50 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.86 	gb1: 0.04 	gb2: 0.48 	gb3: 1.91 	gb4: 3.35 	gb5: 2.22
+		Population 57
+			Robot 0 	f: 664.24 	mf: 1189.90 	ga0: 1.00 	ga1: 9.50 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.86 	gb1: 0.04 	gb2: 0.48 	gb3: 1.91 	gb4: 3.35 	gb5: 2.22
+		Population 58
+			Robot 0 	f: 1071.66 	mf: 1174.40 	ga0: 1.00 	ga1: 9.50 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.86 	gb1: 0.04 	gb2: 0.48 	gb3: 1.91 	gb4: 3.35 	gb5: 2.22
+		Population 59
+			Robot 0 	f: 1215.78 	mf: 1153.80 	ga0: 1.00 	ga1: 9.50 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.86 	gb1: 0.04 	gb2: 0.48 	gb3: 1.91 	gb4: 3.35 	gb5: 2.22
+		Population 60
+			Robot 0 	f: 1286.04 	mf: 1152.60 	ga0: 1.00 	ga1: 9.50 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.86 	gb1: 0.04 	gb2: 0.48 	gb3: 1.91 	gb4: 3.35 	gb5: 2.22
+		Population 61
+			Robot 0 	f: 1157.43 	mf: 1154.60 	ga0: 1.00 	ga1: 9.50 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.86 	gb1: 0.04 	gb2: 0.48 	gb3: 1.91 	gb4: 3.35 	gb5: 2.22
+		Population 62
+			Robot 0 	f: 1117.17 	mf: 1135.00 	ga0: 1.00 	ga1: 9.50 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.86 	gb1: 0.04 	gb2: 0.48 	gb3: 1.91 	gb4: 3.35 	gb5: 2.22
+		Population 63
+			Robot 0 	f: 1334.04 	mf: 1148.50 	ga0: 1.00 	ga1: 9.50 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.86 	gb1: 0.04 	gb2: 0.48 	gb3: 1.91 	gb4: 3.35 	gb5: 2.22
+		Population 64
+			Robot 0 	f: 1023.39 	mf: 1121.00 	ga0: 1.00 	ga1: 9.50 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.86 	gb1: 0.04 	gb2: 0.48 	gb3: 1.91 	gb4: 3.35 	gb5: 2.22
+		Population 65
+			Robot 0 	f: 1392.52 	mf: 1146.80 	ga0: 1.00 	ga1: 9.50 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.86 	gb1: 0.04 	gb2: 0.48 	gb3: 1.91 	gb4: 3.35 	gb5: 2.22
+		Population 66
+			Robot 0 	f: 1296.37 	mf: 1155.50 	ga0: 1.00 	ga1: 9.50 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.86 	gb1: 0.04 	gb2: 0.48 	gb3: 1.91 	gb4: 3.35 	gb5: 2.22
+		Population 67
+			Robot 0 	f: 1330.48 	mf: 1222.10 	ga0: 1.00 	ga1: 9.50 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.86 	gb1: 0.04 	gb2: 0.48 	gb3: 1.91 	gb4: 3.35 	gb5: 2.22
+		Population 68
+			Robot 0 	f: 1199.71 	mf: 1234.90 	ga0: 1.00 	ga1: 9.50 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.86 	gb1: 0.04 	gb2: 0.48 	gb3: 1.91 	gb4: 3.35 	gb5: 2.22
+		Population 69
+			Robot 0 	f: 1103.09 	mf: 1223.70 	ga0: 1.00 	ga1: 9.50 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.86 	gb1: 0.04 	gb2: 0.48 	gb3: 1.91 	gb4: 3.35 	gb5: 2.22
+		Population 70
+			Robot 0 	f: 1057.12 	mf: 1200.80 	ga0: 1.00 	ga1: 9.50 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.86 	gb1: 0.04 	gb2: 0.48 	gb3: 1.91 	gb4: 3.35 	gb5: 2.22
+		Population 71
+			Robot 0 	f: 1257.81 	mf: 1210.80 	ga0: 1.00 	ga1: 9.50 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.86 	gb1: 0.04 	gb2: 0.48 	gb3: 1.91 	gb4: 3.35 	gb5: 2.22
+		Population 72
+			Robot 0 	f: 1279.17 	mf: 1227.00 	ga0: 1.00 	ga1: 9.50 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.86 	gb1: 0.04 	gb2: 0.48 	gb3: 1.91 	gb4: 3.35 	gb5: 2.22
+		Population 73
+			Robot 0 	f: 1258.91 	mf: 1219.40 	ga0: 1.00 	ga1: 9.50 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.86 	gb1: 0.04 	gb2: 0.48 	gb3: 1.91 	gb4: 3.35 	gb5: 2.22
+		Population 74
+			Robot 0 	f: 1133.63 	mf: 1230.40 	ga0: 1.00 	ga1: 9.50 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.86 	gb1: 0.04 	gb2: 0.48 	gb3: 1.91 	gb4: 3.35 	gb5: 2.22
+		Population 75
+			Robot 0 	f: 1266.30 	mf: 1217.80 	ga0: 1.00 	ga1: 9.50 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.86 	gb1: 0.04 	gb2: 0.48 	gb3: 1.91 	gb4: 3.35 	gb5: 2.22
+		Population 76
+			Robot 0 	f: 1164.56 	mf: 1204.60 	ga0: 1.00 	ga1: 9.50 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.86 	gb1: 0.04 	gb2: 0.48 	gb3: 1.91 	gb4: 3.35 	gb5: 2.22
+		Population 77
+			Robot 0 	f: 1246.41 	mf: 1196.20 	ga0: 1.00 	ga1: 9.50 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.86 	gb1: 0.04 	gb2: 0.48 	gb3: 1.91 	gb4: 3.35 	gb5: 2.22
+		Population 78
+			Robot 0 	f: 1122.73 	mf: 1188.50 	ga0: 1.00 	ga1: 9.50 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.86 	gb1: 0.04 	gb2: 0.48 	gb3: 1.91 	gb4: 3.35 	gb5: 2.22
+		Population 79
+			Robot 0 	f: 1094.44 	mf: 1187.60 	ga0: 1.00 	ga1: 9.50 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.86 	gb1: 0.04 	gb2: 0.48 	gb3: 1.91 	gb4: 3.35 	gb5: 2.22
+		Population 80
+			Robot 0 	f: 1184.86 	mf: 1200.30 	ga0: 1.00 	ga1: 9.50 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.86 	gb1: 0.04 	gb2: 0.48 	gb3: 1.91 	gb4: 3.35 	gb5: 2.22
+		Population 81
+			Robot 0 	f: 1059.82 	mf: 1180.50 	ga0: 1.00 	ga1: 9.50 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.86 	gb1: 0.04 	gb2: 0.48 	gb3: 1.91 	gb4: 3.35 	gb5: 2.22
+		Population 82
+			Robot 0 	f: 998.29 	mf: 1152.40 	ga0: 1.00 	ga1: 9.50 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.86 	gb1: 0.04 	gb2: 0.48 	gb3: 1.91 	gb4: 3.35 	gb5: 2.22
+		Population 83
+			Robot 0 	f: 1155.10 	mf: 1142.10 	ga0: 1.00 	ga1: 9.50 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.86 	gb1: 0.04 	gb2: 0.48 	gb3: 1.91 	gb4: 3.35 	gb5: 2.22
+		Population 84
+			Robot 0 	f: 1245.52 	mf: 1153.30 	ga0: 1.00 	ga1: 9.50 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.86 	gb1: 0.04 	gb2: 0.48 	gb3: 1.91 	gb4: 3.35 	gb5: 2.22
+		Population 85
+			Robot 0 	f: 1201.80 	mf: 1146.80 	ga0: 1.00 	ga1: 9.50 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.86 	gb1: 0.04 	gb2: 0.48 	gb3: 1.91 	gb4: 3.35 	gb5: 2.22
+		Population 86
+			Robot 0 	f: 852.27 	mf: 1115.60 	ga0: 1.00 	ga1: 9.50 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.86 	gb1: 0.04 	gb2: 0.48 	gb3: 1.91 	gb4: 3.35 	gb5: 2.22
+		Population 87
+			Robot 0 	f: 1279.60 	mf: 1118.90 	ga0: 1.00 	ga1: 9.50 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.86 	gb1: 0.04 	gb2: 0.48 	gb3: 1.91 	gb4: 3.35 	gb5: 2.22
+		Population 88
+			Robot 0 	f: 1113.54 	mf: 1118.00 	ga0: 1.00 	ga1: 9.50 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.86 	gb1: 0.04 	gb2: 0.48 	gb3: 1.91 	gb4: 3.35 	gb5: 2.22
+		Population 89
+			Robot 0 	f: 1152.24 	mf: 1123.80 	ga0: 1.00 	ga1: 9.50 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.86 	gb1: 0.04 	gb2: 0.48 	gb3: 1.91 	gb4: 3.35 	gb5: 2.22
+		Population 90
+			Robot 0 	f: 1212.66 	mf: 1126.60 	ga0: 1.00 	ga1: 9.50 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.86 	gb1: 0.04 	gb2: 0.48 	gb3: 1.91 	gb4: 3.35 	gb5: 2.22
+		Population 91
+			Robot 0 	f: 821.32 	mf: 1102.80 	ga0: 1.00 	ga1: 9.50 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.86 	gb1: 0.04 	gb2: 0.48 	gb3: 1.91 	gb4: 3.35 	gb5: 2.22
+		Population 92
+			Robot 0 	f: 1134.30 	mf: 1116.40 	ga0: 1.00 	ga1: 9.50 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.86 	gb1: 0.04 	gb2: 0.48 	gb3: 1.91 	gb4: 3.35 	gb5: 2.22
+		Population 93
+			Robot 0 	f: 1015.95 	mf: 1102.40 	ga0: 1.00 	ga1: 9.50 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.86 	gb1: 0.04 	gb2: 0.48 	gb3: 1.91 	gb4: 3.35 	gb5: 2.22
+		Population 94
+			Robot 0 	f: 1073.93 	mf: 1085.20 	ga0: 1.00 	ga1: 9.50 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.86 	gb1: 0.04 	gb2: 0.48 	gb3: 1.91 	gb4: 3.35 	gb5: 2.22
+		Population 95
+			Robot 0 	f: 977.56 	mf: 1062.80 	ga0: 1.00 	ga1: 9.50 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.86 	gb1: 0.04 	gb2: 0.48 	gb3: 1.91 	gb4: 3.35 	gb5: 2.22
+		Population 96
+			Robot 0 	f: 1229.30 	mf: 1100.50 	ga0: 1.00 	ga1: 9.50 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.86 	gb1: 0.04 	gb2: 0.48 	gb3: 1.91 	gb4: 3.35 	gb5: 2.22
+		Population 97
+			Robot 0 	f: 715.33 	mf: 1044.10 	ga0: 1.00 	ga1: 9.50 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.86 	gb1: 0.04 	gb2: 0.48 	gb3: 1.91 	gb4: 3.35 	gb5: 2.22
+		Population 98
+			Robot 0 	f: 806.14 	mf: 1013.40 	ga0: 1.00 	ga1: 9.50 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.86 	gb1: 0.04 	gb2: 0.48 	gb3: 1.91 	gb4: 3.35 	gb5: 2.22
+		Population 99
+			Robot 0 	f: 806.14 	mf: 1013.40 	ga0: 1.00 	ga1: 9.50 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.86 	gb1: 0.04 	gb2: 0.48 	gb3: 1.91 	gb4: 3.35 	gb5: 2.22
+	finalFitness: 1013
+	Repetition 3
+		Population 0
+			Robot 0 	f: 1063.40 	mf: 1063.00 	ga0: 1.00 	ga1: 9.70 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.86 	gb1: 0.75 	gb2: 0.73 	gb3: 1.42 	gb4: 1.21 	gb5: 1.14
+		Population 1
+			Robot 0 	f: 1349.67 	mf: 1206.00 	ga0: 1.00 	ga1: 9.70 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.86 	gb1: 0.75 	gb2: 0.73 	gb3: 1.42 	gb4: 1.21 	gb5: 1.14
+		Population 2
+			Robot 0 	f: 384.95 	mf: 932.00 	ga0: 1.00 	ga1: 9.70 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.86 	gb1: 0.75 	gb2: 0.73 	gb3: 1.42 	gb4: 1.21 	gb5: 1.14
+		Population 3
+			Robot 0 	f: 1086.64 	mf: 970.50 	ga0: 1.00 	ga1: 9.70 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.86 	gb1: 0.75 	gb2: 0.73 	gb3: 1.42 	gb4: 1.21 	gb5: 1.14
+		Population 4
+			Robot 0 	f: 1171.03 	mf: 1010.60 	ga0: 1.00 	ga1: 9.70 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.86 	gb1: 0.75 	gb2: 0.73 	gb3: 1.42 	gb4: 1.21 	gb5: 1.14
+		Population 5
+			Robot 0 	f: 1101.34 	mf: 1025.67 	ga0: 1.00 	ga1: 9.70 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.86 	gb1: 0.75 	gb2: 0.73 	gb3: 1.42 	gb4: 1.21 	gb5: 1.14
+		Population 6
+			Robot 0 	f: 1221.44 	mf: 1053.57 	ga0: 1.00 	ga1: 9.70 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.86 	gb1: 0.75 	gb2: 0.73 	gb3: 1.42 	gb4: 1.21 	gb5: 1.14
+		Population 7
+			Robot 0 	f: 1240.36 	mf: 1076.88 	ga0: 1.00 	ga1: 9.70 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.86 	gb1: 0.75 	gb2: 0.73 	gb3: 1.42 	gb4: 1.21 	gb5: 1.14
+		Population 8
+			Robot 0 	f: 1077.93 	mf: 1076.89 	ga0: 1.00 	ga1: 9.70 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.86 	gb1: 0.75 	gb2: 0.73 	gb3: 1.42 	gb4: 1.21 	gb5: 1.14
+		Population 9
+			Robot 0 	f: 1250.78 	mf: 1094.20 	ga0: 1.00 	ga1: 9.70 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.86 	gb1: 0.75 	gb2: 0.73 	gb3: 1.42 	gb4: 1.21 	gb5: 1.14
+		Population 10
+			Robot 0 	f: 924.88 	mf: 1080.30 	ga0: 1.00 	ga1: 9.70 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.86 	gb1: 0.75 	gb2: 0.73 	gb3: 1.42 	gb4: 1.21 	gb5: 1.14
+		Population 11
+			Robot 0 	f: 1290.43 	mf: 1074.40 	ga0: 1.00 	ga1: 9.70 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.86 	gb1: 0.75 	gb2: 0.73 	gb3: 1.42 	gb4: 1.21 	gb5: 1.14
+		Population 12
+			Robot 0 	f: 1110.46 	mf: 1147.00 	ga0: 1.00 	ga1: 9.70 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.86 	gb1: 0.75 	gb2: 0.73 	gb3: 1.42 	gb4: 1.21 	gb5: 1.14
+		Population 13
+			Robot 0 	f: 1352.90 	mf: 1173.60 	ga0: 1.00 	ga1: 9.70 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.86 	gb1: 0.75 	gb2: 0.73 	gb3: 1.42 	gb4: 1.21 	gb5: 1.14
+		Population 14
+			Robot 0 	f: 1193.78 	mf: 1175.80 	ga0: 1.00 	ga1: 9.70 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.86 	gb1: 0.75 	gb2: 0.73 	gb3: 1.42 	gb4: 1.21 	gb5: 1.14
+		Population 15
+			Robot 0 	f: 1372.69 	mf: 1202.90 	ga0: 1.00 	ga1: 9.70 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.86 	gb1: 0.75 	gb2: 0.73 	gb3: 1.42 	gb4: 1.21 	gb5: 1.14
+		Population 16
+			Robot 0 	f: 983.81 	mf: 1179.10 	ga0: 1.00 	ga1: 9.70 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.86 	gb1: 0.75 	gb2: 0.73 	gb3: 1.42 	gb4: 1.21 	gb5: 1.14
+		Population 17
+			Robot 0 	f: 1041.81 	mf: 1159.20 	ga0: 1.00 	ga1: 9.70 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.86 	gb1: 0.75 	gb2: 0.73 	gb3: 1.42 	gb4: 1.21 	gb5: 1.14
+		Population 18
+			Robot 0 	f: 1264.28 	mf: 1177.90 	ga0: 1.00 	ga1: 9.70 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.86 	gb1: 0.75 	gb2: 0.73 	gb3: 1.42 	gb4: 1.21 	gb5: 1.14
+		Population 19
+			Robot 0 	f: 1163.75 	mf: 1169.20 	ga0: 1.00 	ga1: 9.70 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.86 	gb1: 0.75 	gb2: 0.73 	gb3: 1.42 	gb4: 1.21 	gb5: 1.14
+		Population 20
+			Robot 0 	f: 1300.04 	mf: 1206.80 	ga0: 1.00 	ga1: 9.70 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.86 	gb1: 0.75 	gb2: 0.73 	gb3: 1.42 	gb4: 1.21 	gb5: 1.14
+		Population 21
+			Robot 0 	f: 1206.43 	mf: 1198.40 	ga0: 1.00 	ga1: 9.70 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.86 	gb1: 0.75 	gb2: 0.73 	gb3: 1.42 	gb4: 1.21 	gb5: 1.14
+		Population 22
+			Robot 0 	f: 1161.86 	mf: 1203.50 	ga0: 1.00 	ga1: 9.70 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.86 	gb1: 0.75 	gb2: 0.73 	gb3: 1.42 	gb4: 1.21 	gb5: 1.14
+		Population 23
+			Robot 0 	f: 961.87 	mf: 1164.40 	ga0: 1.00 	ga1: 9.70 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.86 	gb1: 0.75 	gb2: 0.73 	gb3: 1.42 	gb4: 1.21 	gb5: 1.14
+		Population 24
+			Robot 0 	f: 1277.54 	mf: 1172.80 	ga0: 1.00 	ga1: 9.70 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.86 	gb1: 0.75 	gb2: 0.73 	gb3: 1.42 	gb4: 1.21 	gb5: 1.14
+		Population 25
+			Robot 0 	f: 1130.60 	mf: 1148.60 	ga0: 1.00 	ga1: 9.70 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.86 	gb1: 0.75 	gb2: 0.73 	gb3: 1.42 	gb4: 1.21 	gb5: 1.14
+		Population 26
+			Robot 0 	f: 1212.88 	mf: 1171.50 	ga0: 1.00 	ga1: 9.70 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.86 	gb1: 0.75 	gb2: 0.73 	gb3: 1.42 	gb4: 1.21 	gb5: 1.14
+		Population 27
+			Robot 0 	f: 1232.40 	mf: 1190.60 	ga0: 1.00 	ga1: 9.70 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.86 	gb1: 0.75 	gb2: 0.73 	gb3: 1.42 	gb4: 1.21 	gb5: 1.14
+		Population 28
+			Robot 0 	f: 1310.28 	mf: 1195.20 	ga0: 1.00 	ga1: 9.70 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.86 	gb1: 0.75 	gb2: 0.73 	gb3: 1.42 	gb4: 1.21 	gb5: 1.14
+		Population 29
+			Robot 0 	f: 1250.84 	mf: 1203.90 	ga0: 1.00 	ga1: 9.70 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.86 	gb1: 0.75 	gb2: 0.73 	gb3: 1.42 	gb4: 1.21 	gb5: 1.14
+		Population 30
+			Robot 0 	f: 1003.80 	mf: 1174.20 	ga0: 1.00 	ga1: 9.70 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.86 	gb1: 0.75 	gb2: 0.73 	gb3: 1.42 	gb4: 1.21 	gb5: 1.14
+		Population 31
+			Robot 0 	f: 1136.59 	mf: 1167.20 	ga0: 1.00 	ga1: 9.70 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.86 	gb1: 0.75 	gb2: 0.73 	gb3: 1.42 	gb4: 1.21 	gb5: 1.14
+		Population 32
+			Robot 0 	f: 1359.32 	mf: 1187.00 	ga0: 1.00 	ga1: 9.70 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.86 	gb1: 0.75 	gb2: 0.73 	gb3: 1.42 	gb4: 1.21 	gb5: 1.14
+		Population 33
+			Robot 0 	f: 1112.13 	mf: 1202.10 	ga0: 1.00 	ga1: 9.70 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.86 	gb1: 0.75 	gb2: 0.73 	gb3: 1.42 	gb4: 1.21 	gb5: 1.14
+		Population 34
+			Robot 0 	f: 1088.77 	mf: 1183.20 	ga0: 1.00 	ga1: 9.70 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.86 	gb1: 0.75 	gb2: 0.73 	gb3: 1.42 	gb4: 1.21 	gb5: 1.14
+		Population 35
+			Robot 0 	f: 1196.39 	mf: 1189.80 	ga0: 1.00 	ga1: 9.70 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.86 	gb1: 0.75 	gb2: 0.73 	gb3: 1.42 	gb4: 1.21 	gb5: 1.14
+		Population 36
+			Robot 0 	f: 1259.86 	mf: 1194.50 	ga0: 1.00 	ga1: 9.70 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.86 	gb1: 0.75 	gb2: 0.73 	gb3: 1.42 	gb4: 1.21 	gb5: 1.14
+		Population 37
+			Robot 0 	f: 1372.78 	mf: 1208.50 	ga0: 1.00 	ga1: 9.70 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.86 	gb1: 0.75 	gb2: 0.73 	gb3: 1.42 	gb4: 1.21 	gb5: 1.14
+		Population 38
+			Robot 0 	f: 766.20 	mf: 1154.10 	ga0: 1.00 	ga1: 9.70 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.86 	gb1: 0.75 	gb2: 0.73 	gb3: 1.42 	gb4: 1.21 	gb5: 1.14
+		Population 39
+			Robot 0 	f: 1215.01 	mf: 1150.60 	ga0: 1.00 	ga1: 9.70 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.86 	gb1: 0.75 	gb2: 0.73 	gb3: 1.42 	gb4: 1.21 	gb5: 1.14
+		Population 40
+			Robot 0 	f: 1366.05 	mf: 1186.90 	ga0: 1.00 	ga1: 9.70 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.86 	gb1: 0.75 	gb2: 0.73 	gb3: 1.42 	gb4: 1.21 	gb5: 1.14
+		Population 41
+			Robot 0 	f: 1241.18 	mf: 1197.40 	ga0: 1.00 	ga1: 9.70 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.86 	gb1: 0.75 	gb2: 0.73 	gb3: 1.42 	gb4: 1.21 	gb5: 1.14
+		Population 42
+			Robot 0 	f: 1302.42 	mf: 1191.70 	ga0: 1.00 	ga1: 9.70 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.86 	gb1: 0.75 	gb2: 0.73 	gb3: 1.42 	gb4: 1.21 	gb5: 1.14
+		Population 43
+			Robot 0 	f: 1244.49 	mf: 1204.90 	ga0: 1.00 	ga1: 9.70 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.86 	gb1: 0.75 	gb2: 0.73 	gb3: 1.42 	gb4: 1.21 	gb5: 1.14
+		Population 44
+			Robot 0 	f: 1027.50 	mf: 1198.80 	ga0: 1.00 	ga1: 9.70 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.86 	gb1: 0.75 	gb2: 0.73 	gb3: 1.42 	gb4: 1.21 	gb5: 1.14
+		Population 45
+			Robot 0 	f: 1011.58 	mf: 1180.30 	ga0: 1.00 	ga1: 9.70 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.86 	gb1: 0.75 	gb2: 0.73 	gb3: 1.42 	gb4: 1.21 	gb5: 1.14
+		Population 46
+			Robot 0 	f: 1060.46 	mf: 1160.40 	ga0: 1.00 	ga1: 9.70 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.86 	gb1: 0.75 	gb2: 0.73 	gb3: 1.42 	gb4: 1.21 	gb5: 1.14
+		Population 47
+			Robot 0 	f: 1311.85 	mf: 1154.30 	ga0: 1.00 	ga1: 9.70 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.86 	gb1: 0.75 	gb2: 0.73 	gb3: 1.42 	gb4: 1.21 	gb5: 1.14
+		Population 48
+			Robot 0 	f: 1186.23 	mf: 1196.30 	ga0: 1.00 	ga1: 9.70 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.86 	gb1: 0.75 	gb2: 0.73 	gb3: 1.42 	gb4: 1.21 	gb5: 1.14
+		Population 49
+			Robot 0 	f: 1246.45 	mf: 1199.40 	ga0: 1.00 	ga1: 9.70 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.86 	gb1: 0.75 	gb2: 0.73 	gb3: 1.42 	gb4: 1.21 	gb5: 1.14
+		Population 50
+			Robot 0 	f: 996.41 	mf: 1162.40 	ga0: 1.00 	ga1: 9.70 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.86 	gb1: 0.75 	gb2: 0.73 	gb3: 1.42 	gb4: 1.21 	gb5: 1.14
+		Population 51
+			Robot 0 	f: 906.86 	mf: 1128.90 	ga0: 1.00 	ga1: 9.70 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.86 	gb1: 0.75 	gb2: 0.73 	gb3: 1.42 	gb4: 1.21 	gb5: 1.14
+		Population 52
+			Robot 0 	f: 1272.60 	mf: 1125.90 	ga0: 1.00 	ga1: 9.70 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.86 	gb1: 0.75 	gb2: 0.73 	gb3: 1.42 	gb4: 1.21 	gb5: 1.14
+		Population 53
+			Robot 0 	f: 1309.96 	mf: 1132.40 	ga0: 1.00 	ga1: 9.70 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.86 	gb1: 0.75 	gb2: 0.73 	gb3: 1.42 	gb4: 1.21 	gb5: 1.14
+		Population 54
+			Robot 0 	f: 1219.89 	mf: 1151.60 	ga0: 1.00 	ga1: 9.70 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.86 	gb1: 0.75 	gb2: 0.73 	gb3: 1.42 	gb4: 1.21 	gb5: 1.14
+		Population 55
+			Robot 0 	f: 1179.79 	mf: 1168.40 	ga0: 1.00 	ga1: 9.70 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.86 	gb1: 0.75 	gb2: 0.73 	gb3: 1.42 	gb4: 1.21 	gb5: 1.14
+		Population 56
+			Robot 0 	f: 1328.51 	mf: 1195.20 	ga0: 1.00 	ga1: 9.70 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.86 	gb1: 0.75 	gb2: 0.73 	gb3: 1.42 	gb4: 1.21 	gb5: 1.14
+		Population 57
+			Robot 0 	f: 1085.37 	mf: 1172.60 	ga0: 1.00 	ga1: 9.70 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.86 	gb1: 0.75 	gb2: 0.73 	gb3: 1.42 	gb4: 1.21 	gb5: 1.14
+		Population 58
+			Robot 0 	f: 870.26 	mf: 1141.00 	ga0: 1.00 	ga1: 9.70 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.86 	gb1: 0.75 	gb2: 0.73 	gb3: 1.42 	gb4: 1.21 	gb5: 1.14
+		Population 59
+			Robot 0 	f: 1033.39 	mf: 1119.70 	ga0: 1.00 	ga1: 9.70 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.86 	gb1: 0.75 	gb2: 0.73 	gb3: 1.42 	gb4: 1.21 	gb5: 1.14
+		Population 60
+			Robot 0 	f: 1153.10 	mf: 1135.40 	ga0: 1.00 	ga1: 9.70 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.86 	gb1: 0.75 	gb2: 0.73 	gb3: 1.42 	gb4: 1.21 	gb5: 1.14
+		Population 61
+			Robot 0 	f: 1188.59 	mf: 1163.60 	ga0: 1.00 	ga1: 9.70 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.86 	gb1: 0.75 	gb2: 0.73 	gb3: 1.42 	gb4: 1.21 	gb5: 1.14
+		Population 62
+			Robot 0 	f: 1180.29 	mf: 1154.40 	ga0: 1.00 	ga1: 9.70 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.86 	gb1: 0.75 	gb2: 0.73 	gb3: 1.42 	gb4: 1.21 	gb5: 1.14
+		Population 63
+			Robot 0 	f: 1108.09 	mf: 1134.30 	ga0: 1.00 	ga1: 9.70 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.86 	gb1: 0.75 	gb2: 0.73 	gb3: 1.42 	gb4: 1.21 	gb5: 1.14
+		Population 64
+			Robot 0 	f: 1109.29 	mf: 1123.30 	ga0: 1.00 	ga1: 9.70 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.86 	gb1: 0.75 	gb2: 0.73 	gb3: 1.42 	gb4: 1.21 	gb5: 1.14
+		Population 65
+			Robot 0 	f: 1029.13 	mf: 1108.30 	ga0: 1.00 	ga1: 9.70 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.86 	gb1: 0.75 	gb2: 0.73 	gb3: 1.42 	gb4: 1.21 	gb5: 1.14
+		Population 66
+			Robot 0 	f: 1187.25 	mf: 1094.20 	ga0: 1.00 	ga1: 9.70 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.86 	gb1: 0.75 	gb2: 0.73 	gb3: 1.42 	gb4: 1.21 	gb5: 1.14
+		Population 67
+			Robot 0 	f: 1332.88 	mf: 1118.90 	ga0: 1.00 	ga1: 9.70 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.86 	gb1: 0.75 	gb2: 0.73 	gb3: 1.42 	gb4: 1.21 	gb5: 1.14
+		Population 68
+			Robot 0 	f: 1192.72 	mf: 1151.10 	ga0: 1.00 	ga1: 9.70 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.86 	gb1: 0.75 	gb2: 0.73 	gb3: 1.42 	gb4: 1.21 	gb5: 1.14
+		Population 69
+			Robot 0 	f: 1121.69 	mf: 1159.90 	ga0: 1.00 	ga1: 9.70 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.86 	gb1: 0.75 	gb2: 0.73 	gb3: 1.42 	gb4: 1.21 	gb5: 1.14
+		Population 70
+			Robot 0 	f: 676.24 	mf: 1112.20 	ga0: 1.00 	ga1: 9.70 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.86 	gb1: 0.75 	gb2: 0.73 	gb3: 1.42 	gb4: 1.21 	gb5: 1.14
+		Population 71
+			Robot 0 	f: 1402.35 	mf: 1133.60 	ga0: 1.00 	ga1: 9.70 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.86 	gb1: 0.75 	gb2: 0.73 	gb3: 1.42 	gb4: 1.21 	gb5: 1.14
+		Population 72
+			Robot 0 	f: 1258.00 	mf: 1141.30 	ga0: 1.00 	ga1: 9.70 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.86 	gb1: 0.75 	gb2: 0.73 	gb3: 1.42 	gb4: 1.21 	gb5: 1.14
+		Population 73
+			Robot 0 	f: 946.14 	mf: 1125.10 	ga0: 1.00 	ga1: 9.70 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.86 	gb1: 0.75 	gb2: 0.73 	gb3: 1.42 	gb4: 1.21 	gb5: 1.14
+		Population 74
+			Robot 0 	f: 1155.26 	mf: 1129.70 	ga0: 1.00 	ga1: 9.70 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.86 	gb1: 0.75 	gb2: 0.73 	gb3: 1.42 	gb4: 1.21 	gb5: 1.14
+		Population 75
+			Robot 0 	f: 1280.25 	mf: 1154.80 	ga0: 1.00 	ga1: 9.70 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.86 	gb1: 0.75 	gb2: 0.73 	gb3: 1.42 	gb4: 1.21 	gb5: 1.14
+		Population 76
+			Robot 0 	f: 1034.64 	mf: 1139.50 	ga0: 1.00 	ga1: 9.70 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.86 	gb1: 0.75 	gb2: 0.73 	gb3: 1.42 	gb4: 1.21 	gb5: 1.14
+		Population 77
+			Robot 0 	f: 1093.11 	mf: 1115.60 	ga0: 1.00 	ga1: 9.70 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.86 	gb1: 0.75 	gb2: 0.73 	gb3: 1.42 	gb4: 1.21 	gb5: 1.14
+		Population 78
+			Robot 0 	f: 1315.39 	mf: 1127.90 	ga0: 1.00 	ga1: 9.70 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.86 	gb1: 0.75 	gb2: 0.73 	gb3: 1.42 	gb4: 1.21 	gb5: 1.14
+		Population 79
+			Robot 0 	f: 1206.88 	mf: 1136.40 	ga0: 1.00 	ga1: 9.70 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.86 	gb1: 0.75 	gb2: 0.73 	gb3: 1.42 	gb4: 1.21 	gb5: 1.14
+		Population 80
+			Robot 0 	f: 1196.16 	mf: 1188.40 	ga0: 1.00 	ga1: 9.70 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.86 	gb1: 0.75 	gb2: 0.73 	gb3: 1.42 	gb4: 1.21 	gb5: 1.14
+		Population 81
+			Robot 0 	f: 1334.56 	mf: 1181.60 	ga0: 1.00 	ga1: 9.70 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.86 	gb1: 0.75 	gb2: 0.73 	gb3: 1.42 	gb4: 1.21 	gb5: 1.14
+		Population 82
+			Robot 0 	f: 1288.74 	mf: 1184.70 	ga0: 1.00 	ga1: 9.70 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.86 	gb1: 0.75 	gb2: 0.73 	gb3: 1.42 	gb4: 1.21 	gb5: 1.14
+		Population 83
+			Robot 0 	f: 1298.77 	mf: 1219.90 	ga0: 1.00 	ga1: 9.70 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.86 	gb1: 0.75 	gb2: 0.73 	gb3: 1.42 	gb4: 1.21 	gb5: 1.14
+		Population 84
+			Robot 0 	f: 1307.71 	mf: 1235.10 	ga0: 1.00 	ga1: 9.70 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.86 	gb1: 0.75 	gb2: 0.73 	gb3: 1.42 	gb4: 1.21 	gb5: 1.14
+		Population 85
+			Robot 0 	f: 1281.19 	mf: 1235.20 	ga0: 1.00 	ga1: 9.70 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.86 	gb1: 0.75 	gb2: 0.73 	gb3: 1.42 	gb4: 1.21 	gb5: 1.14
+		Population 86
+			Robot 0 	f: 1269.65 	mf: 1258.70 	ga0: 1.00 	ga1: 9.70 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.86 	gb1: 0.75 	gb2: 0.73 	gb3: 1.42 	gb4: 1.21 	gb5: 1.14
+		Population 87
+			Robot 0 	f: 1413.07 	mf: 1290.70 	ga0: 1.00 	ga1: 9.70 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.86 	gb1: 0.75 	gb2: 0.73 	gb3: 1.42 	gb4: 1.21 	gb5: 1.14
+		Population 88
+			Robot 0 	f: 1136.62 	mf: 1272.80 	ga0: 1.00 	ga1: 9.70 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.86 	gb1: 0.75 	gb2: 0.73 	gb3: 1.42 	gb4: 1.21 	gb5: 1.14
+		Population 89
+			Robot 0 	f: 1159.44 	mf: 1268.10 	ga0: 1.00 	ga1: 9.70 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.86 	gb1: 0.75 	gb2: 0.73 	gb3: 1.42 	gb4: 1.21 	gb5: 1.14
+		Population 90
+			Robot 0 	f: 1341.89 	mf: 1282.60 	ga0: 1.00 	ga1: 9.70 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.86 	gb1: 0.75 	gb2: 0.73 	gb3: 1.42 	gb4: 1.21 	gb5: 1.14
+		Population 91
+			Robot 0 	f: 1168.96 	mf: 1266.00 	ga0: 1.00 	ga1: 9.70 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.86 	gb1: 0.75 	gb2: 0.73 	gb3: 1.42 	gb4: 1.21 	gb5: 1.14
+		Population 92
+			Robot 0 	f: 1120.40 	mf: 1249.20 	ga0: 1.00 	ga1: 9.70 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.86 	gb1: 0.75 	gb2: 0.73 	gb3: 1.42 	gb4: 1.21 	gb5: 1.14
+		Population 93
+			Robot 0 	f: 1037.00 	mf: 1223.00 	ga0: 1.00 	ga1: 9.70 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.86 	gb1: 0.75 	gb2: 0.73 	gb3: 1.42 	gb4: 1.21 	gb5: 1.14
+		Population 94
+			Robot 0 	f: 1143.76 	mf: 1206.60 	ga0: 1.00 	ga1: 9.70 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.86 	gb1: 0.75 	gb2: 0.73 	gb3: 1.42 	gb4: 1.21 	gb5: 1.14
+		Population 95
+			Robot 0 	f: 1265.27 	mf: 1205.00 	ga0: 1.00 	ga1: 9.70 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.86 	gb1: 0.75 	gb2: 0.73 	gb3: 1.42 	gb4: 1.21 	gb5: 1.14
+		Population 96
+			Robot 0 	f: 1219.45 	mf: 1200.00 	ga0: 1.00 	ga1: 9.70 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.86 	gb1: 0.75 	gb2: 0.73 	gb3: 1.42 	gb4: 1.21 	gb5: 1.14
+		Population 97
+			Robot 0 	f: 1215.56 	mf: 1180.20 	ga0: 1.00 	ga1: 9.70 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.86 	gb1: 0.75 	gb2: 0.73 	gb3: 1.42 	gb4: 1.21 	gb5: 1.14
+		Population 98
+			Robot 0 	f: 1180.81 	mf: 1184.60 	ga0: 1.00 	ga1: 9.70 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.86 	gb1: 0.75 	gb2: 0.73 	gb3: 1.42 	gb4: 1.21 	gb5: 1.14
+		Population 99
+			Robot 0 	f: 1180.81 	mf: 1184.60 	ga0: 1.00 	ga1: 9.70 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.86 	gb1: 0.75 	gb2: 0.73 	gb3: 1.42 	gb4: 1.21 	gb5: 1.14
+	finalFitness: 1184
+	Repetition 4
+		Population 0
+			Robot 0 	f: 1261.95 	mf: 1261.00 	ga0: 1.00 	ga1: 1.60 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.41 	gb1: 0.41 	gb2: 0.23 	gb3: 2.85 	gb4: 2.99 	gb5: 2.49
+		Population 1
+			Robot 0 	f: 1165.67 	mf: 1213.00 	ga0: 1.00 	ga1: 1.60 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.41 	gb1: 0.41 	gb2: 0.23 	gb3: 2.85 	gb4: 2.99 	gb5: 2.49
+		Population 2
+			Robot 0 	f: 1079.78 	mf: 1168.33 	ga0: 1.00 	ga1: 1.60 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.41 	gb1: 0.41 	gb2: 0.23 	gb3: 2.85 	gb4: 2.99 	gb5: 2.49
+		Population 3
+			Robot 0 	f: 759.72 	mf: 1066.00 	ga0: 1.00 	ga1: 1.60 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.41 	gb1: 0.41 	gb2: 0.23 	gb3: 2.85 	gb4: 2.99 	gb5: 2.49
+		Population 4
+			Robot 0 	f: 1228.00 	mf: 1098.20 	ga0: 1.00 	ga1: 1.60 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.41 	gb1: 0.41 	gb2: 0.23 	gb3: 2.85 	gb4: 2.99 	gb5: 2.49
+		Population 5
+			Robot 0 	f: 1406.84 	mf: 1149.50 	ga0: 1.00 	ga1: 1.60 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.41 	gb1: 0.41 	gb2: 0.23 	gb3: 2.85 	gb4: 2.99 	gb5: 2.49
+		Population 6
+			Robot 0 	f: 1240.31 	mf: 1162.43 	ga0: 1.00 	ga1: 1.60 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.41 	gb1: 0.41 	gb2: 0.23 	gb3: 2.85 	gb4: 2.99 	gb5: 2.49
+		Population 7
+			Robot 0 	f: 1069.66 	mf: 1150.75 	ga0: 1.00 	ga1: 1.60 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.41 	gb1: 0.41 	gb2: 0.23 	gb3: 2.85 	gb4: 2.99 	gb5: 2.49
+		Population 8
+			Robot 0 	f: 961.38 	mf: 1129.67 	ga0: 1.00 	ga1: 1.60 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.41 	gb1: 0.41 	gb2: 0.23 	gb3: 2.85 	gb4: 2.99 	gb5: 2.49
+		Population 9
+			Robot 0 	f: 1345.34 	mf: 1151.20 	ga0: 1.00 	ga1: 1.60 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.41 	gb1: 0.41 	gb2: 0.23 	gb3: 2.85 	gb4: 2.99 	gb5: 2.49
+		Population 10
+			Robot 0 	f: 1254.72 	mf: 1150.60 	ga0: 1.00 	ga1: 1.60 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.41 	gb1: 0.41 	gb2: 0.23 	gb3: 2.85 	gb4: 2.99 	gb5: 2.49
+		Population 11
+			Robot 0 	f: 1093.87 	mf: 1143.40 	ga0: 1.00 	ga1: 1.60 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.41 	gb1: 0.41 	gb2: 0.23 	gb3: 2.85 	gb4: 2.99 	gb5: 2.49
+		Population 12
+			Robot 0 	f: 1287.28 	mf: 1164.20 	ga0: 1.00 	ga1: 1.60 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.41 	gb1: 0.41 	gb2: 0.23 	gb3: 2.85 	gb4: 2.99 	gb5: 2.49
+		Population 13
+			Robot 0 	f: 1176.50 	mf: 1205.90 	ga0: 1.00 	ga1: 1.60 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.41 	gb1: 0.41 	gb2: 0.23 	gb3: 2.85 	gb4: 2.99 	gb5: 2.49
+		Population 14
+			Robot 0 	f: 805.64 	mf: 1163.60 	ga0: 1.00 	ga1: 1.60 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.41 	gb1: 0.41 	gb2: 0.23 	gb3: 2.85 	gb4: 2.99 	gb5: 2.49
+		Population 15
+			Robot 0 	f: 1077.36 	mf: 1130.70 	ga0: 1.00 	ga1: 1.60 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.41 	gb1: 0.41 	gb2: 0.23 	gb3: 2.85 	gb4: 2.99 	gb5: 2.49
+		Population 16
+			Robot 0 	f: 711.26 	mf: 1077.80 	ga0: 1.00 	ga1: 1.60 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.41 	gb1: 0.41 	gb2: 0.23 	gb3: 2.85 	gb4: 2.99 	gb5: 2.49
+		Population 17
+			Robot 0 	f: 974.78 	mf: 1068.30 	ga0: 1.00 	ga1: 1.60 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.41 	gb1: 0.41 	gb2: 0.23 	gb3: 2.85 	gb4: 2.99 	gb5: 2.49
+		Population 18
+			Robot 0 	f: 1359.35 	mf: 1108.10 	ga0: 1.00 	ga1: 1.60 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.41 	gb1: 0.41 	gb2: 0.23 	gb3: 2.85 	gb4: 2.99 	gb5: 2.49
+		Population 19
+			Robot 0 	f: 1312.83 	mf: 1104.80 	ga0: 1.00 	ga1: 1.60 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.41 	gb1: 0.41 	gb2: 0.23 	gb3: 2.85 	gb4: 2.99 	gb5: 2.49
+		Population 20
+			Robot 0 	f: 1108.00 	mf: 1090.20 	ga0: 1.00 	ga1: 1.60 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.41 	gb1: 0.41 	gb2: 0.23 	gb3: 2.85 	gb4: 2.99 	gb5: 2.49
+		Population 21
+			Robot 0 	f: 798.87 	mf: 1060.70 	ga0: 1.00 	ga1: 1.60 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.41 	gb1: 0.41 	gb2: 0.23 	gb3: 2.85 	gb4: 2.99 	gb5: 2.49
+		Population 22
+			Robot 0 	f: 1372.63 	mf: 1069.20 	ga0: 1.00 	ga1: 1.60 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.41 	gb1: 0.41 	gb2: 0.23 	gb3: 2.85 	gb4: 2.99 	gb5: 2.49
+		Population 23
+			Robot 0 	f: 1173.54 	mf: 1068.90 	ga0: 1.00 	ga1: 1.60 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.41 	gb1: 0.41 	gb2: 0.23 	gb3: 2.85 	gb4: 2.99 	gb5: 2.49
+		Population 24
+			Robot 0 	f: 967.13 	mf: 1085.10 	ga0: 1.00 	ga1: 1.60 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.41 	gb1: 0.41 	gb2: 0.23 	gb3: 2.85 	gb4: 2.99 	gb5: 2.49
+		Population 25
+			Robot 0 	f: 1218.52 	mf: 1099.20 	ga0: 1.00 	ga1: 1.60 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.41 	gb1: 0.41 	gb2: 0.23 	gb3: 2.85 	gb4: 2.99 	gb5: 2.49
+		Population 26
+			Robot 0 	f: 1150.01 	mf: 1143.10 	ga0: 1.00 	ga1: 1.60 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.41 	gb1: 0.41 	gb2: 0.23 	gb3: 2.85 	gb4: 2.99 	gb5: 2.49
+		Population 27
+			Robot 0 	f: 1069.66 	mf: 1152.60 	ga0: 1.00 	ga1: 1.60 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.41 	gb1: 0.41 	gb2: 0.23 	gb3: 2.85 	gb4: 2.99 	gb5: 2.49
+		Population 28
+			Robot 0 	f: 1113.29 	mf: 1128.00 	ga0: 1.00 	ga1: 1.60 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.41 	gb1: 0.41 	gb2: 0.23 	gb3: 2.85 	gb4: 2.99 	gb5: 2.49
+		Population 29
+			Robot 0 	f: 1159.19 	mf: 1112.70 	ga0: 1.00 	ga1: 1.60 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.41 	gb1: 0.41 	gb2: 0.23 	gb3: 2.85 	gb4: 2.99 	gb5: 2.49
+		Population 30
+			Robot 0 	f: 631.05 	mf: 1065.00 	ga0: 1.00 	ga1: 1.60 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.41 	gb1: 0.41 	gb2: 0.23 	gb3: 2.85 	gb4: 2.99 	gb5: 2.49
+		Population 31
+			Robot 0 	f: 1154.53 	mf: 1100.60 	ga0: 1.00 	ga1: 1.60 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.41 	gb1: 0.41 	gb2: 0.23 	gb3: 2.85 	gb4: 2.99 	gb5: 2.49
+		Population 32
+			Robot 0 	f: 1114.94 	mf: 1074.80 	ga0: 1.00 	ga1: 1.60 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.41 	gb1: 0.41 	gb2: 0.23 	gb3: 2.85 	gb4: 2.99 	gb5: 2.49
+		Population 33
+			Robot 0 	f: 1121.85 	mf: 1069.60 	ga0: 1.00 	ga1: 1.60 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.41 	gb1: 0.41 	gb2: 0.23 	gb3: 2.85 	gb4: 2.99 	gb5: 2.49
+		Population 34
+			Robot 0 	f: 1054.26 	mf: 1078.30 	ga0: 1.00 	ga1: 1.60 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.41 	gb1: 0.41 	gb2: 0.23 	gb3: 2.85 	gb4: 2.99 	gb5: 2.49
+		Population 35
+			Robot 0 	f: 1169.39 	mf: 1073.40 	ga0: 1.00 	ga1: 1.60 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.41 	gb1: 0.41 	gb2: 0.23 	gb3: 2.85 	gb4: 2.99 	gb5: 2.49
+		Population 36
+			Robot 0 	f: 1129.15 	mf: 1071.30 	ga0: 1.00 	ga1: 1.60 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.41 	gb1: 0.41 	gb2: 0.23 	gb3: 2.85 	gb4: 2.99 	gb5: 2.49
+		Population 37
+			Robot 0 	f: 893.12 	mf: 1053.70 	ga0: 1.00 	ga1: 1.60 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.41 	gb1: 0.41 	gb2: 0.23 	gb3: 2.85 	gb4: 2.99 	gb5: 2.49
+		Population 38
+			Robot 0 	f: 1282.44 	mf: 1070.60 	ga0: 1.00 	ga1: 1.60 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.41 	gb1: 0.41 	gb2: 0.23 	gb3: 2.85 	gb4: 2.99 	gb5: 2.49
+		Population 39
+			Robot 0 	f: 1109.15 	mf: 1065.60 	ga0: 1.00 	ga1: 1.60 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.41 	gb1: 0.41 	gb2: 0.23 	gb3: 2.85 	gb4: 2.99 	gb5: 2.49
+		Population 40
+			Robot 0 	f: 1299.28 	mf: 1132.40 	ga0: 1.00 	ga1: 1.60 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.41 	gb1: 0.41 	gb2: 0.23 	gb3: 2.85 	gb4: 2.99 	gb5: 2.49
+		Population 41
+			Robot 0 	f: 1330.48 	mf: 1150.00 	ga0: 1.00 	ga1: 1.60 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.41 	gb1: 0.41 	gb2: 0.23 	gb3: 2.85 	gb4: 2.99 	gb5: 2.49
+		Population 42
+			Robot 0 	f: 1450.64 	mf: 1183.60 	ga0: 1.00 	ga1: 1.60 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.41 	gb1: 0.41 	gb2: 0.23 	gb3: 2.85 	gb4: 2.99 	gb5: 2.49
+		Population 43
+			Robot 0 	f: 1192.93 	mf: 1190.70 	ga0: 1.00 	ga1: 1.60 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.41 	gb1: 0.41 	gb2: 0.23 	gb3: 2.85 	gb4: 2.99 	gb5: 2.49
+		Population 44
+			Robot 0 	f: 1316.20 	mf: 1216.90 	ga0: 1.00 	ga1: 1.60 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.41 	gb1: 0.41 	gb2: 0.23 	gb3: 2.85 	gb4: 2.99 	gb5: 2.49
+		Population 45
+			Robot 0 	f: 1310.54 	mf: 1231.00 	ga0: 1.00 	ga1: 1.60 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.41 	gb1: 0.41 	gb2: 0.23 	gb3: 2.85 	gb4: 2.99 	gb5: 2.49
+		Population 46
+			Robot 0 	f: 1186.24 	mf: 1236.70 	ga0: 1.00 	ga1: 1.60 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.41 	gb1: 0.41 	gb2: 0.23 	gb3: 2.85 	gb4: 2.99 	gb5: 2.49
+		Population 47
+			Robot 0 	f: 1146.49 	mf: 1262.00 	ga0: 1.00 	ga1: 1.60 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.41 	gb1: 0.41 	gb2: 0.23 	gb3: 2.85 	gb4: 2.99 	gb5: 2.49
+		Population 48
+			Robot 0 	f: 1040.46 	mf: 1237.80 	ga0: 1.00 	ga1: 1.60 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.41 	gb1: 0.41 	gb2: 0.23 	gb3: 2.85 	gb4: 2.99 	gb5: 2.49
+		Population 49
+			Robot 0 	f: 1346.04 	mf: 1261.50 	ga0: 1.00 	ga1: 1.60 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.41 	gb1: 0.41 	gb2: 0.23 	gb3: 2.85 	gb4: 2.99 	gb5: 2.49
+		Population 50
+			Robot 0 	f: 918.34 	mf: 1223.40 	ga0: 1.00 	ga1: 1.60 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.41 	gb1: 0.41 	gb2: 0.23 	gb3: 2.85 	gb4: 2.99 	gb5: 2.49
+		Population 51
+			Robot 0 	f: 1346.93 	mf: 1225.00 	ga0: 1.00 	ga1: 1.60 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.41 	gb1: 0.41 	gb2: 0.23 	gb3: 2.85 	gb4: 2.99 	gb5: 2.49
+		Population 52
+			Robot 0 	f: 1099.73 	mf: 1189.90 	ga0: 1.00 	ga1: 1.60 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.41 	gb1: 0.41 	gb2: 0.23 	gb3: 2.85 	gb4: 2.99 	gb5: 2.49
+		Population 53
+			Robot 0 	f: 1264.91 	mf: 1197.10 	ga0: 1.00 	ga1: 1.60 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.41 	gb1: 0.41 	gb2: 0.23 	gb3: 2.85 	gb4: 2.99 	gb5: 2.49
+		Population 54
+			Robot 0 	f: 854.95 	mf: 1150.90 	ga0: 1.00 	ga1: 1.60 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.41 	gb1: 0.41 	gb2: 0.23 	gb3: 2.85 	gb4: 2.99 	gb5: 2.49
+		Population 55
+			Robot 0 	f: 1189.54 	mf: 1138.80 	ga0: 1.00 	ga1: 1.60 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.41 	gb1: 0.41 	gb2: 0.23 	gb3: 2.85 	gb4: 2.99 	gb5: 2.49
+		Population 56
+			Robot 0 	f: 1215.49 	mf: 1141.70 	ga0: 1.00 	ga1: 1.60 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.41 	gb1: 0.41 	gb2: 0.23 	gb3: 2.85 	gb4: 2.99 	gb5: 2.49
+		Population 57
+			Robot 0 	f: 1240.68 	mf: 1151.10 	ga0: 1.00 	ga1: 1.60 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.41 	gb1: 0.41 	gb2: 0.23 	gb3: 2.85 	gb4: 2.99 	gb5: 2.49
+		Population 58
+			Robot 0 	f: 1098.16 	mf: 1156.90 	ga0: 1.00 	ga1: 1.60 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.41 	gb1: 0.41 	gb2: 0.23 	gb3: 2.85 	gb4: 2.99 	gb5: 2.49
+		Population 59
+			Robot 0 	f: 1042.49 	mf: 1126.50 	ga0: 1.00 	ga1: 1.60 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.41 	gb1: 0.41 	gb2: 0.23 	gb3: 2.85 	gb4: 2.99 	gb5: 2.49
+		Population 60
+			Robot 0 	f: 1163.32 	mf: 1151.00 	ga0: 1.00 	ga1: 1.60 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.41 	gb1: 0.41 	gb2: 0.23 	gb3: 2.85 	gb4: 2.99 	gb5: 2.49
+		Population 61
+			Robot 0 	f: 1242.83 	mf: 1140.60 	ga0: 1.00 	ga1: 1.60 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.41 	gb1: 0.41 	gb2: 0.23 	gb3: 2.85 	gb4: 2.99 	gb5: 2.49
+		Population 62
+			Robot 0 	f: 1017.91 	mf: 1132.40 	ga0: 1.00 	ga1: 1.60 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.41 	gb1: 0.41 	gb2: 0.23 	gb3: 2.85 	gb4: 2.99 	gb5: 2.49
+		Population 63
+			Robot 0 	f: 1216.02 	mf: 1127.60 	ga0: 1.00 	ga1: 1.60 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.41 	gb1: 0.41 	gb2: 0.23 	gb3: 2.85 	gb4: 2.99 	gb5: 2.49
+		Population 64
+			Robot 0 	f: 1360.11 	mf: 1178.20 	ga0: 1.00 	ga1: 1.60 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.41 	gb1: 0.41 	gb2: 0.23 	gb3: 2.85 	gb4: 2.99 	gb5: 2.49
+		Population 65
+			Robot 0 	f: 1241.46 	mf: 1183.40 	ga0: 1.00 	ga1: 1.60 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.41 	gb1: 0.41 	gb2: 0.23 	gb3: 2.85 	gb4: 2.99 	gb5: 2.49
+		Population 66
+			Robot 0 	f: 1284.58 	mf: 1190.30 	ga0: 1.00 	ga1: 1.60 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.41 	gb1: 0.41 	gb2: 0.23 	gb3: 2.85 	gb4: 2.99 	gb5: 2.49
+		Population 67
+			Robot 0 	f: 1294.94 	mf: 1195.70 	ga0: 1.00 	ga1: 1.60 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.41 	gb1: 0.41 	gb2: 0.23 	gb3: 2.85 	gb4: 2.99 	gb5: 2.49
+		Population 68
+			Robot 0 	f: 1127.00 	mf: 1198.60 	ga0: 1.00 	ga1: 1.60 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.41 	gb1: 0.41 	gb2: 0.23 	gb3: 2.85 	gb4: 2.99 	gb5: 2.49
+		Population 69
+			Robot 0 	f: 1168.75 	mf: 1211.20 	ga0: 1.00 	ga1: 1.60 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.41 	gb1: 0.41 	gb2: 0.23 	gb3: 2.85 	gb4: 2.99 	gb5: 2.49
+		Population 70
+			Robot 0 	f: 1136.34 	mf: 1208.50 	ga0: 1.00 	ga1: 1.60 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.41 	gb1: 0.41 	gb2: 0.23 	gb3: 2.85 	gb4: 2.99 	gb5: 2.49
+		Population 71
+			Robot 0 	f: 1222.36 	mf: 1206.50 	ga0: 1.00 	ga1: 1.60 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.41 	gb1: 0.41 	gb2: 0.23 	gb3: 2.85 	gb4: 2.99 	gb5: 2.49
+		Population 72
+			Robot 0 	f: 1155.13 	mf: 1220.30 	ga0: 1.00 	ga1: 1.60 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.41 	gb1: 0.41 	gb2: 0.23 	gb3: 2.85 	gb4: 2.99 	gb5: 2.49
+		Population 73
+			Robot 0 	f: 1326.46 	mf: 1231.30 	ga0: 1.00 	ga1: 1.60 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.41 	gb1: 0.41 	gb2: 0.23 	gb3: 2.85 	gb4: 2.99 	gb5: 2.49
+		Population 74
+			Robot 0 	f: 1233.77 	mf: 1218.60 	ga0: 1.00 	ga1: 1.60 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.41 	gb1: 0.41 	gb2: 0.23 	gb3: 2.85 	gb4: 2.99 	gb5: 2.49
+		Population 75
+			Robot 0 	f: 1324.73 	mf: 1226.90 	ga0: 1.00 	ga1: 1.60 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.41 	gb1: 0.41 	gb2: 0.23 	gb3: 2.85 	gb4: 2.99 	gb5: 2.49
+		Population 76
+			Robot 0 	f: 1266.91 	mf: 1225.10 	ga0: 1.00 	ga1: 1.60 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.41 	gb1: 0.41 	gb2: 0.23 	gb3: 2.85 	gb4: 2.99 	gb5: 2.49
+		Population 77
+			Robot 0 	f: 1325.78 	mf: 1228.20 	ga0: 1.00 	ga1: 1.60 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.41 	gb1: 0.41 	gb2: 0.23 	gb3: 2.85 	gb4: 2.99 	gb5: 2.49
+		Population 78
+			Robot 0 	f: 810.24 	mf: 1196.50 	ga0: 1.00 	ga1: 1.60 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.41 	gb1: 0.41 	gb2: 0.23 	gb3: 2.85 	gb4: 2.99 	gb5: 2.49
+		Population 79
+			Robot 0 	f: 1213.09 	mf: 1201.00 	ga0: 1.00 	ga1: 1.60 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.41 	gb1: 0.41 	gb2: 0.23 	gb3: 2.85 	gb4: 2.99 	gb5: 2.49
+		Population 80
+			Robot 0 	f: 1313.84 	mf: 1218.70 	ga0: 1.00 	ga1: 1.60 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.41 	gb1: 0.41 	gb2: 0.23 	gb3: 2.85 	gb4: 2.99 	gb5: 2.49
+		Population 81
+			Robot 0 	f: 1388.06 	mf: 1235.30 	ga0: 1.00 	ga1: 1.60 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.41 	gb1: 0.41 	gb2: 0.23 	gb3: 2.85 	gb4: 2.99 	gb5: 2.49
+		Population 82
+			Robot 0 	f: 1118.50 	mf: 1231.60 	ga0: 1.00 	ga1: 1.60 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.41 	gb1: 0.41 	gb2: 0.23 	gb3: 2.85 	gb4: 2.99 	gb5: 2.49
+		Population 83
+			Robot 0 	f: 1275.11 	mf: 1226.50 	ga0: 1.00 	ga1: 1.60 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.41 	gb1: 0.41 	gb2: 0.23 	gb3: 2.85 	gb4: 2.99 	gb5: 2.49
+		Population 84
+			Robot 0 	f: 1036.71 	mf: 1206.80 	ga0: 1.00 	ga1: 1.60 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.41 	gb1: 0.41 	gb2: 0.23 	gb3: 2.85 	gb4: 2.99 	gb5: 2.49
+		Population 85
+			Robot 0 	f: 1196.86 	mf: 1194.00 	ga0: 1.00 	ga1: 1.60 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.41 	gb1: 0.41 	gb2: 0.23 	gb3: 2.85 	gb4: 2.99 	gb5: 2.49
+		Population 86
+			Robot 0 	f: 1242.23 	mf: 1191.60 	ga0: 1.00 	ga1: 1.60 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.41 	gb1: 0.41 	gb2: 0.23 	gb3: 2.85 	gb4: 2.99 	gb5: 2.49
+		Population 87
+			Robot 0 	f: 1302.76 	mf: 1189.30 	ga0: 1.00 	ga1: 1.60 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.41 	gb1: 0.41 	gb2: 0.23 	gb3: 2.85 	gb4: 2.99 	gb5: 2.49
+		Population 88
+			Robot 0 	f: 1141.47 	mf: 1222.40 	ga0: 1.00 	ga1: 1.60 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.41 	gb1: 0.41 	gb2: 0.23 	gb3: 2.85 	gb4: 2.99 	gb5: 2.49
+		Population 89
+			Robot 0 	f: 1402.01 	mf: 1241.30 	ga0: 1.00 	ga1: 1.60 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.41 	gb1: 0.41 	gb2: 0.23 	gb3: 2.85 	gb4: 2.99 	gb5: 2.49
+		Population 90
+			Robot 0 	f: 1114.89 	mf: 1221.40 	ga0: 1.00 	ga1: 1.60 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.41 	gb1: 0.41 	gb2: 0.23 	gb3: 2.85 	gb4: 2.99 	gb5: 2.49
+		Population 91
+			Robot 0 	f: 1186.21 	mf: 1201.20 	ga0: 1.00 	ga1: 1.60 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.41 	gb1: 0.41 	gb2: 0.23 	gb3: 2.85 	gb4: 2.99 	gb5: 2.49
+		Population 92
+			Robot 0 	f: 1043.60 	mf: 1193.70 	ga0: 1.00 	ga1: 1.60 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.41 	gb1: 0.41 	gb2: 0.23 	gb3: 2.85 	gb4: 2.99 	gb5: 2.49
+		Population 93
+			Robot 0 	f: 1037.57 	mf: 1169.90 	ga0: 1.00 	ga1: 1.60 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.41 	gb1: 0.41 	gb2: 0.23 	gb3: 2.85 	gb4: 2.99 	gb5: 2.49
+		Population 94
+			Robot 0 	f: 1248.49 	mf: 1191.10 	ga0: 1.00 	ga1: 1.60 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.41 	gb1: 0.41 	gb2: 0.23 	gb3: 2.85 	gb4: 2.99 	gb5: 2.49
+		Population 95
+			Robot 0 	f: 859.10 	mf: 1157.40 	ga0: 1.00 	ga1: 1.60 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.41 	gb1: 0.41 	gb2: 0.23 	gb3: 2.85 	gb4: 2.99 	gb5: 2.49
+		Population 96
+			Robot 0 	f: 1269.70 	mf: 1160.10 	ga0: 1.00 	ga1: 1.60 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.41 	gb1: 0.41 	gb2: 0.23 	gb3: 2.85 	gb4: 2.99 	gb5: 2.49
+		Population 97
+			Robot 0 	f: 1232.38 	mf: 1153.10 	ga0: 1.00 	ga1: 1.60 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.41 	gb1: 0.41 	gb2: 0.23 	gb3: 2.85 	gb4: 2.99 	gb5: 2.49
+		Population 98
+			Robot 0 	f: 1182.96 	mf: 1157.20 	ga0: 1.00 	ga1: 1.60 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.41 	gb1: 0.41 	gb2: 0.23 	gb3: 2.85 	gb4: 2.99 	gb5: 2.49
+		Population 99
+			Robot 0 	f: 1182.96 	mf: 1157.20 	ga0: 1.00 	ga1: 1.60 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.41 	gb1: 0.41 	gb2: 0.23 	gb3: 2.85 	gb4: 2.99 	gb5: 2.49
+	finalFitness: 1157
+	Repetition 5
+		Population 0
+			Robot 0 	f: 1175.98 	mf: 1175.00 	ga0: 1.00 	ga1: 2.30 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.84 	gb1: 0.00 	gb2: 0.73 	gb3: 4.21 	gb4: 4.09 	gb5: 1.17
+		Population 1
+			Robot 0 	f: 896.34 	mf: 1035.50 	ga0: 1.00 	ga1: 2.30 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.84 	gb1: 0.00 	gb2: 0.73 	gb3: 4.21 	gb4: 4.09 	gb5: 1.17
+		Population 2
+			Robot 0 	f: 1135.59 	mf: 1068.67 	ga0: 1.00 	ga1: 2.30 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.84 	gb1: 0.00 	gb2: 0.73 	gb3: 4.21 	gb4: 4.09 	gb5: 1.17
+		Population 3
+			Robot 0 	f: 1242.75 	mf: 1112.00 	ga0: 1.00 	ga1: 2.30 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.84 	gb1: 0.00 	gb2: 0.73 	gb3: 4.21 	gb4: 4.09 	gb5: 1.17
+		Population 4
+			Robot 0 	f: 1026.44 	mf: 1094.80 	ga0: 1.00 	ga1: 2.30 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.84 	gb1: 0.00 	gb2: 0.73 	gb3: 4.21 	gb4: 4.09 	gb5: 1.17
+		Population 5
+			Robot 0 	f: 1136.23 	mf: 1101.67 	ga0: 1.00 	ga1: 2.30 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.84 	gb1: 0.00 	gb2: 0.73 	gb3: 4.21 	gb4: 4.09 	gb5: 1.17
+		Population 6
+			Robot 0 	f: 1348.20 	mf: 1136.86 	ga0: 1.00 	ga1: 2.30 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.84 	gb1: 0.00 	gb2: 0.73 	gb3: 4.21 	gb4: 4.09 	gb5: 1.17
+		Population 7
+			Robot 0 	f: 1122.14 	mf: 1135.00 	ga0: 1.00 	ga1: 2.30 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.84 	gb1: 0.00 	gb2: 0.73 	gb3: 4.21 	gb4: 4.09 	gb5: 1.17
+		Population 8
+			Robot 0 	f: 1372.18 	mf: 1161.33 	ga0: 1.00 	ga1: 2.30 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.84 	gb1: 0.00 	gb2: 0.73 	gb3: 4.21 	gb4: 4.09 	gb5: 1.17
+		Population 9
+			Robot 0 	f: 1032.00 	mf: 1148.40 	ga0: 1.00 	ga1: 2.30 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.84 	gb1: 0.00 	gb2: 0.73 	gb3: 4.21 	gb4: 4.09 	gb5: 1.17
+		Population 10
+			Robot 0 	f: 1168.13 	mf: 1147.70 	ga0: 1.00 	ga1: 2.30 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.84 	gb1: 0.00 	gb2: 0.73 	gb3: 4.21 	gb4: 4.09 	gb5: 1.17
+		Population 11
+			Robot 0 	f: 1247.67 	mf: 1182.80 	ga0: 1.00 	ga1: 2.30 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.84 	gb1: 0.00 	gb2: 0.73 	gb3: 4.21 	gb4: 4.09 	gb5: 1.17
+		Population 12
+			Robot 0 	f: 209.99 	mf: 1090.20 	ga0: 1.00 	ga1: 2.30 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.84 	gb1: 0.00 	gb2: 0.73 	gb3: 4.21 	gb4: 4.09 	gb5: 1.17
+		Population 13
+			Robot 0 	f: 1227.89 	mf: 1088.70 	ga0: 1.00 	ga1: 2.30 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.84 	gb1: 0.00 	gb2: 0.73 	gb3: 4.21 	gb4: 4.09 	gb5: 1.17
+		Population 14
+			Robot 0 	f: 1249.94 	mf: 1111.00 	ga0: 1.00 	ga1: 2.30 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.84 	gb1: 0.00 	gb2: 0.73 	gb3: 4.21 	gb4: 4.09 	gb5: 1.17
+		Population 15
+			Robot 0 	f: 1377.41 	mf: 1135.10 	ga0: 1.00 	ga1: 2.30 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.84 	gb1: 0.00 	gb2: 0.73 	gb3: 4.21 	gb4: 4.09 	gb5: 1.17
+		Population 16
+			Robot 0 	f: 1228.06 	mf: 1123.10 	ga0: 1.00 	ga1: 2.30 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.84 	gb1: 0.00 	gb2: 0.73 	gb3: 4.21 	gb4: 4.09 	gb5: 1.17
+		Population 17
+			Robot 0 	f: 1152.59 	mf: 1126.10 	ga0: 1.00 	ga1: 2.30 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.84 	gb1: 0.00 	gb2: 0.73 	gb3: 4.21 	gb4: 4.09 	gb5: 1.17
+		Population 18
+			Robot 0 	f: 1128.59 	mf: 1101.70 	ga0: 1.00 	ga1: 2.30 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.84 	gb1: 0.00 	gb2: 0.73 	gb3: 4.21 	gb4: 4.09 	gb5: 1.17
+		Population 19
+			Robot 0 	f: 1077.52 	mf: 1106.20 	ga0: 1.00 	ga1: 2.30 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.84 	gb1: 0.00 	gb2: 0.73 	gb3: 4.21 	gb4: 4.09 	gb5: 1.17
+		Population 20
+			Robot 0 	f: 1274.52 	mf: 1116.80 	ga0: 1.00 	ga1: 2.30 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.84 	gb1: 0.00 	gb2: 0.73 	gb3: 4.21 	gb4: 4.09 	gb5: 1.17
+		Population 21
+			Robot 0 	f: 1196.06 	mf: 1111.70 	ga0: 1.00 	ga1: 2.30 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.84 	gb1: 0.00 	gb2: 0.73 	gb3: 4.21 	gb4: 4.09 	gb5: 1.17
+		Population 22
+			Robot 0 	f: 1340.19 	mf: 1224.80 	ga0: 1.00 	ga1: 2.30 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.84 	gb1: 0.00 	gb2: 0.73 	gb3: 4.21 	gb4: 4.09 	gb5: 1.17
+		Population 23
+			Robot 0 	f: 1337.29 	mf: 1235.80 	ga0: 1.00 	ga1: 2.30 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.84 	gb1: 0.00 	gb2: 0.73 	gb3: 4.21 	gb4: 4.09 	gb5: 1.17
+		Population 24
+			Robot 0 	f: 1194.00 	mf: 1230.30 	ga0: 1.00 	ga1: 2.30 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.84 	gb1: 0.00 	gb2: 0.73 	gb3: 4.21 	gb4: 4.09 	gb5: 1.17
+		Population 25
+			Robot 0 	f: 1112.52 	mf: 1203.80 	ga0: 1.00 	ga1: 2.30 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.84 	gb1: 0.00 	gb2: 0.73 	gb3: 4.21 	gb4: 4.09 	gb5: 1.17
+		Population 26
+			Robot 0 	f: 1210.18 	mf: 1202.00 	ga0: 1.00 	ga1: 2.30 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.84 	gb1: 0.00 	gb2: 0.73 	gb3: 4.21 	gb4: 4.09 	gb5: 1.17
+		Population 27
+			Robot 0 	f: 1166.26 	mf: 1203.40 	ga0: 1.00 	ga1: 2.30 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.84 	gb1: 0.00 	gb2: 0.73 	gb3: 4.21 	gb4: 4.09 	gb5: 1.17
+		Population 28
+			Robot 0 	f: 1195.50 	mf: 1210.10 	ga0: 1.00 	ga1: 2.30 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.84 	gb1: 0.00 	gb2: 0.73 	gb3: 4.21 	gb4: 4.09 	gb5: 1.17
+		Population 29
+			Robot 0 	f: 1269.84 	mf: 1229.30 	ga0: 1.00 	ga1: 2.30 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.84 	gb1: 0.00 	gb2: 0.73 	gb3: 4.21 	gb4: 4.09 	gb5: 1.17
+		Population 30
+			Robot 0 	f: 963.94 	mf: 1198.20 	ga0: 1.00 	ga1: 2.30 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.84 	gb1: 0.00 	gb2: 0.73 	gb3: 4.21 	gb4: 4.09 	gb5: 1.17
+		Population 31
+			Robot 0 	f: 1124.75 	mf: 1191.00 	ga0: 1.00 	ga1: 2.30 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.84 	gb1: 0.00 	gb2: 0.73 	gb3: 4.21 	gb4: 4.09 	gb5: 1.17
+		Population 32
+			Robot 0 	f: 1171.46 	mf: 1174.10 	ga0: 1.00 	ga1: 2.30 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.84 	gb1: 0.00 	gb2: 0.73 	gb3: 4.21 	gb4: 4.09 	gb5: 1.17
+		Population 33
+			Robot 0 	f: 1201.55 	mf: 1160.50 	ga0: 1.00 	ga1: 2.30 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.84 	gb1: 0.00 	gb2: 0.73 	gb3: 4.21 	gb4: 4.09 	gb5: 1.17
+		Population 34
+			Robot 0 	f: 1096.11 	mf: 1150.70 	ga0: 1.00 	ga1: 2.30 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.84 	gb1: 0.00 	gb2: 0.73 	gb3: 4.21 	gb4: 4.09 	gb5: 1.17
+		Population 35
+			Robot 0 	f: 1072.65 	mf: 1146.70 	ga0: 1.00 	ga1: 2.30 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.84 	gb1: 0.00 	gb2: 0.73 	gb3: 4.21 	gb4: 4.09 	gb5: 1.17
+		Population 36
+			Robot 0 	f: 1153.63 	mf: 1141.00 	ga0: 1.00 	ga1: 2.30 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.84 	gb1: 0.00 	gb2: 0.73 	gb3: 4.21 	gb4: 4.09 	gb5: 1.17
+		Population 37
+			Robot 0 	f: 1105.56 	mf: 1134.90 	ga0: 1.00 	ga1: 2.30 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.84 	gb1: 0.00 	gb2: 0.73 	gb3: 4.21 	gb4: 4.09 	gb5: 1.17
+		Population 38
+			Robot 0 	f: 1275.61 	mf: 1142.90 	ga0: 1.00 	ga1: 2.30 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.84 	gb1: 0.00 	gb2: 0.73 	gb3: 4.21 	gb4: 4.09 	gb5: 1.17
+		Population 39
+			Robot 0 	f: 1297.71 	mf: 1145.70 	ga0: 1.00 	ga1: 2.30 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.84 	gb1: 0.00 	gb2: 0.73 	gb3: 4.21 	gb4: 4.09 	gb5: 1.17
+		Population 40
+			Robot 0 	f: 1405.98 	mf: 1189.90 	ga0: 1.00 	ga1: 2.30 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.84 	gb1: 0.00 	gb2: 0.73 	gb3: 4.21 	gb4: 4.09 	gb5: 1.17
+		Population 41
+			Robot 0 	f: 1345.24 	mf: 1212.00 	ga0: 1.00 	ga1: 2.30 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.84 	gb1: 0.00 	gb2: 0.73 	gb3: 4.21 	gb4: 4.09 	gb5: 1.17
+		Population 42
+			Robot 0 	f: 1305.41 	mf: 1225.40 	ga0: 1.00 	ga1: 2.30 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.84 	gb1: 0.00 	gb2: 0.73 	gb3: 4.21 	gb4: 4.09 	gb5: 1.17
+		Population 43
+			Robot 0 	f: 1070.99 	mf: 1212.30 	ga0: 1.00 	ga1: 2.30 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.84 	gb1: 0.00 	gb2: 0.73 	gb3: 4.21 	gb4: 4.09 	gb5: 1.17
+		Population 44
+			Robot 0 	f: 1427.51 	mf: 1245.40 	ga0: 1.00 	ga1: 2.30 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.84 	gb1: 0.00 	gb2: 0.73 	gb3: 4.21 	gb4: 4.09 	gb5: 1.17
+		Population 45
+			Robot 0 	f: 1197.51 	mf: 1257.90 	ga0: 1.00 	ga1: 2.30 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.84 	gb1: 0.00 	gb2: 0.73 	gb3: 4.21 	gb4: 4.09 	gb5: 1.17
+		Population 46
+			Robot 0 	f: 1124.75 	mf: 1255.00 	ga0: 1.00 	ga1: 2.30 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.84 	gb1: 0.00 	gb2: 0.73 	gb3: 4.21 	gb4: 4.09 	gb5: 1.17
+		Population 47
+			Robot 0 	f: 1260.56 	mf: 1270.50 	ga0: 1.00 	ga1: 2.30 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.84 	gb1: 0.00 	gb2: 0.73 	gb3: 4.21 	gb4: 4.09 	gb5: 1.17
+		Population 48
+			Robot 0 	f: 1296.75 	mf: 1272.60 	ga0: 1.00 	ga1: 2.30 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.84 	gb1: 0.00 	gb2: 0.73 	gb3: 4.21 	gb4: 4.09 	gb5: 1.17
+		Population 49
+			Robot 0 	f: 1183.14 	mf: 1261.20 	ga0: 1.00 	ga1: 2.30 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.84 	gb1: 0.00 	gb2: 0.73 	gb3: 4.21 	gb4: 4.09 	gb5: 1.17
+		Population 50
+			Robot 0 	f: 1189.02 	mf: 1239.60 	ga0: 1.00 	ga1: 2.30 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.84 	gb1: 0.00 	gb2: 0.73 	gb3: 4.21 	gb4: 4.09 	gb5: 1.17
+		Population 51
+			Robot 0 	f: 978.78 	mf: 1202.90 	ga0: 1.00 	ga1: 2.30 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.84 	gb1: 0.00 	gb2: 0.73 	gb3: 4.21 	gb4: 4.09 	gb5: 1.17
+		Population 52
+			Robot 0 	f: 1089.31 	mf: 1181.30 	ga0: 1.00 	ga1: 2.30 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.84 	gb1: 0.00 	gb2: 0.73 	gb3: 4.21 	gb4: 4.09 	gb5: 1.17
+		Population 53
+			Robot 0 	f: 971.92 	mf: 1171.40 	ga0: 1.00 	ga1: 2.30 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.84 	gb1: 0.00 	gb2: 0.73 	gb3: 4.21 	gb4: 4.09 	gb5: 1.17
+		Population 54
+			Robot 0 	f: 1164.95 	mf: 1145.10 	ga0: 1.00 	ga1: 2.30 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.84 	gb1: 0.00 	gb2: 0.73 	gb3: 4.21 	gb4: 4.09 	gb5: 1.17
+		Population 55
+			Robot 0 	f: 1122.46 	mf: 1137.60 	ga0: 1.00 	ga1: 2.30 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.84 	gb1: 0.00 	gb2: 0.73 	gb3: 4.21 	gb4: 4.09 	gb5: 1.17
+		Population 56
+			Robot 0 	f: 1193.54 	mf: 1144.50 	ga0: 1.00 	ga1: 2.30 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.84 	gb1: 0.00 	gb2: 0.73 	gb3: 4.21 	gb4: 4.09 	gb5: 1.17
+		Population 57
+			Robot 0 	f: 1270.95 	mf: 1145.50 	ga0: 1.00 	ga1: 2.30 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.84 	gb1: 0.00 	gb2: 0.73 	gb3: 4.21 	gb4: 4.09 	gb5: 1.17
+		Population 58
+			Robot 0 	f: 992.74 	mf: 1115.10 	ga0: 1.00 	ga1: 2.30 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.84 	gb1: 0.00 	gb2: 0.73 	gb3: 4.21 	gb4: 4.09 	gb5: 1.17
+		Population 59
+			Robot 0 	f: 1233.53 	mf: 1120.10 	ga0: 1.00 	ga1: 2.30 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.84 	gb1: 0.00 	gb2: 0.73 	gb3: 4.21 	gb4: 4.09 	gb5: 1.17
+		Population 60
+			Robot 0 	f: 1173.79 	mf: 1118.50 	ga0: 1.00 	ga1: 2.30 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.84 	gb1: 0.00 	gb2: 0.73 	gb3: 4.21 	gb4: 4.09 	gb5: 1.17
+		Population 61
+			Robot 0 	f: 1002.58 	mf: 1120.90 	ga0: 1.00 	ga1: 2.30 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.84 	gb1: 0.00 	gb2: 0.73 	gb3: 4.21 	gb4: 4.09 	gb5: 1.17
+		Population 62
+			Robot 0 	f: 701.09 	mf: 1082.10 	ga0: 1.00 	ga1: 2.30 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.84 	gb1: 0.00 	gb2: 0.73 	gb3: 4.21 	gb4: 4.09 	gb5: 1.17
+		Population 63
+			Robot 0 	f: 1246.14 	mf: 1109.60 	ga0: 1.00 	ga1: 2.30 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.84 	gb1: 0.00 	gb2: 0.73 	gb3: 4.21 	gb4: 4.09 	gb5: 1.17
+		Population 64
+			Robot 0 	f: 1112.15 	mf: 1104.40 	ga0: 1.00 	ga1: 2.30 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.84 	gb1: 0.00 	gb2: 0.73 	gb3: 4.21 	gb4: 4.09 	gb5: 1.17
+		Population 65
+			Robot 0 	f: 1227.66 	mf: 1114.90 	ga0: 1.00 	ga1: 2.30 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.84 	gb1: 0.00 	gb2: 0.73 	gb3: 4.21 	gb4: 4.09 	gb5: 1.17
+		Population 66
+			Robot 0 	f: 1189.00 	mf: 1114.40 	ga0: 1.00 	ga1: 2.30 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.84 	gb1: 0.00 	gb2: 0.73 	gb3: 4.21 	gb4: 4.09 	gb5: 1.17
+		Population 67
+			Robot 0 	f: 1178.42 	mf: 1105.20 	ga0: 1.00 	ga1: 2.30 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.84 	gb1: 0.00 	gb2: 0.73 	gb3: 4.21 	gb4: 4.09 	gb5: 1.17
+		Population 68
+			Robot 0 	f: 1116.27 	mf: 1117.60 	ga0: 1.00 	ga1: 2.30 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.84 	gb1: 0.00 	gb2: 0.73 	gb3: 4.21 	gb4: 4.09 	gb5: 1.17
+		Population 69
+			Robot 0 	f: 1198.24 	mf: 1114.10 	ga0: 1.00 	ga1: 2.30 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.84 	gb1: 0.00 	gb2: 0.73 	gb3: 4.21 	gb4: 4.09 	gb5: 1.17
+		Population 70
+			Robot 0 	f: 1110.38 	mf: 1107.80 	ga0: 1.00 	ga1: 2.30 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.84 	gb1: 0.00 	gb2: 0.73 	gb3: 4.21 	gb4: 4.09 	gb5: 1.17
+		Population 71
+			Robot 0 	f: 1114.06 	mf: 1119.00 	ga0: 1.00 	ga1: 2.30 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.84 	gb1: 0.00 	gb2: 0.73 	gb3: 4.21 	gb4: 4.09 	gb5: 1.17
+		Population 72
+			Robot 0 	f: 1241.34 	mf: 1173.00 	ga0: 1.00 	ga1: 2.30 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.84 	gb1: 0.00 	gb2: 0.73 	gb3: 4.21 	gb4: 4.09 	gb5: 1.17
+		Population 73
+			Robot 0 	f: 1062.57 	mf: 1154.60 	ga0: 1.00 	ga1: 2.30 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.84 	gb1: 0.00 	gb2: 0.73 	gb3: 4.21 	gb4: 4.09 	gb5: 1.17
+		Population 74
+			Robot 0 	f: 1051.82 	mf: 1148.50 	ga0: 1.00 	ga1: 2.30 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.84 	gb1: 0.00 	gb2: 0.73 	gb3: 4.21 	gb4: 4.09 	gb5: 1.17
+		Population 75
+			Robot 0 	f: 1383.13 	mf: 1164.10 	ga0: 1.00 	ga1: 2.30 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.84 	gb1: 0.00 	gb2: 0.73 	gb3: 4.21 	gb4: 4.09 	gb5: 1.17
+		Population 76
+			Robot 0 	f: 1022.36 	mf: 1147.50 	ga0: 1.00 	ga1: 2.30 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.84 	gb1: 0.00 	gb2: 0.73 	gb3: 4.21 	gb4: 4.09 	gb5: 1.17
+		Population 77
+			Robot 0 	f: 1332.04 	mf: 1162.90 	ga0: 1.00 	ga1: 2.30 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.84 	gb1: 0.00 	gb2: 0.73 	gb3: 4.21 	gb4: 4.09 	gb5: 1.17
+		Population 78
+			Robot 0 	f: 475.32 	mf: 1098.80 	ga0: 1.00 	ga1: 2.30 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.84 	gb1: 0.00 	gb2: 0.73 	gb3: 4.21 	gb4: 4.09 	gb5: 1.17
+		Population 79
+			Robot 0 	f: 936.64 	mf: 1072.60 	ga0: 1.00 	ga1: 2.30 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.84 	gb1: 0.00 	gb2: 0.73 	gb3: 4.21 	gb4: 4.09 	gb5: 1.17
+		Population 80
+			Robot 0 	f: 1305.01 	mf: 1092.10 	ga0: 1.00 	ga1: 2.30 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.84 	gb1: 0.00 	gb2: 0.73 	gb3: 4.21 	gb4: 4.09 	gb5: 1.17
+		Population 81
+			Robot 0 	f: 1168.68 	mf: 1097.50 	ga0: 1.00 	ga1: 2.30 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.84 	gb1: 0.00 	gb2: 0.73 	gb3: 4.21 	gb4: 4.09 	gb5: 1.17
+		Population 82
+			Robot 0 	f: 1064.07 	mf: 1079.80 	ga0: 1.00 	ga1: 2.30 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.84 	gb1: 0.00 	gb2: 0.73 	gb3: 4.21 	gb4: 4.09 	gb5: 1.17
+		Population 83
+			Robot 0 	f: 982.90 	mf: 1071.80 	ga0: 1.00 	ga1: 2.30 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.84 	gb1: 0.00 	gb2: 0.73 	gb3: 4.21 	gb4: 4.09 	gb5: 1.17
+		Population 84
+			Robot 0 	f: 1041.68 	mf: 1070.80 	ga0: 1.00 	ga1: 2.30 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.84 	gb1: 0.00 	gb2: 0.73 	gb3: 4.21 	gb4: 4.09 	gb5: 1.17
+		Population 85
+			Robot 0 	f: 1141.48 	mf: 1046.60 	ga0: 1.00 	ga1: 2.30 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.84 	gb1: 0.00 	gb2: 0.73 	gb3: 4.21 	gb4: 4.09 	gb5: 1.17
+		Population 86
+			Robot 0 	f: 1177.94 	mf: 1062.10 	ga0: 1.00 	ga1: 2.30 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.84 	gb1: 0.00 	gb2: 0.73 	gb3: 4.21 	gb4: 4.09 	gb5: 1.17
+		Population 87
+			Robot 0 	f: 1071.79 	mf: 1036.00 	ga0: 1.00 	ga1: 2.30 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.84 	gb1: 0.00 	gb2: 0.73 	gb3: 4.21 	gb4: 4.09 	gb5: 1.17
+		Population 88
+			Robot 0 	f: 1357.31 	mf: 1124.20 	ga0: 1.00 	ga1: 2.30 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.84 	gb1: 0.00 	gb2: 0.73 	gb3: 4.21 	gb4: 4.09 	gb5: 1.17
+		Population 89
+			Robot 0 	f: 1211.70 	mf: 1151.70 	ga0: 1.00 	ga1: 2.30 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.84 	gb1: 0.00 	gb2: 0.73 	gb3: 4.21 	gb4: 4.09 	gb5: 1.17
+		Population 90
+			Robot 0 	f: 839.89 	mf: 1105.10 	ga0: 1.00 	ga1: 2.30 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.84 	gb1: 0.00 	gb2: 0.73 	gb3: 4.21 	gb4: 4.09 	gb5: 1.17
+		Population 91
+			Robot 0 	f: 568.40 	mf: 1045.10 	ga0: 1.00 	ga1: 2.30 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.84 	gb1: 0.00 	gb2: 0.73 	gb3: 4.21 	gb4: 4.09 	gb5: 1.17
+		Population 92
+			Robot 0 	f: 1267.20 	mf: 1065.40 	ga0: 1.00 	ga1: 2.30 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.84 	gb1: 0.00 	gb2: 0.73 	gb3: 4.21 	gb4: 4.09 	gb5: 1.17
+		Population 93
+			Robot 0 	f: 999.14 	mf: 1067.10 	ga0: 1.00 	ga1: 2.30 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.84 	gb1: 0.00 	gb2: 0.73 	gb3: 4.21 	gb4: 4.09 	gb5: 1.17
+		Population 94
+			Robot 0 	f: 1117.13 	mf: 1074.70 	ga0: 1.00 	ga1: 2.30 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.84 	gb1: 0.00 	gb2: 0.73 	gb3: 4.21 	gb4: 4.09 	gb5: 1.17
+		Population 95
+			Robot 0 	f: 1247.17 	mf: 1085.30 	ga0: 1.00 	ga1: 2.30 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.84 	gb1: 0.00 	gb2: 0.73 	gb3: 4.21 	gb4: 4.09 	gb5: 1.17
+		Population 96
+			Robot 0 	f: 935.89 	mf: 1061.10 	ga0: 1.00 	ga1: 2.30 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.84 	gb1: 0.00 	gb2: 0.73 	gb3: 4.21 	gb4: 4.09 	gb5: 1.17
+		Population 97
+			Robot 0 	f: 1425.33 	mf: 1096.50 	ga0: 1.00 	ga1: 2.30 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.84 	gb1: 0.00 	gb2: 0.73 	gb3: 4.21 	gb4: 4.09 	gb5: 1.17
+		Population 98
+			Robot 0 	f: 1053.16 	mf: 1066.10 	ga0: 1.00 	ga1: 2.30 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.84 	gb1: 0.00 	gb2: 0.73 	gb3: 4.21 	gb4: 4.09 	gb5: 1.17
+		Population 99
+			Robot 0 	f: 1053.16 	mf: 1066.10 	ga0: 1.00 	ga1: 2.30 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.84 	gb1: 0.00 	gb2: 0.73 	gb3: 4.21 	gb4: 4.09 	gb5: 1.17
+	finalFitness: 1066
+	Repetition 6
+		Population 0
+			Robot 0 	f: 1242.19 	mf: 1242.00 	ga0: 1.00 	ga1: 2.60 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.38 	gb1: 0.03 	gb2: 0.50 	gb3: 3.98 	gb4: 3.12 	gb5: 1.49
+		Population 1
+			Robot 0 	f: 1177.25 	mf: 1209.50 	ga0: 1.00 	ga1: 2.60 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.38 	gb1: 0.03 	gb2: 0.50 	gb3: 3.98 	gb4: 3.12 	gb5: 1.49
+		Population 2
+			Robot 0 	f: 1044.22 	mf: 1154.33 	ga0: 1.00 	ga1: 2.60 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.38 	gb1: 0.03 	gb2: 0.50 	gb3: 3.98 	gb4: 3.12 	gb5: 1.49
+		Population 3
+			Robot 0 	f: 1120.81 	mf: 1145.75 	ga0: 1.00 	ga1: 2.60 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.38 	gb1: 0.03 	gb2: 0.50 	gb3: 3.98 	gb4: 3.12 	gb5: 1.49
+		Population 4
+			Robot 0 	f: 1096.82 	mf: 1135.80 	ga0: 1.00 	ga1: 2.60 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.38 	gb1: 0.03 	gb2: 0.50 	gb3: 3.98 	gb4: 3.12 	gb5: 1.49
+		Population 5
+			Robot 0 	f: 1140.98 	mf: 1136.50 	ga0: 1.00 	ga1: 2.60 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.38 	gb1: 0.03 	gb2: 0.50 	gb3: 3.98 	gb4: 3.12 	gb5: 1.49
+		Population 6
+			Robot 0 	f: 1273.33 	mf: 1156.00 	ga0: 1.00 	ga1: 2.60 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.38 	gb1: 0.03 	gb2: 0.50 	gb3: 3.98 	gb4: 3.12 	gb5: 1.49
+		Population 7
+			Robot 0 	f: 1427.50 	mf: 1189.88 	ga0: 1.00 	ga1: 2.60 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.38 	gb1: 0.03 	gb2: 0.50 	gb3: 3.98 	gb4: 3.12 	gb5: 1.49
+		Population 8
+			Robot 0 	f: 1328.56 	mf: 1205.22 	ga0: 1.00 	ga1: 2.60 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.38 	gb1: 0.03 	gb2: 0.50 	gb3: 3.98 	gb4: 3.12 	gb5: 1.49
+		Population 9
+			Robot 0 	f: 1067.08 	mf: 1191.40 	ga0: 1.00 	ga1: 2.60 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.38 	gb1: 0.03 	gb2: 0.50 	gb3: 3.98 	gb4: 3.12 	gb5: 1.49
+		Population 10
+			Robot 0 	f: 1212.64 	mf: 1188.40 	ga0: 1.00 	ga1: 2.60 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.38 	gb1: 0.03 	gb2: 0.50 	gb3: 3.98 	gb4: 3.12 	gb5: 1.49
+		Population 11
+			Robot 0 	f: 1133.64 	mf: 1184.00 	ga0: 1.00 	ga1: 2.60 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.38 	gb1: 0.03 	gb2: 0.50 	gb3: 3.98 	gb4: 3.12 	gb5: 1.49
+		Population 12
+			Robot 0 	f: 1263.00 	mf: 1205.90 	ga0: 1.00 	ga1: 2.60 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.38 	gb1: 0.03 	gb2: 0.50 	gb3: 3.98 	gb4: 3.12 	gb5: 1.49
+		Population 13
+			Robot 0 	f: 1199.33 	mf: 1213.80 	ga0: 1.00 	ga1: 2.60 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.38 	gb1: 0.03 	gb2: 0.50 	gb3: 3.98 	gb4: 3.12 	gb5: 1.49
+		Population 14
+			Robot 0 	f: 1292.54 	mf: 1233.40 	ga0: 1.00 	ga1: 2.60 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.38 	gb1: 0.03 	gb2: 0.50 	gb3: 3.98 	gb4: 3.12 	gb5: 1.49
+		Population 15
+			Robot 0 	f: 611.52 	mf: 1180.50 	ga0: 1.00 	ga1: 2.60 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.38 	gb1: 0.03 	gb2: 0.50 	gb3: 3.98 	gb4: 3.12 	gb5: 1.49
+		Population 16
+			Robot 0 	f: 1206.13 	mf: 1173.80 	ga0: 1.00 	ga1: 2.60 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.38 	gb1: 0.03 	gb2: 0.50 	gb3: 3.98 	gb4: 3.12 	gb5: 1.49
+		Population 17
+			Robot 0 	f: 1313.93 	mf: 1162.40 	ga0: 1.00 	ga1: 2.60 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.38 	gb1: 0.03 	gb2: 0.50 	gb3: 3.98 	gb4: 3.12 	gb5: 1.49
+		Population 18
+			Robot 0 	f: 1290.68 	mf: 1158.60 	ga0: 1.00 	ga1: 2.60 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.38 	gb1: 0.03 	gb2: 0.50 	gb3: 3.98 	gb4: 3.12 	gb5: 1.49
+		Population 19
+			Robot 0 	f: 1254.12 	mf: 1177.30 	ga0: 1.00 	ga1: 2.60 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.38 	gb1: 0.03 	gb2: 0.50 	gb3: 3.98 	gb4: 3.12 	gb5: 1.49
+		Population 20
+			Robot 0 	f: 1237.04 	mf: 1179.80 	ga0: 1.00 	ga1: 2.60 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.38 	gb1: 0.03 	gb2: 0.50 	gb3: 3.98 	gb4: 3.12 	gb5: 1.49
+		Population 21
+			Robot 0 	f: 1130.50 	mf: 1179.50 	ga0: 1.00 	ga1: 2.60 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.38 	gb1: 0.03 	gb2: 0.50 	gb3: 3.98 	gb4: 3.12 	gb5: 1.49
+		Population 22
+			Robot 0 	f: 936.04 	mf: 1146.80 	ga0: 1.00 	ga1: 2.60 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.38 	gb1: 0.03 	gb2: 0.50 	gb3: 3.98 	gb4: 3.12 	gb5: 1.49
+		Population 23
+			Robot 0 	f: 1328.89 	mf: 1159.70 	ga0: 1.00 	ga1: 2.60 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.38 	gb1: 0.03 	gb2: 0.50 	gb3: 3.98 	gb4: 3.12 	gb5: 1.49
+		Population 24
+			Robot 0 	f: 1188.54 	mf: 1149.30 	ga0: 1.00 	ga1: 2.60 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.38 	gb1: 0.03 	gb2: 0.50 	gb3: 3.98 	gb4: 3.12 	gb5: 1.49
+		Population 25
+			Robot 0 	f: 1083.44 	mf: 1196.50 	ga0: 1.00 	ga1: 2.60 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.38 	gb1: 0.03 	gb2: 0.50 	gb3: 3.98 	gb4: 3.12 	gb5: 1.49
+		Population 26
+			Robot 0 	f: 1168.88 	mf: 1192.70 	ga0: 1.00 	ga1: 2.60 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.38 	gb1: 0.03 	gb2: 0.50 	gb3: 3.98 	gb4: 3.12 	gb5: 1.49
+		Population 27
+			Robot 0 	f: 1229.39 	mf: 1184.30 	ga0: 1.00 	ga1: 2.60 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.38 	gb1: 0.03 	gb2: 0.50 	gb3: 3.98 	gb4: 3.12 	gb5: 1.49
+		Population 28
+			Robot 0 	f: 1183.54 	mf: 1173.60 	ga0: 1.00 	ga1: 2.60 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.38 	gb1: 0.03 	gb2: 0.50 	gb3: 3.98 	gb4: 3.12 	gb5: 1.49
+		Population 29
+			Robot 0 	f: 1249.72 	mf: 1173.10 	ga0: 1.00 	ga1: 2.60 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.38 	gb1: 0.03 	gb2: 0.50 	gb3: 3.98 	gb4: 3.12 	gb5: 1.49
+		Population 30
+			Robot 0 	f: 1265.02 	mf: 1175.90 	ga0: 1.00 	ga1: 2.60 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.38 	gb1: 0.03 	gb2: 0.50 	gb3: 3.98 	gb4: 3.12 	gb5: 1.49
+		Population 31
+			Robot 0 	f: 1298.21 	mf: 1192.70 	ga0: 1.00 	ga1: 2.60 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.38 	gb1: 0.03 	gb2: 0.50 	gb3: 3.98 	gb4: 3.12 	gb5: 1.49
+		Population 32
+			Robot 0 	f: 1328.65 	mf: 1231.90 	ga0: 1.00 	ga1: 2.60 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.38 	gb1: 0.03 	gb2: 0.50 	gb3: 3.98 	gb4: 3.12 	gb5: 1.49
+		Population 33
+			Robot 0 	f: 1059.63 	mf: 1205.00 	ga0: 1.00 	ga1: 2.60 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.38 	gb1: 0.03 	gb2: 0.50 	gb3: 3.98 	gb4: 3.12 	gb5: 1.49
+		Population 34
+			Robot 0 	f: 1242.59 	mf: 1210.40 	ga0: 1.00 	ga1: 2.60 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.38 	gb1: 0.03 	gb2: 0.50 	gb3: 3.98 	gb4: 3.12 	gb5: 1.49
+		Population 35
+			Robot 0 	f: 1325.54 	mf: 1234.60 	ga0: 1.00 	ga1: 2.60 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.38 	gb1: 0.03 	gb2: 0.50 	gb3: 3.98 	gb4: 3.12 	gb5: 1.49
+		Population 36
+			Robot 0 	f: 1337.93 	mf: 1251.50 	ga0: 1.00 	ga1: 2.60 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.38 	gb1: 0.03 	gb2: 0.50 	gb3: 3.98 	gb4: 3.12 	gb5: 1.49
+		Population 37
+			Robot 0 	f: 1016.20 	mf: 1230.20 	ga0: 1.00 	ga1: 2.60 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.38 	gb1: 0.03 	gb2: 0.50 	gb3: 3.98 	gb4: 3.12 	gb5: 1.49
+		Population 38
+			Robot 0 	f: 1175.77 	mf: 1229.40 	ga0: 1.00 	ga1: 2.60 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.38 	gb1: 0.03 	gb2: 0.50 	gb3: 3.98 	gb4: 3.12 	gb5: 1.49
+		Population 39
+			Robot 0 	f: 1094.40 	mf: 1213.90 	ga0: 1.00 	ga1: 2.60 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.38 	gb1: 0.03 	gb2: 0.50 	gb3: 3.98 	gb4: 3.12 	gb5: 1.49
+		Population 40
+			Robot 0 	f: 1083.24 	mf: 1195.70 	ga0: 1.00 	ga1: 2.60 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.38 	gb1: 0.03 	gb2: 0.50 	gb3: 3.98 	gb4: 3.12 	gb5: 1.49
+		Population 41
+			Robot 0 	f: 1205.74 	mf: 1186.40 	ga0: 1.00 	ga1: 2.60 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.38 	gb1: 0.03 	gb2: 0.50 	gb3: 3.98 	gb4: 3.12 	gb5: 1.49
+		Population 42
+			Robot 0 	f: 683.65 	mf: 1121.90 	ga0: 1.00 	ga1: 2.60 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.38 	gb1: 0.03 	gb2: 0.50 	gb3: 3.98 	gb4: 3.12 	gb5: 1.49
+		Population 43
+			Robot 0 	f: 1047.74 	mf: 1120.70 	ga0: 1.00 	ga1: 2.60 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.38 	gb1: 0.03 	gb2: 0.50 	gb3: 3.98 	gb4: 3.12 	gb5: 1.49
+		Population 44
+			Robot 0 	f: 1116.15 	mf: 1108.10 	ga0: 1.00 	ga1: 2.60 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.38 	gb1: 0.03 	gb2: 0.50 	gb3: 3.98 	gb4: 3.12 	gb5: 1.49
+		Population 45
+			Robot 0 	f: 1164.78 	mf: 1092.00 	ga0: 1.00 	ga1: 2.60 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.38 	gb1: 0.03 	gb2: 0.50 	gb3: 3.98 	gb4: 3.12 	gb5: 1.49
+		Population 46
+			Robot 0 	f: 1155.41 	mf: 1073.80 	ga0: 1.00 	ga1: 2.60 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.38 	gb1: 0.03 	gb2: 0.50 	gb3: 3.98 	gb4: 3.12 	gb5: 1.49
+		Population 47
+			Robot 0 	f: 1412.62 	mf: 1113.40 	ga0: 1.00 	ga1: 2.60 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.38 	gb1: 0.03 	gb2: 0.50 	gb3: 3.98 	gb4: 3.12 	gb5: 1.49
+		Population 48
+			Robot 0 	f: 1174.14 	mf: 1113.30 	ga0: 1.00 	ga1: 2.60 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.38 	gb1: 0.03 	gb2: 0.50 	gb3: 3.98 	gb4: 3.12 	gb5: 1.49
+		Population 49
+			Robot 0 	f: 1330.35 	mf: 1136.90 	ga0: 1.00 	ga1: 2.60 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.38 	gb1: 0.03 	gb2: 0.50 	gb3: 3.98 	gb4: 3.12 	gb5: 1.49
+		Population 50
+			Robot 0 	f: 854.54 	mf: 1114.00 	ga0: 1.00 	ga1: 2.60 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.38 	gb1: 0.03 	gb2: 0.50 	gb3: 3.98 	gb4: 3.12 	gb5: 1.49
+		Population 51
+			Robot 0 	f: 1300.38 	mf: 1123.50 	ga0: 1.00 	ga1: 2.60 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.38 	gb1: 0.03 	gb2: 0.50 	gb3: 3.98 	gb4: 3.12 	gb5: 1.49
+		Population 52
+			Robot 0 	f: 1195.29 	mf: 1174.70 	ga0: 1.00 	ga1: 2.60 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.38 	gb1: 0.03 	gb2: 0.50 	gb3: 3.98 	gb4: 3.12 	gb5: 1.49
+		Population 53
+			Robot 0 	f: 950.17 	mf: 1165.00 	ga0: 1.00 	ga1: 2.60 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.38 	gb1: 0.03 	gb2: 0.50 	gb3: 3.98 	gb4: 3.12 	gb5: 1.49
+		Population 54
+			Robot 0 	f: 1149.20 	mf: 1168.30 	ga0: 1.00 	ga1: 2.60 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.38 	gb1: 0.03 	gb2: 0.50 	gb3: 3.98 	gb4: 3.12 	gb5: 1.49
+		Population 55
+			Robot 0 	f: 1290.19 	mf: 1180.90 	ga0: 1.00 	ga1: 2.60 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.38 	gb1: 0.03 	gb2: 0.50 	gb3: 3.98 	gb4: 3.12 	gb5: 1.49
+		Population 56
+			Robot 0 	f: 1154.68 	mf: 1180.80 	ga0: 1.00 	ga1: 2.60 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.38 	gb1: 0.03 	gb2: 0.50 	gb3: 3.98 	gb4: 3.12 	gb5: 1.49
+		Population 57
+			Robot 0 	f: 1337.93 	mf: 1173.30 	ga0: 1.00 	ga1: 2.60 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.38 	gb1: 0.03 	gb2: 0.50 	gb3: 3.98 	gb4: 3.12 	gb5: 1.49
+		Population 58
+			Robot 0 	f: 1098.38 	mf: 1165.70 	ga0: 1.00 	ga1: 2.60 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.38 	gb1: 0.03 	gb2: 0.50 	gb3: 3.98 	gb4: 3.12 	gb5: 1.49
+		Population 59
+			Robot 0 	f: 1279.14 	mf: 1160.60 	ga0: 1.00 	ga1: 2.60 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.38 	gb1: 0.03 	gb2: 0.50 	gb3: 3.98 	gb4: 3.12 	gb5: 1.49
+		Population 60
+			Robot 0 	f: 1260.90 	mf: 1201.20 	ga0: 1.00 	ga1: 2.60 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.38 	gb1: 0.03 	gb2: 0.50 	gb3: 3.98 	gb4: 3.12 	gb5: 1.49
+		Population 61
+			Robot 0 	f: 1251.20 	mf: 1196.30 	ga0: 1.00 	ga1: 2.60 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.38 	gb1: 0.03 	gb2: 0.50 	gb3: 3.98 	gb4: 3.12 	gb5: 1.49
+		Population 62
+			Robot 0 	f: 1157.44 	mf: 1192.50 	ga0: 1.00 	ga1: 2.60 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.38 	gb1: 0.03 	gb2: 0.50 	gb3: 3.98 	gb4: 3.12 	gb5: 1.49
+		Population 63
+			Robot 0 	f: 1247.91 	mf: 1222.20 	ga0: 1.00 	ga1: 2.60 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.38 	gb1: 0.03 	gb2: 0.50 	gb3: 3.98 	gb4: 3.12 	gb5: 1.49
+		Population 64
+			Robot 0 	f: 1144.83 	mf: 1221.70 	ga0: 1.00 	ga1: 2.60 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.38 	gb1: 0.03 	gb2: 0.50 	gb3: 3.98 	gb4: 3.12 	gb5: 1.49
+		Population 65
+			Robot 0 	f: 1005.97 	mf: 1193.20 	ga0: 1.00 	ga1: 2.60 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.38 	gb1: 0.03 	gb2: 0.50 	gb3: 3.98 	gb4: 3.12 	gb5: 1.49
+		Population 66
+			Robot 0 	f: 1342.15 	mf: 1212.00 	ga0: 1.00 	ga1: 2.60 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.38 	gb1: 0.03 	gb2: 0.50 	gb3: 3.98 	gb4: 3.12 	gb5: 1.49
+		Population 67
+			Robot 0 	f: 1245.61 	mf: 1202.80 	ga0: 1.00 	ga1: 2.60 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.38 	gb1: 0.03 	gb2: 0.50 	gb3: 3.98 	gb4: 3.12 	gb5: 1.49
+		Population 68
+			Robot 0 	f: 1392.96 	mf: 1232.20 	ga0: 1.00 	ga1: 2.60 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.38 	gb1: 0.03 	gb2: 0.50 	gb3: 3.98 	gb4: 3.12 	gb5: 1.49
+		Population 69
+			Robot 0 	f: 999.92 	mf: 1204.20 	ga0: 1.00 	ga1: 2.60 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.38 	gb1: 0.03 	gb2: 0.50 	gb3: 3.98 	gb4: 3.12 	gb5: 1.49
+		Population 70
+			Robot 0 	f: 1399.80 	mf: 1218.10 	ga0: 1.00 	ga1: 2.60 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.38 	gb1: 0.03 	gb2: 0.50 	gb3: 3.98 	gb4: 3.12 	gb5: 1.49
+		Population 71
+			Robot 0 	f: 997.44 	mf: 1192.70 	ga0: 1.00 	ga1: 2.60 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.38 	gb1: 0.03 	gb2: 0.50 	gb3: 3.98 	gb4: 3.12 	gb5: 1.49
+		Population 72
+			Robot 0 	f: 1042.55 	mf: 1181.20 	ga0: 1.00 	ga1: 2.60 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.38 	gb1: 0.03 	gb2: 0.50 	gb3: 3.98 	gb4: 3.12 	gb5: 1.49
+		Population 73
+			Robot 0 	f: 1209.82 	mf: 1177.40 	ga0: 1.00 	ga1: 2.60 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.38 	gb1: 0.03 	gb2: 0.50 	gb3: 3.98 	gb4: 3.12 	gb5: 1.49
+		Population 74
+			Robot 0 	f: 1285.10 	mf: 1191.50 	ga0: 1.00 	ga1: 2.60 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.38 	gb1: 0.03 	gb2: 0.50 	gb3: 3.98 	gb4: 3.12 	gb5: 1.49
+		Population 75
+			Robot 0 	f: 1200.93 	mf: 1211.00 	ga0: 1.00 	ga1: 2.60 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.38 	gb1: 0.03 	gb2: 0.50 	gb3: 3.98 	gb4: 3.12 	gb5: 1.49
+		Population 76
+			Robot 0 	f: 1286.47 	mf: 1205.40 	ga0: 1.00 	ga1: 2.60 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.38 	gb1: 0.03 	gb2: 0.50 	gb3: 3.98 	gb4: 3.12 	gb5: 1.49
+		Population 77
+			Robot 0 	f: 1099.83 	mf: 1190.80 	ga0: 1.00 	ga1: 2.60 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.38 	gb1: 0.03 	gb2: 0.50 	gb3: 3.98 	gb4: 3.12 	gb5: 1.49
+		Population 78
+			Robot 0 	f: 1276.07 	mf: 1179.20 	ga0: 1.00 	ga1: 2.60 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.38 	gb1: 0.03 	gb2: 0.50 	gb3: 3.98 	gb4: 3.12 	gb5: 1.49
+		Population 79
+			Robot 0 	f: 1242.54 	mf: 1203.50 	ga0: 1.00 	ga1: 2.60 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.38 	gb1: 0.03 	gb2: 0.50 	gb3: 3.98 	gb4: 3.12 	gb5: 1.49
+		Population 80
+			Robot 0 	f: 1215.29 	mf: 1185.10 	ga0: 1.00 	ga1: 2.60 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.38 	gb1: 0.03 	gb2: 0.50 	gb3: 3.98 	gb4: 3.12 	gb5: 1.49
+		Population 81
+			Robot 0 	f: 1113.87 	mf: 1196.70 	ga0: 1.00 	ga1: 2.60 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.38 	gb1: 0.03 	gb2: 0.50 	gb3: 3.98 	gb4: 3.12 	gb5: 1.49
+		Population 82
+			Robot 0 	f: 1037.48 	mf: 1196.20 	ga0: 1.00 	ga1: 2.60 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.38 	gb1: 0.03 	gb2: 0.50 	gb3: 3.98 	gb4: 3.12 	gb5: 1.49
+		Population 83
+			Robot 0 	f: 1302.76 	mf: 1205.50 	ga0: 1.00 	ga1: 2.60 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.38 	gb1: 0.03 	gb2: 0.50 	gb3: 3.98 	gb4: 3.12 	gb5: 1.49
+		Population 84
+			Robot 0 	f: 937.93 	mf: 1170.70 	ga0: 1.00 	ga1: 2.60 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.38 	gb1: 0.03 	gb2: 0.50 	gb3: 3.98 	gb4: 3.12 	gb5: 1.49
+		Population 85
+			Robot 0 	f: 877.39 	mf: 1138.40 	ga0: 1.00 	ga1: 2.60 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.38 	gb1: 0.03 	gb2: 0.50 	gb3: 3.98 	gb4: 3.12 	gb5: 1.49
+		Population 86
+			Robot 0 	f: 986.15 	mf: 1108.40 	ga0: 1.00 	ga1: 2.60 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.38 	gb1: 0.03 	gb2: 0.50 	gb3: 3.98 	gb4: 3.12 	gb5: 1.49
+		Population 87
+			Robot 0 	f: 1301.36 	mf: 1128.60 	ga0: 1.00 	ga1: 2.60 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.38 	gb1: 0.03 	gb2: 0.50 	gb3: 3.98 	gb4: 3.12 	gb5: 1.49
+		Population 88
+			Robot 0 	f: 1251.68 	mf: 1126.10 	ga0: 1.00 	ga1: 2.60 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.38 	gb1: 0.03 	gb2: 0.50 	gb3: 3.98 	gb4: 3.12 	gb5: 1.49
+		Population 89
+			Robot 0 	f: 979.06 	mf: 1099.80 	ga0: 1.00 	ga1: 2.60 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.38 	gb1: 0.03 	gb2: 0.50 	gb3: 3.98 	gb4: 3.12 	gb5: 1.49
+		Population 90
+			Robot 0 	f: 1232.14 	mf: 1101.50 	ga0: 1.00 	ga1: 2.60 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.38 	gb1: 0.03 	gb2: 0.50 	gb3: 3.98 	gb4: 3.12 	gb5: 1.49
+		Population 91
+			Robot 0 	f: 1262.00 	mf: 1116.40 	ga0: 1.00 	ga1: 2.60 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.38 	gb1: 0.03 	gb2: 0.50 	gb3: 3.98 	gb4: 3.12 	gb5: 1.49
+		Population 92
+			Robot 0 	f: 1026.91 	mf: 1115.30 	ga0: 1.00 	ga1: 2.60 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.38 	gb1: 0.03 	gb2: 0.50 	gb3: 3.98 	gb4: 3.12 	gb5: 1.49
+		Population 93
+			Robot 0 	f: 1258.61 	mf: 1110.90 	ga0: 1.00 	ga1: 2.60 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.38 	gb1: 0.03 	gb2: 0.50 	gb3: 3.98 	gb4: 3.12 	gb5: 1.49
+		Population 94
+			Robot 0 	f: 1272.94 	mf: 1144.40 	ga0: 1.00 	ga1: 2.60 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.38 	gb1: 0.03 	gb2: 0.50 	gb3: 3.98 	gb4: 3.12 	gb5: 1.49
+		Population 95
+			Robot 0 	f: 1182.13 	mf: 1174.90 	ga0: 1.00 	ga1: 2.60 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.38 	gb1: 0.03 	gb2: 0.50 	gb3: 3.98 	gb4: 3.12 	gb5: 1.49
+		Population 96
+			Robot 0 	f: 1204.94 	mf: 1196.70 	ga0: 1.00 	ga1: 2.60 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.38 	gb1: 0.03 	gb2: 0.50 	gb3: 3.98 	gb4: 3.12 	gb5: 1.49
+		Population 97
+			Robot 0 	f: 1247.00 	mf: 1191.30 	ga0: 1.00 	ga1: 2.60 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.38 	gb1: 0.03 	gb2: 0.50 	gb3: 3.98 	gb4: 3.12 	gb5: 1.49
+		Population 98
+			Robot 0 	f: 1184.45 	mf: 1184.60 	ga0: 1.00 	ga1: 2.60 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.38 	gb1: 0.03 	gb2: 0.50 	gb3: 3.98 	gb4: 3.12 	gb5: 1.49
+		Population 99
+			Robot 0 	f: 1184.45 	mf: 1184.60 	ga0: 1.00 	ga1: 2.60 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.38 	gb1: 0.03 	gb2: 0.50 	gb3: 3.98 	gb4: 3.12 	gb5: 1.49
+	finalFitness: 1184
+	Repetition 7
+		Population 0
+			Robot 0 	f: 876.70 	mf: 876.00 	ga0: 1.00 	ga1: 0.00 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.77 	gb1: 0.98 	gb2: 0.94 	gb3: 1.37 	gb4: 2.40 	gb5: 0.21
+		Population 1
+			Robot 0 	f: 805.14 	mf: 840.50 	ga0: 1.00 	ga1: 0.00 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.77 	gb1: 0.98 	gb2: 0.94 	gb3: 1.37 	gb4: 2.40 	gb5: 0.21
+		Population 2
+			Robot 0 	f: 452.42 	mf: 711.00 	ga0: 1.00 	ga1: 0.00 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.77 	gb1: 0.98 	gb2: 0.94 	gb3: 1.37 	gb4: 2.40 	gb5: 0.21
+		Population 3
+			Robot 0 	f: 862.06 	mf: 748.75 	ga0: 1.00 	ga1: 0.00 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.77 	gb1: 0.98 	gb2: 0.94 	gb3: 1.37 	gb4: 2.40 	gb5: 0.21
+		Population 4
+			Robot 0 	f: 856.45 	mf: 770.20 	ga0: 1.00 	ga1: 0.00 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.77 	gb1: 0.98 	gb2: 0.94 	gb3: 1.37 	gb4: 2.40 	gb5: 0.21
+		Population 5
+			Robot 0 	f: 994.89 	mf: 807.50 	ga0: 1.00 	ga1: 0.00 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.77 	gb1: 0.98 	gb2: 0.94 	gb3: 1.37 	gb4: 2.40 	gb5: 0.21
+		Population 6
+			Robot 0 	f: 686.92 	mf: 790.14 	ga0: 1.00 	ga1: 0.00 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.77 	gb1: 0.98 	gb2: 0.94 	gb3: 1.37 	gb4: 2.40 	gb5: 0.21
+		Population 7
+			Robot 0 	f: 795.74 	mf: 790.75 	ga0: 1.00 	ga1: 0.00 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.77 	gb1: 0.98 	gb2: 0.94 	gb3: 1.37 	gb4: 2.40 	gb5: 0.21
+		Population 8
+			Robot 0 	f: 1060.46 	mf: 820.67 	ga0: 1.00 	ga1: 0.00 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.77 	gb1: 0.98 	gb2: 0.94 	gb3: 1.37 	gb4: 2.40 	gb5: 0.21
+		Population 9
+			Robot 0 	f: 846.52 	mf: 823.20 	ga0: 1.00 	ga1: 0.00 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.77 	gb1: 0.98 	gb2: 0.94 	gb3: 1.37 	gb4: 2.40 	gb5: 0.21
+		Population 10
+			Robot 0 	f: 650.13 	mf: 800.60 	ga0: 1.00 	ga1: 0.00 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.77 	gb1: 0.98 	gb2: 0.94 	gb3: 1.37 	gb4: 2.40 	gb5: 0.21
+		Population 11
+			Robot 0 	f: 500.21 	mf: 770.10 	ga0: 1.00 	ga1: 0.00 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.77 	gb1: 0.98 	gb2: 0.94 	gb3: 1.37 	gb4: 2.40 	gb5: 0.21
+		Population 12
+			Robot 0 	f: 867.68 	mf: 811.60 	ga0: 1.00 	ga1: 0.00 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.77 	gb1: 0.98 	gb2: 0.94 	gb3: 1.37 	gb4: 2.40 	gb5: 0.21
+		Population 13
+			Robot 0 	f: 668.99 	mf: 792.20 	ga0: 1.00 	ga1: 0.00 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.77 	gb1: 0.98 	gb2: 0.94 	gb3: 1.37 	gb4: 2.40 	gb5: 0.21
+		Population 14
+			Robot 0 	f: 1060.71 	mf: 812.60 	ga0: 1.00 	ga1: 0.00 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.77 	gb1: 0.98 	gb2: 0.94 	gb3: 1.37 	gb4: 2.40 	gb5: 0.21
+		Population 15
+			Robot 0 	f: 982.05 	mf: 811.40 	ga0: 1.00 	ga1: 0.00 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.77 	gb1: 0.98 	gb2: 0.94 	gb3: 1.37 	gb4: 2.40 	gb5: 0.21
+		Population 16
+			Robot 0 	f: 803.37 	mf: 823.10 	ga0: 1.00 	ga1: 0.00 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.77 	gb1: 0.98 	gb2: 0.94 	gb3: 1.37 	gb4: 2.40 	gb5: 0.21
+		Population 17
+			Robot 0 	f: 733.27 	mf: 816.90 	ga0: 1.00 	ga1: 0.00 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.77 	gb1: 0.98 	gb2: 0.94 	gb3: 1.37 	gb4: 2.40 	gb5: 0.21
+		Population 18
+			Robot 0 	f: 1129.98 	mf: 823.80 	ga0: 1.00 	ga1: 0.00 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.77 	gb1: 0.98 	gb2: 0.94 	gb3: 1.37 	gb4: 2.40 	gb5: 0.21
+		Population 19
+			Robot 0 	f: 1002.98 	mf: 839.40 	ga0: 1.00 	ga1: 0.00 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.77 	gb1: 0.98 	gb2: 0.94 	gb3: 1.37 	gb4: 2.40 	gb5: 0.21
+		Population 20
+			Robot 0 	f: 795.32 	mf: 853.90 	ga0: 1.00 	ga1: 0.00 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.77 	gb1: 0.98 	gb2: 0.94 	gb3: 1.37 	gb4: 2.40 	gb5: 0.21
+		Population 21
+			Robot 0 	f: 605.04 	mf: 864.40 	ga0: 1.00 	ga1: 0.00 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.77 	gb1: 0.98 	gb2: 0.94 	gb3: 1.37 	gb4: 2.40 	gb5: 0.21
+		Population 22
+			Robot 0 	f: 934.20 	mf: 871.10 	ga0: 1.00 	ga1: 0.00 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.77 	gb1: 0.98 	gb2: 0.94 	gb3: 1.37 	gb4: 2.40 	gb5: 0.21
+		Population 23
+			Robot 0 	f: 931.63 	mf: 897.40 	ga0: 1.00 	ga1: 0.00 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.77 	gb1: 0.98 	gb2: 0.94 	gb3: 1.37 	gb4: 2.40 	gb5: 0.21
+		Population 24
+			Robot 0 	f: 895.41 	mf: 880.90 	ga0: 1.00 	ga1: 0.00 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.77 	gb1: 0.98 	gb2: 0.94 	gb3: 1.37 	gb4: 2.40 	gb5: 0.21
+		Population 25
+			Robot 0 	f: 812.03 	mf: 863.90 	ga0: 1.00 	ga1: 0.00 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.77 	gb1: 0.98 	gb2: 0.94 	gb3: 1.37 	gb4: 2.40 	gb5: 0.21
+		Population 26
+			Robot 0 	f: 953.21 	mf: 878.90 	ga0: 1.00 	ga1: 0.00 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.77 	gb1: 0.98 	gb2: 0.94 	gb3: 1.37 	gb4: 2.40 	gb5: 0.21
+		Population 27
+			Robot 0 	f: 669.17 	mf: 872.50 	ga0: 1.00 	ga1: 0.00 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.77 	gb1: 0.98 	gb2: 0.94 	gb3: 1.37 	gb4: 2.40 	gb5: 0.21
+		Population 28
+			Robot 0 	f: 745.69 	mf: 834.10 	ga0: 1.00 	ga1: 0.00 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.77 	gb1: 0.98 	gb2: 0.94 	gb3: 1.37 	gb4: 2.40 	gb5: 0.21
+		Population 29
+			Robot 0 	f: 980.74 	mf: 831.90 	ga0: 1.00 	ga1: 0.00 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.77 	gb1: 0.98 	gb2: 0.94 	gb3: 1.37 	gb4: 2.40 	gb5: 0.21
+		Population 30
+			Robot 0 	f: 799.14 	mf: 832.30 	ga0: 1.00 	ga1: 0.00 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.77 	gb1: 0.98 	gb2: 0.94 	gb3: 1.37 	gb4: 2.40 	gb5: 0.21
+		Population 31
+			Robot 0 	f: 906.51 	mf: 862.40 	ga0: 1.00 	ga1: 0.00 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.77 	gb1: 0.98 	gb2: 0.94 	gb3: 1.37 	gb4: 2.40 	gb5: 0.21
+		Population 32
+			Robot 0 	f: 378.21 	mf: 806.80 	ga0: 1.00 	ga1: 0.00 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.77 	gb1: 0.98 	gb2: 0.94 	gb3: 1.37 	gb4: 2.40 	gb5: 0.21
+		Population 33
+			Robot 0 	f: 855.78 	mf: 799.20 	ga0: 1.00 	ga1: 0.00 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.77 	gb1: 0.98 	gb2: 0.94 	gb3: 1.37 	gb4: 2.40 	gb5: 0.21
+		Population 34
+			Robot 0 	f: 628.47 	mf: 772.50 	ga0: 1.00 	ga1: 0.00 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.77 	gb1: 0.98 	gb2: 0.94 	gb3: 1.37 	gb4: 2.40 	gb5: 0.21
+		Population 35
+			Robot 0 	f: 860.71 	mf: 777.30 	ga0: 1.00 	ga1: 0.00 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.77 	gb1: 0.98 	gb2: 0.94 	gb3: 1.37 	gb4: 2.40 	gb5: 0.21
+		Population 36
+			Robot 0 	f: 773.01 	mf: 759.30 	ga0: 1.00 	ga1: 0.00 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.77 	gb1: 0.98 	gb2: 0.94 	gb3: 1.37 	gb4: 2.40 	gb5: 0.21
+		Population 37
+			Robot 0 	f: 742.61 	mf: 766.60 	ga0: 1.00 	ga1: 0.00 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.77 	gb1: 0.98 	gb2: 0.94 	gb3: 1.37 	gb4: 2.40 	gb5: 0.21
+		Population 38
+			Robot 0 	f: 172.68 	mf: 709.30 	ga0: 1.00 	ga1: 0.00 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.77 	gb1: 0.98 	gb2: 0.94 	gb3: 1.37 	gb4: 2.40 	gb5: 0.21
+		Population 39
+			Robot 0 	f: 1209.88 	mf: 732.20 	ga0: 1.00 	ga1: 0.00 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.77 	gb1: 0.98 	gb2: 0.94 	gb3: 1.37 	gb4: 2.40 	gb5: 0.21
+		Population 40
+			Robot 0 	f: 723.57 	mf: 724.60 	ga0: 1.00 	ga1: 0.00 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.77 	gb1: 0.98 	gb2: 0.94 	gb3: 1.37 	gb4: 2.40 	gb5: 0.21
+		Population 41
+			Robot 0 	f: 1188.03 	mf: 752.80 	ga0: 1.00 	ga1: 0.00 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.77 	gb1: 0.98 	gb2: 0.94 	gb3: 1.37 	gb4: 2.40 	gb5: 0.21
+		Population 42
+			Robot 0 	f: 861.19 	mf: 801.10 	ga0: 1.00 	ga1: 0.00 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.77 	gb1: 0.98 	gb2: 0.94 	gb3: 1.37 	gb4: 2.40 	gb5: 0.21
+		Population 43
+			Robot 0 	f: 692.85 	mf: 784.80 	ga0: 1.00 	ga1: 0.00 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.77 	gb1: 0.98 	gb2: 0.94 	gb3: 1.37 	gb4: 2.40 	gb5: 0.21
+		Population 44
+			Robot 0 	f: 1085.18 	mf: 830.50 	ga0: 1.00 	ga1: 0.00 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.77 	gb1: 0.98 	gb2: 0.94 	gb3: 1.37 	gb4: 2.40 	gb5: 0.21
+		Population 45
+			Robot 0 	f: 787.11 	mf: 823.20 	ga0: 1.00 	ga1: 0.00 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.77 	gb1: 0.98 	gb2: 0.94 	gb3: 1.37 	gb4: 2.40 	gb5: 0.21
+		Population 46
+			Robot 0 	f: -661.65 	mf: 679.80 	ga0: 1.00 	ga1: 0.00 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.77 	gb1: 0.98 	gb2: 0.94 	gb3: 1.37 	gb4: 2.40 	gb5: 0.21
+		Population 47
+			Robot 0 	f: 637.91 	mf: 669.30 	ga0: 1.00 	ga1: 0.00 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.77 	gb1: 0.98 	gb2: 0.94 	gb3: 1.37 	gb4: 2.40 	gb5: 0.21
+		Population 48
+			Robot 0 	f: 701.09 	mf: 722.10 	ga0: 1.00 	ga1: 0.00 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.77 	gb1: 0.98 	gb2: 0.94 	gb3: 1.37 	gb4: 2.40 	gb5: 0.21
+		Population 49
+			Robot 0 	f: 519.38 	mf: 653.10 	ga0: 1.00 	ga1: 0.00 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.77 	gb1: 0.98 	gb2: 0.94 	gb3: 1.37 	gb4: 2.40 	gb5: 0.21
+		Population 50
+			Robot 0 	f: 863.29 	mf: 667.10 	ga0: 1.00 	ga1: 0.00 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.77 	gb1: 0.98 	gb2: 0.94 	gb3: 1.37 	gb4: 2.40 	gb5: 0.21
+		Population 51
+			Robot 0 	f: 684.67 	mf: 616.70 	ga0: 1.00 	ga1: 0.00 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.77 	gb1: 0.98 	gb2: 0.94 	gb3: 1.37 	gb4: 2.40 	gb5: 0.21
+		Population 52
+			Robot 0 	f: 842.49 	mf: 614.80 	ga0: 1.00 	ga1: 0.00 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.77 	gb1: 0.98 	gb2: 0.94 	gb3: 1.37 	gb4: 2.40 	gb5: 0.21
+		Population 53
+			Robot 0 	f: 709.31 	mf: 616.50 	ga0: 1.00 	ga1: 0.00 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.77 	gb1: 0.98 	gb2: 0.94 	gb3: 1.37 	gb4: 2.40 	gb5: 0.21
+		Population 54
+			Robot 0 	f: 1322.41 	mf: 640.20 	ga0: 1.00 	ga1: 0.00 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.77 	gb1: 0.98 	gb2: 0.94 	gb3: 1.37 	gb4: 2.40 	gb5: 0.21
+		Population 55
+			Robot 0 	f: 718.88 	mf: 633.30 	ga0: 1.00 	ga1: 0.00 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.77 	gb1: 0.98 	gb2: 0.94 	gb3: 1.37 	gb4: 2.40 	gb5: 0.21
+		Population 56
+			Robot 0 	f: 594.35 	mf: 758.90 	ga0: 1.00 	ga1: 0.00 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.77 	gb1: 0.98 	gb2: 0.94 	gb3: 1.37 	gb4: 2.40 	gb5: 0.21
+		Population 57
+			Robot 0 	f: 658.79 	mf: 761.00 	ga0: 1.00 	ga1: 0.00 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.77 	gb1: 0.98 	gb2: 0.94 	gb3: 1.37 	gb4: 2.40 	gb5: 0.21
+		Population 58
+			Robot 0 	f: 796.08 	mf: 770.50 	ga0: 1.00 	ga1: 0.00 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.77 	gb1: 0.98 	gb2: 0.94 	gb3: 1.37 	gb4: 2.40 	gb5: 0.21
+		Population 59
+			Robot 0 	f: 745.38 	mf: 793.10 	ga0: 1.00 	ga1: 0.00 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.77 	gb1: 0.98 	gb2: 0.94 	gb3: 1.37 	gb4: 2.40 	gb5: 0.21
+		Population 60
+			Robot 0 	f: 1027.47 	mf: 809.50 	ga0: 1.00 	ga1: 0.00 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.77 	gb1: 0.98 	gb2: 0.94 	gb3: 1.37 	gb4: 2.40 	gb5: 0.21
+		Population 61
+			Robot 0 	f: 857.25 	mf: 826.80 	ga0: 1.00 	ga1: 0.00 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.77 	gb1: 0.98 	gb2: 0.94 	gb3: 1.37 	gb4: 2.40 	gb5: 0.21
+		Population 62
+			Robot 0 	f: 626.87 	mf: 805.20 	ga0: 1.00 	ga1: 0.00 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.77 	gb1: 0.98 	gb2: 0.94 	gb3: 1.37 	gb4: 2.40 	gb5: 0.21
+		Population 63
+			Robot 0 	f: 773.76 	mf: 811.60 	ga0: 1.00 	ga1: 0.00 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.77 	gb1: 0.98 	gb2: 0.94 	gb3: 1.37 	gb4: 2.40 	gb5: 0.21
+		Population 64
+			Robot 0 	f: 819.44 	mf: 761.30 	ga0: 1.00 	ga1: 0.00 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.77 	gb1: 0.98 	gb2: 0.94 	gb3: 1.37 	gb4: 2.40 	gb5: 0.21
+		Population 65
+			Robot 0 	f: 1070.07 	mf: 796.50 	ga0: 1.00 	ga1: 0.00 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.77 	gb1: 0.98 	gb2: 0.94 	gb3: 1.37 	gb4: 2.40 	gb5: 0.21
+		Population 66
+			Robot 0 	f: 899.82 	mf: 827.00 	ga0: 1.00 	ga1: 0.00 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.77 	gb1: 0.98 	gb2: 0.94 	gb3: 1.37 	gb4: 2.40 	gb5: 0.21
+		Population 67
+			Robot 0 	f: 765.80 	mf: 837.70 	ga0: 1.00 	ga1: 0.00 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.77 	gb1: 0.98 	gb2: 0.94 	gb3: 1.37 	gb4: 2.40 	gb5: 0.21
+		Population 68
+			Robot 0 	f: 573.31 	mf: 815.40 	ga0: 1.00 	ga1: 0.00 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.77 	gb1: 0.98 	gb2: 0.94 	gb3: 1.37 	gb4: 2.40 	gb5: 0.21
+		Population 69
+			Robot 0 	f: 1369.50 	mf: 877.80 	ga0: 1.00 	ga1: 0.00 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.77 	gb1: 0.98 	gb2: 0.94 	gb3: 1.37 	gb4: 2.40 	gb5: 0.21
+		Population 70
+			Robot 0 	f: 1005.62 	mf: 875.60 	ga0: 1.00 	ga1: 0.00 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.77 	gb1: 0.98 	gb2: 0.94 	gb3: 1.37 	gb4: 2.40 	gb5: 0.21
+		Population 71
+			Robot 0 	f: 585.44 	mf: 848.40 	ga0: 1.00 	ga1: 0.00 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.77 	gb1: 0.98 	gb2: 0.94 	gb3: 1.37 	gb4: 2.40 	gb5: 0.21
+		Population 72
+			Robot 0 	f: 994.23 	mf: 885.20 	ga0: 1.00 	ga1: 0.00 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.77 	gb1: 0.98 	gb2: 0.94 	gb3: 1.37 	gb4: 2.40 	gb5: 0.21
+		Population 73
+			Robot 0 	f: 542.29 	mf: 862.10 	ga0: 1.00 	ga1: 0.00 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.77 	gb1: 0.98 	gb2: 0.94 	gb3: 1.37 	gb4: 2.40 	gb5: 0.21
+		Population 74
+			Robot 0 	f: 990.75 	mf: 879.20 	ga0: 1.00 	ga1: 0.00 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.77 	gb1: 0.98 	gb2: 0.94 	gb3: 1.37 	gb4: 2.40 	gb5: 0.21
+		Population 75
+			Robot 0 	f: 923.80 	mf: 864.50 	ga0: 1.00 	ga1: 0.00 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.77 	gb1: 0.98 	gb2: 0.94 	gb3: 1.37 	gb4: 2.40 	gb5: 0.21
+		Population 76
+			Robot 0 	f: 961.53 	mf: 870.70 	ga0: 1.00 	ga1: 0.00 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.77 	gb1: 0.98 	gb2: 0.94 	gb3: 1.37 	gb4: 2.40 	gb5: 0.21
+		Population 77
+			Robot 0 	f: 1074.73 	mf: 901.60 	ga0: 1.00 	ga1: 0.00 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.77 	gb1: 0.98 	gb2: 0.94 	gb3: 1.37 	gb4: 2.40 	gb5: 0.21
+		Population 78
+			Robot 0 	f: 668.16 	mf: 911.10 	ga0: 1.00 	ga1: 0.00 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.77 	gb1: 0.98 	gb2: 0.94 	gb3: 1.37 	gb4: 2.40 	gb5: 0.21
+		Population 79
+			Robot 0 	f: 982.62 	mf: 872.40 	ga0: 1.00 	ga1: 0.00 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.77 	gb1: 0.98 	gb2: 0.94 	gb3: 1.37 	gb4: 2.40 	gb5: 0.21
+		Population 80
+			Robot 0 	f: 776.68 	mf: 849.50 	ga0: 1.00 	ga1: 0.00 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.77 	gb1: 0.98 	gb2: 0.94 	gb3: 1.37 	gb4: 2.40 	gb5: 0.21
+		Population 81
+			Robot 0 	f: 1019.18 	mf: 892.90 	ga0: 1.00 	ga1: 0.00 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.77 	gb1: 0.98 	gb2: 0.94 	gb3: 1.37 	gb4: 2.40 	gb5: 0.21
+		Population 82
+			Robot 0 	f: 750.00 	mf: 868.50 	ga0: 1.00 	ga1: 0.00 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.77 	gb1: 0.98 	gb2: 0.94 	gb3: 1.37 	gb4: 2.40 	gb5: 0.21
+		Population 83
+			Robot 0 	f: 775.97 	mf: 891.80 	ga0: 1.00 	ga1: 0.00 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.77 	gb1: 0.98 	gb2: 0.94 	gb3: 1.37 	gb4: 2.40 	gb5: 0.21
+		Population 84
+			Robot 0 	f: 927.48 	mf: 885.50 	ga0: 1.00 	ga1: 0.00 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.77 	gb1: 0.98 	gb2: 0.94 	gb3: 1.37 	gb4: 2.40 	gb5: 0.21
+		Population 85
+			Robot 0 	f: 734.76 	mf: 866.60 	ga0: 1.00 	ga1: 0.00 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.77 	gb1: 0.98 	gb2: 0.94 	gb3: 1.37 	gb4: 2.40 	gb5: 0.21
+		Population 86
+			Robot 0 	f: 257.84 	mf: 796.20 	ga0: 1.00 	ga1: 0.00 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.77 	gb1: 0.98 	gb2: 0.94 	gb3: 1.37 	gb4: 2.40 	gb5: 0.21
+		Population 87
+			Robot 0 	f: 484.38 	mf: 737.20 	ga0: 1.00 	ga1: 0.00 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.77 	gb1: 0.98 	gb2: 0.94 	gb3: 1.37 	gb4: 2.40 	gb5: 0.21
+		Population 88
+			Robot 0 	f: 847.26 	mf: 755.10 	ga0: 1.00 	ga1: 0.00 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.77 	gb1: 0.98 	gb2: 0.94 	gb3: 1.37 	gb4: 2.40 	gb5: 0.21
+		Population 89
+			Robot 0 	f: 983.81 	mf: 755.20 	ga0: 1.00 	ga1: 0.00 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.77 	gb1: 0.98 	gb2: 0.94 	gb3: 1.37 	gb4: 2.40 	gb5: 0.21
+		Population 90
+			Robot 0 	f: 975.70 	mf: 775.10 	ga0: 1.00 	ga1: 0.00 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.77 	gb1: 0.98 	gb2: 0.94 	gb3: 1.37 	gb4: 2.40 	gb5: 0.21
+		Population 91
+			Robot 0 	f: 938.54 	mf: 767.00 	ga0: 1.00 	ga1: 0.00 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.77 	gb1: 0.98 	gb2: 0.94 	gb3: 1.37 	gb4: 2.40 	gb5: 0.21
+		Population 92
+			Robot 0 	f: 414.06 	mf: 733.40 	ga0: 1.00 	ga1: 0.00 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.77 	gb1: 0.98 	gb2: 0.94 	gb3: 1.37 	gb4: 2.40 	gb5: 0.21
+		Population 93
+			Robot 0 	f: 814.99 	mf: 737.30 	ga0: 1.00 	ga1: 0.00 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.77 	gb1: 0.98 	gb2: 0.94 	gb3: 1.37 	gb4: 2.40 	gb5: 0.21
+		Population 94
+			Robot 0 	f: 896.10 	mf: 734.20 	ga0: 1.00 	ga1: 0.00 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.77 	gb1: 0.98 	gb2: 0.94 	gb3: 1.37 	gb4: 2.40 	gb5: 0.21
+		Population 95
+			Robot 0 	f: 752.91 	mf: 736.00 	ga0: 1.00 	ga1: 0.00 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.77 	gb1: 0.98 	gb2: 0.94 	gb3: 1.37 	gb4: 2.40 	gb5: 0.21
+		Population 96
+			Robot 0 	f: 766.50 	mf: 786.90 	ga0: 1.00 	ga1: 0.00 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.77 	gb1: 0.98 	gb2: 0.94 	gb3: 1.37 	gb4: 2.40 	gb5: 0.21
+		Population 97
+			Robot 0 	f: 799.16 	mf: 818.40 	ga0: 1.00 	ga1: 0.00 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.77 	gb1: 0.98 	gb2: 0.94 	gb3: 1.37 	gb4: 2.40 	gb5: 0.21
+		Population 98
+			Robot 0 	f: 1083.38 	mf: 842.00 	ga0: 1.00 	ga1: 0.00 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.77 	gb1: 0.98 	gb2: 0.94 	gb3: 1.37 	gb4: 2.40 	gb5: 0.21
+		Population 99
+			Robot 0 	f: 1083.38 	mf: 842.00 	ga0: 1.00 	ga1: 0.00 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.77 	gb1: 0.98 	gb2: 0.94 	gb3: 1.37 	gb4: 2.40 	gb5: 0.21
+	finalFitness: 842
+	Repetition 8
+		Population 0
+			Robot 0 	f: 1077.76 	mf: 1077.00 	ga0: 1.00 	ga1: 9.60 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.34 	gb1: 0.50 	gb2: 0.19 	gb3: 1.65 	gb4: 1.37 	gb5: 3.47
+		Population 1
+			Robot 0 	f: 1248.04 	mf: 1162.50 	ga0: 1.00 	ga1: 9.60 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.34 	gb1: 0.50 	gb2: 0.19 	gb3: 1.65 	gb4: 1.37 	gb5: 3.47
+		Population 2
+			Robot 0 	f: 1084.10 	mf: 1136.33 	ga0: 1.00 	ga1: 9.60 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.34 	gb1: 0.50 	gb2: 0.19 	gb3: 1.65 	gb4: 1.37 	gb5: 3.47
+		Population 3
+			Robot 0 	f: 1186.67 	mf: 1148.75 	ga0: 1.00 	ga1: 9.60 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.34 	gb1: 0.50 	gb2: 0.19 	gb3: 1.65 	gb4: 1.37 	gb5: 3.47
+		Population 4
+			Robot 0 	f: 1201.49 	mf: 1159.20 	ga0: 1.00 	ga1: 9.60 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.34 	gb1: 0.50 	gb2: 0.19 	gb3: 1.65 	gb4: 1.37 	gb5: 3.47
+		Population 5
+			Robot 0 	f: 1284.93 	mf: 1180.00 	ga0: 1.00 	ga1: 9.60 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.34 	gb1: 0.50 	gb2: 0.19 	gb3: 1.65 	gb4: 1.37 	gb5: 3.47
+		Population 6
+			Robot 0 	f: 986.74 	mf: 1152.29 	ga0: 1.00 	ga1: 9.60 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.34 	gb1: 0.50 	gb2: 0.19 	gb3: 1.65 	gb4: 1.37 	gb5: 3.47
+		Population 7
+			Robot 0 	f: 1295.01 	mf: 1170.12 	ga0: 1.00 	ga1: 9.60 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.34 	gb1: 0.50 	gb2: 0.19 	gb3: 1.65 	gb4: 1.37 	gb5: 3.47
+		Population 8
+			Robot 0 	f: 1292.34 	mf: 1183.67 	ga0: 1.00 	ga1: 9.60 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.34 	gb1: 0.50 	gb2: 0.19 	gb3: 1.65 	gb4: 1.37 	gb5: 3.47
+		Population 9
+			Robot 0 	f: 1248.76 	mf: 1190.10 	ga0: 1.00 	ga1: 9.60 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.34 	gb1: 0.50 	gb2: 0.19 	gb3: 1.65 	gb4: 1.37 	gb5: 3.47
+		Population 10
+			Robot 0 	f: 1269.65 	mf: 1209.30 	ga0: 1.00 	ga1: 9.60 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.34 	gb1: 0.50 	gb2: 0.19 	gb3: 1.65 	gb4: 1.37 	gb5: 3.47
+		Population 11
+			Robot 0 	f: 1173.12 	mf: 1201.80 	ga0: 1.00 	ga1: 9.60 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.34 	gb1: 0.50 	gb2: 0.19 	gb3: 1.65 	gb4: 1.37 	gb5: 3.47
+		Population 12
+			Robot 0 	f: 849.37 	mf: 1178.30 	ga0: 1.00 	ga1: 9.60 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.34 	gb1: 0.50 	gb2: 0.19 	gb3: 1.65 	gb4: 1.37 	gb5: 3.47
+		Population 13
+			Robot 0 	f: 861.87 	mf: 1145.80 	ga0: 1.00 	ga1: 9.60 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.34 	gb1: 0.50 	gb2: 0.19 	gb3: 1.65 	gb4: 1.37 	gb5: 3.47
+		Population 14
+			Robot 0 	f: 1229.40 	mf: 1148.60 	ga0: 1.00 	ga1: 9.60 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.34 	gb1: 0.50 	gb2: 0.19 	gb3: 1.65 	gb4: 1.37 	gb5: 3.47
+		Population 15
+			Robot 0 	f: 1140.50 	mf: 1134.20 	ga0: 1.00 	ga1: 9.60 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.34 	gb1: 0.50 	gb2: 0.19 	gb3: 1.65 	gb4: 1.37 	gb5: 3.47
+		Population 16
+			Robot 0 	f: 988.76 	mf: 1134.40 	ga0: 1.00 	ga1: 9.60 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.34 	gb1: 0.50 	gb2: 0.19 	gb3: 1.65 	gb4: 1.37 	gb5: 3.47
+		Population 17
+			Robot 0 	f: 1288.49 	mf: 1133.70 	ga0: 1.00 	ga1: 9.60 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.34 	gb1: 0.50 	gb2: 0.19 	gb3: 1.65 	gb4: 1.37 	gb5: 3.47
+		Population 18
+			Robot 0 	f: 1284.43 	mf: 1132.90 	ga0: 1.00 	ga1: 9.60 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.34 	gb1: 0.50 	gb2: 0.19 	gb3: 1.65 	gb4: 1.37 	gb5: 3.47
+		Population 19
+			Robot 0 	f: 151.24 	mf: 1023.20 	ga0: 1.00 	ga1: 9.60 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.34 	gb1: 0.50 	gb2: 0.19 	gb3: 1.65 	gb4: 1.37 	gb5: 3.47
+		Population 20
+			Robot 0 	f: 979.86 	mf: 994.20 	ga0: 1.00 	ga1: 9.60 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.34 	gb1: 0.50 	gb2: 0.19 	gb3: 1.65 	gb4: 1.37 	gb5: 3.47
+		Population 21
+			Robot 0 	f: 1184.26 	mf: 995.30 	ga0: 1.00 	ga1: 9.60 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.34 	gb1: 0.50 	gb2: 0.19 	gb3: 1.65 	gb4: 1.37 	gb5: 3.47
+		Population 22
+			Robot 0 	f: 1277.59 	mf: 1038.10 	ga0: 1.00 	ga1: 9.60 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.34 	gb1: 0.50 	gb2: 0.19 	gb3: 1.65 	gb4: 1.37 	gb5: 3.47
+		Population 23
+			Robot 0 	f: 1251.28 	mf: 1077.10 	ga0: 1.00 	ga1: 9.60 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.34 	gb1: 0.50 	gb2: 0.19 	gb3: 1.65 	gb4: 1.37 	gb5: 3.47
+		Population 24
+			Robot 0 	f: 1392.67 	mf: 1093.40 	ga0: 1.00 	ga1: 9.60 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.34 	gb1: 0.50 	gb2: 0.19 	gb3: 1.65 	gb4: 1.37 	gb5: 3.47
+		Population 25
+			Robot 0 	f: 1445.00 	mf: 1123.80 	ga0: 1.00 	ga1: 9.60 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.34 	gb1: 0.50 	gb2: 0.19 	gb3: 1.65 	gb4: 1.37 	gb5: 3.47
+		Population 26
+			Robot 0 	f: 1241.42 	mf: 1149.10 	ga0: 1.00 	ga1: 9.60 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.34 	gb1: 0.50 	gb2: 0.19 	gb3: 1.65 	gb4: 1.37 	gb5: 3.47
+		Population 27
+			Robot 0 	f: 1193.07 	mf: 1139.60 	ga0: 1.00 	ga1: 9.60 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.34 	gb1: 0.50 	gb2: 0.19 	gb3: 1.65 	gb4: 1.37 	gb5: 3.47
+		Population 28
+			Robot 0 	f: 1230.29 	mf: 1134.20 	ga0: 1.00 	ga1: 9.60 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.34 	gb1: 0.50 	gb2: 0.19 	gb3: 1.65 	gb4: 1.37 	gb5: 3.47
+		Population 29
+			Robot 0 	f: 833.96 	mf: 1202.40 	ga0: 1.00 	ga1: 9.60 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.34 	gb1: 0.50 	gb2: 0.19 	gb3: 1.65 	gb4: 1.37 	gb5: 3.47
+		Population 30
+			Robot 0 	f: 1050.41 	mf: 1209.50 	ga0: 1.00 	ga1: 9.60 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.34 	gb1: 0.50 	gb2: 0.19 	gb3: 1.65 	gb4: 1.37 	gb5: 3.47
+		Population 31
+			Robot 0 	f: 1128.36 	mf: 1203.90 	ga0: 1.00 	ga1: 9.60 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.34 	gb1: 0.50 	gb2: 0.19 	gb3: 1.65 	gb4: 1.37 	gb5: 3.47
+		Population 32
+			Robot 0 	f: 1152.89 	mf: 1191.40 	ga0: 1.00 	ga1: 9.60 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.34 	gb1: 0.50 	gb2: 0.19 	gb3: 1.65 	gb4: 1.37 	gb5: 3.47
+		Population 33
+			Robot 0 	f: 329.60 	mf: 1099.20 	ga0: 1.00 	ga1: 9.60 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.34 	gb1: 0.50 	gb2: 0.19 	gb3: 1.65 	gb4: 1.37 	gb5: 3.47
+		Population 34
+			Robot 0 	f: 1121.81 	mf: 1072.10 	ga0: 1.00 	ga1: 9.60 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.34 	gb1: 0.50 	gb2: 0.19 	gb3: 1.65 	gb4: 1.37 	gb5: 3.47
+		Population 35
+			Robot 0 	f: 1365.31 	mf: 1064.20 	ga0: 1.00 	ga1: 9.60 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.34 	gb1: 0.50 	gb2: 0.19 	gb3: 1.65 	gb4: 1.37 	gb5: 3.47
+		Population 36
+			Robot 0 	f: 1219.89 	mf: 1062.00 	ga0: 1.00 	ga1: 9.60 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.34 	gb1: 0.50 	gb2: 0.19 	gb3: 1.65 	gb4: 1.37 	gb5: 3.47
+		Population 37
+			Robot 0 	f: 1025.14 	mf: 1045.20 	ga0: 1.00 	ga1: 9.60 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.34 	gb1: 0.50 	gb2: 0.19 	gb3: 1.65 	gb4: 1.37 	gb5: 3.47
+		Population 38
+			Robot 0 	f: 997.22 	mf: 1021.90 	ga0: 1.00 	ga1: 9.60 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.34 	gb1: 0.50 	gb2: 0.19 	gb3: 1.65 	gb4: 1.37 	gb5: 3.47
+		Population 39
+			Robot 0 	f: 1072.94 	mf: 1045.80 	ga0: 1.00 	ga1: 9.60 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.34 	gb1: 0.50 	gb2: 0.19 	gb3: 1.65 	gb4: 1.37 	gb5: 3.47
+		Population 40
+			Robot 0 	f: 1234.94 	mf: 1064.20 	ga0: 1.00 	ga1: 9.60 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.34 	gb1: 0.50 	gb2: 0.19 	gb3: 1.65 	gb4: 1.37 	gb5: 3.47
+		Population 41
+			Robot 0 	f: 1107.13 	mf: 1062.10 	ga0: 1.00 	ga1: 9.60 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.34 	gb1: 0.50 	gb2: 0.19 	gb3: 1.65 	gb4: 1.37 	gb5: 3.47
+		Population 42
+			Robot 0 	f: 1372.09 	mf: 1084.10 	ga0: 1.00 	ga1: 9.60 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.34 	gb1: 0.50 	gb2: 0.19 	gb3: 1.65 	gb4: 1.37 	gb5: 3.47
+		Population 43
+			Robot 0 	f: 1347.38 	mf: 1185.90 	ga0: 1.00 	ga1: 9.60 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.34 	gb1: 0.50 	gb2: 0.19 	gb3: 1.65 	gb4: 1.37 	gb5: 3.47
+		Population 44
+			Robot 0 	f: 1257.78 	mf: 1199.50 	ga0: 1.00 	ga1: 9.60 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.34 	gb1: 0.50 	gb2: 0.19 	gb3: 1.65 	gb4: 1.37 	gb5: 3.47
+		Population 45
+			Robot 0 	f: 1110.41 	mf: 1174.00 	ga0: 1.00 	ga1: 9.60 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.34 	gb1: 0.50 	gb2: 0.19 	gb3: 1.65 	gb4: 1.37 	gb5: 3.47
+		Population 46
+			Robot 0 	f: 1184.85 	mf: 1170.50 	ga0: 1.00 	ga1: 9.60 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.34 	gb1: 0.50 	gb2: 0.19 	gb3: 1.65 	gb4: 1.37 	gb5: 3.47
+		Population 47
+			Robot 0 	f: 1223.16 	mf: 1190.30 	ga0: 1.00 	ga1: 9.60 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.34 	gb1: 0.50 	gb2: 0.19 	gb3: 1.65 	gb4: 1.37 	gb5: 3.47
+		Population 48
+			Robot 0 	f: 1369.31 	mf: 1227.50 	ga0: 1.00 	ga1: 9.60 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.34 	gb1: 0.50 	gb2: 0.19 	gb3: 1.65 	gb4: 1.37 	gb5: 3.47
+		Population 49
+			Robot 0 	f: 1008.82 	mf: 1221.10 	ga0: 1.00 	ga1: 9.60 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.34 	gb1: 0.50 	gb2: 0.19 	gb3: 1.65 	gb4: 1.37 	gb5: 3.47
+		Population 50
+			Robot 0 	f: 1163.15 	mf: 1214.00 	ga0: 1.00 	ga1: 9.60 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.34 	gb1: 0.50 	gb2: 0.19 	gb3: 1.65 	gb4: 1.37 	gb5: 3.47
+		Population 51
+			Robot 0 	f: 1068.26 	mf: 1210.10 	ga0: 1.00 	ga1: 9.60 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.34 	gb1: 0.50 	gb2: 0.19 	gb3: 1.65 	gb4: 1.37 	gb5: 3.47
+		Population 52
+			Robot 0 	f: 1279.01 	mf: 1200.80 	ga0: 1.00 	ga1: 9.60 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.34 	gb1: 0.50 	gb2: 0.19 	gb3: 1.65 	gb4: 1.37 	gb5: 3.47
+		Population 53
+			Robot 0 	f: 1154.81 	mf: 1181.50 	ga0: 1.00 	ga1: 9.60 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.34 	gb1: 0.50 	gb2: 0.19 	gb3: 1.65 	gb4: 1.37 	gb5: 3.47
+		Population 54
+			Robot 0 	f: 968.75 	mf: 1152.60 	ga0: 1.00 	ga1: 9.60 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.34 	gb1: 0.50 	gb2: 0.19 	gb3: 1.65 	gb4: 1.37 	gb5: 3.47
+		Population 55
+			Robot 0 	f: 1244.58 	mf: 1166.00 	ga0: 1.00 	ga1: 9.60 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.34 	gb1: 0.50 	gb2: 0.19 	gb3: 1.65 	gb4: 1.37 	gb5: 3.47
+		Population 56
+			Robot 0 	f: 1102.57 	mf: 1157.80 	ga0: 1.00 	ga1: 9.60 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.34 	gb1: 0.50 	gb2: 0.19 	gb3: 1.65 	gb4: 1.37 	gb5: 3.47
+		Population 57
+			Robot 0 	f: 1229.02 	mf: 1158.40 	ga0: 1.00 	ga1: 9.60 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.34 	gb1: 0.50 	gb2: 0.19 	gb3: 1.65 	gb4: 1.37 	gb5: 3.47
+		Population 58
+			Robot 0 	f: 1212.96 	mf: 1142.70 	ga0: 1.00 	ga1: 9.60 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.34 	gb1: 0.50 	gb2: 0.19 	gb3: 1.65 	gb4: 1.37 	gb5: 3.47
+		Population 59
+			Robot 0 	f: 1144.04 	mf: 1156.30 	ga0: 1.00 	ga1: 9.60 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.34 	gb1: 0.50 	gb2: 0.19 	gb3: 1.65 	gb4: 1.37 	gb5: 3.47
+		Population 60
+			Robot 0 	f: 713.32 	mf: 1111.30 	ga0: 1.00 	ga1: 9.60 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.34 	gb1: 0.50 	gb2: 0.19 	gb3: 1.65 	gb4: 1.37 	gb5: 3.47
+		Population 61
+			Robot 0 	f: 1222.43 	mf: 1126.70 	ga0: 1.00 	ga1: 9.60 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.34 	gb1: 0.50 	gb2: 0.19 	gb3: 1.65 	gb4: 1.37 	gb5: 3.47
+		Population 62
+			Robot 0 	f: 1058.12 	mf: 1104.60 	ga0: 1.00 	ga1: 9.60 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.34 	gb1: 0.50 	gb2: 0.19 	gb3: 1.65 	gb4: 1.37 	gb5: 3.47
+		Population 63
+			Robot 0 	f: 1162.34 	mf: 1105.40 	ga0: 1.00 	ga1: 9.60 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.34 	gb1: 0.50 	gb2: 0.19 	gb3: 1.65 	gb4: 1.37 	gb5: 3.47
+		Population 64
+			Robot 0 	f: 1163.56 	mf: 1124.90 	ga0: 1.00 	ga1: 9.60 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.34 	gb1: 0.50 	gb2: 0.19 	gb3: 1.65 	gb4: 1.37 	gb5: 3.47
+		Population 65
+			Robot 0 	f: 1160.85 	mf: 1116.50 	ga0: 1.00 	ga1: 9.60 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.34 	gb1: 0.50 	gb2: 0.19 	gb3: 1.65 	gb4: 1.37 	gb5: 3.47
+		Population 66
+			Robot 0 	f: 994.69 	mf: 1105.70 	ga0: 1.00 	ga1: 9.60 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.34 	gb1: 0.50 	gb2: 0.19 	gb3: 1.65 	gb4: 1.37 	gb5: 3.47
+		Population 67
+			Robot 0 	f: 1282.43 	mf: 1111.00 	ga0: 1.00 	ga1: 9.60 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.34 	gb1: 0.50 	gb2: 0.19 	gb3: 1.65 	gb4: 1.37 	gb5: 3.47
+		Population 68
+			Robot 0 	f: 1231.60 	mf: 1112.90 	ga0: 1.00 	ga1: 9.60 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.34 	gb1: 0.50 	gb2: 0.19 	gb3: 1.65 	gb4: 1.37 	gb5: 3.47
+		Population 69
+			Robot 0 	f: 1210.93 	mf: 1119.50 	ga0: 1.00 	ga1: 9.60 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.34 	gb1: 0.50 	gb2: 0.19 	gb3: 1.65 	gb4: 1.37 	gb5: 3.47
+		Population 70
+			Robot 0 	f: 1144.78 	mf: 1162.60 	ga0: 1.00 	ga1: 9.60 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.34 	gb1: 0.50 	gb2: 0.19 	gb3: 1.65 	gb4: 1.37 	gb5: 3.47
+		Population 71
+			Robot 0 	f: 1209.13 	mf: 1161.30 	ga0: 1.00 	ga1: 9.60 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.34 	gb1: 0.50 	gb2: 0.19 	gb3: 1.65 	gb4: 1.37 	gb5: 3.47
+		Population 72
+			Robot 0 	f: 1338.27 	mf: 1189.30 	ga0: 1.00 	ga1: 9.60 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.34 	gb1: 0.50 	gb2: 0.19 	gb3: 1.65 	gb4: 1.37 	gb5: 3.47
+		Population 73
+			Robot 0 	f: 1127.08 	mf: 1185.80 	ga0: 1.00 	ga1: 9.60 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.34 	gb1: 0.50 	gb2: 0.19 	gb3: 1.65 	gb4: 1.37 	gb5: 3.47
+		Population 74
+			Robot 0 	f: 1339.95 	mf: 1203.40 	ga0: 1.00 	ga1: 9.60 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.34 	gb1: 0.50 	gb2: 0.19 	gb3: 1.65 	gb4: 1.37 	gb5: 3.47
+		Population 75
+			Robot 0 	f: 1219.96 	mf: 1209.30 	ga0: 1.00 	ga1: 9.60 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.34 	gb1: 0.50 	gb2: 0.19 	gb3: 1.65 	gb4: 1.37 	gb5: 3.47
+		Population 76
+			Robot 0 	f: 1211.43 	mf: 1231.00 	ga0: 1.00 	ga1: 9.60 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.34 	gb1: 0.50 	gb2: 0.19 	gb3: 1.65 	gb4: 1.37 	gb5: 3.47
+		Population 77
+			Robot 0 	f: 1039.32 	mf: 1206.70 	ga0: 1.00 	ga1: 9.60 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.34 	gb1: 0.50 	gb2: 0.19 	gb3: 1.65 	gb4: 1.37 	gb5: 3.47
+		Population 78
+			Robot 0 	f: 1305.24 	mf: 1214.10 	ga0: 1.00 	ga1: 9.60 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.34 	gb1: 0.50 	gb2: 0.19 	gb3: 1.65 	gb4: 1.37 	gb5: 3.47
+		Population 79
+			Robot 0 	f: 949.11 	mf: 1188.00 	ga0: 1.00 	ga1: 9.60 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.34 	gb1: 0.50 	gb2: 0.19 	gb3: 1.65 	gb4: 1.37 	gb5: 3.47
+		Population 80
+			Robot 0 	f: 1264.89 	mf: 1200.00 	ga0: 1.00 	ga1: 9.60 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.34 	gb1: 0.50 	gb2: 0.19 	gb3: 1.65 	gb4: 1.37 	gb5: 3.47
+		Population 81
+			Robot 0 	f: 1002.66 	mf: 1179.30 	ga0: 1.00 	ga1: 9.60 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.34 	gb1: 0.50 	gb2: 0.19 	gb3: 1.65 	gb4: 1.37 	gb5: 3.47
+		Population 82
+			Robot 0 	f: 1264.38 	mf: 1171.90 	ga0: 1.00 	ga1: 9.60 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.34 	gb1: 0.50 	gb2: 0.19 	gb3: 1.65 	gb4: 1.37 	gb5: 3.47
+		Population 83
+			Robot 0 	f: 1244.03 	mf: 1183.60 	ga0: 1.00 	ga1: 9.60 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.34 	gb1: 0.50 	gb2: 0.19 	gb3: 1.65 	gb4: 1.37 	gb5: 3.47
+		Population 84
+			Robot 0 	f: 1086.64 	mf: 1158.30 	ga0: 1.00 	ga1: 9.60 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.34 	gb1: 0.50 	gb2: 0.19 	gb3: 1.65 	gb4: 1.37 	gb5: 3.47
+		Population 85
+			Robot 0 	f: 1191.72 	mf: 1155.50 	ga0: 1.00 	ga1: 9.60 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.34 	gb1: 0.50 	gb2: 0.19 	gb3: 1.65 	gb4: 1.37 	gb5: 3.47
+		Population 86
+			Robot 0 	f: 1278.36 	mf: 1162.20 	ga0: 1.00 	ga1: 9.60 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.34 	gb1: 0.50 	gb2: 0.19 	gb3: 1.65 	gb4: 1.37 	gb5: 3.47
+		Population 87
+			Robot 0 	f: 1390.75 	mf: 1197.30 	ga0: 1.00 	ga1: 9.60 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.34 	gb1: 0.50 	gb2: 0.19 	gb3: 1.65 	gb4: 1.37 	gb5: 3.47
+		Population 88
+			Robot 0 	f: 1301.14 	mf: 1196.90 	ga0: 1.00 	ga1: 9.60 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.34 	gb1: 0.50 	gb2: 0.19 	gb3: 1.65 	gb4: 1.37 	gb5: 3.47
+		Population 89
+			Robot 0 	f: 925.63 	mf: 1194.50 	ga0: 1.00 	ga1: 9.60 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.34 	gb1: 0.50 	gb2: 0.19 	gb3: 1.65 	gb4: 1.37 	gb5: 3.47
+		Population 90
+			Robot 0 	f: 704.34 	mf: 1138.50 	ga0: 1.00 	ga1: 9.60 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.34 	gb1: 0.50 	gb2: 0.19 	gb3: 1.65 	gb4: 1.37 	gb5: 3.47
+		Population 91
+			Robot 0 	f: 1381.75 	mf: 1176.40 	ga0: 1.00 	ga1: 9.60 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.34 	gb1: 0.50 	gb2: 0.19 	gb3: 1.65 	gb4: 1.37 	gb5: 3.47
+		Population 92
+			Robot 0 	f: 1299.20 	mf: 1179.90 	ga0: 1.00 	ga1: 9.60 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.34 	gb1: 0.50 	gb2: 0.19 	gb3: 1.65 	gb4: 1.37 	gb5: 3.47
+		Population 93
+			Robot 0 	f: 1187.35 	mf: 1174.20 	ga0: 1.00 	ga1: 9.60 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.34 	gb1: 0.50 	gb2: 0.19 	gb3: 1.65 	gb4: 1.37 	gb5: 3.47
+		Population 94
+			Robot 0 	f: 972.62 	mf: 1162.80 	ga0: 1.00 	ga1: 9.60 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.34 	gb1: 0.50 	gb2: 0.19 	gb3: 1.65 	gb4: 1.37 	gb5: 3.47
+		Population 95
+			Robot 0 	f: 1180.20 	mf: 1161.70 	ga0: 1.00 	ga1: 9.60 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.34 	gb1: 0.50 	gb2: 0.19 	gb3: 1.65 	gb4: 1.37 	gb5: 3.47
+		Population 96
+			Robot 0 	f: 1118.81 	mf: 1145.70 	ga0: 1.00 	ga1: 9.60 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.34 	gb1: 0.50 	gb2: 0.19 	gb3: 1.65 	gb4: 1.37 	gb5: 3.47
+		Population 97
+			Robot 0 	f: 1217.55 	mf: 1128.40 	ga0: 1.00 	ga1: 9.60 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.34 	gb1: 0.50 	gb2: 0.19 	gb3: 1.65 	gb4: 1.37 	gb5: 3.47
+		Population 98
+			Robot 0 	f: 1411.67 	mf: 1139.40 	ga0: 1.00 	ga1: 9.60 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.34 	gb1: 0.50 	gb2: 0.19 	gb3: 1.65 	gb4: 1.37 	gb5: 3.47
+		Population 99
+			Robot 0 	f: 1411.67 	mf: 1139.40 	ga0: 1.00 	ga1: 9.60 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.34 	gb1: 0.50 	gb2: 0.19 	gb3: 1.65 	gb4: 1.37 	gb5: 3.47
+	finalFitness: 1139
+	Repetition 9
+		Population 0
+			Robot 0 	f: 1119.62 	mf: 1119.00 	ga0: 1.00 	ga1: 8.90 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.68 	gb1: 0.26 	gb2: 0.62 	gb3: 4.40 	gb4: 1.42 	gb5: 4.24
+		Population 1
+			Robot 0 	f: 1141.79 	mf: 1130.00 	ga0: 1.00 	ga1: 8.90 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.68 	gb1: 0.26 	gb2: 0.62 	gb3: 4.40 	gb4: 1.42 	gb5: 4.24
+		Population 2
+			Robot 0 	f: 1192.42 	mf: 1150.67 	ga0: 1.00 	ga1: 8.90 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.68 	gb1: 0.26 	gb2: 0.62 	gb3: 4.40 	gb4: 1.42 	gb5: 4.24
+		Population 3
+			Robot 0 	f: 998.06 	mf: 1112.50 	ga0: 1.00 	ga1: 8.90 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.68 	gb1: 0.26 	gb2: 0.62 	gb3: 4.40 	gb4: 1.42 	gb5: 4.24
+		Population 4
+			Robot 0 	f: 1096.62 	mf: 1109.20 	ga0: 1.00 	ga1: 8.90 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.68 	gb1: 0.26 	gb2: 0.62 	gb3: 4.40 	gb4: 1.42 	gb5: 4.24
+		Population 5
+			Robot 0 	f: 1353.53 	mf: 1149.83 	ga0: 1.00 	ga1: 8.90 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.68 	gb1: 0.26 	gb2: 0.62 	gb3: 4.40 	gb4: 1.42 	gb5: 4.24
+		Population 6
+			Robot 0 	f: 1290.61 	mf: 1169.86 	ga0: 1.00 	ga1: 8.90 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.68 	gb1: 0.26 	gb2: 0.62 	gb3: 4.40 	gb4: 1.42 	gb5: 4.24
+		Population 7
+			Robot 0 	f: 1318.61 	mf: 1188.38 	ga0: 1.00 	ga1: 8.90 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.68 	gb1: 0.26 	gb2: 0.62 	gb3: 4.40 	gb4: 1.42 	gb5: 4.24
+		Population 8
+			Robot 0 	f: 1069.55 	mf: 1175.11 	ga0: 1.00 	ga1: 8.90 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.68 	gb1: 0.26 	gb2: 0.62 	gb3: 4.40 	gb4: 1.42 	gb5: 4.24
+		Population 9
+			Robot 0 	f: 1256.72 	mf: 1183.20 	ga0: 1.00 	ga1: 8.90 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.68 	gb1: 0.26 	gb2: 0.62 	gb3: 4.40 	gb4: 1.42 	gb5: 4.24
+		Population 10
+			Robot 0 	f: 1224.01 	mf: 1193.70 	ga0: 1.00 	ga1: 8.90 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.68 	gb1: 0.26 	gb2: 0.62 	gb3: 4.40 	gb4: 1.42 	gb5: 4.24
+		Population 11
+			Robot 0 	f: 1094.52 	mf: 1189.00 	ga0: 1.00 	ga1: 8.90 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.68 	gb1: 0.26 	gb2: 0.62 	gb3: 4.40 	gb4: 1.42 	gb5: 4.24
+		Population 12
+			Robot 0 	f: 1226.40 	mf: 1192.40 	ga0: 1.00 	ga1: 8.90 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.68 	gb1: 0.26 	gb2: 0.62 	gb3: 4.40 	gb4: 1.42 	gb5: 4.24
+		Population 13
+			Robot 0 	f: 1231.26 	mf: 1215.70 	ga0: 1.00 	ga1: 8.90 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.68 	gb1: 0.26 	gb2: 0.62 	gb3: 4.40 	gb4: 1.42 	gb5: 4.24
+		Population 14
+			Robot 0 	f: 1183.32 	mf: 1224.40 	ga0: 1.00 	ga1: 8.90 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.68 	gb1: 0.26 	gb2: 0.62 	gb3: 4.40 	gb4: 1.42 	gb5: 4.24
+		Population 15
+			Robot 0 	f: 1183.12 	mf: 1207.40 	ga0: 1.00 	ga1: 8.90 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.68 	gb1: 0.26 	gb2: 0.62 	gb3: 4.40 	gb4: 1.42 	gb5: 4.24
+		Population 16
+			Robot 0 	f: 1362.73 	mf: 1214.60 	ga0: 1.00 	ga1: 8.90 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.68 	gb1: 0.26 	gb2: 0.62 	gb3: 4.40 	gb4: 1.42 	gb5: 4.24
+		Population 17
+			Robot 0 	f: 1234.12 	mf: 1206.20 	ga0: 1.00 	ga1: 8.90 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.68 	gb1: 0.26 	gb2: 0.62 	gb3: 4.40 	gb4: 1.42 	gb5: 4.24
+		Population 18
+			Robot 0 	f: 1202.68 	mf: 1219.50 	ga0: 1.00 	ga1: 8.90 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.68 	gb1: 0.26 	gb2: 0.62 	gb3: 4.40 	gb4: 1.42 	gb5: 4.24
+		Population 19
+			Robot 0 	f: 1287.34 	mf: 1222.60 	ga0: 1.00 	ga1: 8.90 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.68 	gb1: 0.26 	gb2: 0.62 	gb3: 4.40 	gb4: 1.42 	gb5: 4.24
+		Population 20
+			Robot 0 	f: 1130.55 	mf: 1213.20 	ga0: 1.00 	ga1: 8.90 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.68 	gb1: 0.26 	gb2: 0.62 	gb3: 4.40 	gb4: 1.42 	gb5: 4.24
+		Population 21
+			Robot 0 	f: 1221.60 	mf: 1225.90 	ga0: 1.00 	ga1: 8.90 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.68 	gb1: 0.26 	gb2: 0.62 	gb3: 4.40 	gb4: 1.42 	gb5: 4.24
+		Population 22
+			Robot 0 	f: 1297.05 	mf: 1233.00 	ga0: 1.00 	ga1: 8.90 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.68 	gb1: 0.26 	gb2: 0.62 	gb3: 4.40 	gb4: 1.42 	gb5: 4.24
+		Population 23
+			Robot 0 	f: 1158.10 	mf: 1225.70 	ga0: 1.00 	ga1: 8.90 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.68 	gb1: 0.26 	gb2: 0.62 	gb3: 4.40 	gb4: 1.42 	gb5: 4.24
+		Population 24
+			Robot 0 	f: 1196.79 	mf: 1227.00 	ga0: 1.00 	ga1: 8.90 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.68 	gb1: 0.26 	gb2: 0.62 	gb3: 4.40 	gb4: 1.42 	gb5: 4.24
+		Population 25
+			Robot 0 	f: 1099.61 	mf: 1218.60 	ga0: 1.00 	ga1: 8.90 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.68 	gb1: 0.26 	gb2: 0.62 	gb3: 4.40 	gb4: 1.42 	gb5: 4.24
+		Population 26
+			Robot 0 	f: 1202.95 	mf: 1202.60 	ga0: 1.00 	ga1: 8.90 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.68 	gb1: 0.26 	gb2: 0.62 	gb3: 4.40 	gb4: 1.42 	gb5: 4.24
+		Population 27
+			Robot 0 	f: 1241.34 	mf: 1203.30 	ga0: 1.00 	ga1: 8.90 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.68 	gb1: 0.26 	gb2: 0.62 	gb3: 4.40 	gb4: 1.42 	gb5: 4.24
+		Population 28
+			Robot 0 	f: 1229.37 	mf: 1206.00 	ga0: 1.00 	ga1: 8.90 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.68 	gb1: 0.26 	gb2: 0.62 	gb3: 4.40 	gb4: 1.42 	gb5: 4.24
+		Population 29
+			Robot 0 	f: 1163.87 	mf: 1193.60 	ga0: 1.00 	ga1: 8.90 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.68 	gb1: 0.26 	gb2: 0.62 	gb3: 4.40 	gb4: 1.42 	gb5: 4.24
+		Population 30
+			Robot 0 	f: 1058.69 	mf: 1186.40 	ga0: 1.00 	ga1: 8.90 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.68 	gb1: 0.26 	gb2: 0.62 	gb3: 4.40 	gb4: 1.42 	gb5: 4.24
+		Population 31
+			Robot 0 	f: 1224.96 	mf: 1186.70 	ga0: 1.00 	ga1: 8.90 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.68 	gb1: 0.26 	gb2: 0.62 	gb3: 4.40 	gb4: 1.42 	gb5: 4.24
+		Population 32
+			Robot 0 	f: 1123.21 	mf: 1169.30 	ga0: 1.00 	ga1: 8.90 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.68 	gb1: 0.26 	gb2: 0.62 	gb3: 4.40 	gb4: 1.42 	gb5: 4.24
+		Population 33
+			Robot 0 	f: 1091.29 	mf: 1162.60 	ga0: 1.00 	ga1: 8.90 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.68 	gb1: 0.26 	gb2: 0.62 	gb3: 4.40 	gb4: 1.42 	gb5: 4.24
+		Population 34
+			Robot 0 	f: 1036.62 	mf: 1146.60 	ga0: 1.00 	ga1: 8.90 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.68 	gb1: 0.26 	gb2: 0.62 	gb3: 4.40 	gb4: 1.42 	gb5: 4.24
+		Population 35
+			Robot 0 	f: 1325.10 	mf: 1169.20 	ga0: 1.00 	ga1: 8.90 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.68 	gb1: 0.26 	gb2: 0.62 	gb3: 4.40 	gb4: 1.42 	gb5: 4.24
+		Population 36
+			Robot 0 	f: 1070.28 	mf: 1156.00 	ga0: 1.00 	ga1: 8.90 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.68 	gb1: 0.26 	gb2: 0.62 	gb3: 4.40 	gb4: 1.42 	gb5: 4.24
+		Population 37
+			Robot 0 	f: 1345.46 	mf: 1166.40 	ga0: 1.00 	ga1: 8.90 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.68 	gb1: 0.26 	gb2: 0.62 	gb3: 4.40 	gb4: 1.42 	gb5: 4.24
+		Population 38
+			Robot 0 	f: 1222.52 	mf: 1165.70 	ga0: 1.00 	ga1: 8.90 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.68 	gb1: 0.26 	gb2: 0.62 	gb3: 4.40 	gb4: 1.42 	gb5: 4.24
+		Population 39
+			Robot 0 	f: 1160.21 	mf: 1165.40 	ga0: 1.00 	ga1: 8.90 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.68 	gb1: 0.26 	gb2: 0.62 	gb3: 4.40 	gb4: 1.42 	gb5: 4.24
+		Population 40
+			Robot 0 	f: 1220.85 	mf: 1181.60 	ga0: 1.00 	ga1: 8.90 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.68 	gb1: 0.26 	gb2: 0.62 	gb3: 4.40 	gb4: 1.42 	gb5: 4.24
+		Population 41
+			Robot 0 	f: 929.34 	mf: 1152.10 	ga0: 1.00 	ga1: 8.90 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.68 	gb1: 0.26 	gb2: 0.62 	gb3: 4.40 	gb4: 1.42 	gb5: 4.24
+		Population 42
+			Robot 0 	f: 1007.82 	mf: 1140.50 	ga0: 1.00 	ga1: 8.90 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.68 	gb1: 0.26 	gb2: 0.62 	gb3: 4.40 	gb4: 1.42 	gb5: 4.24
+		Population 43
+			Robot 0 	f: 1301.49 	mf: 1161.50 	ga0: 1.00 	ga1: 8.90 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.68 	gb1: 0.26 	gb2: 0.62 	gb3: 4.40 	gb4: 1.42 	gb5: 4.24
+		Population 44
+			Robot 0 	f: 1249.82 	mf: 1182.80 	ga0: 1.00 	ga1: 8.90 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.68 	gb1: 0.26 	gb2: 0.62 	gb3: 4.40 	gb4: 1.42 	gb5: 4.24
+		Population 45
+			Robot 0 	f: 1272.26 	mf: 1177.50 	ga0: 1.00 	ga1: 8.90 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.68 	gb1: 0.26 	gb2: 0.62 	gb3: 4.40 	gb4: 1.42 	gb5: 4.24
+		Population 46
+			Robot 0 	f: 1333.36 	mf: 1203.80 	ga0: 1.00 	ga1: 8.90 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.68 	gb1: 0.26 	gb2: 0.62 	gb3: 4.40 	gb4: 1.42 	gb5: 4.24
+		Population 47
+			Robot 0 	f: 691.58 	mf: 1138.40 	ga0: 1.00 	ga1: 8.90 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.68 	gb1: 0.26 	gb2: 0.62 	gb3: 4.40 	gb4: 1.42 	gb5: 4.24
+		Population 48
+			Robot 0 	f: 1084.20 	mf: 1124.60 	ga0: 1.00 	ga1: 8.90 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.68 	gb1: 0.26 	gb2: 0.62 	gb3: 4.40 	gb4: 1.42 	gb5: 4.24
+		Population 49
+			Robot 0 	f: 974.00 	mf: 1105.90 	ga0: 1.00 	ga1: 8.90 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.68 	gb1: 0.26 	gb2: 0.62 	gb3: 4.40 	gb4: 1.42 	gb5: 4.24
+		Population 50
+			Robot 0 	f: 1235.54 	mf: 1107.50 	ga0: 1.00 	ga1: 8.90 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.68 	gb1: 0.26 	gb2: 0.62 	gb3: 4.40 	gb4: 1.42 	gb5: 4.24
+		Population 51
+			Robot 0 	f: 959.90 	mf: 1110.50 	ga0: 1.00 	ga1: 8.90 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.68 	gb1: 0.26 	gb2: 0.62 	gb3: 4.40 	gb4: 1.42 	gb5: 4.24
+		Population 52
+			Robot 0 	f: 1019.72 	mf: 1111.70 	ga0: 1.00 	ga1: 8.90 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.68 	gb1: 0.26 	gb2: 0.62 	gb3: 4.40 	gb4: 1.42 	gb5: 4.24
+		Population 53
+			Robot 0 	f: 1204.39 	mf: 1102.00 	ga0: 1.00 	ga1: 8.90 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.68 	gb1: 0.26 	gb2: 0.62 	gb3: 4.40 	gb4: 1.42 	gb5: 4.24
+		Population 54
+			Robot 0 	f: 1003.05 	mf: 1077.40 	ga0: 1.00 	ga1: 8.90 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.68 	gb1: 0.26 	gb2: 0.62 	gb3: 4.40 	gb4: 1.42 	gb5: 4.24
+		Population 55
+			Robot 0 	f: 1116.81 	mf: 1061.80 	ga0: 1.00 	ga1: 8.90 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.68 	gb1: 0.26 	gb2: 0.62 	gb3: 4.40 	gb4: 1.42 	gb5: 4.24
+		Population 56
+			Robot 0 	f: 1375.71 	mf: 1066.00 	ga0: 1.00 	ga1: 8.90 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.68 	gb1: 0.26 	gb2: 0.62 	gb3: 4.40 	gb4: 1.42 	gb5: 4.24
+		Population 57
+			Robot 0 	f: 1278.56 	mf: 1124.70 	ga0: 1.00 	ga1: 8.90 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.68 	gb1: 0.26 	gb2: 0.62 	gb3: 4.40 	gb4: 1.42 	gb5: 4.24
+		Population 58
+			Robot 0 	f: 1277.45 	mf: 1144.00 	ga0: 1.00 	ga1: 8.90 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.68 	gb1: 0.26 	gb2: 0.62 	gb3: 4.40 	gb4: 1.42 	gb5: 4.24
+		Population 59
+			Robot 0 	f: 1278.37 	mf: 1174.40 	ga0: 1.00 	ga1: 8.90 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.68 	gb1: 0.26 	gb2: 0.62 	gb3: 4.40 	gb4: 1.42 	gb5: 4.24
+		Population 60
+			Robot 0 	f: 1157.29 	mf: 1166.60 	ga0: 1.00 	ga1: 8.90 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.68 	gb1: 0.26 	gb2: 0.62 	gb3: 4.40 	gb4: 1.42 	gb5: 4.24
+		Population 61
+			Robot 0 	f: 1252.72 	mf: 1195.90 	ga0: 1.00 	ga1: 8.90 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.68 	gb1: 0.26 	gb2: 0.62 	gb3: 4.40 	gb4: 1.42 	gb5: 4.24
+		Population 62
+			Robot 0 	f: 1392.57 	mf: 1233.20 	ga0: 1.00 	ga1: 8.90 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.68 	gb1: 0.26 	gb2: 0.62 	gb3: 4.40 	gb4: 1.42 	gb5: 4.24
+		Population 63
+			Robot 0 	f: 1282.64 	mf: 1241.00 	ga0: 1.00 	ga1: 8.90 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.68 	gb1: 0.26 	gb2: 0.62 	gb3: 4.40 	gb4: 1.42 	gb5: 4.24
+		Population 64
+			Robot 0 	f: 1284.94 	mf: 1269.10 	ga0: 1.00 	ga1: 8.90 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.68 	gb1: 0.26 	gb2: 0.62 	gb3: 4.40 	gb4: 1.42 	gb5: 4.24
+		Population 65
+			Robot 0 	f: 1162.63 	mf: 1273.70 	ga0: 1.00 	ga1: 8.90 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.68 	gb1: 0.26 	gb2: 0.62 	gb3: 4.40 	gb4: 1.42 	gb5: 4.24
+		Population 66
+			Robot 0 	f: 1372.31 	mf: 1273.40 	ga0: 1.00 	ga1: 8.90 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.68 	gb1: 0.26 	gb2: 0.62 	gb3: 4.40 	gb4: 1.42 	gb5: 4.24
+		Population 67
+			Robot 0 	f: 1171.65 	mf: 1262.70 	ga0: 1.00 	ga1: 8.90 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.68 	gb1: 0.26 	gb2: 0.62 	gb3: 4.40 	gb4: 1.42 	gb5: 4.24
+		Population 68
+			Robot 0 	f: 1183.12 	mf: 1253.30 	ga0: 1.00 	ga1: 8.90 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.68 	gb1: 0.26 	gb2: 0.62 	gb3: 4.40 	gb4: 1.42 	gb5: 4.24
+		Population 69
+			Robot 0 	f: 1226.84 	mf: 1248.10 	ga0: 1.00 	ga1: 8.90 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.68 	gb1: 0.26 	gb2: 0.62 	gb3: 4.40 	gb4: 1.42 	gb5: 4.24
+		Population 70
+			Robot 0 	f: 1106.20 	mf: 1243.00 	ga0: 1.00 	ga1: 8.90 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.68 	gb1: 0.26 	gb2: 0.62 	gb3: 4.40 	gb4: 1.42 	gb5: 4.24
+		Population 71
+			Robot 0 	f: 1238.39 	mf: 1241.60 	ga0: 1.00 	ga1: 8.90 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.68 	gb1: 0.26 	gb2: 0.62 	gb3: 4.40 	gb4: 1.42 	gb5: 4.24
+		Population 72
+			Robot 0 	f: 1223.42 	mf: 1224.70 	ga0: 1.00 	ga1: 8.90 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.68 	gb1: 0.26 	gb2: 0.62 	gb3: 4.40 	gb4: 1.42 	gb5: 4.24
+		Population 73
+			Robot 0 	f: 1371.56 	mf: 1233.60 	ga0: 1.00 	ga1: 8.90 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.68 	gb1: 0.26 	gb2: 0.62 	gb3: 4.40 	gb4: 1.42 	gb5: 4.24
+		Population 74
+			Robot 0 	f: 1049.65 	mf: 1210.10 	ga0: 1.00 	ga1: 8.90 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.68 	gb1: 0.26 	gb2: 0.62 	gb3: 4.40 	gb4: 1.42 	gb5: 4.24
+		Population 75
+			Robot 0 	f: 1329.68 	mf: 1226.80 	ga0: 1.00 	ga1: 8.90 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.68 	gb1: 0.26 	gb2: 0.62 	gb3: 4.40 	gb4: 1.42 	gb5: 4.24
+		Population 76
+			Robot 0 	f: 1258.39 	mf: 1215.40 	ga0: 1.00 	ga1: 8.90 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.68 	gb1: 0.26 	gb2: 0.62 	gb3: 4.40 	gb4: 1.42 	gb5: 4.24
+		Population 77
+			Robot 0 	f: 1350.18 	mf: 1233.30 	ga0: 1.00 	ga1: 8.90 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.68 	gb1: 0.26 	gb2: 0.62 	gb3: 4.40 	gb4: 1.42 	gb5: 4.24
+		Population 78
+			Robot 0 	f: 1189.34 	mf: 1233.90 	ga0: 1.00 	ga1: 8.90 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.68 	gb1: 0.26 	gb2: 0.62 	gb3: 4.40 	gb4: 1.42 	gb5: 4.24
+		Population 79
+			Robot 0 	f: 1161.38 	mf: 1227.40 	ga0: 1.00 	ga1: 8.90 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.68 	gb1: 0.26 	gb2: 0.62 	gb3: 4.40 	gb4: 1.42 	gb5: 4.24
+		Population 80
+			Robot 0 	f: 1127.94 	mf: 1229.50 	ga0: 1.00 	ga1: 8.90 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.68 	gb1: 0.26 	gb2: 0.62 	gb3: 4.40 	gb4: 1.42 	gb5: 4.24
+		Population 81
+			Robot 0 	f: 940.34 	mf: 1199.70 	ga0: 1.00 	ga1: 8.90 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.68 	gb1: 0.26 	gb2: 0.62 	gb3: 4.40 	gb4: 1.42 	gb5: 4.24
+		Population 82
+			Robot 0 	f: 1057.47 	mf: 1183.10 	ga0: 1.00 	ga1: 8.90 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.68 	gb1: 0.26 	gb2: 0.62 	gb3: 4.40 	gb4: 1.42 	gb5: 4.24
+		Population 83
+			Robot 0 	f: 723.53 	mf: 1118.30 	ga0: 1.00 	ga1: 8.90 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.68 	gb1: 0.26 	gb2: 0.62 	gb3: 4.40 	gb4: 1.42 	gb5: 4.24
+		Population 84
+			Robot 0 	f: 949.21 	mf: 1108.30 	ga0: 1.00 	ga1: 8.90 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.68 	gb1: 0.26 	gb2: 0.62 	gb3: 4.40 	gb4: 1.42 	gb5: 4.24
+		Population 85
+			Robot 0 	f: 1355.95 	mf: 1110.90 	ga0: 1.00 	ga1: 8.90 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.68 	gb1: 0.26 	gb2: 0.62 	gb3: 4.40 	gb4: 1.42 	gb5: 4.24
+		Population 86
+			Robot 0 	f: 1133.04 	mf: 1098.40 	ga0: 1.00 	ga1: 8.90 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.68 	gb1: 0.26 	gb2: 0.62 	gb3: 4.40 	gb4: 1.42 	gb5: 4.24
+		Population 87
+			Robot 0 	f: 1154.28 	mf: 1078.80 	ga0: 1.00 	ga1: 8.90 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.68 	gb1: 0.26 	gb2: 0.62 	gb3: 4.40 	gb4: 1.42 	gb5: 4.24
+		Population 88
+			Robot 0 	f: 1379.40 	mf: 1097.80 	ga0: 1.00 	ga1: 8.90 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.68 	gb1: 0.26 	gb2: 0.62 	gb3: 4.40 	gb4: 1.42 	gb5: 4.24
+		Population 89
+			Robot 0 	f: 1306.31 	mf: 1112.30 	ga0: 1.00 	ga1: 8.90 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.68 	gb1: 0.26 	gb2: 0.62 	gb3: 4.40 	gb4: 1.42 	gb5: 4.24
+		Population 90
+			Robot 0 	f: 1166.56 	mf: 1116.20 	ga0: 1.00 	ga1: 8.90 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.68 	gb1: 0.26 	gb2: 0.62 	gb3: 4.40 	gb4: 1.42 	gb5: 4.24
+		Population 91
+			Robot 0 	f: 1302.81 	mf: 1152.40 	ga0: 1.00 	ga1: 8.90 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.68 	gb1: 0.26 	gb2: 0.62 	gb3: 4.40 	gb4: 1.42 	gb5: 4.24
+		Population 92
+			Robot 0 	f: 1087.92 	mf: 1155.40 	ga0: 1.00 	ga1: 8.90 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.68 	gb1: 0.26 	gb2: 0.62 	gb3: 4.40 	gb4: 1.42 	gb5: 4.24
+		Population 93
+			Robot 0 	f: 1186.34 	mf: 1201.70 	ga0: 1.00 	ga1: 8.90 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.68 	gb1: 0.26 	gb2: 0.62 	gb3: 4.40 	gb4: 1.42 	gb5: 4.24
+		Population 94
+			Robot 0 	f: 1072.51 	mf: 1214.00 	ga0: 1.00 	ga1: 8.90 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.68 	gb1: 0.26 	gb2: 0.62 	gb3: 4.40 	gb4: 1.42 	gb5: 4.24
+		Population 95
+			Robot 0 	f: 1150.85 	mf: 1193.50 	ga0: 1.00 	ga1: 8.90 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.68 	gb1: 0.26 	gb2: 0.62 	gb3: 4.40 	gb4: 1.42 	gb5: 4.24
+		Population 96
+			Robot 0 	f: 1246.28 	mf: 1204.80 	ga0: 1.00 	ga1: 8.90 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.68 	gb1: 0.26 	gb2: 0.62 	gb3: 4.40 	gb4: 1.42 	gb5: 4.24
+		Population 97
+			Robot 0 	f: 1270.38 	mf: 1216.40 	ga0: 1.00 	ga1: 8.90 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.68 	gb1: 0.26 	gb2: 0.62 	gb3: 4.40 	gb4: 1.42 	gb5: 4.24
+		Population 98
+			Robot 0 	f: 1298.35 	mf: 1208.30 	ga0: 1.00 	ga1: 8.90 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.68 	gb1: 0.26 	gb2: 0.62 	gb3: 4.40 	gb4: 1.42 	gb5: 4.24
+		Population 99
+			Robot 0 	f: 1298.35 	mf: 1208.30 	ga0: 1.00 	ga1: 8.90 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.68 	gb1: 0.26 	gb2: 0.62 	gb3: 4.40 	gb4: 1.42 	gb5: 4.24
+	finalFitness: 1208
+Environment 1	 h: 10.00	 mr: 0.00	 nc: 0.60	 nm: 0.00	 bmp: 1.00	 cc: 0.00
+	Repetition 0
+		Population 0
+			Robot 0 	f: 1421.72 	mf: 1421.00 	ga0: 1.00 	ga1: 6.50 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.47 	gb1: 0.55 	gb2: 0.34 	gb3: 4.51 	gb4: 1.51 	gb5: 4.97
+		Population 1
+			Robot 0 	f: 374.51 	mf: 897.50 	ga0: 1.00 	ga1: 6.50 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.47 	gb1: 0.55 	gb2: 0.34 	gb3: 4.51 	gb4: 1.51 	gb5: 4.97
+		Population 2
+			Robot 0 	f: 1187.01 	mf: 994.00 	ga0: 1.00 	ga1: 6.50 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.47 	gb1: 0.55 	gb2: 0.34 	gb3: 4.51 	gb4: 1.51 	gb5: 4.97
+		Population 3
+			Robot 0 	f: 1185.27 	mf: 1041.75 	ga0: 1.00 	ga1: 6.50 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.47 	gb1: 0.55 	gb2: 0.34 	gb3: 4.51 	gb4: 1.51 	gb5: 4.97
+		Population 4
+			Robot 0 	f: 1080.36 	mf: 1049.40 	ga0: 1.00 	ga1: 6.50 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.47 	gb1: 0.55 	gb2: 0.34 	gb3: 4.51 	gb4: 1.51 	gb5: 4.97
+		Population 5
+			Robot 0 	f: 1054.01 	mf: 1050.17 	ga0: 1.00 	ga1: 6.50 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.47 	gb1: 0.55 	gb2: 0.34 	gb3: 4.51 	gb4: 1.51 	gb5: 4.97
+		Population 6
+			Robot 0 	f: 1279.83 	mf: 1082.86 	ga0: 1.00 	ga1: 6.50 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.47 	gb1: 0.55 	gb2: 0.34 	gb3: 4.51 	gb4: 1.51 	gb5: 4.97
+		Population 7
+			Robot 0 	f: 1222.76 	mf: 1100.25 	ga0: 1.00 	ga1: 6.50 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.47 	gb1: 0.55 	gb2: 0.34 	gb3: 4.51 	gb4: 1.51 	gb5: 4.97
+		Population 8
+			Robot 0 	f: 1236.09 	mf: 1115.33 	ga0: 1.00 	ga1: 6.50 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.47 	gb1: 0.55 	gb2: 0.34 	gb3: 4.51 	gb4: 1.51 	gb5: 4.97
+		Population 9
+			Robot 0 	f: 1300.29 	mf: 1133.80 	ga0: 1.00 	ga1: 6.50 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.47 	gb1: 0.55 	gb2: 0.34 	gb3: 4.51 	gb4: 1.51 	gb5: 4.97
+		Population 10
+			Robot 0 	f: 1244.77 	mf: 1116.10 	ga0: 1.00 	ga1: 6.50 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.47 	gb1: 0.55 	gb2: 0.34 	gb3: 4.51 	gb4: 1.51 	gb5: 4.97
+		Population 11
+			Robot 0 	f: 1227.93 	mf: 1201.40 	ga0: 1.00 	ga1: 6.50 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.47 	gb1: 0.55 	gb2: 0.34 	gb3: 4.51 	gb4: 1.51 	gb5: 4.97
+		Population 12
+			Robot 0 	f: 969.46 	mf: 1179.60 	ga0: 1.00 	ga1: 6.50 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.47 	gb1: 0.55 	gb2: 0.34 	gb3: 4.51 	gb4: 1.51 	gb5: 4.97
+		Population 13
+			Robot 0 	f: 1041.47 	mf: 1165.20 	ga0: 1.00 	ga1: 6.50 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.47 	gb1: 0.55 	gb2: 0.34 	gb3: 4.51 	gb4: 1.51 	gb5: 4.97
+		Population 14
+			Robot 0 	f: 1219.70 	mf: 1179.10 	ga0: 1.00 	ga1: 6.50 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.47 	gb1: 0.55 	gb2: 0.34 	gb3: 4.51 	gb4: 1.51 	gb5: 4.97
+		Population 15
+			Robot 0 	f: 1252.94 	mf: 1198.90 	ga0: 1.00 	ga1: 6.50 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.47 	gb1: 0.55 	gb2: 0.34 	gb3: 4.51 	gb4: 1.51 	gb5: 4.97
+		Population 16
+			Robot 0 	f: 1267.72 	mf: 1197.70 	ga0: 1.00 	ga1: 6.50 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.47 	gb1: 0.55 	gb2: 0.34 	gb3: 4.51 	gb4: 1.51 	gb5: 4.97
+		Population 17
+			Robot 0 	f: 1147.75 	mf: 1190.20 	ga0: 1.00 	ga1: 6.50 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.47 	gb1: 0.55 	gb2: 0.34 	gb3: 4.51 	gb4: 1.51 	gb5: 4.97
+		Population 18
+			Robot 0 	f: 1134.11 	mf: 1180.00 	ga0: 1.00 	ga1: 6.50 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.47 	gb1: 0.55 	gb2: 0.34 	gb3: 4.51 	gb4: 1.51 	gb5: 4.97
+		Population 19
+			Robot 0 	f: 1202.32 	mf: 1170.20 	ga0: 1.00 	ga1: 6.50 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.47 	gb1: 0.55 	gb2: 0.34 	gb3: 4.51 	gb4: 1.51 	gb5: 4.97
+		Population 20
+			Robot 0 	f: 1150.63 	mf: 1160.80 	ga0: 1.00 	ga1: 6.50 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.47 	gb1: 0.55 	gb2: 0.34 	gb3: 4.51 	gb4: 1.51 	gb5: 4.97
+		Population 21
+			Robot 0 	f: 1277.13 	mf: 1165.80 	ga0: 1.00 	ga1: 6.50 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.47 	gb1: 0.55 	gb2: 0.34 	gb3: 4.51 	gb4: 1.51 	gb5: 4.97
+		Population 22
+			Robot 0 	f: 1255.02 	mf: 1194.40 	ga0: 1.00 	ga1: 6.50 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.47 	gb1: 0.55 	gb2: 0.34 	gb3: 4.51 	gb4: 1.51 	gb5: 4.97
+		Population 23
+			Robot 0 	f: 1114.22 	mf: 1201.70 	ga0: 1.00 	ga1: 6.50 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.47 	gb1: 0.55 	gb2: 0.34 	gb3: 4.51 	gb4: 1.51 	gb5: 4.97
+		Population 24
+			Robot 0 	f: 1219.72 	mf: 1201.70 	ga0: 1.00 	ga1: 6.50 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.47 	gb1: 0.55 	gb2: 0.34 	gb3: 4.51 	gb4: 1.51 	gb5: 4.97
+		Population 25
+			Robot 0 	f: 1423.74 	mf: 1218.80 	ga0: 1.00 	ga1: 6.50 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.47 	gb1: 0.55 	gb2: 0.34 	gb3: 4.51 	gb4: 1.51 	gb5: 4.97
+		Population 26
+			Robot 0 	f: 1194.55 	mf: 1211.50 	ga0: 1.00 	ga1: 6.50 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.47 	gb1: 0.55 	gb2: 0.34 	gb3: 4.51 	gb4: 1.51 	gb5: 4.97
+		Population 27
+			Robot 0 	f: 1071.89 	mf: 1203.90 	ga0: 1.00 	ga1: 6.50 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.47 	gb1: 0.55 	gb2: 0.34 	gb3: 4.51 	gb4: 1.51 	gb5: 4.97
+		Population 28
+			Robot 0 	f: 1278.71 	mf: 1218.30 	ga0: 1.00 	ga1: 6.50 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.47 	gb1: 0.55 	gb2: 0.34 	gb3: 4.51 	gb4: 1.51 	gb5: 4.97
+		Population 29
+			Robot 0 	f: 1180.56 	mf: 1216.10 	ga0: 1.00 	ga1: 6.50 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.47 	gb1: 0.55 	gb2: 0.34 	gb3: 4.51 	gb4: 1.51 	gb5: 4.97
+		Population 30
+			Robot 0 	f: 1160.91 	mf: 1217.10 	ga0: 1.00 	ga1: 6.50 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.47 	gb1: 0.55 	gb2: 0.34 	gb3: 4.51 	gb4: 1.51 	gb5: 4.97
+		Population 31
+			Robot 0 	f: 1188.85 	mf: 1208.20 	ga0: 1.00 	ga1: 6.50 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.47 	gb1: 0.55 	gb2: 0.34 	gb3: 4.51 	gb4: 1.51 	gb5: 4.97
+		Population 32
+			Robot 0 	f: 1137.83 	mf: 1196.40 	ga0: 1.00 	ga1: 6.50 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.47 	gb1: 0.55 	gb2: 0.34 	gb3: 4.51 	gb4: 1.51 	gb5: 4.97
+		Population 33
+			Robot 0 	f: 1308.51 	mf: 1215.80 	ga0: 1.00 	ga1: 6.50 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.47 	gb1: 0.55 	gb2: 0.34 	gb3: 4.51 	gb4: 1.51 	gb5: 4.97
+		Population 34
+			Robot 0 	f: 1161.02 	mf: 1210.00 	ga0: 1.00 	ga1: 6.50 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.47 	gb1: 0.55 	gb2: 0.34 	gb3: 4.51 	gb4: 1.51 	gb5: 4.97
+		Population 35
+			Robot 0 	f: 1324.54 	mf: 1200.10 	ga0: 1.00 	ga1: 6.50 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.47 	gb1: 0.55 	gb2: 0.34 	gb3: 4.51 	gb4: 1.51 	gb5: 4.97
+		Population 36
+			Robot 0 	f: 1189.74 	mf: 1199.60 	ga0: 1.00 	ga1: 6.50 	ga2: 1.00 	ga3: 0.00 	ga4: 1.00 	gb0: 0.47 	gb1: 0.55 	gb2: 0.34 	gb3: 4.51 	gb4: 1.51 	gb5: 4.97

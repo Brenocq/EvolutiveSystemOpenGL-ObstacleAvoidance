@@ -23,6 +23,7 @@ public:
   void newGenes(vector<float> _genesAnatomy, vector<float> _genesBrain);
   void newOrientation(float _x, float _y, float _theta);// _x,_y: meters | _theta: degrees
   void setTheta(float _theta);
+  void setHeadColor(int r, int g, int b);
 
   vector<float> fitness;
   vector<float> meanFitness;
@@ -38,6 +39,7 @@ private:
   float theta;
   float lastX, lastY;
   float timeLastXY;
+  vector<int> headColor;
   bool inCollision;
   vector<char> sensorValues;// 4 Possible values: Near / Middle / Far / Too Far
   // Calculatio fitness with area explored

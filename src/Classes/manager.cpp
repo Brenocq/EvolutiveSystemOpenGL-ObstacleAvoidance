@@ -74,6 +74,10 @@ void Manager::updateEnvironment(float time){
     cout<<"Enviroment ("<<currEnvironment<<"/"<<qtdEnvironments-1<<")"<<
     " - Repetition("<<currRepetition<<"/"<<qtdRepetitions-1<<"): "
     << environment[currEnvironment].fitness.back()<<endl;
+    for (size_t i = 0; i < qtdRobots; i++) {
+      environment[currEnvironment].robot[i].meanFitness.clear();
+      environment[currEnvironment].robot[i].fitness.clear();
+    }
   }
 }
 

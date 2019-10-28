@@ -202,15 +202,16 @@ void Widget::on_genComboBox_currentIndexChanged(int index)
 void Widget::updatePlot()
 {
     // generate some data:
-    QVector<QVector<double> > fitness, meanFitness; // initialize with entries 0..100
+    QVector<QVector<double> > fitness, meanFitness, qtdSensors; // initialize with entries 0..100
     QVector<double> generation;
     getRobotsFitness(ui->genComboBox->currentIndex(), ui->envComboBox->currentIndex(), ui->repComboBox->currentIndex(), fitness, meanFitness);
+    getRobotsSensors(ui->genComboBox->currentIndex(), ui->envComboBox->currentIndex(), ui->repComboBox->currentIndex(), qtdSensors);
 
     for (int i=0;i<fitness[0].size();i++) {
         generation.push_back(i);
     }
 
-    //----- Update gross graph -----//
+    //---------- Update gross graph ----------//
     // create graph and assign data to it
     int qtdRobots = ui->qtdRobotsEdit->text().toInt();
     for (int i=1;i<=qtdRobots;i++) {
@@ -218,30 +219,97 @@ void Widget::updatePlot()
         ui->graphGross->graph(i-1)->setPen(QPen(QColor(int(i%2)*255,int((i/2)%2)*255,int((i/4)%2)*255,255 )));
         ui->graphGross->graph(i-1)->setData(generation, fitness[i-1]);
     }
+
     // give the axes some labels
     ui->graphGross->xAxis->setLabel("Generation");
     ui->graphGross->yAxis->setLabel("Fitness");
 
     // set axes ranges, so we see all data
     ui->graphGross->xAxis->setRange(0, fitness[0].size());
-    ui->graphGross->yAxis->setRange(-400, 700);
+    //ui->graphGross->xAxis->setRange(0, 50);
+    ui->graphGross->yAxis->setRange(-200, 12000);
     ui->graphGross->replot();
 
-    //----- Update mean graph -----//
+    //---------- Update mean graph ----------//
     // create graph and assign data to it
     for (int i=1;i<=qtdRobots;i++) {
         ui->graphMean->addGraph();
         ui->graphMean->graph(i-1)->setPen(QPen(QColor(int(i%2)*255,int((i/2)%2)*255,int((i/4)%2)*255,255 )));
         ui->graphMean->graph(i-1)->setData(generation, meanFitness[i-1]);
     }
+
+    //---------- Plot mean line (gross graph) ----------//
+    ui->graphGross->addGraph();
+    ui->graphGross->graph(qtdRobots)->setPen(QPen(QColor(255,0,0,255),2));
+
+    QVector<double> grossLine;
+
+    for(int gen=0;gen<generation.size(); gen++){
+        double mean=0;
+        for(int robot=0;robot<qtdRobots;robot++)
+           mean+=fitness[robot][gen];
+        mean/=qtdRobots;
+        grossLine.push_back(mean);
+    }
+
+    ui->graphGross->graph(qtdRobots)->setData(generation, grossLine);
+
+    //---------- Plot mean line (mean graph) ----------//
+    ui->graphMean->addGraph();
+    ui->graphMean->graph(qtdRobots)->setPen(QPen(QColor(255,0,0,255),2));
+
+    QVector<double> meanLine;
+
+    for(int gen=0;gen<generation.size(); gen++){
+        double mean=0;
+        for(int robot=0;robot<qtdRobots;robot++)
+           mean+=meanFitness[robot][gen];
+        mean/=qtdRobots;
+        meanLine.push_back(mean);
+    }
+
+    ui->graphMean->graph(qtdRobots)->setData(generation, meanLine);
+
     // give the axes some labels
     ui->graphMean->xAxis->setLabel("Generation");
     ui->graphMean->yAxis->setLabel("Fitness");
     // set axes ranges, so we see all data
     ui->graphMean->xAxis->setRange(0, meanFitness[0].size());
-    ui->graphMean->yAxis->setRange(-400, 700);
+    //ui->graphMean->xAxis->setRange(0, 50);
+    ui->graphMean->yAxis->setRange(-200, 12000);
     ui->graphMean->replot();
 
+    //---------- Plot number of sensors ----------//
+    // create graph and assign data to it
+    for (int i=1;i<=qtdRobots;i++) {
+        ui->graphSensors->addGraph();
+        ui->graphSensors->graph(i-1)->setPen(QPen(QColor(int(i%2)*255,int((i/2)%2)*255,int((i/4)%2)*255,255 )));
+        ui->graphSensors->graph(i-1)->setData(generation, qtdSensors[i-1]);
+    }
+
+    // give the axes some labels
+    ui->graphSensors->xAxis->setLabel("Generation");
+    ui->graphSensors->yAxis->setLabel("Qtd sensors");
+
+    // set axes ranges, so we see all data
+    ui->graphSensors->xAxis->setRange(0, fitness[0].size());
+    //ui->graphGross->xAxis->setRange(0, 50);
+    ui->graphSensors->yAxis->setRange(0, 4);
+    ui->graphSensors->replot();
+
+    //---------- Plot mean line (sensors graph) ----------//
+    ui->graphSensors->addGraph();
+    ui->graphSensors->graph(qtdRobots)->setPen(QPen(QColor(255,0,0,255),2));
+    QVector<double> meanSensors;
+
+    for(int gen=0;gen<generation.size(); gen++){
+        double mean=0;
+        for(int robot=0;robot<qtdRobots;robot++)
+           mean+=qtdSensors[robot][gen];
+        mean/=qtdRobots;
+        meanSensors.push_back(mean);
+    }
+    ui->graphSensors->graph(qtdRobots)->setData(generation, meanSensors);
 }
 
 void Widget::getRobotsFitness(int gen, int env, int rep, QVector<QVector<double> >&fitness, QVector<QVector<double> >&meanFitness)
@@ -294,6 +362,67 @@ void Widget::getRobotsFitness(int gen, int env, int rep, QVector<QVector<double>
                        //qDebug()<<"fitness "<< robotFields[3].toDouble()<<" mean:"<<robotFields[5].toDouble();
                        fitness[i].push_back(robotFields[3].toDouble());
                        meanFitness[i].push_back(robotFields[5].toDouble());
+                   }
+               }
+            }
+        }
+    }
+}
+
+void Widget::getRobotsSensors(int gen, int env, int rep, QVector<QVector<double> >&qtdSensors){
+    int qtdRobots = ui->qtdRobotsEdit->text().toInt();
+    const int maxSensors = 3;
+    const float enableValue = 0.4;
+
+    qtdSensors.clear();
+    qtdSensors.resize(qtdRobots);
+
+    //----- Get data from file -----//
+    int currEnv=-1;
+    int currGen=-1;
+    int currRep=-1;
+    int currPopNum=-1;
+
+    QFile file(_fileName);
+
+    if(!file.open(QIODevice::ReadOnly)) {
+        QMessageBox::information(this, "error", file.errorString());
+    }
+    QTextStream in(&file);
+
+    while(!in.atEnd()){
+        QString line = in.readLine();
+        QStringList fields = line.split(" ");
+        if(fields.size()>=2){
+            int cmp = QString::compare(fields[0], "Environment", Qt::CaseInsensitive);
+            if(cmp==0){
+               currEnv = fields[1].toInt();
+               //qDebug() << "currEnv "<<currEnv;
+               if(currEnv == ui->envComboBox->currentIndex()){
+                   currGen++;
+               }
+            }
+
+            cmp = QString::compare(fields[0], "\tRepetition", Qt::CaseInsensitive);
+            if(cmp==0){
+               currRep = fields[1].toInt();
+            }
+
+            cmp = QString::compare(fields[0], "\t\tPopulation", Qt::CaseInsensitive);
+            if(cmp==0){
+               currPopNum = fields[1].toInt();
+
+               if(currEnv == env && currGen==gen && currRep == rep && cmp==0){
+                   for(int i=0; i<qtdRobots; i++){
+                       int total = 0;
+                       QString robotLine = in.readLine();
+                       QStringList robotFields = robotLine.split(" ");
+
+                       for(int i=0;i<maxSensors;i++){
+                            total += (robotFields[11+i*2].toDouble())>=double(enableValue);
+                       }
+
+                       qtdSensors[i].push_back(total);
                    }
                }
             }

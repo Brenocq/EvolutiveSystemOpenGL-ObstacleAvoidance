@@ -18,7 +18,8 @@ public:
   Environment();
   void updateRobots(float time);
   void initiateRobots();
-  void newPopulationRobots();
+  void newPopulationRobotsElitism();
+  void newPopulationRobotsTournament();
   void newRandomPositions();
   void draw();
   //----- Getters and Setters -----//

@@ -4,18 +4,19 @@
 #define screenHeight 1080
 #define screenWidth 1920
 #define displaySteps 3000
+#define worldSize 15
 
 // Evolutive system global parameters (fixed)
-#define qtdRobots 6
+#define qtdRobots 20
 #define qtdEnvironments 10
 #define qtdRepetitions 10// Number of times that each environment will be tested to define the fitness
-#define qtdObstacles 40
-#define pointsCollision -50.0// Points per collision
-#define pointsRotation -2.0// Points every 360 degrees rotation
+#define qtdObstacles 100
+#define pointsCollision -1000.0// Points per collision
+#define pointsRotation 0// Points every 360 degrees rotation
 #define pointsMoving 10.0// Points per second in maximum speed
-#define pointsExploration 1000// Points when explored all the world
-#define maxPopulation 500// Number of populations tested with each environment
-#define maxTime 600// Time that each population will be tested
+#define pointsExploration 0// Points when explored all the world
+#define maxPopulation 200// Number of populations tested with each environment
+#define maxTime 10000// Time that each population will be tested
 #define envMutationRate 0.2
 
 // OutputFile
@@ -34,14 +35,16 @@
 // Fixed genes environments
 // Set as -1 if you want to evolute the gene
 #define controlFitnessMean 10
-#define controlMutationRate .4
-#define controlNeutralCrossing 0.6
-#define controlNeutralMutation 0.3
+#define controlMutationRate 0.2f
+#define controlNeutralCrossing 0.3// Only when using elitism
+#define controlQtdTournament 5// Only when using tournament
+#define controlNeutralMutation 0.5
 #define controlBackMutationPrevention 1
 #define controlCrossingCondition 0
 
 // Robot info
-#define controlQtdSensors 10
+#define controlQtdSensors 3
+#define controlMaxSensorAngle 90.0f
 #define controlSensorQtdDivisions 10.0f// SensorValue: [0..n-1] when object | n when is not reading obstacle (n+1 divisions)
-#define controlSensorMaxDist 1.5f// meters
-#define controlEnableSensor 0.35f//  0 = always enable | 1 = never enable
+#define controlSensorMaxDist 2.0f// meters
+#define controlEnableSensor 0.4f//  0 = always enable | 1 = never enable

@@ -1,0 +1,12 @@
+QtdRobots: 6
+QtdEnvironments: 10
+QtdRepetitions: 10
+QtdObstacles: 50
+PointsCollision: -100
+PointsMoving: 10
+MaxPopulation: 500
+MaxTime: 3000
+EnvMutationRate: 0.2
+
+Environment 0	 h: 10	 mr: 0.1	 nc: 0.6	 nm: 0.2	 bmp: 1	 cc: 0
+	Repetition 0

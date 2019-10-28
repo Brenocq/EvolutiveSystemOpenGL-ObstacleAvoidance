@@ -29,6 +29,7 @@ private slots:
 private:
     void updatePlot();
     void getRobotsFitness(int gen, int env, int rep, QVector<QVector<double> >&fitness, QVector<QVector<double> >&meanFitness);
+    void getRobotsSensors(int gen, int env, int rep, QVector<QVector<double> >&qtdSensors);
     Ui::Widget *ui;
     QString _fileName;
     QTimer *timer;

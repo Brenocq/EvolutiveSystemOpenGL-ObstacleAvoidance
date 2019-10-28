@@ -4,7 +4,6 @@
 #include <vector>
 #include <algorithm>
 #include <string>
-#include <iostream>
 #include <fstream>
 #include <iomanip>
 #include "Classes/manager.h"
@@ -13,8 +12,9 @@ using namespace std;
 
 // Global variables
 Manager manager ;
-char fileName[30];
+char fileName[50];
 ofstream outputFile;
+int steps = 1;
 
 // Manager state (used to print to file)
 int lastEnvironment = -1;
@@ -23,12 +23,13 @@ int lastPopulation = 0;
 
 void draw();
 void timer(int);
+void mouse(int button, int state, int x, int y);
 //----- Data generation -----//
 void setFileName(string name);
 void writeHeaderFile();
 
 int main(int argc, char** argv){
-  srand(time(0));
+  srand(42);
 
   if(argc>1){
     string input(argv[1]);
@@ -44,6 +45,7 @@ int main(int argc, char** argv){
   glutInitWindowPosition((screenWidth/2)-(windowWidth/2), (screenHeight/2)-(windowHeight/2));
   glutCreateWindow("Obstacle Avoidance Simulation");
   glClearColor(1.0, 1.0, 1.0, 1.0);// Clear window
+  glutMouseFunc(mouse);// Allow to add points
   glutDisplayFunc(draw);// Set the draw function
   glutTimerFunc(0, timer, 0);// Define timer function (loop function)
   glutMainLoop();
@@ -61,7 +63,7 @@ void draw(){
 }
 
 void timer(int){
-  for(int rep=0;rep<displaySteps;rep++){
+  for(int rep=0;rep<steps;rep++){
     for (int i = 0; i < qtdEnvironments; i++) {
       manager.updateEnvironment(0.0200);// Update as 200ms
       if(manager.getCurrEnvironment()!=lastEnvironment){
@@ -102,8 +104,7 @@ void timer(int){
             outputFile<<"\t\t\tRobot "<< i;
             outputFile<<fixed<<setprecision(2);
             outputFile<<" \tf: "  << robot->fitness[robot->fitness.size()-2];
-            outputFile<<" \tmf: " << robot->meanFitness[robot->meanFitness.size()-1];// Core Dumped
-
+            outputFile<<" \tmf: " << robot->meanFitness[robot->meanFitness.size()-1];
             if(printEverything){
               int i=0;
               for(float value : robot->genesAnatomy){
@@ -154,8 +155,22 @@ void writeHeaderFile(){
   outputFile<<"QtdObstacles: " << qtdObstacles << endl;
   outputFile<<"PointsCollision: " << pointsCollision << endl;
   outputFile<<"PointsMoving: " << pointsMoving << endl;
+//outputFile<<"PointsExploration: " << pointsExploration << endl;
   outputFile<<"MaxPopulation: " << maxPopulation << endl;
   outputFile<<"MaxTime: " << maxTime << endl;
   outputFile<<"EnvMutationRate: " << envMutationRate << endl << endl;
   outputFile.close();
+}
+
+void mouse(int button, int state, int x, int y){
+  if(button==GLUT_LEFT_BUTTON && state==GLUT_DOWN && x>0 && y>0){
+    if(steps==1){
+      cout<<"Display steps changed to "<<displaySteps<<endl;
+      steps = displaySteps;
+    }
+    else{
+      cout<<"Display steps changed to 1\n";
+      steps = 1;
+    }
+  }
 }
