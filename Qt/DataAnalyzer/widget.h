@@ -35,6 +35,8 @@ private:
     QTimer *timer;
 
     int _sizeEnv, _sizeGen, _sizeRep;
+    int _qtdSensors;
+    float _enableSensor;
 };
 
 #endif // WIDGET_H

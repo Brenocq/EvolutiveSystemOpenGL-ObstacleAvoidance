@@ -14,9 +14,9 @@
 #define pointsCollision -1000.0// Points per collision
 #define pointsRotation 0// Points every 360 degrees rotation
 #define pointsMoving 10.0// Points per second in maximum speed
-#define pointsExploration 0// Points when explored all the world
+#define pointsExploration 0// Points when explored all the world (not used)
 #define maxPopulation 200// Number of populations tested with each environment
-#define maxTime 10000// Time that each population will be tested
+#define maxTime 3000// Time that each population will be tested
 #define envMutationRate 0.2
 
 // OutputFile
@@ -34,7 +34,7 @@
 
 // Fixed genes environments
 // Set as -1 if you want to evolute the gene
-#define controlFitnessMean 10
+#define controlFitnessMean 5
 #define controlMutationRate 0.2f
 #define controlNeutralCrossing 0.3// Only when using elitism
 #define controlQtdTournament 5// Only when using tournament
@@ -43,8 +43,8 @@
 #define controlCrossingCondition 0
 
 // Robot info
-#define controlQtdSensors 3
-#define controlMaxSensorAngle 90.0f
+#define controlQtdSensors 5
+#define controlMaxSensorAngle 120.0f
 #define controlSensorQtdDivisions 10.0f// SensorValue: [0..n-1] when object | n when is not reading obstacle (n+1 divisions)
 #define controlSensorMaxDist 2.0f// meters
 #define controlEnableSensor 0.4f//  0 = always enable | 1 = never enable

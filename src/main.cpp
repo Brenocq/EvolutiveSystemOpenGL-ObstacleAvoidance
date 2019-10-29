@@ -155,10 +155,13 @@ void writeHeaderFile(){
   outputFile<<"QtdObstacles: " << qtdObstacles << endl;
   outputFile<<"PointsCollision: " << pointsCollision << endl;
   outputFile<<"PointsMoving: " << pointsMoving << endl;
-//outputFile<<"PointsExploration: " << pointsExploration << endl;
+  //outputFile<<"PointsExploration: " << pointsExploration << endl;
   outputFile<<"MaxPopulation: " << maxPopulation << endl;
   outputFile<<"MaxTime: " << maxTime << endl;
-  outputFile<<"EnvMutationRate: " << envMutationRate << endl << endl;
+  outputFile<<"EnvMutationRate: " << envMutationRate << endl;
+  outputFile<<"QtdSensors: " << controlQtdSensors << endl;
+  outputFile<<"EnableSensor: " << controlEnableSensor << endl << endl;
+
   outputFile.close();
 }
 

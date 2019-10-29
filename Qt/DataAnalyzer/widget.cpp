@@ -19,6 +19,8 @@ Widget::Widget(QWidget *parent) :
     _sizeEnv = -1;
     _sizeGen = -1;
     _sizeRep = -1;
+    _qtdSensors = -1;
+    _enableSensor = -1;
 }
 
 Widget::~Widget()
@@ -85,6 +87,13 @@ void Widget::on_importButton_clicked()
     line = in.readLine();
     fields = line.split(" ");
     ui->envMutEdit->setText(fields.back());
+
+    line = in.readLine();
+    fields = line.split(" ");
+    _qtdSensors = fields.back().toInt();
+    line = in.readLine();
+    fields = line.split(" ");
+    _enableSensor = fields.back().toFloat();
 
     file.close();
 
@@ -371,8 +380,10 @@ void Widget::getRobotsFitness(int gen, int env, int rep, QVector<QVector<double>
 
 void Widget::getRobotsSensors(int gen, int env, int rep, QVector<QVector<double> >&qtdSensors){
     int qtdRobots = ui->qtdRobotsEdit->text().toInt();
-    const int maxSensors = 3;
-    const float enableValue = 0.4;
+    const int maxSensors = _qtdSensors==-1 ? 3 : _qtdSensors;
+    const float enableValue =_enableSensor==-1 ? 0.4f : _enableSensor;
+
+    qDebug()<<"1:"<<maxSensors<<" 2:"<<enableValue<<endl;
 
     qtdSensors.clear();
     qtdSensors.resize(qtdRobots);
