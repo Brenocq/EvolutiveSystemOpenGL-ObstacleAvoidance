@@ -3,6 +3,7 @@
 Manager::Manager():
   currEnvironment(0), currRepetition(0)
 {
+  envMeanFitness.resize(1);
   for (int i = 0; i < qtdEnvironments; i++) {
     Environment env;
     environment.push_back(env);
@@ -57,6 +58,9 @@ void Manager::updateEnvironment(float time){
     // Next repetition
     currRepetition++;
     if(currRepetition==qtdRepetitions){
+      cout<<"Mean: "<<envMeanFitness.back()<<endl;
+      envMeanFitness.push_back(0);
+
       currRepetition = 0;
       // Next environemnt
       currEnvironment++;
@@ -71,6 +75,8 @@ void Manager::updateEnvironment(float time){
   environment[currEnvironment].updateRobots(time);
 
   if(environment[currEnvironment].getFinished()){
+    envMeanFitness.back()=((currRepetition)*envMeanFitness.back()+environment[currEnvironment].fitness.back())/(currRepetition+1);
+
     cout<<"Enviroment ("<<currEnvironment<<"/"<<qtdEnvironments-1<<")"<<
     " - Repetition("<<currRepetition<<"/"<<qtdRepetitions-1<<"): "
     << environment[currEnvironment].fitness.back()<<endl;
@@ -138,74 +144,3 @@ void Manager::newPopulationEnvironments(){
 void Manager::draw(){
   environment[currEnvironment].draw();
 }
-
-/*updatePositions(0.200);// Update as 200ms
-currTime+=0.200;
-
-if(currTime>=populationTestTime){
-  newPopulationRobots();
-  currTime=0;
-  populationNum++;
-  //----- Update outputFile -----//
-  outputFile.open(fileName, std::ios::app);
-  if(populationNum==1){
-    outputFile<<"\npop " << populationNum <<" env "<<environmentBeingTested<<" rep "<< environment[environmentBeingTested].auxFitness.size()<<" : ";
-  }
-  outputFile << bestRobotFitness<<" ";
-  outputFile.close();
-}
-//----- Tested one repetition in the environment -----//
-if(populationNum == qtdPopulationsTested){
-  populationNum = 0;
-  environment[environmentBeingTested].auxFitness.push_back(populationMeanFitness);
-  if(showPopulationEnvironments){
-    cout<<"Environment ("<<environmentBeingTested<<"/"<<qtdEnvironments-1<<") - Repetition ("<<
-    environment[environmentBeingTested].auxFitness.size()<<"/"<<qtdRepetitions<<
-    ") - Generations:"<<qtdPopulationsTested<<" - best fitness:"<<
-    environment[environmentBeingTested].auxFitness.back()<<endl;
-  }
-}
-//----- Tested all repetitions of a environment -----//
-if(environment[environmentBeingTested].auxFitness.size() == qtdRepetitions){
-  float meanFitness=0;
-
-  // Calculate mean (exclude best and worst value)
-  sort(environment[environmentBeingTested].auxFitness.begin(),
-  environment[environmentBeingTested].auxFitness.end());
-  for (int i = 1; i < qtdRepetitions-1; i++) {
-    meanFitness+=environment[environmentBeingTested].auxFitness[i];
-  }
-  meanFitness/=(qtdRepetitions-2);
-
-  // Update environment fitness
-  environment[environmentBeingTested].auxFitness.clear();
-  environment[environmentBeingTested].fitness.push_back(meanFitness);
-
-  if(showPopulationEnvironments){
-    cout<<"--- Environment "<<environmentBeingTested<<" - Final fitness: "<<
-    environment[environmentBeingTested].fitness.back()<<endl;
-  }
-
-  environmentBeingTested++;
-  if(environmentBeingTested<qtdEnvironments){
-    setEnvironmentParameters();
-  }
-}
-//----- Tested all environments -----//
-if(environmentBeingTested==qtdEnvironments){
-  if(showPopulationEnvironments){
-    cout<<"FINISH TESTING ENVIRONMENTS (Generation "<< populationEnvironmentNum <<")"<<endl;
-    for (int i = 0; i < qtdEnvironments; i++) {
-      cout<<"\tEnvironment "<<i<<": "<<environment[i].fitness.back()<<endl;
-      cout<<"\t\tFitness mean: "<<environment[i].genes[0]<<endl;
-      cout<<"\t\tMutation rate: "<<environment[i].genes[1]<<endl;
-      cout<<"\t\tNeutral crossing: "<<environment[i].genes[2]<<endl;
-      cout<<"\t\tNeutral mutation: "<<environment[i].genes[3]<<endl;
-      cout<<"\t\tBack mutation prevention: "<<environment[i].genes[4]<<endl;
-      cout<<"\t\tCrossing condition: "<<environment[i].genes[5]<<endl;
-    }
-  }
-  environmentBeingTested=0;
-  //newPopulationEnvironments();
-  populationEnvironmentNum++;
-}*/

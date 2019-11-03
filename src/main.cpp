@@ -65,8 +65,15 @@ void draw(){
 void timer(int){
   for(int rep=0;rep<steps;rep++){
     for (int i = 0; i < qtdEnvironments; i++) {
-      manager.updateEnvironment(0.0200);// Update as 200ms
+      /*if(steps==1)
+        manager.updateEnvironment(0.005);// Update as 1ms
+      else*/
+      manager.updateEnvironment(0.020);// Update as 20ms
       if(manager.getCurrEnvironment()!=lastEnvironment){
+        if(lastEnvironment!=-1){
+          cout<<"Mean: ";
+        }
+
         lastEnvironment = manager.getCurrEnvironment();
         outputFile.open(fileName, ios::out | ios::app);
         outputFile<< "Environment "<< lastEnvironment;
@@ -129,7 +136,7 @@ void timer(int){
 
   glutPostRedisplay();
 
-  glutTimerFunc(1000/60, timer, 0);// Call timer function as fast as possible
+    glutTimerFunc(1000/60, timer, 0);// Call timer function as fast as possible
 }
 
 //----- Data generation -----//

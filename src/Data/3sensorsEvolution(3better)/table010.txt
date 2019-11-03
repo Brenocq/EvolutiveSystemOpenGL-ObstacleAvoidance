@@ -1,0 +1,14 @@
+QtdRobots: 1
+QtdEnvironments: 10
+QtdRepetitions: 50
+QtdObstacles: 120
+PointsCollision: -1000
+PointsMoving: 10
+MaxPopulation: 2
+MaxTime: 3000
+EnvMutationRate: 0.2
+QtdSensors: 3
+EnableSensor: 0.7
+
+Environment 0	 h: 3	 mr: 0.2	 nc: 0.3	 nm: 0.5	 bmp: 1	 cc: 0
+	Repetition 0

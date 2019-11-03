@@ -11,6 +11,7 @@
 
 #include <QtCore/QVariant>
 #include <QtWidgets/QApplication>
+#include <QtWidgets/QCheckBox>
 #include <QtWidgets/QComboBox>
 #include <QtWidgets/QGroupBox>
 #include <QtWidgets/QLabel>
@@ -56,6 +57,12 @@ public:
     QComboBox *genComboBox;
     QComboBox *repComboBox;
     QLabel *label_24;
+    QComboBox *selRobotComboBox;
+    QLabel *label_25;
+    QLabel *label_26;
+    QPushButton *allVisibleButton;
+    QPushButton *allInvisibleButton;
+    QCheckBox *visibleCheckBox;
     QWidget *envEvolution;
     QCustomPlot *graphGross;
     QCustomPlot *graphMean;
@@ -173,7 +180,7 @@ public:
         pointsMovEdit->setReadOnly(true);
         tabWidget = new QTabWidget(Widget);
         tabWidget->setObjectName(QString::fromUtf8("tabWidget"));
-        tabWidget->setGeometry(QRect(280, 10, 581, 271));
+        tabWidget->setGeometry(QRect(260, 10, 621, 271));
         tabWidget->setFont(font);
         robotEvolution = new QWidget();
         robotEvolution->setObjectName(QString::fromUtf8("robotEvolution"));
@@ -213,6 +220,34 @@ public:
         label_24->setObjectName(QString::fromUtf8("label_24"));
         label_24->setGeometry(QRect(20, 90, 101, 17));
         label_24->setFont(font1);
+        selRobotComboBox = new QComboBox(robotEvolution);
+        selRobotComboBox->setObjectName(QString::fromUtf8("selRobotComboBox"));
+        selRobotComboBox->setEnabled(false);
+        selRobotComboBox->setGeometry(QRect(370, 70, 91, 25));
+        selRobotComboBox->setFont(font1);
+        label_25 = new QLabel(robotEvolution);
+        label_25->setObjectName(QString::fromUtf8("label_25"));
+        label_25->setGeometry(QRect(250, 10, 191, 17));
+        label_25->setFont(font2);
+        label_26 = new QLabel(robotEvolution);
+        label_26->setObjectName(QString::fromUtf8("label_26"));
+        label_26->setGeometry(QRect(270, 70, 101, 17));
+        label_26->setFont(font1);
+        allVisibleButton = new QPushButton(robotEvolution);
+        allVisibleButton->setObjectName(QString::fromUtf8("allVisibleButton"));
+        allVisibleButton->setEnabled(false);
+        allVisibleButton->setGeometry(QRect(270, 30, 89, 25));
+        allVisibleButton->setFont(font1);
+        allInvisibleButton = new QPushButton(robotEvolution);
+        allInvisibleButton->setObjectName(QString::fromUtf8("allInvisibleButton"));
+        allInvisibleButton->setEnabled(false);
+        allInvisibleButton->setGeometry(QRect(370, 30, 89, 25));
+        allInvisibleButton->setFont(font1);
+        visibleCheckBox = new QCheckBox(robotEvolution);
+        visibleCheckBox->setObjectName(QString::fromUtf8("visibleCheckBox"));
+        visibleCheckBox->setEnabled(false);
+        visibleCheckBox->setGeometry(QRect(290, 100, 92, 23));
+        visibleCheckBox->setFont(font1);
         tabWidget->addTab(robotEvolution, QString());
         envEvolution = new QWidget();
         envEvolution->setObjectName(QString::fromUtf8("envEvolution"));
@@ -254,6 +289,11 @@ public:
         label_22->setText(QCoreApplication::translate("Widget", "Select population", nullptr));
         label_23->setText(QCoreApplication::translate("Widget", "Generation:", nullptr));
         label_24->setText(QCoreApplication::translate("Widget", "Repetition:", nullptr));
+        label_25->setText(QCoreApplication::translate("Widget", "Graph visualization", nullptr));
+        label_26->setText(QCoreApplication::translate("Widget", "Select robot:", nullptr));
+        allVisibleButton->setText(QCoreApplication::translate("Widget", "All Visible", nullptr));
+        allInvisibleButton->setText(QCoreApplication::translate("Widget", "All Invisible", nullptr));
+        visibleCheckBox->setText(QCoreApplication::translate("Widget", "Visible", nullptr));
         tabWidget->setTabText(tabWidget->indexOf(robotEvolution), QCoreApplication::translate("Widget", "Robot Evolution", nullptr));
         tabWidget->setTabText(tabWidget->indexOf(envEvolution), QCoreApplication::translate("Widget", "Environment Evolution", nullptr));
     } // retranslateUi

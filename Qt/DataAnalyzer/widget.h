@@ -26,6 +26,16 @@ private slots:
 
     void callUpdate();
 
+    void on_allVisibleButton_clicked();
+
+    void on_allInvisibleButton_clicked();
+
+    void on_visibleCheckBox_clicked();
+
+    void on_visibleCheckBox_stateChanged(int arg1);
+
+    void on_selRobotComboBox_currentIndexChanged(int index);
+
 private:
     void updatePlot();
     void getRobotsFitness(int gen, int env, int rep, QVector<QVector<double> >&fitness, QVector<QVector<double> >&meanFitness);
@@ -34,6 +44,7 @@ private:
     QString _fileName;
     QTimer *timer;
 
+    QVector<bool> _visibleRobots;
     int _sizeEnv, _sizeGen, _sizeRep;
     int _qtdSensors;
     float _enableSensor;

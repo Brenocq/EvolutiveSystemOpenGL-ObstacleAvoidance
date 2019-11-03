@@ -1,0 +1,339 @@
+QtdRobots: 1
+QtdEnvironments: 10
+QtdRepetitions: 50
+QtdObstacles: 120
+PointsCollision: -1000
+PointsMoving: 10
+MaxPopulation: 2
+MaxTime: 3000
+EnvMutationRate: 0.2
+QtdSensors: 3
+EnableSensor: 0.7
+
+Environment 0	 h: 3	 mr: 0.2	 nc: 0.3	 nm: 0.5	 bmp: 1	 cc: 0
+	Repetition 0
+		Population 0
+			Robot 0 	f: 2414.48 	mf: 2414.00 	ga0: 1.00 	ga1: 9.80 	ga2: 0.00 	ga3: 1.00 	ga4: 1.00 	gb0: 0.71 	gb1: 0.41 	gb2: 0.54 	gb3: 2.92 	gb4: 0.99 	gb5: 2.46
+		Population 1
+			Robot 0 	f: 2414.48 	mf: 2414.00 	ga0: 1.00 	ga1: 9.80 	ga2: 0.00 	ga3: 1.00 	ga4: 1.00 	gb0: 0.71 	gb1: 0.41 	gb2: 0.54 	gb3: 2.92 	gb4: 0.99 	gb5: 2.46
+	finalFitness: 2414
+	Repetition 1
+		Population 0
+			Robot 0 	f: 3828.33 	mf: 3828.00 	ga0: 1.00 	ga1: 7.80 	ga2: 0.00 	ga3: 1.00 	ga4: 1.00 	gb0: 0.48 	gb1: 0.42 	gb2: 0.85 	gb3: 0.87 	gb4: 3.32 	gb5: 4.69
+		Population 1
+			Robot 0 	f: 3828.33 	mf: 3828.00 	ga0: 1.00 	ga1: 7.80 	ga2: 0.00 	ga3: 1.00 	ga4: 1.00 	gb0: 0.48 	gb1: 0.42 	gb2: 0.85 	gb3: 0.87 	gb4: 3.32 	gb5: 4.69
+	finalFitness: 3828
+	Repetition 2
+		Population 0
+			Robot 0 	f: 2144.76 	mf: 2144.00 	ga0: 1.00 	ga1: 9.60 	ga2: 0.00 	ga3: 1.00 	ga4: 1.00 	gb0: 0.26 	gb1: 0.81 	gb2: 0.94 	gb3: 1.65 	gb4: 4.49 	gb5: 2.51
+		Population 1
+			Robot 0 	f: 2144.76 	mf: 2144.00 	ga0: 1.00 	ga1: 9.60 	ga2: 0.00 	ga3: 1.00 	ga4: 1.00 	gb0: 0.26 	gb1: 0.81 	gb2: 0.94 	gb3: 1.65 	gb4: 4.49 	gb5: 2.51
+	finalFitness: 2144
+	Repetition 3
+		Population 0
+			Robot 0 	f: 2333.78 	mf: 2333.00 	ga0: 1.00 	ga1: 6.50 	ga2: 0.00 	ga3: 1.00 	ga4: 1.00 	gb0: 0.43 	gb1: 0.23 	gb2: 0.74 	gb3: 2.46 	gb4: 1.54 	gb5: 4.04
+		Population 1
+			Robot 0 	f: 2333.78 	mf: 2333.00 	ga0: 1.00 	ga1: 6.50 	ga2: 0.00 	ga3: 1.00 	ga4: 1.00 	gb0: 0.43 	gb1: 0.23 	gb2: 0.74 	gb3: 2.46 	gb4: 1.54 	gb5: 4.04
+	finalFitness: 2333
+	Repetition 4
+		Population 0
+			Robot 0 	f: 1592.22 	mf: 1592.00 	ga0: 1.00 	ga1: 4.90 	ga2: 0.00 	ga3: 1.00 	ga4: 1.00 	gb0: 0.34 	gb1: 0.87 	gb2: 0.86 	gb3: 4.08 	gb4: 1.98 	gb5: 1.18
+		Population 1
+			Robot 0 	f: 1592.22 	mf: 1592.00 	ga0: 1.00 	ga1: 4.90 	ga2: 0.00 	ga3: 1.00 	ga4: 1.00 	gb0: 0.34 	gb1: 0.87 	gb2: 0.86 	gb3: 4.08 	gb4: 1.98 	gb5: 1.18
+	finalFitness: 1592
+	Repetition 5
+		Population 0
+			Robot 0 	f: 2078.16 	mf: 2078.00 	ga0: 1.00 	ga1: 7.70 	ga2: 0.00 	ga3: 1.00 	ga4: 1.00 	gb0: 0.65 	gb1: 0.82 	gb2: 0.64 	gb3: 2.12 	gb4: 0.53 	gb5: 1.34
+		Population 1
+			Robot 0 	f: 2078.16 	mf: 2078.00 	ga0: 1.00 	ga1: 7.70 	ga2: 0.00 	ga3: 1.00 	ga4: 1.00 	gb0: 0.65 	gb1: 0.82 	gb2: 0.64 	gb3: 2.12 	gb4: 0.53 	gb5: 1.34
+	finalFitness: 2078
+	Repetition 6
+		Population 0
+			Robot 0 	f: 2969.92 	mf: 2969.00 	ga0: 1.00 	ga1: 8.30 	ga2: 0.00 	ga3: 1.00 	ga4: 1.00 	gb0: 0.57 	gb1: 0.45 	gb2: 0.60 	gb3: 4.65 	gb4: 1.61 	gb5: 3.81
+		Population 1
+			Robot 0 	f: 2969.92 	mf: 2969.00 	ga0: 1.00 	ga1: 8.30 	ga2: 0.00 	ga3: 1.00 	ga4: 1.00 	gb0: 0.57 	gb1: 0.45 	gb2: 0.60 	gb3: 4.65 	gb4: 1.61 	gb5: 3.81
+	finalFitness: 2969
+	Repetition 7
+		Population 0
+			Robot 0 	f: 995.74 	mf: 995.00 	ga0: 1.00 	ga1: 8.40 	ga2: 0.00 	ga3: 1.00 	ga4: 1.00 	gb0: 0.32 	gb1: 0.30 	gb2: 0.53 	gb3: 2.48 	gb4: 4.52 	gb5: 2.20
+		Population 1
+			Robot 0 	f: 995.74 	mf: 995.00 	ga0: 1.00 	ga1: 8.40 	ga2: 0.00 	ga3: 1.00 	ga4: 1.00 	gb0: 0.32 	gb1: 0.30 	gb2: 0.53 	gb3: 2.48 	gb4: 4.52 	gb5: 2.20
+	finalFitness: 995
+	Repetition 8
+		Population 0
+			Robot 0 	f: 3404.49 	mf: 3404.00 	ga0: 1.00 	ga1: 7.40 	ga2: 0.00 	ga3: 1.00 	ga4: 1.00 	gb0: 0.24 	gb1: 0.95 	gb2: 0.26 	gb3: 3.18 	gb4: 0.30 	gb5: 0.90
+		Population 1
+			Robot 0 	f: 3404.49 	mf: 3404.00 	ga0: 1.00 	ga1: 7.40 	ga2: 0.00 	ga3: 1.00 	ga4: 1.00 	gb0: 0.24 	gb1: 0.95 	gb2: 0.26 	gb3: 3.18 	gb4: 0.30 	gb5: 0.90
+	finalFitness: 3404
+	Repetition 9
+		Population 0
+			Robot 0 	f: 2151.14 	mf: 2151.00 	ga0: 1.00 	ga1: 7.20 	ga2: 0.00 	ga3: 1.00 	ga4: 1.00 	gb0: 0.76 	gb1: 0.56 	gb2: 0.95 	gb3: 3.29 	gb4: 0.46 	gb5: 1.60
+		Population 1
+			Robot 0 	f: 2151.14 	mf: 2151.00 	ga0: 1.00 	ga1: 7.20 	ga2: 0.00 	ga3: 1.00 	ga4: 1.00 	gb0: 0.76 	gb1: 0.56 	gb2: 0.95 	gb3: 3.29 	gb4: 0.46 	gb5: 1.60
+	finalFitness: 2151
+	Repetition 10
+		Population 0
+			Robot 0 	f: 462.58 	mf: 462.00 	ga0: 1.00 	ga1: 3.20 	ga2: 0.00 	ga3: 1.00 	ga4: 1.00 	gb0: 0.74 	gb1: 0.82 	gb2: 0.05 	gb3: 2.58 	gb4: 0.97 	gb5: 4.57
+		Population 1
+			Robot 0 	f: 462.58 	mf: 462.00 	ga0: 1.00 	ga1: 3.20 	ga2: 0.00 	ga3: 1.00 	ga4: 1.00 	gb0: 0.74 	gb1: 0.82 	gb2: 0.05 	gb3: 2.58 	gb4: 0.97 	gb5: 4.57
+	finalFitness: 462
+	Repetition 11
+		Population 0
+			Robot 0 	f: 1355.90 	mf: 1355.00 	ga0: 1.00 	ga1: 8.30 	ga2: 0.00 	ga3: 1.00 	ga4: 1.00 	gb0: 0.44 	gb1: 0.09 	gb2: 0.69 	gb3: 0.72 	gb4: 0.59 	gb5: 4.02
+		Population 1
+			Robot 0 	f: 1355.90 	mf: 1355.00 	ga0: 1.00 	ga1: 8.30 	ga2: 0.00 	ga3: 1.00 	ga4: 1.00 	gb0: 0.44 	gb1: 0.09 	gb2: 0.69 	gb3: 0.72 	gb4: 0.59 	gb5: 4.02
+	finalFitness: 1355
+	Repetition 12
+		Population 0
+			Robot 0 	f: 1422.77 	mf: 1422.00 	ga0: 1.00 	ga1: 9.80 	ga2: 0.00 	ga3: 1.00 	ga4: 1.00 	gb0: 0.12 	gb1: 0.57 	gb2: 0.72 	gb3: 3.57 	gb4: 3.39 	gb5: 1.09
+		Population 1
+			Robot 0 	f: 1422.77 	mf: 1422.00 	ga0: 1.00 	ga1: 9.80 	ga2: 0.00 	ga3: 1.00 	ga4: 1.00 	gb0: 0.12 	gb1: 0.57 	gb2: 0.72 	gb3: 3.57 	gb4: 3.39 	gb5: 1.09
+	finalFitness: 1422
+	Repetition 13
+		Population 0
+			Robot 0 	f: 897.75 	mf: 897.00 	ga0: 1.00 	ga1: 2.60 	ga2: 0.00 	ga3: 1.00 	ga4: 1.00 	gb0: 0.45 	gb1: 0.69 	gb2: 0.27 	gb3: 3.10 	gb4: 3.71 	gb5: 2.78
+		Population 1
+			Robot 0 	f: 897.75 	mf: 897.00 	ga0: 1.00 	ga1: 2.60 	ga2: 0.00 	ga3: 1.00 	ga4: 1.00 	gb0: 0.45 	gb1: 0.69 	gb2: 0.27 	gb3: 3.10 	gb4: 3.71 	gb5: 2.78
+	finalFitness: 897
+	Repetition 14
+		Population 0
+			Robot 0 	f: 1865.76 	mf: 1865.00 	ga0: 1.00 	ga1: 1.40 	ga2: 0.00 	ga3: 1.00 	ga4: 1.00 	gb0: 0.16 	gb1: 0.58 	gb2: 0.21 	gb3: 4.36 	gb4: 1.73 	gb5: 2.03
+		Population 1
+			Robot 0 	f: 1865.76 	mf: 1865.00 	ga0: 1.00 	ga1: 1.40 	ga2: 0.00 	ga3: 1.00 	ga4: 1.00 	gb0: 0.16 	gb1: 0.58 	gb2: 0.21 	gb3: 4.36 	gb4: 1.73 	gb5: 2.03
+	finalFitness: 1865
+	Repetition 15
+		Population 0
+			Robot 0 	f: 1237.16 	mf: 1237.00 	ga0: 1.00 	ga1: 4.30 	ga2: 0.00 	ga3: 1.00 	ga4: 1.00 	gb0: 0.80 	gb1: 0.19 	gb2: 0.39 	gb3: 3.80 	gb4: 1.23 	gb5: 2.08
+		Population 1
+			Robot 0 	f: 1237.16 	mf: 1237.00 	ga0: 1.00 	ga1: 4.30 	ga2: 0.00 	ga3: 1.00 	ga4: 1.00 	gb0: 0.80 	gb1: 0.19 	gb2: 0.39 	gb3: 3.80 	gb4: 1.23 	gb5: 2.08
+	finalFitness: 1237
+	Repetition 16
+		Population 0
+			Robot 0 	f: 2871.04 	mf: 2871.00 	ga0: 1.00 	ga1: 9.90 	ga2: 0.00 	ga3: 1.00 	ga4: 1.00 	gb0: 0.15 	gb1: 0.45 	gb2: 0.28 	gb3: 3.36 	gb4: 0.17 	gb5: 1.37
+		Population 1
+			Robot 0 	f: 2871.04 	mf: 2871.00 	ga0: 1.00 	ga1: 9.90 	ga2: 0.00 	ga3: 1.00 	ga4: 1.00 	gb0: 0.15 	gb1: 0.45 	gb2: 0.28 	gb3: 3.36 	gb4: 0.17 	gb5: 1.37
+	finalFitness: 2871
+	Repetition 17
+		Population 0
+			Robot 0 	f: 1367.20 	mf: 1367.00 	ga0: 1.00 	ga1: 2.40 	ga2: 0.00 	ga3: 1.00 	ga4: 1.00 	gb0: 0.24 	gb1: 0.85 	gb2: 0.43 	gb3: 2.50 	gb4: 1.13 	gb5: 0.85
+		Population 1
+			Robot 0 	f: 1367.20 	mf: 1367.00 	ga0: 1.00 	ga1: 2.40 	ga2: 0.00 	ga3: 1.00 	ga4: 1.00 	gb0: 0.24 	gb1: 0.85 	gb2: 0.43 	gb3: 2.50 	gb4: 1.13 	gb5: 0.85
+	finalFitness: 1367
+	Repetition 18
+		Population 0
+			Robot 0 	f: 2188.56 	mf: 2188.00 	ga0: 1.00 	ga1: 8.00 	ga2: 0.00 	ga3: 1.00 	ga4: 1.00 	gb0: 0.84 	gb1: 0.44 	gb2: 0.95 	gb3: 2.86 	gb4: 0.04 	gb5: 1.48
+		Population 1
+			Robot 0 	f: 2188.56 	mf: 2188.00 	ga0: 1.00 	ga1: 8.00 	ga2: 0.00 	ga3: 1.00 	ga4: 1.00 	gb0: 0.84 	gb1: 0.44 	gb2: 0.95 	gb3: 2.86 	gb4: 0.04 	gb5: 1.48
+	finalFitness: 2188
+	Repetition 19
+		Population 0
+			Robot 0 	f: 1268.55 	mf: 1268.00 	ga0: 1.00 	ga1: 6.90 	ga2: 0.00 	ga3: 1.00 	ga4: 1.00 	gb0: 0.68 	gb1: 0.61 	gb2: 0.18 	gb3: 3.23 	gb4: 4.83 	gb5: 2.45
+		Population 1
+			Robot 0 	f: 1268.55 	mf: 1268.00 	ga0: 1.00 	ga1: 6.90 	ga2: 0.00 	ga3: 1.00 	ga4: 1.00 	gb0: 0.68 	gb1: 0.61 	gb2: 0.18 	gb3: 3.23 	gb4: 4.83 	gb5: 2.45
+	finalFitness: 1268
+	Repetition 20
+		Population 0
+			Robot 0 	f: 818.68 	mf: 818.00 	ga0: 1.00 	ga1: 3.50 	ga2: 0.00 	ga3: 1.00 	ga4: 1.00 	gb0: 0.25 	gb1: 0.89 	gb2: 0.17 	gb3: 4.29 	gb4: 3.02 	gb5: 4.78
+		Population 1
+			Robot 0 	f: 818.68 	mf: 818.00 	ga0: 1.00 	ga1: 3.50 	ga2: 0.00 	ga3: 1.00 	ga4: 1.00 	gb0: 0.25 	gb1: 0.89 	gb2: 0.17 	gb3: 4.29 	gb4: 3.02 	gb5: 4.78
+	finalFitness: 818
+	Repetition 21
+		Population 0
+			Robot 0 	f: 1922.27 	mf: 1922.00 	ga0: 1.00 	ga1: 0.90 	ga2: 0.00 	ga3: 1.00 	ga4: 1.00 	gb0: 0.33 	gb1: 0.65 	gb2: 0.77 	gb3: 1.37 	gb4: 3.20 	gb5: 1.47
+		Population 1
+			Robot 0 	f: 1922.27 	mf: 1922.00 	ga0: 1.00 	ga1: 0.90 	ga2: 0.00 	ga3: 1.00 	ga4: 1.00 	gb0: 0.33 	gb1: 0.65 	gb2: 0.77 	gb3: 1.37 	gb4: 3.20 	gb5: 1.47
+	finalFitness: 1922
+	Repetition 22
+		Population 0
+			Robot 0 	f: 1620.07 	mf: 1620.00 	ga0: 1.00 	ga1: 7.40 	ga2: 0.00 	ga3: 1.00 	ga4: 1.00 	gb0: 0.18 	gb1: 0.98 	gb2: 0.12 	gb3: 0.53 	gb4: 3.09 	gb5: 2.04
+		Population 1
+			Robot 0 	f: 1620.07 	mf: 1620.00 	ga0: 1.00 	ga1: 7.40 	ga2: 0.00 	ga3: 1.00 	ga4: 1.00 	gb0: 0.18 	gb1: 0.98 	gb2: 0.12 	gb3: 0.53 	gb4: 3.09 	gb5: 2.04
+	finalFitness: 1620
+	Repetition 23
+		Population 0
+			Robot 0 	f: 2839.18 	mf: 2839.00 	ga0: 1.00 	ga1: 5.20 	ga2: 0.00 	ga3: 1.00 	ga4: 1.00 	gb0: 0.26 	gb1: 0.06 	gb2: 0.96 	gb3: 2.52 	gb4: 0.96 	gb5: 1.36
+		Population 1
+			Robot 0 	f: 2839.18 	mf: 2839.00 	ga0: 1.00 	ga1: 5.20 	ga2: 0.00 	ga3: 1.00 	ga4: 1.00 	gb0: 0.26 	gb1: 0.06 	gb2: 0.96 	gb3: 2.52 	gb4: 0.96 	gb5: 1.36
+	finalFitness: 2839
+	Repetition 24
+		Population 0
+			Robot 0 	f: 2947.19 	mf: 2947.00 	ga0: 1.00 	ga1: 4.70 	ga2: 0.00 	ga3: 1.00 	ga4: 1.00 	gb0: 0.46 	gb1: 0.51 	gb2: 0.51 	gb3: 4.49 	gb4: 4.47 	gb5: 2.64
+		Population 1
+			Robot 0 	f: 2947.19 	mf: 2947.00 	ga0: 1.00 	ga1: 4.70 	ga2: 0.00 	ga3: 1.00 	ga4: 1.00 	gb0: 0.46 	gb1: 0.51 	gb2: 0.51 	gb3: 4.49 	gb4: 4.47 	gb5: 2.64
+	finalFitness: 2947
+	Repetition 25
+		Population 0
+			Robot 0 	f: 1924.00 	mf: 1923.00 	ga0: 1.00 	ga1: 9.70 	ga2: 0.00 	ga3: 1.00 	ga4: 1.00 	gb0: 0.89 	gb1: 0.95 	gb2: 0.70 	gb3: 4.22 	gb4: 1.14 	gb5: 4.41
+		Population 1
+			Robot 0 	f: 1924.00 	mf: 1923.00 	ga0: 1.00 	ga1: 9.70 	ga2: 0.00 	ga3: 1.00 	ga4: 1.00 	gb0: 0.89 	gb1: 0.95 	gb2: 0.70 	gb3: 4.22 	gb4: 1.14 	gb5: 4.41
+	finalFitness: 1923
+	Repetition 26
+		Population 0
+			Robot 0 	f: 1424.46 	mf: 1424.00 	ga0: 1.00 	ga1: 6.80 	ga2: 0.00 	ga3: 1.00 	ga4: 1.00 	gb0: 0.44 	gb1: 0.29 	gb2: 0.08 	gb3: 2.01 	gb4: 3.67 	gb5: 0.49
+		Population 1
+			Robot 0 	f: 1424.46 	mf: 1424.00 	ga0: 1.00 	ga1: 6.80 	ga2: 0.00 	ga3: 1.00 	ga4: 1.00 	gb0: 0.44 	gb1: 0.29 	gb2: 0.08 	gb3: 2.01 	gb4: 3.67 	gb5: 0.49
+	finalFitness: 1424
+	Repetition 27
+		Population 0
+			Robot 0 	f: 1885.78 	mf: 1885.00 	ga0: 1.00 	ga1: 7.20 	ga2: 0.00 	ga3: 1.00 	ga4: 1.00 	gb0: 0.69 	gb1: 0.74 	gb2: 0.74 	gb3: 2.77 	gb4: 4.95 	gb5: 2.97
+		Population 1
+			Robot 0 	f: 1885.78 	mf: 1885.00 	ga0: 1.00 	ga1: 7.20 	ga2: 0.00 	ga3: 1.00 	ga4: 1.00 	gb0: 0.69 	gb1: 0.74 	gb2: 0.74 	gb3: 2.77 	gb4: 4.95 	gb5: 2.97
+	finalFitness: 1885
+	Repetition 28
+		Population 0
+			Robot 0 	f: 4280.82 	mf: 4280.00 	ga0: 1.00 	ga1: 3.00 	ga2: 0.00 	ga3: 1.00 	ga4: 1.00 	gb0: 0.59 	gb1: 0.02 	gb2: 0.98 	gb3: 2.74 	gb4: 4.48 	gb5: 1.88
+		Population 1
+			Robot 0 	f: 4280.82 	mf: 4280.00 	ga0: 1.00 	ga1: 3.00 	ga2: 0.00 	ga3: 1.00 	ga4: 1.00 	gb0: 0.59 	gb1: 0.02 	gb2: 0.98 	gb3: 2.74 	gb4: 4.48 	gb5: 1.88
+	finalFitness: 4280
+	Repetition 29
+		Population 0
+			Robot 0 	f: 4114.64 	mf: 4114.00 	ga0: 1.00 	ga1: 5.00 	ga2: 0.00 	ga3: 1.00 	ga4: 1.00 	gb0: 0.72 	gb1: 0.06 	gb2: 0.31 	gb3: 4.28 	gb4: 3.07 	gb5: 3.78
+		Population 1
+			Robot 0 	f: 4114.64 	mf: 4114.00 	ga0: 1.00 	ga1: 5.00 	ga2: 0.00 	ga3: 1.00 	ga4: 1.00 	gb0: 0.72 	gb1: 0.06 	gb2: 0.31 	gb3: 4.28 	gb4: 3.07 	gb5: 3.78
+	finalFitness: 4114
+	Repetition 30
+		Population 0
+			Robot 0 	f: 1057.18 	mf: 1057.00 	ga0: 1.00 	ga1: 6.40 	ga2: 0.00 	ga3: 1.00 	ga4: 1.00 	gb0: 0.05 	gb1: 0.55 	gb2: 0.14 	gb3: 0.28 	gb4: 1.90 	gb5: 3.81
+		Population 1
+			Robot 0 	f: 1057.18 	mf: 1057.00 	ga0: 1.00 	ga1: 6.40 	ga2: 0.00 	ga3: 1.00 	ga4: 1.00 	gb0: 0.05 	gb1: 0.55 	gb2: 0.14 	gb3: 0.28 	gb4: 1.90 	gb5: 3.81
+	finalFitness: 1057
+	Repetition 31
+		Population 0
+			Robot 0 	f: 2563.21 	mf: 2563.00 	ga0: 1.00 	ga1: 3.30 	ga2: 0.00 	ga3: 1.00 	ga4: 1.00 	gb0: 0.74 	gb1: 0.85 	gb2: 0.89 	gb3: 2.27 	gb4: 0.87 	gb5: 4.04
+		Population 1
+			Robot 0 	f: 2563.21 	mf: 2563.00 	ga0: 1.00 	ga1: 3.30 	ga2: 0.00 	ga3: 1.00 	ga4: 1.00 	gb0: 0.74 	gb1: 0.85 	gb2: 0.89 	gb3: 2.27 	gb4: 0.87 	gb5: 4.04
+	finalFitness: 2563
+	Repetition 32
+		Population 0
+			Robot 0 	f: 2557.76 	mf: 2557.00 	ga0: 1.00 	ga1: 5.80 	ga2: 0.00 	ga3: 1.00 	ga4: 1.00 	gb0: 0.88 	gb1: 0.05 	gb2: 0.32 	gb3: 2.33 	gb4: 0.06 	gb5: 4.71
+		Population 1
+			Robot 0 	f: 2557.76 	mf: 2557.00 	ga0: 1.00 	ga1: 5.80 	ga2: 0.00 	ga3: 1.00 	ga4: 1.00 	gb0: 0.88 	gb1: 0.05 	gb2: 0.32 	gb3: 2.33 	gb4: 0.06 	gb5: 4.71
+	finalFitness: 2557
+	Repetition 33
+		Population 0
+			Robot 0 	f: 1599.54 	mf: 1599.00 	ga0: 1.00 	ga1: 2.30 	ga2: 0.00 	ga3: 1.00 	ga4: 1.00 	gb0: 0.78 	gb1: 0.41 	gb2: 0.35 	gb3: 3.80 	gb4: 0.62 	gb5: 0.31
+		Population 1
+			Robot 0 	f: 1599.54 	mf: 1599.00 	ga0: 1.00 	ga1: 2.30 	ga2: 0.00 	ga3: 1.00 	ga4: 1.00 	gb0: 0.78 	gb1: 0.41 	gb2: 0.35 	gb3: 3.80 	gb4: 0.62 	gb5: 0.31
+	finalFitness: 1599
+	Repetition 34
+		Population 0
+			Robot 0 	f: 3188.04 	mf: 3188.00 	ga0: 1.00 	ga1: 2.10 	ga2: 0.00 	ga3: 1.00 	ga4: 1.00 	gb0: 0.08 	gb1: 0.59 	gb2: 0.77 	gb3: 1.50 	gb4: 4.62 	gb5: 2.42
+		Population 1
+			Robot 0 	f: 3188.04 	mf: 3188.00 	ga0: 1.00 	ga1: 2.10 	ga2: 0.00 	ga3: 1.00 	ga4: 1.00 	gb0: 0.08 	gb1: 0.59 	gb2: 0.77 	gb3: 1.50 	gb4: 4.62 	gb5: 2.42
+	finalFitness: 3188
+	Repetition 35
+		Population 0
+			Robot 0 	f: 2474.81 	mf: 2474.00 	ga0: 1.00 	ga1: 5.80 	ga2: 0.00 	ga3: 1.00 	ga4: 1.00 	gb0: 0.98 	gb1: 0.03 	gb2: 0.60 	gb3: 0.13 	gb4: 4.62 	gb5: 3.21
+		Population 1
+			Robot 0 	f: 2474.81 	mf: 2474.00 	ga0: 1.00 	ga1: 5.80 	ga2: 0.00 	ga3: 1.00 	ga4: 1.00 	gb0: 0.98 	gb1: 0.03 	gb2: 0.60 	gb3: 0.13 	gb4: 4.62 	gb5: 3.21
+	finalFitness: 2474
+	Repetition 36
+		Population 0
+			Robot 0 	f: 3008.63 	mf: 3008.00 	ga0: 1.00 	ga1: 9.30 	ga2: 0.00 	ga3: 1.00 	ga4: 1.00 	gb0: 0.19 	gb1: 0.68 	gb2: 0.07 	gb3: 2.18 	gb4: 1.90 	gb5: 3.86
+		Population 1
+			Robot 0 	f: 3008.63 	mf: 3008.00 	ga0: 1.00 	ga1: 9.30 	ga2: 0.00 	ga3: 1.00 	ga4: 1.00 	gb0: 0.19 	gb1: 0.68 	gb2: 0.07 	gb3: 2.18 	gb4: 1.90 	gb5: 3.86
+	finalFitness: 3008
+	Repetition 37
+		Population 0
+			Robot 0 	f: 2380.39 	mf: 2380.00 	ga0: 1.00 	ga1: 9.50 	ga2: 0.00 	ga3: 1.00 	ga4: 1.00 	gb0: 0.26 	gb1: 0.09 	gb2: 0.05 	gb3: 0.64 	gb4: 2.16 	gb5: 2.74
+		Population 1
+			Robot 0 	f: 2380.39 	mf: 2380.00 	ga0: 1.00 	ga1: 9.50 	ga2: 0.00 	ga3: 1.00 	ga4: 1.00 	gb0: 0.26 	gb1: 0.09 	gb2: 0.05 	gb3: 0.64 	gb4: 2.16 	gb5: 2.74
+	finalFitness: 2380
+	Repetition 38
+		Population 0
+			Robot 0 	f: 1056.89 	mf: 1056.00 	ga0: 1.00 	ga1: 0.40 	ga2: 0.00 	ga3: 1.00 	ga4: 1.00 	gb0: 0.91 	gb1: 0.02 	gb2: 0.75 	gb3: 4.13 	gb4: 1.23 	gb5: 3.91
+		Population 1
+			Robot 0 	f: 1056.89 	mf: 1056.00 	ga0: 1.00 	ga1: 0.40 	ga2: 0.00 	ga3: 1.00 	ga4: 1.00 	gb0: 0.91 	gb1: 0.02 	gb2: 0.75 	gb3: 4.13 	gb4: 1.23 	gb5: 3.91
+	finalFitness: 1056
+	Repetition 39
+		Population 0
+			Robot 0 	f: 3381.92 	mf: 3381.00 	ga0: 1.00 	ga1: 0.30 	ga2: 0.00 	ga3: 1.00 	ga4: 1.00 	gb0: 0.34 	gb1: 0.80 	gb2: 0.46 	gb3: 1.29 	gb4: 2.41 	gb5: 4.13
+		Population 1
+			Robot 0 	f: 3381.92 	mf: 3381.00 	ga0: 1.00 	ga1: 0.30 	ga2: 0.00 	ga3: 1.00 	ga4: 1.00 	gb0: 0.34 	gb1: 0.80 	gb2: 0.46 	gb3: 1.29 	gb4: 2.41 	gb5: 4.13
+	finalFitness: 3381
+	Repetition 40
+		Population 0
+			Robot 0 	f: 1965.73 	mf: 1965.00 	ga0: 1.00 	ga1: 4.00 	ga2: 0.00 	ga3: 1.00 	ga4: 1.00 	gb0: 0.98 	gb1: 0.40 	gb2: 0.32 	gb3: 3.01 	gb4: 2.59 	gb5: 1.33
+		Population 1
+			Robot 0 	f: 1965.73 	mf: 1965.00 	ga0: 1.00 	ga1: 4.00 	ga2: 0.00 	ga3: 1.00 	ga4: 1.00 	gb0: 0.98 	gb1: 0.40 	gb2: 0.32 	gb3: 3.01 	gb4: 2.59 	gb5: 1.33
+	finalFitness: 1965
+	Repetition 41
+		Population 0
+			Robot 0 	f: 2182.94 	mf: 2182.00 	ga0: 1.00 	ga1: 7.50 	ga2: 0.00 	ga3: 1.00 	ga4: 1.00 	gb0: 0.24 	gb1: 0.45 	gb2: 0.88 	gb3: 2.87 	gb4: 1.74 	gb5: 4.49
+		Population 1
+			Robot 0 	f: 2182.94 	mf: 2182.00 	ga0: 1.00 	ga1: 7.50 	ga2: 0.00 	ga3: 1.00 	ga4: 1.00 	gb0: 0.24 	gb1: 0.45 	gb2: 0.88 	gb3: 2.87 	gb4: 1.74 	gb5: 4.49
+	finalFitness: 2182
+	Repetition 42
+		Population 0
+			Robot 0 	f: 275.70 	mf: 275.00 	ga0: 1.00 	ga1: 1.20 	ga2: 0.00 	ga3: 1.00 	ga4: 1.00 	gb0: 0.88 	gb1: 0.84 	gb2: 0.39 	gb3: 3.54 	gb4: 1.40 	gb5: 4.71
+		Population 1
+			Robot 0 	f: 275.70 	mf: 275.00 	ga0: 1.00 	ga1: 1.20 	ga2: 0.00 	ga3: 1.00 	ga4: 1.00 	gb0: 0.88 	gb1: 0.84 	gb2: 0.39 	gb3: 3.54 	gb4: 1.40 	gb5: 4.71
+	finalFitness: 275
+	Repetition 43
+		Population 0
+			Robot 0 	f: 1877.27 	mf: 1877.00 	ga0: 1.00 	ga1: 5.20 	ga2: 0.00 	ga3: 1.00 	ga4: 1.00 	gb0: 0.96 	gb1: 0.94 	gb2: 0.07 	gb3: 1.28 	gb4: 2.19 	gb5: 2.07
+		Population 1
+			Robot 0 	f: 1877.27 	mf: 1877.00 	ga0: 1.00 	ga1: 5.20 	ga2: 0.00 	ga3: 1.00 	ga4: 1.00 	gb0: 0.96 	gb1: 0.94 	gb2: 0.07 	gb3: 1.28 	gb4: 2.19 	gb5: 2.07
+	finalFitness: 1877
+	Repetition 44
+		Population 0
+			Robot 0 	f: 3446.69 	mf: 3446.00 	ga0: 1.00 	ga1: 5.20 	ga2: 0.00 	ga3: 1.00 	ga4: 1.00 	gb0: 0.15 	gb1: 0.76 	gb2: 0.12 	gb3: 4.99 	gb4: 3.58 	gb5: 4.00
+		Population 1
+			Robot 0 	f: 3446.69 	mf: 3446.00 	ga0: 1.00 	ga1: 5.20 	ga2: 0.00 	ga3: 1.00 	ga4: 1.00 	gb0: 0.15 	gb1: 0.76 	gb2: 0.12 	gb3: 4.99 	gb4: 3.58 	gb5: 4.00
+	finalFitness: 3446
+	Repetition 45
+		Population 0
+			Robot 0 	f: 2506.85 	mf: 2506.00 	ga0: 1.00 	ga1: 6.20 	ga2: 0.00 	ga3: 1.00 	ga4: 1.00 	gb0: 0.34 	gb1: 0.36 	gb2: 0.97 	gb3: 0.51 	gb4: 3.06 	gb5: 4.68
+		Population 1
+			Robot 0 	f: 2506.85 	mf: 2506.00 	ga0: 1.00 	ga1: 6.20 	ga2: 0.00 	ga3: 1.00 	ga4: 1.00 	gb0: 0.34 	gb1: 0.36 	gb2: 0.97 	gb3: 0.51 	gb4: 3.06 	gb5: 4.68
+	finalFitness: 2506
+	Repetition 46
+		Population 0
+			Robot 0 	f: 1807.34 	mf: 1807.00 	ga0: 1.00 	ga1: 1.60 	ga2: 0.00 	ga3: 1.00 	ga4: 1.00 	gb0: 0.11 	gb1: 0.16 	gb2: 0.32 	gb3: 1.08 	gb4: 3.62 	gb5: 3.25
+		Population 1
+			Robot 0 	f: 1807.34 	mf: 1807.00 	ga0: 1.00 	ga1: 1.60 	ga2: 0.00 	ga3: 1.00 	ga4: 1.00 	gb0: 0.11 	gb1: 0.16 	gb2: 0.32 	gb3: 1.08 	gb4: 3.62 	gb5: 3.25
+	finalFitness: 1807
+	Repetition 47
+		Population 0
+			Robot 0 	f: 2021.18 	mf: 2021.00 	ga0: 1.00 	ga1: 1.90 	ga2: 0.00 	ga3: 1.00 	ga4: 1.00 	gb0: 0.20 	gb1: 0.06 	gb2: 0.81 	gb3: 2.47 	gb4: 4.60 	gb5: 0.28
+		Population 1
+			Robot 0 	f: 2021.18 	mf: 2021.00 	ga0: 1.00 	ga1: 1.90 	ga2: 0.00 	ga3: 1.00 	ga4: 1.00 	gb0: 0.20 	gb1: 0.06 	gb2: 0.81 	gb3: 2.47 	gb4: 4.60 	gb5: 0.28
+	finalFitness: 2021
+	Repetition 48
+		Population 0
+			Robot 0 	f: 1836.51 	mf: 1836.00 	ga0: 1.00 	ga1: 9.40 	ga2: 0.00 	ga3: 1.00 	ga4: 1.00 	gb0: 0.81 	gb1: 0.52 	gb2: 0.82 	gb3: 2.19 	gb4: 2.70 	gb5: 4.13
+		Population 1
+			Robot 0 	f: 1836.51 	mf: 1836.00 	ga0: 1.00 	ga1: 9.40 	ga2: 0.00 	ga3: 1.00 	ga4: 1.00 	gb0: 0.81 	gb1: 0.52 	gb2: 0.82 	gb3: 2.19 	gb4: 2.70 	gb5: 4.13
+	finalFitness: 1836
+	Repetition 49
+		Population 0
+			Robot 0 	f: 4006.85 	mf: 4006.00 	ga0: 1.00 	ga1: 9.40 	ga2: 0.00 	ga3: 1.00 	ga4: 1.00 	gb0: 0.58 	gb1: 0.63 	gb2: 0.01 	gb3: 0.12 	gb4: 0.70 	gb5: 3.27
+		Population 1
+			Robot 0 	f: 4006.85 	mf: 4006.00 	ga0: 1.00 	ga1: 9.40 	ga2: 0.00 	ga3: 1.00 	ga4: 1.00 	gb0: 0.58 	gb1: 0.63 	gb2: 0.01 	gb3: 0.12 	gb4: 0.70 	gb5: 3.27
+	finalFitness: 4006
+Environment 1	 h: 3.00	 mr: 0.20	 nc: 0.30	 nm: 0.50	 bmp: 1.00	 cc: 0.00
+	Repetition 0
+		Population 0
+			Robot 0 	f: 2155.10 	mf: 2155.00 	ga0: 1.00 	ga1: 9.80 	ga2: 0.00 	ga3: 1.00 	ga4: 1.00 	gb0: 0.71 	gb1: 0.41 	gb2: 0.54 	gb3: 2.92 	gb4: 0.99 	gb5: 2.46
+		Population 1
+			Robot 0 	f: 2155.10 	mf: 2155.00 	ga0: 1.00 	ga1: 9.80 	ga2: 0.00 	ga3: 1.00 	ga4: 1.00 	gb0: 0.71 	gb1: 0.41 	gb2: 0.54 	gb3: 2.92 	gb4: 0.99 	gb5: 2.46
+	finalFitness: 2155
+	Repetition 1
+		Population 0
+			Robot 0 	f: 2120.02 	mf: 2120.00 	ga0: 1.00 	ga1: 8.90 	ga2: 0.00 	ga3: 1.00 	ga4: 1.00 	gb0: 0.31 	gb1: 0.93 	gb2: 0.49 	gb3: 0.79 	gb4: 4.78 	gb5: 2.48
+		Population 1
+			Robot 0 	f: 2120.02 	mf: 2120.00 	ga0: 1.00 	ga1: 8.90 	ga2: 0.00 	ga3: 1.00 	ga4: 1.00 	gb0: 0.31 	gb1: 0.93 	gb2: 0.49 	gb3: 0.79 	gb4: 4.78 	gb5: 2.48
+	finalFitness: 2120
+	Repetition 2
+		Population 0
+			Robot 0 	f: 2929.39 	mf: 2929.00 	ga0: 1.00 	ga1: 9.60 	ga2: 0.00 	ga3: 1.00 	ga4: 1.00 	gb0: 0.42 	gb1: 0.41 	gb2: 0.21 	gb3: 3.19 	gb4: 2.99 	gb5: 0.49
+		Population 1
+			Robot 0 	f: 2929.39 	mf: 2929.00 	ga0: 1.00 	ga1: 9.60 	ga2: 0.00 	ga3: 1.00 	ga4: 1.00 	gb0: 0.42 	gb1: 0.41 	gb2: 0.21 	gb3: 3.19 	gb4: 2.99 	gb5: 0.49
+	finalFitness: 2929
+	Repetition 3
+		Population 0
+			Robot 0 	f: 2636.51 	mf: 2636.00 	ga0: 1.00 	ga1: 9.50 	ga2: 0.00 	ga3: 1.00 	ga4: 1.00 	gb0: 0.13 	gb1: 0.51 	gb2: 0.01 	gb3: 0.64 	gb4: 4.35 	gb5: 1.53
+		Population 1
+			Robot 0 	f: 2636.51 	mf: 2636.00 	ga0: 1.00 	ga1: 9.50 	ga2: 0.00 	ga3: 1.00 	ga4: 1.00 	gb0: 0.13 	gb1: 0.51 	gb2: 0.01 	gb3: 0.64 	gb4: 4.35 	gb5: 1.53
+	finalFitness: 2636
+	Repetition 4

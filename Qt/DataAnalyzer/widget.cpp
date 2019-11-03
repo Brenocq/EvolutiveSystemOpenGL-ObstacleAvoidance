@@ -16,6 +16,8 @@ Widget::Widget(QWidget *parent) :
     QObject::connect(timer, SIGNAL(timeout()), this, SLOT(callUpdate()));
     timer->start(1000);
 
+    _visibleRobots.resize(0);
+
     _sizeEnv = -1;
     _sizeGen = -1;
     _sizeRep = -1;
@@ -104,13 +106,27 @@ void Widget::on_importButton_clicked()
         itemList += QString::number(i);
     }
 
-    qDebug() << "_sizeEnv" <<_sizeEnv <<" -> " << itemList.size();
     if(_sizeEnv != itemList.size()){
         _sizeEnv = itemList.size();
         ui->envComboBox->clear();
         ui->envComboBox->addItems(itemList);
         ui->genComboBox->setEnabled(true);
     }
+    //----- Update visible -----//
+    QStringList visibleList;
+    int qtdRbt = ui->qtdRobotsEdit->text().toInt();
+     _visibleRobots.resize(qtdRbt);
+     for(int i=0;i<qtdRbt;i++){
+         visibleList += QString::number(i);
+         _visibleRobots[i]=true;
+     }
+
+     ui->selRobotComboBox->clear();
+     ui->selRobotComboBox->addItems(visibleList);
+     ui->selRobotComboBox->setEnabled(true);
+     ui->allVisibleButton->setEnabled(true);
+     ui->allInvisibleButton->setEnabled(true);
+     ui->visibleCheckBox->setEnabled(true);
 }
 
 void Widget::on_envComboBox_currentIndexChanged(int index)
@@ -142,7 +158,6 @@ void Widget::on_envComboBox_currentIndexChanged(int index)
         itemList += QString::number(i);
 
     }
-    qDebug() << "_sizeGen" <<_sizeGen <<" -> " << itemList.size();
     if(_sizeGen != itemList.size()){
         _sizeGen = itemList.size();
         ui->genComboBox->clear();
@@ -198,7 +213,7 @@ void Widget::on_genComboBox_currentIndexChanged(int index)
         itemList += QString::number(i);
 
     }
-    qDebug() << "_sizeRep" <<_sizeRep <<" -> " << itemList.size();
+    //qDebug() << "_sizeRep" <<_sizeRep <<" -> " << itemList.size();
     if(_sizeRep != itemList.size()){
         _sizeRep = itemList.size();
         ui->repComboBox->clear();
@@ -220,9 +235,48 @@ void Widget::updatePlot()
         generation.push_back(i);
     }
 
+    int qtdRobots = ui->qtdRobotsEdit->text().toInt();
+    //---------- Calculate mean lines ----------//
+    QVector<double> grossLine;
+    for(int gen=0;gen<generation.size(); gen++){
+        double mean=0;
+        for(int robot=0;robot<qtdRobots;robot++)
+           mean+=fitness[robot][gen];
+        mean/=qtdRobots;
+        grossLine.push_back(mean);
+    }
+
+    QVector<double> meanLine;
+    for(int gen=0;gen<generation.size(); gen++){
+        double mean=0;
+        for(int robot=0;robot<qtdRobots;robot++)
+           mean+=meanFitness[robot][gen];
+        mean/=qtdRobots;
+        meanLine.push_back(mean);
+    }
+
+    QVector<double> meanSensors;
+    for(int gen=0;gen<generation.size(); gen++){
+        double mean=0;
+        for(int robot=0;robot<qtdRobots;robot++)
+           mean+=qtdSensors[robot][gen];
+        mean/=qtdRobots;
+        meanSensors.push_back(mean);
+    }
+
+    //---------- Set visible robots ----------//
+    for (int i=0;i<qtdRobots && i<_visibleRobots.size();i++) {
+        if(!_visibleRobots[i]){
+            for (int j=0;j<fitness[0].size();j++) {
+                fitness[i][j]=-10000;
+                meanFitness[i][j]=-10000;
+                qtdSensors[i][j]=-1;
+            }
+        }
+    }
     //---------- Update gross graph ----------//
     // create graph and assign data to it
-    int qtdRobots = ui->qtdRobotsEdit->text().toInt();
+
     for (int i=1;i<=qtdRobots;i++) {
         ui->graphGross->addGraph();
         ui->graphGross->graph(i-1)->setPen(QPen(QColor(int(i%2)*255,int((i/2)%2)*255,int((i/4)%2)*255,255 )));
@@ -236,7 +290,7 @@ void Widget::updatePlot()
     // set axes ranges, so we see all data
     ui->graphGross->xAxis->setRange(0, fitness[0].size());
     //ui->graphGross->xAxis->setRange(0, 50);
-    ui->graphGross->yAxis->setRange(-200, 12000);
+    ui->graphGross->yAxis->setRange(-2000, 2000);
     ui->graphGross->replot();
 
     //---------- Update mean graph ----------//
@@ -251,31 +305,13 @@ void Widget::updatePlot()
     ui->graphGross->addGraph();
     ui->graphGross->graph(qtdRobots)->setPen(QPen(QColor(255,0,0,255),2));
 
-    QVector<double> grossLine;
-
-    for(int gen=0;gen<generation.size(); gen++){
-        double mean=0;
-        for(int robot=0;robot<qtdRobots;robot++)
-           mean+=fitness[robot][gen];
-        mean/=qtdRobots;
-        grossLine.push_back(mean);
-    }
-
     ui->graphGross->graph(qtdRobots)->setData(generation, grossLine);
 
     //---------- Plot mean line (mean graph) ----------//
     ui->graphMean->addGraph();
     ui->graphMean->graph(qtdRobots)->setPen(QPen(QColor(255,0,0,255),2));
 
-    QVector<double> meanLine;
 
-    for(int gen=0;gen<generation.size(); gen++){
-        double mean=0;
-        for(int robot=0;robot<qtdRobots;robot++)
-           mean+=meanFitness[robot][gen];
-        mean/=qtdRobots;
-        meanLine.push_back(mean);
-    }
 
     ui->graphMean->graph(qtdRobots)->setData(generation, meanLine);
 
@@ -285,7 +321,7 @@ void Widget::updatePlot()
     // set axes ranges, so we see all data
     ui->graphMean->xAxis->setRange(0, meanFitness[0].size());
     //ui->graphMean->xAxis->setRange(0, 50);
-    ui->graphMean->yAxis->setRange(-200, 12000);
+    ui->graphMean->yAxis->setRange(-2000, 2000);
     ui->graphMean->replot();
 
     //---------- Plot number of sensors ----------//
@@ -309,15 +345,7 @@ void Widget::updatePlot()
     //---------- Plot mean line (sensors graph) ----------//
     ui->graphSensors->addGraph();
     ui->graphSensors->graph(qtdRobots)->setPen(QPen(QColor(255,0,0,255),2));
-    QVector<double> meanSensors;
 
-    for(int gen=0;gen<generation.size(); gen++){
-        double mean=0;
-        for(int robot=0;robot<qtdRobots;robot++)
-           mean+=qtdSensors[robot][gen];
-        mean/=qtdRobots;
-        meanSensors.push_back(mean);
-    }
     ui->graphSensors->graph(qtdRobots)->setData(generation, meanSensors);
 }
 
@@ -383,7 +411,7 @@ void Widget::getRobotsSensors(int gen, int env, int rep, QVector<QVector<double>
     const int maxSensors = _qtdSensors==-1 ? 3 : _qtdSensors;
     const float enableValue =_enableSensor==-1 ? 0.4f : _enableSensor;
 
-    qDebug()<<"1:"<<maxSensors<<" 2:"<<enableValue<<endl;
+    //qDebug()<<"1:"<<maxSensors<<" 2:"<<enableValue<<endl;
 
     qtdSensors.clear();
     qtdSensors.resize(qtdRobots);
@@ -457,4 +485,41 @@ void Widget::callUpdate()
         //----- Update plots -----//
         updatePlot();
     }
+}
+
+void Widget::on_allVisibleButton_clicked()
+{
+    int qtdRobots = ui->qtdRobotsEdit->text().toInt();
+    for (int i=0;i<qtdRobots;i++) {
+        _visibleRobots[i]=true;
+    }
+}
+
+void Widget::on_allInvisibleButton_clicked()
+{
+    int qtdRobots = ui->qtdRobotsEdit->text().toInt();
+    for (int i=0;i<qtdRobots;i++) {
+        _visibleRobots[i]=false;
+    }
+}
+void Widget::on_visibleCheckBox_stateChanged(int arg1)
+{
+    int selectedRobot = ui->selRobotComboBox->currentIndex();
+    _visibleRobots[selectedRobot]= arg1==2? true : false;
+
+    qDebug()<<_visibleRobots;
+
+}
+
+void Widget::on_selRobotComboBox_currentIndexChanged(int index)
+{
+    if(_visibleRobots[index])
+        ui->visibleCheckBox->setChecked(1);
+    else
+        ui->visibleCheckBox->setChecked(0);
+}
+
+void Widget::on_visibleCheckBox_clicked()
+{
+
 }

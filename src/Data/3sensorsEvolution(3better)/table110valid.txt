@@ -1,0 +1,40 @@
+QtdRobots: 1
+QtdEnvironments: 10
+QtdRepetitions: 10
+QtdObstacles: 120
+PointsCollision: -1000
+PointsMoving: 10
+MaxPopulation: 2
+MaxTime: 3000
+EnvMutationRate: 0.2
+QtdSensors: 3
+EnableSensor: 0.7
+
+Environment 0	 h: 3	 mr: 0.2	 nc: 0.3	 nm: 0.5	 bmp: 1	 cc: 0
+	Repetition 0
+		Population 0
+			Robot 0 	f: 730.76 	mf: 730.00 	ga0: 1.00 	ga1: 9.80 	ga2: 0.00 	ga3: 1.00 	ga4: 1.00 	gb0: 0.71 	gb1: 0.41 	gb2: 0.54 	gb3: 2.92 	gb4: 0.99 	gb5: 2.46
+		Population 1
+			Robot 0 	f: 730.76 	mf: 730.00 	ga0: 1.00 	ga1: 9.80 	ga2: 0.00 	ga3: 1.00 	ga4: 1.00 	gb0: 0.71 	gb1: 0.41 	gb2: 0.54 	gb3: 2.92 	gb4: 0.99 	gb5: 2.46
+	finalFitness: 730
+	Repetition 1
+		Population 0
+			Robot 0 	f: 2372.91 	mf: 2372.00 	ga0: 1.00 	ga1: 6.00 	ga2: 0.00 	ga3: 1.00 	ga4: 1.00 	gb0: 0.66 	gb1: 0.35 	gb2: 0.41 	gb3: 1.06 	gb4: 2.90 	gb5: 4.73
+		Population 1
+			Robot 0 	f: 2372.91 	mf: 2372.00 	ga0: 1.00 	ga1: 6.00 	ga2: 0.00 	ga3: 1.00 	ga4: 1.00 	gb0: 0.66 	gb1: 0.35 	gb2: 0.41 	gb3: 1.06 	gb4: 2.90 	gb5: 4.73
+	finalFitness: 2372
+	Repetition 2
+		Population 0
+			Robot 0 	f: 1217.34 	mf: 1217.00 	ga0: 1.00 	ga1: 8.30 	ga2: 0.00 	ga3: 1.00 	ga4: 1.00 	gb0: 0.82 	gb1: 0.24 	gb2: 0.67 	gb3: 2.98 	gb4: 2.42 	gb5: 1.59
+		Population 1
+			Robot 0 	f: 1217.34 	mf: 1217.00 	ga0: 1.00 	ga1: 8.30 	ga2: 0.00 	ga3: 1.00 	ga4: 1.00 	gb0: 0.82 	gb1: 0.24 	gb2: 0.67 	gb3: 2.98 	gb4: 2.42 	gb5: 1.59
+	finalFitness: 1217
+	Repetition 3
+		Population 0
+			Robot 0 	f: 786.45 	mf: 786.00 	ga0: 1.00 	ga1: 7.90 	ga2: 0.00 	ga3: 1.00 	ga4: 1.00 	gb0: 0.61 	gb1: 0.57 	gb2: 0.54 	gb3: 2.17 	gb4: 1.99 	gb5: 3.29
+		Population 1
+			Robot 0 	f: 786.45 	mf: 786.00 	ga0: 1.00 	ga1: 7.90 	ga2: 0.00 	ga3: 1.00 	ga4: 1.00 	gb0: 0.61 	gb1: 0.57 	gb2: 0.54 	gb3: 2.17 	gb4: 1.99 	gb5: 3.29
+	finalFitness: 786
+	Repetition 4
+		Population 0
+			Robot 0 	f: 136.57 	mf: 136.00 	ga0: 1.00 	ga1: 6.50 	ga2: 0.00 	ga3: 1.00 	ga4: 1.00 	gb0: 0.08 	gb1: 0.89 	gb2: 0.22 	gb3: 2.16 	gb4: 3.79 	gb5: 2.29

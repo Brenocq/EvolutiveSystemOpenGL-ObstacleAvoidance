@@ -18,6 +18,7 @@ public:
 
   //----- Manager entities -----//
   vector<Environment> environment;
+  vector<float> envMeanFitness;
 private:
   //----- Simulation parameters -----//
   int currEnvironment;

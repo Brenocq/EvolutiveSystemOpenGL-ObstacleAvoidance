@@ -142,8 +142,10 @@ void Robot::move(vector<Object*> objects, float seconds){
   float maxRot = genesAnatomy[1];
   for(int i=0 ; i<qtdSensors ; i++){
     if(genesAnatomy[i+2]>controlEnableSensor){
-      if(i>qtdSensors/2){
+      if(i==2){
         rotation-=(controlSensorQtdDivisions-sensorValues[i])*/*genesBrain[i+qtdSensors]*/0.5/qtdActiveSensors;
+      }else if(i==1){
+        rotation-=(controlSensorQtdDivisions-sensorValues[i])*/*genesBrain[i+qtdSensors]*/4/qtdActiveSensors;
       }else{
         rotation+=(controlSensorQtdDivisions-sensorValues[i])*/*genesBrain[i+qtdSensors]*/0.5/qtdActiveSensors;
       }
