@@ -12,9 +12,9 @@ Widget::Widget(QWidget *parent) :
 {
     ui->setupUi(this);
     _fileName = "";
-    timer = new QTimer(this);
-    QObject::connect(timer, SIGNAL(timeout()), this, SLOT(callUpdate()));
-    timer->start(1000);
+    //timer = new QTimer(this);
+    //QObject::connect(timer, SIGNAL(timeout()), this, SLOT(callUpdate()));
+    //timer->start(1000);
 
     _visibleRobots.resize(0);
 
@@ -221,6 +221,7 @@ void Widget::on_genComboBox_currentIndexChanged(int index)
         ui->repComboBox->setEnabled(qtdRep>0?true:false);
     }
     updatePlot();
+    updatePlot();
 }
 
 void Widget::updatePlot()
@@ -310,9 +311,6 @@ void Widget::updatePlot()
     //---------- Plot mean line (mean graph) ----------//
     ui->graphMean->addGraph();
     ui->graphMean->graph(qtdRobots)->setPen(QPen(QColor(255,0,0,255),2));
-
-
-
     ui->graphMean->graph(qtdRobots)->setData(generation, meanLine);
 
     // give the axes some labels
@@ -473,6 +471,7 @@ void Widget::getRobotsSensors(int gen, int env, int rep, QVector<QVector<double>
 void Widget::on_repComboBox_currentIndexChanged(int index)
 {
     updatePlot();
+    updatePlot();
 }
 
 void Widget::callUpdate()
@@ -484,6 +483,7 @@ void Widget::callUpdate()
         on_repComboBox_currentIndexChanged(ui->repComboBox->currentIndex());
         //----- Update plots -----//
         updatePlot();
+        updatePlot();
     }
 }
 
@@ -493,6 +493,8 @@ void Widget::on_allVisibleButton_clicked()
     for (int i=0;i<qtdRobots;i++) {
         _visibleRobots[i]=true;
     }
+    updatePlot();
+    updatePlot();
 }
 
 void Widget::on_allInvisibleButton_clicked()
@@ -501,13 +503,16 @@ void Widget::on_allInvisibleButton_clicked()
     for (int i=0;i<qtdRobots;i++) {
         _visibleRobots[i]=false;
     }
+    updatePlot();
+    updatePlot();
 }
 void Widget::on_visibleCheckBox_stateChanged(int arg1)
 {
     int selectedRobot = ui->selRobotComboBox->currentIndex();
     _visibleRobots[selectedRobot]= arg1==2? true : false;
 
-    qDebug()<<_visibleRobots;
+    updatePlot();
+    updatePlot();
 
 }
 
@@ -517,6 +522,9 @@ void Widget::on_selRobotComboBox_currentIndexChanged(int index)
         ui->visibleCheckBox->setChecked(1);
     else
         ui->visibleCheckBox->setChecked(0);
+
+    updatePlot();
+    updatePlot();
 }
 
 void Widget::on_visibleCheckBox_clicked()
