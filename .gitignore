@@ -1,0 +1,3 @@
+*.o
+*.swp
+/build-DataAnalyzer-Desktop_Qt_5_13_1_GCC_64bit-Debug
