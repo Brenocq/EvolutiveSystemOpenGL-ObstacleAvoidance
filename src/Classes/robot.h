@@ -19,11 +19,13 @@ public:
 
   //----- Getters -----//
   float getTheta() const;
+	uint8_t getImmunity() const;
   //----- Setters -----//
   void newGenes(vector<float> _genesAnatomy, vector<float> _genesBrain);
   void newOrientation(float _x, float _y, float _theta);// _x,_y: meters | _theta: degrees
   void setTheta(float _theta);
   void setHeadColor(int r, int g, int b);
+	void setImmunity(uint8_t _immunity);
 
   vector<float> fitness;
   vector<float> meanFitness;
@@ -43,8 +45,9 @@ private:
   bool inCollision;
   vector<char> sensorValues;// 4 Possible values: Near / Middle / Far / Too Far
   // Calculatio fitness with area explored
-  float minX, maxX, minY, maxY;
-  float lastFitnessExploration;
+  //float minX, maxX, minY, maxY;
+  //float lastFitnessExploration;
+	uint8_t immunity; 
 };
 
 

@@ -3,7 +3,7 @@
 #define windowWidth 600
 #define screenHeight 1080
 #define screenWidth 1920
-#define displaySteps 3000
+#define displaySteps 10000
 #define worldSize 15
 
 // Evolutive system global parameters (fixed)
@@ -16,7 +16,7 @@
 #define pointsMoving 10.0// Points per second in maximum speed
 #define pointsExploration 0// Points when explored all the world (not used)
 #define maxPopulation 150// Number of populations tested with each environment
-#define maxTime 3000// Time that each population will be tested
+#define maxTime 500// Time that each population will be tested
 #define envMutationRate 0.2
 
 // OutputFile
@@ -34,12 +34,12 @@
 
 // Fixed genes environments
 // Set as -1 if you want to evolute the gene
-#define controlFitnessMean 3
+#define controlFitnessMean 1
 #define controlMutationRate 0.2f
 #define controlNeutralCrossing 0.3// Only when using elitism
 #define controlQtdTournament 5// Only when using tournament
 #define controlNeutralMutation 0.5
-#define controlBackMutationPrevention 1
+#define controlBackMutationPrevention 0
 #define controlCrossingCondition 0
 
 // Robot info

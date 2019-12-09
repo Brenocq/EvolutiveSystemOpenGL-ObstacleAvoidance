@@ -173,17 +173,22 @@ void Environment::newPopulationRobotsElitism(){
         // Select how to cross
         switch(int(genes[5])){
             case 0:
-            condition = robot[i].fitness.back() <= robot[bestRobot].fitness.back() && i!=bestRobot;
+            	condition = robot[i].fitness.back() <= robot[bestRobot].fitness.back() && i!=bestRobot;
             break;
             case 1:
-            condition = robot[i].fitness.back() <= robot[bestRobot].meanFitness.back() && i!=bestRobot;
+            	condition = robot[i].fitness.back() <= robot[bestRobot].meanFitness.back() && i!=bestRobot;
             break;
             case 2:
-            condition = robot[i].meanFitness.back() <= robot[bestRobot].meanFitness.back() && i!=bestRobot;
+            	condition = robot[i].meanFitness.back() <= robot[bestRobot].meanFitness.back() && i!=bestRobot;
             break;
         }
+				uint8_t immunityRobot = robot[i].getImmunity();
+				if(immunityRobot>0)
+					robot[i].setImmunity(--immunityRobot);
+				if(condition==0)
+					robot[i].setImmunity(3);
 
-        if(condition){
+        if(condition && robot[i].getImmunity()!=0){
             for (int j = 0; j < controlQtdSensors+2; j++) {
                 robot[i].genesAnatomy[j] = float(genes[2])*robot[i].genesAnatomy[j]+(1-float(genes[2]))*robot[bestRobot].genesAnatomy[j];
             }
@@ -206,7 +211,7 @@ void Environment::newPopulationRobotsElitism(){
             break;
         }
 
-        if(condition){
+        if(condition && robot[i].getImmunity()!=0){
             // Create new cromossome
             vector<float>mutatedGenesAnatomy;
             mutatedGenesAnatomy = robot[i].genesAnatomy;

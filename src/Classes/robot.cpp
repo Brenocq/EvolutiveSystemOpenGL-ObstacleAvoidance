@@ -9,7 +9,7 @@
 using namespace std;
 
 Robot::Robot():
-  Object(), theta(0), lastX(0), lastY(0),timeLastXY(0), inCollision(false), lastFitnessExploration(0)
+  Object(), theta(0), lastX(0), lastY(0),timeLastXY(0), inCollision(false) 
 {
   radius = 0.2;
   id = 0;
@@ -22,6 +22,7 @@ Robot::Robot():
   headColor[0] = 1;
   headColor[1] = 1;
   headColor[2] = 1;
+	immunity = 0;
 }
 
 Robot::~Robot(){
@@ -29,7 +30,8 @@ Robot::~Robot(){
 }
 
 float Robot::getTheta() const {return theta;}
-
+uint8_t Robot::getImmunity() const {return immunity;}
+void Robot::setImmunity(uint8_t _immunity){immunity = _immunity;}
 void Robot::newGenes(vector<float> _genesAnatomy, vector<float> _genesBrain){
   genesAnatomy.clear();
   genesBrain.clear();
@@ -47,8 +49,9 @@ void Robot::newOrientation(float _x, float _y, float _theta){
   y = _y;
   lastY = y;
   theta = _theta;
-  minX = maxX = x;
-  minY = maxY = y;
+  //minX = maxX = x;
+  //minY = maxY = y;
+
 }
 
 void Robot::setTheta(float _theta){
@@ -143,11 +146,11 @@ void Robot::move(vector<Object*> objects, float seconds){
   for(int i=0 ; i<qtdSensors ; i++){
     if(genesAnatomy[i+2]>controlEnableSensor){
       if(i==2){
-        rotation-=(controlSensorQtdDivisions-sensorValues[i])*/*genesBrain[i+qtdSensors]*/0.5/qtdActiveSensors;
+        rotation-=(controlSensorQtdDivisions-sensorValues[i])* /*genesBrain[i+qtdSensors]*/0.5/qtdActiveSensors;
       }else if(i==1){
-        rotation-=(controlSensorQtdDivisions-sensorValues[i])*/*genesBrain[i+qtdSensors]*/4/qtdActiveSensors;
+        rotation-=(controlSensorQtdDivisions-sensorValues[i])* /*genesBrain[i+qtdSensors]*/4/qtdActiveSensors;
       }else{
-        rotation+=(controlSensorQtdDivisions-sensorValues[i])*/*genesBrain[i+qtdSensors]*/0.5/qtdActiveSensors;
+        rotation+=(controlSensorQtdDivisions-sensorValues[i])* /*genesBrain[i+qtdSensors]*/0.5/qtdActiveSensors;
       }
     }
 
@@ -224,7 +227,7 @@ void Robot::move(vector<Object*> objects, float seconds){
   }
 
   // Calculate fitness with area explored
-  minX = min(minX, x);
+  /*minX = min(minX, x);
   maxX = max(maxX, x);
   minY = min(minY, y);
   maxY = max(maxY, y);
@@ -232,7 +235,7 @@ void Robot::move(vector<Object*> objects, float seconds){
   float areaTravelled = (maxX-minX)*(maxX-minY);
   float fitnessExploration = areaTravelled/(worldSize*2)*(worldSize*2) * pointsExploration;
   fitness.back() += fitnessExploration;
-  lastFitnessExploration = fitnessExploration;
+  lastFitnessExploration = fitnessExploration;*/
 }
 
 void Robot::rotate(float angle){
