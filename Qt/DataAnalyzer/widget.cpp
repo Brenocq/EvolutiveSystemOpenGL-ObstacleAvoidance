@@ -23,6 +23,7 @@ Widget::Widget(QWidget *parent) :
     _sizeRep = -1;
     _qtdSensors = -1;
     _enableSensor = -1;
+    _maxTime = 100;
 }
 
 Widget::~Widget()
@@ -54,11 +55,14 @@ void Widget::on_importButton_clicked()
         QMessageBox::information(this, "error", file.errorString());
     }
 
+
     //----- Read file header -----//
     QTextStream in(&file);
 
     QString line;
     QStringList fields;
+
+    qDebug()<<"...";
 
     fields = _fileName.split("/");
     ui->fileNameEdit->setText(fields.back());
@@ -85,6 +89,7 @@ void Widget::on_importButton_clicked()
     ui->maxPopEdit->setText(fields.back());
     line = in.readLine();
     fields = line.split(" ");
+    _maxTime = fields.back().toFloat();
     ui->maxTimeEdit->setText(fields.back());
     line = in.readLine();
     fields = line.split(" ");
@@ -97,7 +102,7 @@ void Widget::on_importButton_clicked()
     fields = line.split(" ");
     _enableSensor = fields.back().toFloat();
 
-    file.close();
+     file.close();
 
     //----- Update combobox -----//
     QStringList itemList;
@@ -115,18 +120,18 @@ void Widget::on_importButton_clicked()
     //----- Update visible -----//
     QStringList visibleList;
     int qtdRbt = ui->qtdRobotsEdit->text().toInt();
-     _visibleRobots.resize(qtdRbt);
-     for(int i=0;i<qtdRbt;i++){
-         visibleList += QString::number(i);
-         _visibleRobots[i]=true;
-     }
+    _visibleRobots.resize(qtdRbt);
+    for(int i=0;i<qtdRbt;i++){
+        visibleList += QString::number(i);
+        _visibleRobots[i]=true;
+    }
 
-     ui->selRobotComboBox->clear();
-     ui->selRobotComboBox->addItems(visibleList);
-     ui->selRobotComboBox->setEnabled(true);
-     ui->allVisibleButton->setEnabled(true);
-     ui->allInvisibleButton->setEnabled(true);
-     ui->visibleCheckBox->setEnabled(true);
+    ui->selRobotComboBox->clear();
+    ui->selRobotComboBox->addItems(visibleList);
+    ui->selRobotComboBox->setEnabled(true);
+    ui->allVisibleButton->setEnabled(true);
+    ui->allInvisibleButton->setEnabled(true);
+    ui->visibleCheckBox->setEnabled(true);
 }
 
 void Widget::on_envComboBox_currentIndexChanged(int index)
@@ -291,7 +296,7 @@ void Widget::updatePlot()
     // set axes ranges, so we see all data
     ui->graphGross->xAxis->setRange(0, fitness[0].size());
     //ui->graphGross->xAxis->setRange(0, 50);
-    ui->graphGross->yAxis->setRange(-2000, 2000);
+    ui->graphGross->yAxis->setRange(-double(_maxTime), double(_maxTime));
     ui->graphGross->replot();
 
     //---------- Update mean graph ----------//
@@ -319,7 +324,7 @@ void Widget::updatePlot()
     // set axes ranges, so we see all data
     ui->graphMean->xAxis->setRange(0, meanFitness[0].size());
     //ui->graphMean->xAxis->setRange(0, 50);
-    ui->graphMean->yAxis->setRange(-2000, 2000);
+    ui->graphMean->yAxis->setRange(-double(_maxTime), double(_maxTime));
     ui->graphMean->replot();
 
     //---------- Plot number of sensors ----------//

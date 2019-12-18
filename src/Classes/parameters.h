@@ -3,7 +3,7 @@
 #define windowWidth 600
 #define screenHeight 1080
 #define screenWidth 1920
-#define displaySteps 10000
+#define displaySteps 10000 
 #define worldSize 15
 
 // Evolutive system global parameters (fixed)
@@ -16,7 +16,7 @@
 #define pointsMoving 10.0// Points per second in maximum speed
 #define pointsExploration 0// Points when explored all the world (not used)
 #define maxPopulation 150// Number of populations tested with each environment
-#define maxTime 500// Time that each population will be tested
+#define maxTime 1000// (MAX TIME TESTS) Time that each population will be tested
 #define envMutationRate 0.2
 
 // OutputFile
@@ -29,12 +29,12 @@
 
 // Fixed genes robots
 // Set as -1 if you want to change
-#define controlMaximumVelocity -1
-#define controlMaximumRotation -1
+#define controlMaximumVelocity 0.8 
+#define controlMaximumRotation 4 
 
 // Fixed genes environments
 // Set as -1 if you want to evolute the gene
-#define controlFitnessMean 1
+#define controlFitnessMean 10// (HEREDITY)
 #define controlMutationRate 0.2f
 #define controlNeutralCrossing 0.3// Only when using elitism
 #define controlQtdTournament 5// Only when using tournament
@@ -47,4 +47,4 @@
 #define controlMaxSensorAngle 120.0f
 #define controlSensorQtdDivisions 10.0f// SensorValue: [0..n-1] when object | n when is not reading obstacle (n+1 divisions)
 #define controlSensorMaxDist 2.0f// meters
-#define controlEnableSensor 0.7f//  0 = always enable | 1 = never enable
+#define controlEnableSensor 0.5f//  0 = always enable | 1 = never enable

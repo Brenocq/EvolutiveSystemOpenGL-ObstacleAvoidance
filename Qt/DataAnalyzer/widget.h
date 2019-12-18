@@ -48,6 +48,7 @@ private:
     int _sizeEnv, _sizeGen, _sizeRep;
     int _qtdSensors;
     float _enableSensor;
+    float _maxTime;
 };
 
 #endif // WIDGET_H
